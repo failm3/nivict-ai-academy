@@ -1,0 +1,416 @@
+{
+  "nodes": [
+    {
+      "id": "space",
+      "type": "group",
+      "label": "01  /  ТРИ РАЗДЕЛЬНЫХ ПРОСТРАНСТВА",
+      "x": 0,
+      "y": 70,
+      "width": 2940,
+      "height": 550,
+      "color": "5"
+    },
+    {
+      "id": "core",
+      "type": "group",
+      "label": "02  /  СКВОЗНОЙ КОНТУР ИСПОЛНЕНИЯ",
+      "x": 0,
+      "y": 700,
+      "width": 2940,
+      "height": 760,
+      "color": "6"
+    },
+    {
+      "id": "products",
+      "type": "group",
+      "label": "03  /  ОСНОВНЫЕ НАПРАВЛЕНИЯ",
+      "x": 0,
+      "y": 1540,
+      "width": 2940,
+      "height": 455,
+      "color": "4"
+    },
+    {
+      "id": "nav",
+      "type": "group",
+      "label": "04  /  ОТКРЫТЬ ДЕТАЛЬНЫЕ КАРТЫ",
+      "x": 0,
+      "y": 2090,
+      "width": 2940,
+      "height": 370,
+      "color": "3"
+    },
+    {
+      "id": "banner",
+      "type": "text",
+      "x": 240,
+      "y": -210,
+      "width": 2140,
+      "height": 190,
+      "color": "6",
+      "text": "### NIVICT WORKSPACE  /  ARCHITECTURE 1.0\n\n**Главный агент + команда исполнителей + независимая приёмка.**\n**Проектное предложение • 03.11.2026 • НЕ проверенный as-is код.**"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "x": 2400,
+      "y": -210,
+      "width": 520,
+      "height": 190,
+      "color": "2",
+      "text": "### Легенда\n\n**Голубой:** границы и данные · **Фиолетовый:** управление · **Зелёный:** качество · **Оранжевый:** риски.\nНе считать карточки реализованными без аудита."
+    },
+    {
+      "id": "studio",
+      "type": "text",
+      "x": 80,
+      "y": 240,
+      "width": 610,
+      "height": 230,
+      "color": "5",
+      "text": "### STUDIO / Студия\n\n**Нокс / Саша / клиенты.**\nДиалог, заявки, офферы, проекты, согласования, сдача.\n**Отдельные права и память.**"
+    },
+    {
+      "id": "exchange",
+      "type": "text",
+      "x": 810,
+      "y": 240,
+      "width": 520,
+      "height": 230,
+      "color": "3",
+      "text": "### Контракт обмена\n\n**Только:** задача → вопросы → статус → ссылки на артефакты → результат.\nАвторизованный API / очередь; нет прямого общего доступа к секретам и памяти."
+    },
+    {
+      "id": "production",
+      "type": "text",
+      "x": 1450,
+      "y": 240,
+      "width": 610,
+      "height": 230,
+      "color": "5",
+      "text": "### PRODUCTION / Рабочее\n\nКод, инструменты, браузер, пайплайны, исполнители, тесты.\n**Изолированные проекты и каталоги; sandbox/worktree по необходимости.**"
+    },
+    {
+      "id": "management",
+      "type": "text",
+      "x": 2180,
+      "y": 240,
+      "width": 610,
+      "height": 230,
+      "color": "5",
+      "text": "### MANAGEMENT / Техническое\n\nНастройки, провайдеры, ключи, логи, обновления, rollback.\n**Администраторский контур отдельно от клиентов.**"
+    },
+    {
+      "id": "entry",
+      "type": "text",
+      "x": 40,
+      "y": 870,
+      "width": 430,
+      "height": 240,
+      "color": "5",
+      "text": "### 01  /  Задача\n\nЧат, файлы, голос, заявка или плановое событие.\nПроект + владелец + исходный источник."
+    },
+    {
+      "id": "requirements",
+      "type": "text",
+      "x": 520,
+      "y": 870,
+      "width": 430,
+      "height": 240,
+      "color": "3",
+      "text": "### 02  /  Контракт\n\nRequirements Agent уточняет цель, границы, критерии готовности и риски.\nДля критичного ТЗ — **согласование человеком**."
+    },
+    {
+      "id": "orchestrator",
+      "type": "text",
+      "x": 1000,
+      "y": 870,
+      "width": 430,
+      "height": 240,
+      "color": "6",
+      "text": "### 03  /  Оркестратор\n\nПлан, зависимости, очереди, параллельные ветви, checkpoint и ограничения.\nРешает, **код или LLM**, кого подключить."
+    },
+    {
+      "id": "runtime",
+      "type": "text",
+      "x": 1480,
+      "y": 870,
+      "width": 430,
+      "height": 240,
+      "color": "6",
+      "text": "### 04  /  Исполнение\n\nПрофильные исполнители + tools/bots: Git, Playwright, браузер, файлы, API.\nРеальные действия исполняет **программный код**."
+    },
+    {
+      "id": "review",
+      "type": "text",
+      "x": 1960,
+      "y": 870,
+      "width": 430,
+      "height": 240,
+      "color": "4",
+      "text": "### 05  /  Quality Gate\n\nОтдельные проверки: критерии, логи, артефакты, UI, E2E, безопасность.\n**Никакого COMPLETED по словам LLM.**"
+    },
+    {
+      "id": "delivery",
+      "type": "text",
+      "x": 2440,
+      "y": 870,
+      "width": 430,
+      "height": 240,
+      "color": "4",
+      "text": "### 06  /  Результат\n\nПодтверждено / доработка / частично / согласование / ошибка.\nОтвет клиенту + ссылки на доказательства."
+    },
+    {
+      "id": "model",
+      "type": "text",
+      "x": 120,
+      "y": 1210,
+      "width": 490,
+      "height": 180,
+      "color": "6",
+      "text": "### Model Router\n\nfast / code / research / review.\nOmniRoute, локальные модели и резервные API — **кандидаты, аудит необходим**."
+    },
+    {
+      "id": "memory",
+      "type": "text",
+      "x": 675,
+      "y": 1210,
+      "width": 490,
+      "height": 180,
+      "color": "5",
+      "text": "### Memory + RAG\n\nИсточники и решения по проекту; raw / working / verified.\nОтдельно — состояние задачи; **не веса модели**."
+    },
+    {
+      "id": "policy",
+      "type": "text",
+      "x": 1230,
+      "y": 1210,
+      "width": 490,
+      "height": 180,
+      "color": "2",
+      "text": "### Policy Engine\n\nПрава + риск + лимиты + подтверждения.\n**Проверяется кодом до внешнего действия.**"
+    },
+    {
+      "id": "state",
+      "type": "text",
+      "x": 1785,
+      "y": 1210,
+      "width": 490,
+      "height": 180,
+      "color": "3",
+      "text": "### Queue + Checkpoints\n\nДлинные задачи, timeout, retries, idempotency.\nВосстановление без повторной оплаты/письма."
+    },
+    {
+      "id": "tracing",
+      "type": "text",
+      "x": 2340,
+      "y": 1210,
+      "width": 490,
+      "height": 180,
+      "color": "5",
+      "text": "### Logs + Metrics\n\nTrace, версии, latency, cost/task, ошибки, непокрытые проверки.\nСигналы аварий и safe rollback."
+    },
+    {
+      "id": "career",
+      "type": "text",
+      "x": 80,
+      "y": 1700,
+      "width": 610,
+      "height": 200,
+      "color": "4",
+      "text": "### Карьера + портфолио\n\nP0: вакансии, резюме, реальные кейсы, аудит адаптива, доказательства результатов."
+    },
+    {
+      "id": "site",
+      "type": "text",
+      "x": 790,
+      "y": 1700,
+      "width": 610,
+      "height": 200,
+      "color": "4",
+      "text": "### Проекты и «Сайт Жив»\n\nP0: ТЗ → разработка → независимая визуальная проверка → регрессия → сдача."
+    },
+    {
+      "id": "studioflow",
+      "type": "text",
+      "x": 1500,
+      "y": 1700,
+      "width": 610,
+      "height": 200,
+      "color": "4",
+      "text": "### Студийный поток\n\nP1: лиды FL / Kwork / TG → оценка → отклик → исполнение → финансы.\nАвтоматические и ручные заказы разделены."
+    },
+    {
+      "id": "factory",
+      "type": "text",
+      "x": 2210,
+      "y": 1700,
+      "width": 610,
+      "height": 200,
+      "color": "4",
+      "text": "### Agent Factory + AI Lab\n\nFactory: создавать исполнителей по ТЗ, тестировать и выпускать.\nAI Lab: **отдельный долгосрочный трек**, не блокирует MVP."
+    },
+    {
+      "id": "map_task",
+      "type": "text",
+      "x": 80,
+      "y": 2220,
+      "width": 610,
+      "height": 180,
+      "color": "3",
+      "text": "### 01  /  Цикл задачи\n\n[[03 - Практика/04 - Архитектура NIVICT Workspace/01 - NIVICT Workspace — Цикл задачи.canvas|Открыть Canvas выполнения]]\nСтатусы, развилки и QA."
+    },
+    {
+      "id": "map_factory",
+      "type": "text",
+      "x": 790,
+      "y": 2220,
+      "width": 610,
+      "height": 180,
+      "color": "3",
+      "text": "### 02  /  Agent Factory\n\n[[03 - Практика/04 - Архитектура NIVICT Workspace/02 - NIVICT Workspace — Agent Factory.canvas|Открыть Canvas фабрики]]\nОт запроса до выпуска агента."
+    },
+    {
+      "id": "map_security",
+      "type": "text",
+      "x": 1500,
+      "y": 2220,
+      "width": 610,
+      "height": 180,
+      "color": "3",
+      "text": "### 03  /  Память и права\n\n[[03 - Практика/04 - Архитектура NIVICT Workspace/03 - NIVICT Workspace — Память, права и надёжность.canvas|Открыть Canvas безопасности]]\nДанные, доступ, аварии."
+    },
+    {
+      "id": "map_spec",
+      "type": "text",
+      "x": 2210,
+      "y": 2220,
+      "width": 610,
+      "height": 180,
+      "color": "3",
+      "text": "### Спецификация v1.0\n\n[[03 - Практика/04 - Архитектура NIVICT Workspace/NIVICT Workspace — Спецификация v1.0|Подробное ТЗ и критерии]]\nРешения, спорные места, аудит."
+    }
+  ],
+  "edges": [
+    {
+      "id": "sp1",
+      "fromNode": "studio",
+      "fromSide": "right",
+      "toNode": "exchange",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "запрос"
+    },
+    {
+      "id": "sp2",
+      "fromNode": "exchange",
+      "fromSide": "right",
+      "toNode": "production",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "контракт"
+    },
+    {
+      "id": "sp3",
+      "fromNode": "management",
+      "fromSide": "left",
+      "toNode": "production",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "управление",
+      "color": "2"
+    },
+    {
+      "id": "p1",
+      "fromNode": "entry",
+      "fromSide": "right",
+      "toNode": "requirements",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "p2",
+      "fromNode": "requirements",
+      "fromSide": "right",
+      "toNode": "orchestrator",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "p3",
+      "fromNode": "orchestrator",
+      "fromSide": "right",
+      "toNode": "runtime",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "p4",
+      "fromNode": "runtime",
+      "fromSide": "right",
+      "toNode": "review",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "p5",
+      "fromNode": "review",
+      "fromSide": "right",
+      "toNode": "delivery",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "только PASS",
+      "color": "4"
+    },
+    {
+      "id": "s1",
+      "fromNode": "model",
+      "fromSide": "top",
+      "toNode": "orchestrator",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "модели",
+      "color": "6"
+    },
+    {
+      "id": "s2",
+      "fromNode": "memory",
+      "fromSide": "top",
+      "toNode": "orchestrator",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "контекст",
+      "color": "5"
+    },
+    {
+      "id": "s3",
+      "fromNode": "policy",
+      "fromSide": "top",
+      "toNode": "runtime",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "разрешения",
+      "color": "2"
+    },
+    {
+      "id": "s4",
+      "fromNode": "state",
+      "fromSide": "top",
+      "toNode": "runtime",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "состояние",
+      "color": "3"
+    },
+    {
+      "id": "s5",
+      "fromNode": "tracing",
+      "fromSide": "top",
+      "toNode": "review",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "следы",
+      "color": "5"
+    }
+  ]
+}
