@@ -1,0 +1,435 @@
+{
+  "nodes": [
+    {
+      "id": "intake",
+      "type": "group",
+      "label": "01  /  ПРИЁМ, УТОЧНЕНИЕ, ДОПУСК",
+      "x": 0,
+      "y": 70,
+      "width": 3100,
+      "height": 445,
+      "color": "5"
+    },
+    {
+      "id": "execution",
+      "type": "group",
+      "label": "02  /  ПЛАНИРОВАНИЕ И ИСПОЛНЕНИЕ",
+      "x": 0,
+      "y": 590,
+      "width": 3100,
+      "height": 690,
+      "color": "6"
+    },
+    {
+      "id": "quality",
+      "type": "group",
+      "label": "03  /  ДОКАЗАТЕЛЬСТВА, QA, ИТОГ",
+      "x": 0,
+      "y": 1360,
+      "width": 3100,
+      "height": 730,
+      "color": "4"
+    },
+    {
+      "id": "foundation",
+      "type": "group",
+      "label": "04  /  СКВОЗНЫЕ ПРАВИЛА",
+      "x": 0,
+      "y": 2170,
+      "width": 3100,
+      "height": 460,
+      "color": "3"
+    },
+    {
+      "id": "header",
+      "type": "text",
+      "x": 290,
+      "y": -200,
+      "width": 2500,
+      "height": 170,
+      "color": "6",
+      "text": "### NIVICT WORKSPACE  /  ЖИЗНЕННЫЙ ЦИКЛ ЗАДАЧИ\n\n**Ни один шаг исполнения не означает автоматически «задача завершена».**\n**Все статусы — проектные, сравнить с текущим кодом перед миграцией.**"
+    },
+    {
+      "id": "recv",
+      "type": "text",
+      "x": 70,
+      "y": 190,
+      "width": 515,
+      "height": 220,
+      "color": "5",
+      "text": "### RECEIVED\n\nПоступил текст/голос/файл/заявка. Присвоены **task_id, project_id, owner**.\nИсходный запрос сохранён."
+    },
+    {
+      "id": "clarify",
+      "type": "text",
+      "x": 690,
+      "y": 190,
+      "width": 515,
+      "height": 220,
+      "color": "3",
+      "text": "### NEEDS_INFO\n\nЕсли непонятны цель, границы, входные данные или ожидаемый результат — **уточнить у человека**."
+    },
+    {
+      "id": "contract",
+      "type": "text",
+      "x": 1310,
+      "y": 190,
+      "width": 515,
+      "height": 220,
+      "color": "3",
+      "text": "### TASK CONTRACT\n\nТЗ: цель, приёмка, источники, права, бюджеты, риск, срок, stop conditions.\n**Sign-off для существенных задач.**"
+    },
+    {
+      "id": "permit",
+      "type": "text",
+      "x": 1930,
+      "y": 190,
+      "width": 515,
+      "height": 220,
+      "color": "2",
+      "text": "### POLICY GATE\n\nКод проверяет автора, права, доступ к данным, лимиты.\nКритические действия → **WAITING_APPROVAL**."
+    },
+    {
+      "id": "plan",
+      "type": "text",
+      "x": 2550,
+      "y": 190,
+      "width": 480,
+      "height": 220,
+      "color": "6",
+      "text": "### PLANNED\n\nКонтракт допущен. Выбраны стратегия, ожидаемые доказательства, число попыток и контрольные точки."
+    },
+    {
+      "id": "orch",
+      "type": "text",
+      "x": 100,
+      "y": 760,
+      "width": 600,
+      "height": 230,
+      "color": "6",
+      "text": "### ОРКЕСТРАТОР\n\nПланирует зависимости, очередь, параллельные ветви, checkpoint, модельные/кодовые шаги."
+    },
+    {
+      "id": "route",
+      "type": "text",
+      "x": 845,
+      "y": 760,
+      "width": 600,
+      "height": 230,
+      "color": "6",
+      "text": "### МАРШРУТИЗАЦИЯ\n\n**Детерминированная операция?** → бот/код.\n**Неоднозначность/генерация?** → LLM + разрешённые инструменты."
+    },
+    {
+      "id": "llm",
+      "type": "text",
+      "x": 1630,
+      "y": 690,
+      "width": 580,
+      "height": 225,
+      "color": "6",
+      "text": "### LLM / PROFILE\n\nfast • code • research • review.\nАнализ, план, текст, код.\n**Не выполняет внешний эффект сама.**"
+    },
+    {
+      "id": "tools",
+      "type": "text",
+      "x": 1630,
+      "y": 970,
+      "width": 580,
+      "height": 225,
+      "color": "5",
+      "text": "### TOOLS + CODE\n\nGit, файлы, Playwright, браузер, APIs, расчёты.\nПроверка аргументов, sandbox, timeout, права."
+    },
+    {
+      "id": "checkpoint",
+      "type": "text",
+      "x": 2430,
+      "y": 800,
+      "width": 550,
+      "height": 230,
+      "color": "3",
+      "text": "### QUEUE / CHECKPOINT\n\nПосле шага: что выполнено, что сохранено и подтверждено.\nРестарт без слепого повтора операций."
+    },
+    {
+      "id": "evidence",
+      "type": "text",
+      "x": 90,
+      "y": 1520,
+      "width": 550,
+      "height": 240,
+      "color": "5",
+      "text": "### EVIDENCE STORE\n\nТочные вызовы и ответы инструментов, скриншоты, тесты, версии, охват и неуспехи.\nЗаявление LLM ≠ факт."
+    },
+    {
+      "id": "reviewer",
+      "type": "text",
+      "x": 735,
+      "y": 1520,
+      "width": 550,
+      "height": 240,
+      "color": "4",
+      "text": "### SPECIALIST REVIEW\n\nПрофильные проверки: техническая, визуальная, финансовая, юридический риск.\nПрограммы и люди при необходимости."
+    },
+    {
+      "id": "gate",
+      "type": "text",
+      "x": 1380,
+      "y": 1520,
+      "width": 550,
+      "height": 240,
+      "color": "4",
+      "text": "### QUALITY GATE\n\nПроверка всех обязательных критериев + свидетельств.\n**Только объективный PASS открывает COMPLETED.**"
+    },
+    {
+      "id": "result",
+      "type": "text",
+      "x": 2410,
+      "y": 1520,
+      "width": 590,
+      "height": 240,
+      "color": "4",
+      "text": "### COMPLETED\n\nРеальный результат подтверждён; сохранены артефакты и ограничения проверки.\nResponse Agent оформляет ответ, код отправляет."
+    },
+    {
+      "id": "rework",
+      "type": "text",
+      "x": 710,
+      "y": 1820,
+      "width": 600,
+      "height": 210,
+      "color": "3",
+      "text": "### NEEDS_REWORK\n\nЕсть замечания → конкретный дефект, ответственный, срок и ограниченный цикл исправления."
+    },
+    {
+      "id": "approval",
+      "type": "text",
+      "x": 1400,
+      "y": 1820,
+      "width": 600,
+      "height": 210,
+      "color": "2",
+      "text": "### WAITING_APPROVAL\n\nНеобратимое, денежное, правовое или другое высокорисковое действие требует человека."
+    },
+    {
+      "id": "incomplete",
+      "type": "text",
+      "x": 2320,
+      "y": 1820,
+      "width": 680,
+      "height": 210,
+      "color": "1",
+      "text": "### PARTIAL / FAILED / INCONCLUSIVE\n\nЕсли доказательств нет, лимиты исчерпаны или задача прервана — честный частичный/ошибочный статус."
+    },
+    {
+      "id": "sources",
+      "type": "text",
+      "x": 70,
+      "y": 2320,
+      "width": 680,
+      "height": 220,
+      "color": "5",
+      "text": "### MEMORY / SOURCE OF TRUTH\n\nКонтекст отбирается по **проекту, разрешениям, версии и авторитетности**. Сырые выводы не становятся фактами."
+    },
+    {
+      "id": "quota",
+      "type": "text",
+      "x": 830,
+      "y": 2320,
+      "width": 680,
+      "height": 220,
+      "color": "6",
+      "text": "### BUDGET / TELEMETRY\n\nTokens, cost/task, latency, retries, provider, coverage. Лимиты и безопасный fallback."
+    },
+    {
+      "id": "errors",
+      "type": "text",
+      "x": 1590,
+      "y": 2320,
+      "width": 680,
+      "height": 220,
+      "color": "2",
+      "text": "### INCIDENT RESPONSE\n\nЗелёный: проверенное автоисправление; жёлтый: ограничить; красный: изолировать, человек, rollback."
+    },
+    {
+      "id": "reliability",
+      "type": "text",
+      "x": 2350,
+      "y": 2320,
+      "width": 680,
+      "height": 220,
+      "color": "3",
+      "text": "### RECOVERY / IDEMPOTENCY\n\nПеред повтором отправки письма, счёта или внешнего действия — сверить результат и ID операции."
+    }
+  ],
+  "edges": [
+    {
+      "id": "a1",
+      "fromNode": "recv",
+      "fromSide": "right",
+      "toNode": "clarify",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "a2",
+      "fromNode": "clarify",
+      "fromSide": "right",
+      "toNode": "contract",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "a3",
+      "fromNode": "contract",
+      "fromSide": "right",
+      "toNode": "permit",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "a4",
+      "fromNode": "permit",
+      "fromSide": "right",
+      "toNode": "plan",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b1",
+      "fromNode": "plan",
+      "fromSide": "bottom",
+      "toNode": "orch",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "начать",
+      "color": "6"
+    },
+    {
+      "id": "b2",
+      "fromNode": "orch",
+      "fromSide": "right",
+      "toNode": "route",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "план"
+    },
+    {
+      "id": "b3",
+      "fromNode": "route",
+      "fromSide": "right",
+      "toNode": "llm",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "модель",
+      "color": "6"
+    },
+    {
+      "id": "b4",
+      "fromNode": "route",
+      "fromSide": "bottom",
+      "toNode": "tools",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "код",
+      "color": "5"
+    },
+    {
+      "id": "b5",
+      "fromNode": "llm",
+      "fromSide": "bottom",
+      "toNode": "tools",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "действие через код",
+      "color": "5"
+    },
+    {
+      "id": "b6",
+      "fromNode": "tools",
+      "fromSide": "right",
+      "toNode": "checkpoint",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "сохранить",
+      "color": "3"
+    },
+    {
+      "id": "c1",
+      "fromNode": "tools",
+      "fromSide": "bottom",
+      "toNode": "evidence",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "факты выполнения",
+      "color": "5"
+    },
+    {
+      "id": "c2",
+      "fromNode": "evidence",
+      "fromSide": "right",
+      "toNode": "reviewer",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "доказательства"
+    },
+    {
+      "id": "c3",
+      "fromNode": "reviewer",
+      "fromSide": "right",
+      "toNode": "gate",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "вердикт"
+    },
+    {
+      "id": "c4",
+      "fromNode": "gate",
+      "fromSide": "right",
+      "toNode": "result",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "PASS",
+      "color": "4"
+    },
+    {
+      "id": "c5",
+      "fromNode": "gate",
+      "fromSide": "bottom",
+      "toNode": "rework",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "FAIL",
+      "color": "3"
+    },
+    {
+      "id": "c6",
+      "fromNode": "gate",
+      "fromSide": "bottom",
+      "toNode": "approval",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "нужно разрешение",
+      "color": "2"
+    },
+    {
+      "id": "c7",
+      "fromNode": "gate",
+      "fromSide": "bottom",
+      "toNode": "incomplete",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "нет подтверждения",
+      "color": "1"
+    },
+    {
+      "id": "c8",
+      "fromNode": "rework",
+      "fromSide": "left",
+      "toNode": "orch",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "повтор с ограничением",
+      "color": "3"
+    }
+  ]
+}
