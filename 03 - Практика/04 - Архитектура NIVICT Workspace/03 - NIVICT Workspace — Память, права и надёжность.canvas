@@ -198,7 +198,7 @@
       "width": 710,
       "height": 270,
       "color": "6",
-      "text": "### Стоимость и скорость\n\nЦена за задачу, токены, latency P50/P95, quotas, retries, сравнительная экономия.\nFallback только по политике."
+      "text": "### Cost & Model Router / ADR-006\n\nОсновная модель по роли; допускаются динамический маршрут и совместимый fallback.\n**Права/качество перед стоимостью.** Tokens, cost/task, latency, provider, retries в trace."
     },
     {
       "id": "incident",
