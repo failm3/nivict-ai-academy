@@ -1,0 +1,392 @@
+{
+  "nodes": [
+    {
+      "id": "discover",
+      "type": "group",
+      "label": "01  /  ОБСУЖДЕНИЕ И СОГЛАСОВАНИЕ ТРЕБОВАНИЙ",
+      "x": 0,
+      "y": 65,
+      "width": 3320,
+      "height": 540,
+      "color": "5"
+    },
+    {
+      "id": "assemble",
+      "type": "group",
+      "label": "02  /  ПРОЕКТИРОВАНИЕ И СБОРКА",
+      "x": 0,
+      "y": 680,
+      "width": 3320,
+      "height": 540,
+      "color": "6"
+    },
+    {
+      "id": "deliver",
+      "type": "group",
+      "label": "03  /  ТЕСТИРОВАНИЕ И ВЫПУСК",
+      "x": 0,
+      "y": 1290,
+      "width": 3320,
+      "height": 560,
+      "color": "4"
+    },
+    {
+      "id": "operate",
+      "type": "group",
+      "label": "04  /  УПРАВЛЯЕМОЕ РАЗВИТИЕ",
+      "x": 0,
+      "y": 1930,
+      "width": 3320,
+      "height": 450,
+      "color": "3"
+    },
+    {
+      "id": "header",
+      "type": "text",
+      "x": 285,
+      "y": -190,
+      "width": 2700,
+      "height": 160,
+      "color": "6",
+      "text": "### AGENT FACTORY  /  ОТ ЗАПРОСА ДО РАБОТАЮЩЕГО АГЕНТА\n\n**Фабрика — конвейер спецификаций, конфигураций, инструментов, тестов и допуска.**\nЦелевая архитектура • ещё не готовый продукт Workspace."
+    },
+    {
+      "id": "request",
+      "type": "text",
+      "x": 70,
+      "y": 230,
+      "width": 550,
+      "height": 240,
+      "color": "5",
+      "text": "### 01  /  Потребность\n\n«Создай агента, который обрабатывает обращения клиентов» — это **пожелание**, а не готовое ТЗ."
+    },
+    {
+      "id": "interview",
+      "type": "text",
+      "x": 720,
+      "y": 230,
+      "width": 550,
+      "height": 240,
+      "color": "5",
+      "text": "### 02  /  Requirements Agent\n\nДиалог с пользователем: цель, исключения, каналы, операции, вопросы, противоречия, пример ответа."
+    },
+    {
+      "id": "signoff",
+      "type": "text",
+      "x": 1370,
+      "y": 230,
+      "width": 550,
+      "height": 240,
+      "color": "3",
+      "text": "### 03  /  Sign-off\n\nТЗ в виде текста, схемы или прототипа.\n**Утверждение требований человеком + проверка полноты.**"
+    },
+    {
+      "id": "need",
+      "type": "text",
+      "x": 2020,
+      "y": 230,
+      "width": 550,
+      "height": 240,
+      "color": "6",
+      "text": "### 04  /  Agent нужен?\n\nРассмотреть **скрипт/бот/workflow** прежде, чем назначать LLM.\nИзбегать ненужной сложности."
+    },
+    {
+      "id": "contract",
+      "type": "text",
+      "x": 2670,
+      "y": 230,
+      "width": 570,
+      "height": 240,
+      "color": "6",
+      "text": "### 05  /  Контракт исполнителя\n\nВходы/выходы, KPI, права, запреты, инструменты, риск, бюджет, тесты и эскалация."
+    },
+    {
+      "id": "capability",
+      "type": "text",
+      "x": 70,
+      "y": 850,
+      "width": 550,
+      "height": 240,
+      "color": "6",
+      "text": "### 06  /  План компонентов\n\nРоль LLM, deterministic code, память, RAG, API, skill, worker, проверяющий, очереди."
+    },
+    {
+      "id": "templates",
+      "type": "text",
+      "x": 720,
+      "y": 850,
+      "width": 550,
+      "height": 240,
+      "color": "6",
+      "text": "### 07  /  Шаблон\n\nВерсионируемые шаблоны agent / workflow; архитектура адаптируется к задаче.\nНикакой «супермодели на всё»."
+    },
+    {
+      "id": "build",
+      "type": "text",
+      "x": 1370,
+      "y": 850,
+      "width": 550,
+      "height": 240,
+      "color": "6",
+      "text": "### 08  /  Builder\n\nГенерация конфигурации, промптов, тестов; при необходимости — кода.\nИзолированный рабочий каталог."
+    },
+    {
+      "id": "permissions",
+      "type": "text",
+      "x": 2020,
+      "y": 850,
+      "width": 550,
+      "height": 240,
+      "color": "2",
+      "text": "### 09  /  Разрешения\n\nLeast privilege, ключи вне LLM, данные проекта, лимиты, approvals.\nПисьма клиента — недоверенный текст."
+    },
+    {
+      "id": "sandbox",
+      "type": "text",
+      "x": 2670,
+      "y": 850,
+      "width": 570,
+      "height": 240,
+      "color": "3",
+      "text": "### 10  /  Sandbox\n\nЗапуск с тестовыми данными, без внешних необратимых эффектов.\nОшибки → доработка без публикации."
+    },
+    {
+      "id": "evals",
+      "type": "text",
+      "x": 70,
+      "y": 1460,
+      "width": 550,
+      "height": 240,
+      "color": "4",
+      "text": "### 11  /  Evals + E2E\n\nОбычные и пограничные запросы, сбои, промпт-инъекции, утечки, стоимость/задержка."
+    },
+    {
+      "id": "quality",
+      "type": "text",
+      "x": 720,
+      "y": 1460,
+      "width": 550,
+      "height": 240,
+      "color": "4",
+      "text": "### 12  /  Quality Gate\n\nНезависимые критерии, логи, свидетельства действий.\n**FAIL → не выпускать**, повторные тесты."
+    },
+    {
+      "id": "registry",
+      "type": "text",
+      "x": 1370,
+      "y": 1460,
+      "width": 550,
+      "height": 240,
+      "color": "4",
+      "text": "### 13  /  Agent Registry\n\nВерсия, владелец, назначение, права, разрешённая модель, тесты, срок действия."
+    },
+    {
+      "id": "rollout",
+      "type": "text",
+      "x": 2020,
+      "y": 1460,
+      "width": 550,
+      "height": 240,
+      "color": "4",
+      "text": "### 14  /  Controlled Rollout\n\nКанареечный или ограниченный запуск, запрет высокорисковых операций до допусков."
+    },
+    {
+      "id": "monitor",
+      "type": "text",
+      "x": 2670,
+      "y": 1460,
+      "width": 570,
+      "height": 240,
+      "color": "4",
+      "text": "### 15  /  Monitor\n\nКачество клиента, жалобы, escaped defects, latency, cost, retries, тревоги и пауза."
+    },
+    {
+      "id": "feedback",
+      "type": "text",
+      "x": 90,
+      "y": 2080,
+      "width": 740,
+      "height": 230,
+      "color": "3",
+      "text": "### Обратная связь и RCA\n\nДефект клиента → воспроизведение → поиск причины → новые тесты → новая версия.\nНе обучать веса из чатов автоматически."
+    },
+    {
+      "id": "versions",
+      "type": "text",
+      "x": 910,
+      "y": 2080,
+      "width": 740,
+      "height": 230,
+      "color": "3",
+      "text": "### Версии и откат\n\nСравнивать изменения с baseline; rollback агента/конфигурации; хранить историю решений."
+    },
+    {
+      "id": "team",
+      "type": "text",
+      "x": 1730,
+      "y": 2080,
+      "width": 740,
+      "height": 230,
+      "color": "2",
+      "text": "### Человек и ответственность\n\nПользователь согласует требования; команда отвечает за качество реализации.\nКритические действия требуют соответствующих прав."
+    },
+    {
+      "id": "lab",
+      "type": "text",
+      "x": 2550,
+      "y": 2080,
+      "width": 680,
+      "height": 230,
+      "color": "5",
+      "text": "### NIVICT AI LAB — отдельно\n\nИсследовательская LLM, Fine-tuning и собственные модели — **не часть обязательного пути Factory MVP**."
+    }
+  ],
+  "edges": [
+    {
+      "id": "r1",
+      "fromNode": "request",
+      "fromSide": "right",
+      "toNode": "interview",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "r2",
+      "fromNode": "interview",
+      "fromSide": "right",
+      "toNode": "signoff",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "r3",
+      "fromNode": "signoff",
+      "fromSide": "right",
+      "toNode": "need",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "r4",
+      "fromNode": "need",
+      "fromSide": "right",
+      "toNode": "contract",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b0",
+      "fromNode": "contract",
+      "fromSide": "bottom",
+      "toNode": "capability",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "утверждённое ТЗ",
+      "color": "6"
+    },
+    {
+      "id": "b1",
+      "fromNode": "capability",
+      "fromSide": "right",
+      "toNode": "templates",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b2",
+      "fromNode": "templates",
+      "fromSide": "right",
+      "toNode": "build",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b3",
+      "fromNode": "build",
+      "fromSide": "right",
+      "toNode": "permissions",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b4",
+      "fromNode": "permissions",
+      "fromSide": "right",
+      "toNode": "sandbox",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "v0",
+      "fromNode": "sandbox",
+      "fromSide": "bottom",
+      "toNode": "evals",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "тестовая среда",
+      "color": "4"
+    },
+    {
+      "id": "v1",
+      "fromNode": "evals",
+      "fromSide": "right",
+      "toNode": "quality",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "v2",
+      "fromNode": "quality",
+      "fromSide": "right",
+      "toNode": "registry",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "PASS",
+      "color": "4"
+    },
+    {
+      "id": "v3",
+      "fromNode": "registry",
+      "fromSide": "right",
+      "toNode": "rollout",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "v4",
+      "fromNode": "rollout",
+      "fromSide": "right",
+      "toNode": "monitor",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "f1",
+      "fromNode": "monitor",
+      "fromSide": "bottom",
+      "toNode": "feedback",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "сигналы",
+      "color": "3"
+    },
+    {
+      "id": "f2",
+      "fromNode": "feedback",
+      "fromSide": "right",
+      "toNode": "versions",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "улучшения"
+    },
+    {
+      "id": "f3",
+      "fromNode": "versions",
+      "fromSide": "right",
+      "toNode": "team",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "согласование"
+    }
+  ]
+}
