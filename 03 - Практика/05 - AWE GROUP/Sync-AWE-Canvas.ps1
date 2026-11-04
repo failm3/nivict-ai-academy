@@ -17,7 +17,9 @@ function Check-Git {
 # Resolve the repository from the script's parent folder.
 $root = (& git -C $PSScriptRoot rev-parse --show-toplevel)
 Check-Git 'repository discovery'
-$root = $root.Trim().TrimEnd('/','\')
+# Git for Windows often returns C:/... while PowerShell resolves C:\... .
+# Canonicalize the actual existing directory before comparing paths.
+$root = (Resolve-Path -LiteralPath $root.Trim() -ErrorAction Stop).ProviderPath.TrimEnd('/','\')
 if (-not (Test-Path -LiteralPath $root -PathType Container)) {
     throw "Repository path not found: $root"
 }
