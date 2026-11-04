@@ -428,11 +428,11 @@
     {
       "id": "438d1d92732926b9",
       "type": "text",
-      "text": "**ДА · Подключить линию**\n\nВосстановить состояние, данные, права и контекст. Не создавать заново.",
+      "text": "**ДА · Подключить линию**\n\nИз реестра: права, хранилища, версия агента и checkpoint. Ничего не пересоздавать.",
       "x": 65,
       "y": 1605,
       "width": 380,
-      "height": 128
+      "height": 138
     },
     {
       "id": "1b630863cb36928f",
@@ -446,21 +446,21 @@
     {
       "id": "48b1471bd058d54d",
       "type": "text",
-      "text": "**Агент выбранного проекта**\n\nПолучает задачу и контекст своей линии. «Сайт Жив» — пример.",
+      "text": "**Project Agent · экземпляр линии**\n\nИзолированное состояние и конфигурация, общий runtime. Получает задачи и контекст проекта.",
       "x": 300,
       "y": 1820,
       "width": 420,
-      "height": 120,
+      "height": 135,
       "color": "6"
     },
     {
       "id": "48199d1b22e2e5ee",
       "type": "text",
-      "text": "**НЕТ · Создать линию по шаблону**\n\nProject Provisioner (код): зарегистрировать проект, среду и доступы.",
+      "text": "**НЕТ · Создать линию по шаблону**\n\nProject Provisioner + Agent Factory: project_id, ресурсы, конфигурация агента.",
       "x": 575,
       "y": 1605,
       "width": 380,
-      "height": 128
+      "height": 138
     },
     {
       "id": "awe-root-v02",
@@ -620,6 +620,176 @@
       "height": 400,
       "text": "**ПИЛОТ / КРИТЕРИЙ ВЫБОРА**\nСравнить Agno + существующий NIVICT Workspace на одном кейсе «Сайт Жив»: ТЗ → линия → инструменты → QA → восстановление → отчёт. Проверить доступы, стоимость, лицензию, совместимость, состояние и ошибки.\n**Запасной кандидат ядра:** [Microsoft Agent Framework](https://github.com/microsoft/agent-framework). Не внедрять два runtime одновременно.",
       "color": "2"
+    },
+    {
+      "id": "awe-agent-template-group-03",
+      "type": "group",
+      "x": -1810,
+      "y": 1570,
+      "width": 1560,
+      "height": 2580,
+      "color": "5",
+      "label": "02.A · УНИВЕРСАЛЬНЫЙ ШАБЛОН PROJECT AGENT"
+    },
+    {
+      "id": "awe-agent-template-root-03",
+      "type": "text",
+      "x": -1700,
+      "y": 1650,
+      "width": 1390,
+      "height": 150,
+      "text": "## Project Agent Factory · универсальный шаблон\n\nОдин корпоративный runtime; **отдельный агент-конфигурация на каждый project_id**. При создании — настроить, при открытии — восстановить. Ниже показаны **точки расширения**, не установленные модули.",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-01-03",
+      "type": "text",
+      "x": -1700,
+      "y": 1920,
+      "width": 640,
+      "height": 165,
+      "text": "**01 · Паспорт агента**\n\nИдентичность, роль, цель и зона ответственности. Привязка к project_id, версия шаблона. Конфигурация, не отдельная LLM.",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-01-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 1920,
+      "width": 650,
+      "height": 165,
+      "text": "**ЗАПОЛНИТЬ ДЛЯ ПРОЕКТА**\n\n`project_id` · имя · цель · границы · владелец · роль · версия шаблона.\nПример: «Сайт Жив» — сайт, тарифы, проверки.",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-02-03",
+      "type": "text",
+      "x": -1700,
+      "y": 2165,
+      "width": 640,
+      "height": 165,
+      "text": "**02 · Политики и безопасность**\n\nПрава по умолчанию закрыты. Бюджет, лимиты, секреты, область файлов, действия с подтверждением.",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-02-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 2165,
+      "width": 650,
+      "height": 165,
+      "text": "**ЗАПОЛНИТЬ / ПОДКЛЮЧИТЬ**\n\nРоли и разрешения · секреты · квоты · запреты · границы проекта · политика публикации и удаления.",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-03-03",
+      "type": "text",
+      "x": -1700,
+      "y": 2410,
+      "width": 640,
+      "height": 195,
+      "text": "**03 · Память и хранилища**\n\nКорпоративный реестр → ресурсы project_id. Данные логически изолированы. Новые БД/индексы/файлы добавляются по необходимости.",
+      "color": "3"
+    },
+    {
+      "id": "awe-agent-template-03-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 2410,
+      "width": 650,
+      "height": 195,
+      "text": "**ДОБАВЛЯЕМ РЕСУРСЫ ПО ПОТРЕБНОСТИ**\n\n[ ] PostgreSQL / другие БД\n[ ] объектное / файловое хранилище\n[ ] поиск / память\nДля каждого ресурса: **Storage Worker (код)**, права, проверки, бэкапы.",
+      "color": "3"
+    },
+    {
+      "id": "awe-agent-template-04-03",
+      "type": "text",
+      "x": -1700,
+      "y": 2685,
+      "width": 640,
+      "height": 165,
+      "text": "**04 · Исполнители и инструменты**\n\nПодключаются только разрешённые capabilities из общего реестра. Без копирования инструментов в каждый проект.",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-04-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 2685,
+      "width": 650,
+      "height": 165,
+      "text": "**ПОДКЛЮЧИТЬ В ПРОЕКТЕ**\n\n[ ] MCP / ToolHive\n[ ] JS / Python / CLI\n[ ] API / боты / браузер\n[ ] специальные интеграции",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-05-03",
+      "type": "text",
+      "x": -1700,
+      "y": 2930,
+      "width": 640,
+      "height": 165,
+      "text": "**05 · Планирование и специализация**\n\nПроектные цели → Task DAG → диспетчер и исполнители блока 03. Оркестратор общий, задачи и очереди — по проекту.",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-05-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 2930,
+      "width": 650,
+      "height": 165,
+      "text": "**НАСТРОЙКА ПОД ПРОЕКТ**\n\n[ ] сценарии и SOP\n[ ] типы задач и приоритеты\n[ ] критерии приёмки\n[ ] специализация: веб / дизайн / маркетинг / AI",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-06-03",
+      "type": "text",
+      "x": -1700,
+      "y": 3175,
+      "width": 640,
+      "height": 185,
+      "text": "**06 · Модуль LLM — НЕОБЯЗАТЕЛЬНЫЙ**\n\nДля анализа, генерации, неоднозначной классификации. Рутинные операции выполняются кодом. Любой вывод LLM проверяется отдельно.",
+      "color": "4"
+    },
+    {
+      "id": "awe-agent-template-06-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 3175,
+      "width": 650,
+      "height": 185,
+      "text": "**ЕСЛИ ПРОЕКТУ НУЖНА LLM**\n\n[ ] модель / OmniRoute / fallback\n[ ] шаблоны промптов и ограничения\n[ ] независимый валидатор / источники\n[ ] бюджет / токены / качество",
+      "color": "4"
+    },
+    {
+      "id": "awe-agent-template-07-03",
+      "type": "text",
+      "x": -1700,
+      "y": 3445,
+      "width": 640,
+      "height": 180,
+      "text": "**07 · Контроль состояния и качества**\n\nЛоги и checkpoint, восстановление задач, история решений. Исполнение → независимый блок 04; LLM не подтверждает собственный результат.",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-07-slot-03",
+      "type": "text",
+      "x": -985,
+      "y": 3445,
+      "width": 650,
+      "height": 180,
+      "text": "**ПРАВИЛА ПРОЕКТА**\n\n[ ] статус и checkpoints\n[ ] тесты / метрики / доказательства\n[ ] повтор и эскалация\n[ ] версия конфигурации и откат",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-ready-03",
+      "type": "text",
+      "x": -1700,
+      "y": 3710,
+      "width": 1390,
+      "height": 205,
+      "text": "**Экземпляр Project Agent готов**\n\nПаспорт + политика + ресурсы + разрешённые инструменты + задачи + проверки + сохранённое состояние.\n**Создание:** Project Provisioner → применить шаблон → зарегистрировать. **Возобновление:** прочитать конфигурацию и checkpoint → подключить существующие ресурсы. **При расширении:** изменить только нужные модули.",
+      "color": "5"
     }
   ],
   "edges": [
@@ -997,6 +1167,135 @@
       "toSide": "left",
       "color": "1",
       "label": "уточнено"
+    },
+    {
+      "id": "awe-agent-template-root-to-agent-03",
+      "fromNode": "awe-agent-template-root-03",
+      "fromSide": "right",
+      "toNode": "48b1471bd058d54d",
+      "toSide": "left",
+      "label": "создаёт / восстанавливает по шаблону",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-0-03",
+      "fromNode": "awe-agent-template-root-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-01-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-1-03",
+      "fromNode": "awe-agent-template-01-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-02-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-2-03",
+      "fromNode": "awe-agent-template-02-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-03-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-3-03",
+      "fromNode": "awe-agent-template-03-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-04-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-4-03",
+      "fromNode": "awe-agent-template-04-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-05-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-5-03",
+      "fromNode": "awe-agent-template-05-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-06-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-6-03",
+      "fromNode": "awe-agent-template-06-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-07-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-spine-7-03",
+      "fromNode": "awe-agent-template-07-03",
+      "fromSide": "bottom",
+      "toNode": "awe-agent-template-ready-03",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "awe-agent-template-slot-01-03",
+      "fromNode": "awe-agent-template-01-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-01-slot-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-slot-02-03",
+      "fromNode": "awe-agent-template-02-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-02-slot-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-slot-03-03",
+      "fromNode": "awe-agent-template-03-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-03-slot-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-slot-04-03",
+      "fromNode": "awe-agent-template-04-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-04-slot-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-slot-05-03",
+      "fromNode": "awe-agent-template-05-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-05-slot-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-slot-06-03",
+      "fromNode": "awe-agent-template-06-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-06-slot-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "awe-agent-template-slot-07-03",
+      "fromNode": "awe-agent-template-07-03",
+      "fromSide": "right",
+      "toNode": "awe-agent-template-07-slot-03",
+      "toSide": "left",
+      "color": "6"
     }
   ]
 }
