@@ -1,5 +1,5 @@
 # Sync AWE GROUP Canvas from origin/main into the local Obsidian vault.
-# Windows PowerShell 5.1-compatible. No non-ASCII literals for filename discovery.
+# Windows PowerShell 5.1-compatible. Sync only the Canvas beside this script.
 # Other locally modified NIVICT Workspace canvases are never reset.
 param(
     [switch]$PreferRemote
@@ -29,11 +29,16 @@ if ($branch.Trim() -ne 'main') {
 if (Get-Process -Name 'Obsidian' -ErrorAction SilentlyContinue) {
     throw "Close Obsidian completely before syncing; it may re-save an open Canvas."
 }
-$canvasFiles = @(Get-ChildItem -LiteralPath $root -Recurse -File -Filter $canvasName)
-if ($canvasFiles.Count -ne 1) {
-    throw "Expected exactly one AWE Canvas, found $($canvasFiles.Count)."
+# This script lives next to the authoritative Canvas. Do NOT recurse through
+# the repo: a backup or duplicated filename must not break synchronization.
+$target = Join-Path -Path $PSScriptRoot -ChildPath $canvasName
+if (-not (Test-Path -LiteralPath $target -PathType Leaf)) {
+    throw "AWE Canvas not found next to this script: $target"
 }
-$target = $canvasFiles[0].FullName
+$target = (Get-Item -LiteralPath $target -ErrorAction Stop).FullName
+if (-not $target.StartsWith(($root + [IO.Path]::DirectorySeparatorChar), [StringComparison]::OrdinalIgnoreCase)) {
+    throw "The Canvas is outside the repository. Aborting."
+}
 $relative = $target.Substring($root.Length).TrimStart('/','\').Replace('\','/')
 Write-Host "Target: $relative"
 
