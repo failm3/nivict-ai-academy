@@ -1030,6 +1030,16 @@
       "height": 140,
       "color": "4",
       "text": "**POST-SAVE AUDIT · 05 / независимый код**\n\nПовторно прочитать артефакт и БД; проверить hashes, статус и отчёт Local QA. Ошибка → BLOCK, не публиковать."
+    },
+    {
+      "id": "awe04-qa-spec-link-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 6200,
+      "width": 1055,
+      "height": 83,
+      "color": "5",
+      "text": "**СПЕЦИФИКАЦИЯ · QA-протоколы, инварианты и пилотные тесты**\n\n[[04 - Блок 04 — AWE Quality Assurance System]]"
     }
   ],
   "edges": [
