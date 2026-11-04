@@ -35,16 +35,16 @@
       "type": "group",
       "x": 0,
       "y": 4390,
-      "width": 1100,
-      "height": 960,
+      "width": 2310,
+      "height": 1920,
       "color": "4",
-      "label": "04 · НЕЗАВИСИМАЯ ПРОВЕРКА"
+      "label": "04 · AWE QUALITY SYSTEM — НЕЗАВИСИМЫЙ ЭКЗАМЕН И АУДИТ"
     },
     {
       "id": "616dcf0176597f89",
       "type": "group",
       "x": 0,
-      "y": 5440,
+      "y": 6400,
       "width": 1020,
       "height": 720,
       "color": "5",
@@ -138,11 +138,11 @@
     {
       "id": "7dfa8d64f836afd7",
       "type": "text",
-      "text": "**Независимая проверка · Langfuse**\n\nТрассировка, evals + реальные тесты. Не автозачёт.",
+      "text": "**01 · QA Controller · код / независимая конфигурация**\n\nИз подписанного ТЗ и профиля задачи выбирает обязательные тесты. Скрывает оценки исполнителя от экзаменатора. Не ставит PASS.",
       "x": 300,
-      "y": 4470,
+      "y": 4480,
       "width": 420,
-      "height": 110,
+      "height": 145,
       "color": "4"
     },
     {
@@ -150,7 +150,7 @@
       "type": "text",
       "text": "**Сохранить результат и память**\n\nФайлы · решения · состояние задачи · запись в проектную память",
       "x": 300,
-      "y": 5510,
+      "y": 6470,
       "width": 420,
       "height": 110,
       "color": "3"
@@ -160,7 +160,7 @@
       "type": "text",
       "text": "**Есть незавершённые задачи?**\n\nПроверка плана и оставшейся работы",
       "x": 300,
-      "y": 5660,
+      "y": 6620,
       "width": 420,
       "height": 110
     },
@@ -169,7 +169,7 @@
       "type": "text",
       "text": "**Продолжить работу**\n\nВозврат к планировщику проекта",
       "x": 65,
-      "y": 5840,
+      "y": 6800,
       "width": 380,
       "height": 110
     },
@@ -178,7 +178,7 @@
       "type": "text",
       "text": "**Отчёт головному агенту**\n\nСтатус · проверки · итог для пользователя",
       "x": 575,
-      "y": 5840,
+      "y": 6800,
       "width": 380,
       "height": 110,
       "color": "5"
@@ -251,29 +251,29 @@
     {
       "id": "211b5df0f9924de5",
       "type": "text",
-      "text": "**Проверка пройдена?**\n\nРезультат подтверждён?",
+      "text": "**05 · Quality Gate · формальный вердикт (КОД)**\n\nPASS только при доказанных обязательных проверках и целостном аудите; FAIL / UNCLEAR / BLOCKED не считаются готовностью. Риск и права отдельно.",
       "x": 300,
-      "y": 4610,
+      "y": 5530,
       "width": 420,
-      "height": 110
+      "height": 150
     },
     {
       "id": "444c4c5d5c35bb40",
       "type": "text",
-      "text": "**Итоговое ревью**\n\nПолнота требований · согласованность частей",
+      "text": "**02 · Independent Examiner · СЛЕПОЙ ЭКЗАМЕН**\n\nТолько ТЗ, критерии, артефакт и безопасный тестовый стенд. Не видит локальную оценку, переписку и объяснения исполнителя. Не может менять критерии.",
       "x": 300,
-      "y": 4795,
+      "y": 4705,
       "width": 420,
-      "height": 110
+      "height": 155
     },
     {
       "id": "1c198778e557aea2",
       "type": "text",
-      "text": "**Тестирование · Playwright**\n\nE2E, адаптивность, регрессия, визуальная проверка.",
+      "text": "**03 · Собственные испытания / Test Harness**\n\nЗапускает реальные проверки по типу результата, а не пересказывает прошлые отчёты. Браузер, API, код, данные, безопасность, adversarial; evidence + ошибки.",
       "x": 300,
       "y": 4940,
       "width": 420,
-      "height": 110
+      "height": 175
     },
     {
       "id": "f75810b3f1801faa",
@@ -296,11 +296,11 @@
     {
       "id": "a459d6031b3aef78",
       "type": "text",
-      "text": "**Агент проекта принимает результат**\n\nТолько после успешных проверок",
+      "text": "**PASS · Агент проекта принимает результат**\n\nТолько после независимого экзамена и аудита тестов; затем блок 05, хранение доказательств.",
       "x": 300,
-      "y": 5085,
+      "y": 5820,
       "width": 420,
-      "height": 110,
+      "height": 140,
       "color": "4"
     },
     {
@@ -418,11 +418,11 @@
     {
       "id": "a75504c62cec3f15",
       "type": "text",
-      "text": "**Исправить ошибки**\n\nВозврат с конкретными замечаниями",
-      "x": 780,
-      "y": 4795,
+      "text": "**FAIL · Возврат дефекта**\n\nУказать task_id, воспроизведение, факты и критерий. Исправлять конкретную подзадачу, ограничить повторы; при лимите — эскалация.",
+      "x": 790,
+      "y": 5770,
       "width": 300,
-      "height": 110,
+      "height": 165,
       "color": "1"
     },
     {
@@ -840,6 +840,186 @@
       "height": 135,
       "text": "**07 · Контроль выполнения · КОД**\n\nСтатусы, таймауты, ошибки, ограниченные повторы, checkpoints. При изменениях — перепланировать.",
       "color": "5"
+    },
+    {
+      "id": "awe04-independent-auditor-20261105",
+      "type": "text",
+      "x": 300,
+      "y": 5255,
+      "width": 420,
+      "height": 185,
+      "text": "**04 · Verification Auditor · ПРОВЕРКА ПРОВЕРЯЮЩИХ**\n\nПосле слепого экзамена открывает локальный отчёт. Сверяет заявления с независимыми тестами, полноту покрытия, устойчивость тестов и подмену доказательств. Может отклонить обе оценки.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-sealed-local-20261105",
+      "type": "text",
+      "x": 25,
+      "y": 5160,
+      "width": 240,
+      "height": 220,
+      "text": "**Локальные отчёты · ЗАПЕЧАТАНЫ ДО ЭКЗАМЕНА**\n\nИз блоков 01–03: hashes, test cases, PASS/FAIL, trace IDs, конфигурация. Доступны аудитору **только после** независимого запуска; экзаменатор их не видит.",
+      "color": "6"
+    },
+    {
+      "id": "awe04-unclear-blocked-20261105",
+      "type": "text",
+      "x": 25,
+      "y": 5780,
+      "width": 240,
+      "height": 180,
+      "text": "**UNCLEAR / BLOCKED · НЕ ПРИНИМАТЬ**\n\nНет доказательств, тест недоступен или запрещён. Запросить данные / разрешение или эскалировать. Никакого автоматического PASS.",
+      "color": "1"
+    },
+    {
+      "id": "awe-qa-local-01-20261105",
+      "type": "text",
+      "x": 745,
+      "y": 925,
+      "width": 245,
+      "height": 220,
+      "text": "**LOCAL QA · 01 / управление**\n\nТЗ соответствует запросу? Роли и полномочия верны? Критерии зафиксированы? Схема+проверяющий; evidence ID. FAIL → исправить, не передавать проекту.",
+      "color": "3"
+    },
+    {
+      "id": "awe-qa-local-02-20261105",
+      "type": "text",
+      "x": 745,
+      "y": 1800,
+      "width": 235,
+      "height": 160,
+      "text": "**LOCAL QA · 02 / агент и ресурсы**\n\nproject_id, изоляция БД, права, шаблон, восстановление, checkpoint. Только PASS → работа; иначе остановить.",
+      "color": "3"
+    },
+    {
+      "id": "awe-qa-local-03-20261105",
+      "type": "text",
+      "x": 745,
+      "y": 3940,
+      "width": 235,
+      "height": 180,
+      "text": "**LOCAL QA · 03 / задачи**\n\nПлан, шаги, tool calls, тесты операций, retry, limits. Сохранить evidence по task_id. FAIL → исправить только дефект.",
+      "color": "3"
+    },
+    {
+      "id": "awe-qa-local-05-20261105",
+      "type": "text",
+      "x": 745,
+      "y": 6465,
+      "width": 235,
+      "height": 170,
+      "text": "**LOCAL QA · 05 / сохранение**\n\nСверить accepted artifact_id, hashes, status, БД, отчёт, доступность результата. FAIL → блокировать финальный отчёт.",
+      "color": "3"
+    },
+    {
+      "id": "awe04-tool-suite-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 4480,
+      "width": 1055,
+      "height": 145,
+      "text": "**QA TOOL REGISTRY · ПРОФИЛИ ПРОВЕРОК ПО ТИПАМ РЕЗУЛЬТАТОВ**\n\nКаждая проверка: tool/version, условия, test case, expected/actual, evidence hash, project_id, task_id. Реестр подключает кандидатов только после пилота.",
+      "color": "5"
+    },
+    {
+      "id": "awe04-tool-web-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 4680,
+      "width": 505,
+      "height": 165,
+      "text": "**Web / UI / API**\n\nPlaywright: браузеры, формы, адаптивность, скриншоты. Контрактные API и E2E; реальные прогоны, не скрин в отчёте.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-tool-code-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 4680,
+      "width": 505,
+      "height": 165,
+      "text": "**Код / регрессии**\n\npytest / Hypothesis для Python, Vitest / Jest для JS, типизация и интеграционные тесты. Связь с критериями из ТЗ.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-tool-security-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 4905,
+      "width": 505,
+      "height": 165,
+      "text": "**Security / права / секреты**\n\nTrivy + Semgrep; разрешения, зависимости, секреты. Для web/API по риску — OWASP ZAP; запуск только в тестовой среде.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-tool-semantic-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 4905,
+      "width": 505,
+      "height": 165,
+      "text": "**Оценка LLM и агентного поведения**\n\nInspect AI / DeepEval для сценариев и проверок ответов, вызовов tools и корректности вывода. Оценка ≠ фактическая истина.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-tool-adversarial-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 5130,
+      "width": 505,
+      "height": 165,
+      "text": "**Adversarial / red team**\n\nPromptfoo: prompt injection, подмена контекста, нарушения политик, злонамеренные входные данные. Изолированный тестовый стенд.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-tool-mutation-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 5130,
+      "width": 505,
+      "height": 165,
+      "text": "**Аудит силы тестов**\n\nStryker (JS/TS mutation testing) и негативные тест-кейсы. Проверяем, ловят ли тесты специально внесённые дефекты.",
+      "color": "4"
+    },
+    {
+      "id": "awe04-tool-trace-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 5355,
+      "width": 1055,
+      "height": 135,
+      "text": "**Трассировка и доказательства · Langfuse + хранилище**\n\nТрейсы, версии промптов/моделей, test results, хеши артефактов, immutable audit log. Langfuse — наблюдаемость, не самостоятельный экзаменатор.",
+      "color": "5"
+    },
+    {
+      "id": "awe04-separation-policy-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 5565,
+      "width": 1055,
+      "height": 165,
+      "text": "**ПОЛИТИКА НЕЗАВИСИМОСТИ / РАЗДЕЛЕНИЕ ОБЯЗАННОСТЕЙ**\n\nИсполнитель ≠ Local QA ≠ Examiner ≠ Auditor. Раздельные сессии, права и входы; read-only к оригиналу, тесты в sandbox. Сначала слепой вердикт, затем сравнение отчётов. LLM не даёт себе зачёт.",
+      "color": "3"
+    },
+    {
+      "id": "awe04-decision-contract-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 5800,
+      "width": 1055,
+      "height": 150,
+      "text": "**EVIDENCE CONTRACT / КАК ВЫДАЁТСЯ ЗАЧЁТ**\n\nTraceability: requirement → test → run → evidence. Неизвестно/не запускалось → UNCLEAR; ошибка → FAIL; невозможность проверки → BLOCKED. PASS только после прохождения критических проверок.",
+      "color": "5"
+    },
+    {
+      "id": "awe04-profile-matrix-20261105",
+      "type": "text",
+      "x": 1170,
+      "y": 6000,
+      "width": 1055,
+      "height": 180,
+      "text": "**РАЗНАЯ ГЛУБИНА ПО РИСКУ, НО БЕЗ ПРОПУСКА КРИТИЧЕСКОГО**\n\nНизкий риск — кодовые assertions и выборочная независимая проверка; средний — полный test profile и аудит доказательств; высокий/необратимый — adversarial, безопасность, расширенный аудит и разрешение владельца.",
+      "color": "5"
     }
   ],
   "edges": [
@@ -862,13 +1042,6 @@
       "fromNode": "b78eefb81fa8c8d7",
       "fromSide": "bottom",
       "toNode": "dd1b8084523e889c",
-      "toSide": "top"
-    },
-    {
-      "id": "ab964d36b2ee16fe",
-      "fromNode": "dd1b8084523e889c",
-      "fromSide": "bottom",
-      "toNode": "1b630863cb36928f",
       "toSide": "top"
     },
     {
@@ -900,91 +1073,6 @@
       "fromSide": "bottom",
       "toNode": "48b1471bd058d54d",
       "toSide": "right"
-    },
-    {
-      "id": "caa5f45a3c39eb35",
-      "fromNode": "48b1471bd058d54d",
-      "fromSide": "bottom",
-      "toNode": "20a93a3193e4e8a1",
-      "toSide": "top"
-    },
-    {
-      "id": "386b96f264338b0a",
-      "fromNode": "4eac25a00ba63318",
-      "fromSide": "bottom",
-      "toNode": "7dfa8d64f836afd7",
-      "toSide": "top"
-    },
-    {
-      "id": "710b31ff371ae0ee",
-      "fromNode": "7dfa8d64f836afd7",
-      "fromSide": "bottom",
-      "toNode": "211b5df0f9924de5",
-      "toSide": "top"
-    },
-    {
-      "id": "b4834d4714f8d02e",
-      "fromNode": "211b5df0f9924de5",
-      "fromSide": "right",
-      "toNode": "a75504c62cec3f15",
-      "toSide": "top",
-      "color": "1",
-      "label": "НЕТ"
-    },
-    {
-      "id": "48f654c0e903f128",
-      "fromNode": "a75504c62cec3f15",
-      "fromSide": "right",
-      "toNode": "4dca0b8d15b5e4a5",
-      "toSide": "right",
-      "color": "1",
-      "label": "повтор / эскалация"
-    },
-    {
-      "id": "6dce8bb6616cbd01",
-      "fromNode": "211b5df0f9924de5",
-      "fromSide": "bottom",
-      "toNode": "444c4c5d5c35bb40",
-      "toSide": "top",
-      "color": "4",
-      "label": "ДА"
-    },
-    {
-      "id": "13b784d79d03264e",
-      "fromNode": "444c4c5d5c35bb40",
-      "fromSide": "bottom",
-      "toNode": "1c198778e557aea2",
-      "toSide": "top"
-    },
-    {
-      "id": "55a1b21fb9bdc06a",
-      "fromNode": "1c198778e557aea2",
-      "fromSide": "bottom",
-      "toNode": "a459d6031b3aef78",
-      "toSide": "top"
-    },
-    {
-      "id": "c8a7b080bfcdd2c3",
-      "fromNode": "1c198778e557aea2",
-      "fromSide": "right",
-      "toNode": "a75504c62cec3f15",
-      "toSide": "bottom",
-      "color": "1",
-      "label": "дефект"
-    },
-    {
-      "id": "a66e6552e9bc9f6a",
-      "fromNode": "a459d6031b3aef78",
-      "fromSide": "bottom",
-      "toNode": "70b38105f43b03e8",
-      "toSide": "top"
-    },
-    {
-      "id": "678106c9baff06c2",
-      "fromNode": "70b38105f43b03e8",
-      "fromSide": "bottom",
-      "toNode": "eeb7def6353bb1d7",
-      "toSide": "top"
     },
     {
       "id": "8cb10fc6cd77b1a7",
@@ -1408,6 +1496,259 @@
       "toNode": "awe03-dispatcher-20261105",
       "toSide": "right",
       "label": "повтор / перепланирование"
+    },
+    {
+      "id": "awe-qa01-in",
+      "fromNode": "dd1b8084523e889c",
+      "fromSide": "right",
+      "toNode": "awe-qa-local-01-20261105",
+      "toSide": "left"
+    },
+    {
+      "id": "awe-qa01-pass",
+      "fromNode": "awe-qa-local-01-20261105",
+      "fromSide": "bottom",
+      "toNode": "1b630863cb36928f",
+      "toSide": "top",
+      "label": "PASS"
+    },
+    {
+      "id": "awe-qa01-fail",
+      "fromNode": "awe-qa-local-01-20261105",
+      "fromSide": "top",
+      "toNode": "awe-gate-v02",
+      "toSide": "right",
+      "label": "REVISE / UNCLEAR",
+      "color": "1"
+    },
+    {
+      "id": "awe-qa02-in",
+      "fromNode": "48b1471bd058d54d",
+      "fromSide": "right",
+      "toNode": "awe-qa-local-02-20261105",
+      "toSide": "left"
+    },
+    {
+      "id": "awe-qa02-pass",
+      "fromNode": "awe-qa-local-02-20261105",
+      "fromSide": "bottom",
+      "toNode": "20a93a3193e4e8a1",
+      "toSide": "top",
+      "label": "PASS"
+    },
+    {
+      "id": "awe-qa03-in",
+      "fromNode": "4eac25a00ba63318",
+      "fromSide": "right",
+      "toNode": "awe-qa-local-03-20261105",
+      "toSide": "left"
+    },
+    {
+      "id": "awe-qa03-main",
+      "fromNode": "awe-qa-local-03-20261105",
+      "fromSide": "bottom",
+      "toNode": "7dfa8d64f836afd7",
+      "toSide": "top",
+      "label": "запрос независимой проверки"
+    },
+    {
+      "id": "awe-qa03-sealed",
+      "fromNode": "awe-qa-local-03-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-sealed-local-20261105",
+      "toSide": "top",
+      "label": "запечатанный local report",
+      "color": "6"
+    },
+    {
+      "id": "awe-qa04-controller-exam",
+      "fromNode": "7dfa8d64f836afd7",
+      "fromSide": "bottom",
+      "toNode": "444c4c5d5c35bb40",
+      "toSide": "top",
+      "label": "слепой контекст"
+    },
+    {
+      "id": "awe-qa04-controller-sealed",
+      "fromNode": "7dfa8d64f836afd7",
+      "fromSide": "left",
+      "toNode": "awe04-sealed-local-20261105",
+      "toSide": "top",
+      "label": "изолировать отчёты",
+      "color": "6"
+    },
+    {
+      "id": "awe-qa04-exam-harness",
+      "fromNode": "444c4c5d5c35bb40",
+      "fromSide": "bottom",
+      "toNode": "1c198778e557aea2",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-harness-auditor",
+      "fromNode": "1c198778e557aea2",
+      "fromSide": "bottom",
+      "toNode": "awe04-independent-auditor-20261105",
+      "toSide": "top",
+      "label": "свой отчёт"
+    },
+    {
+      "id": "awe-qa04-sealed-auditor",
+      "fromNode": "awe04-sealed-local-20261105",
+      "fromSide": "right",
+      "toNode": "awe04-independent-auditor-20261105",
+      "toSide": "left",
+      "label": "после экзамена",
+      "color": "6"
+    },
+    {
+      "id": "awe-qa04-auditor-gate",
+      "fromNode": "awe04-independent-auditor-20261105",
+      "fromSide": "bottom",
+      "toNode": "211b5df0f9924de5",
+      "toSide": "top",
+      "label": "evidence + audit"
+    },
+    {
+      "id": "awe-qa04-gate-pass",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "bottom",
+      "toNode": "a459d6031b3aef78",
+      "toSide": "top",
+      "label": "PASS",
+      "color": "4"
+    },
+    {
+      "id": "awe-qa04-gate-fail",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "right",
+      "toNode": "a75504c62cec3f15",
+      "toSide": "top",
+      "label": "FAIL",
+      "color": "1"
+    },
+    {
+      "id": "awe-qa04-gate-unclear",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "left",
+      "toNode": "awe04-unclear-blocked-20261105",
+      "toSide": "top",
+      "label": "UNCLEAR/BLOCKED",
+      "color": "1"
+    },
+    {
+      "id": "awe-qa04-fail-replan",
+      "fromNode": "a75504c62cec3f15",
+      "fromSide": "right",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "right",
+      "label": "точечная доработка / эскалация",
+      "color": "1"
+    },
+    {
+      "id": "awe-qa04-pass-result",
+      "fromNode": "a459d6031b3aef78",
+      "fromSide": "bottom",
+      "toNode": "70b38105f43b03e8",
+      "toSide": "top",
+      "label": "принято"
+    },
+    {
+      "id": "awe-qa05-check",
+      "fromNode": "70b38105f43b03e8",
+      "fromSide": "right",
+      "toNode": "awe-qa-local-05-20261105",
+      "toSide": "left"
+    },
+    {
+      "id": "awe-qa05-pass",
+      "fromNode": "awe-qa-local-05-20261105",
+      "fromSide": "bottom",
+      "toNode": "eeb7def6353bb1d7",
+      "toSide": "right",
+      "label": "PASS"
+    },
+    {
+      "id": "awe-qa04-tools",
+      "fromNode": "1c198778e557aea2",
+      "fromSide": "right",
+      "toNode": "awe04-tool-suite-20261105",
+      "toSide": "left",
+      "label": "test profiles"
+    },
+    {
+      "id": "awe-qa04-tool-web",
+      "fromNode": "awe04-tool-suite-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-tool-web-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-tool-code",
+      "fromNode": "awe04-tool-suite-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-tool-code-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-tool-security",
+      "fromNode": "awe04-tool-suite-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-tool-security-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-tool-semantic",
+      "fromNode": "awe04-tool-suite-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-tool-semantic-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-tool-adv",
+      "fromNode": "awe04-tool-suite-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-tool-adversarial-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-tool-mutation",
+      "fromNode": "awe04-tool-suite-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe04-tool-mutation-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-qa04-trace",
+      "fromNode": "awe04-independent-auditor-20261105",
+      "fromSide": "right",
+      "toNode": "awe04-tool-trace-20261105",
+      "toSide": "left",
+      "label": "traces / audits"
+    },
+    {
+      "id": "awe-qa04-policy",
+      "fromNode": "awe04-independent-auditor-20261105",
+      "fromSide": "right",
+      "toNode": "awe04-separation-policy-20261105",
+      "toSide": "left",
+      "label": "independence"
+    },
+    {
+      "id": "awe-qa04-contract",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "right",
+      "toNode": "awe04-decision-contract-20261105",
+      "toSide": "left",
+      "label": "evidence contract"
+    },
+    {
+      "id": "awe-qa04-risk",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "right",
+      "toNode": "awe04-profile-matrix-20261105",
+      "toSide": "left",
+      "label": "risk profile"
     }
   ]
 }
