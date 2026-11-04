@@ -461,6 +461,55 @@
       "y": 1605,
       "width": 380,
       "height": 110
+    },
+    {
+      "id": "awe-root-v02",
+      "type": "text",
+      "x": 150,
+      "y": 45,
+      "width": 720,
+      "height": 115,
+      "color": "5",
+      "text": "## AWE GROUP — корпоративный корень\nЕдиная компания: общие сервисы и управление; внутри — отдельные проектные линии."
+    },
+    {
+      "id": "awe-prompt-v02",
+      "type": "text",
+      "x": 300,
+      "y": 365,
+      "width": 420,
+      "height": 120,
+      "color": "5",
+      "text": "**Мастер промптов / формализация ТЗ**\nLLM понимает запрос, код проверяет структуру, формируются критерии приёмки."
+    },
+    {
+      "id": "awe-gate-v02",
+      "type": "text",
+      "x": 300,
+      "y": 555,
+      "width": 420,
+      "height": 110,
+      "text": "**Задание достаточно определено?**\nВыявить критические пробелы и противоречия."
+    },
+    {
+      "id": "awe-clarify-v02",
+      "type": "text",
+      "x": 25,
+      "y": 565,
+      "width": 240,
+      "height": 155,
+      "color": "1",
+      "text": "**Согласование с пользователем**\nУточнить существенные неясности и повторно сформировать ТЗ."
+    },
+    {
+      "id": "awe-lines-note-v02",
+      "type": "text",
+      "x": 740,
+      "y": 1810,
+      "width": 235,
+      "height": 155,
+      "color": "6",
+      "text": "**Проектная линия**\nСвой агент, память, состояние, доступы, исполнители и проверки. «Сайт Жив» — пример."
     }
   ],
   "edges": [
@@ -468,7 +517,7 @@
       "id": "9cc113bf1b35ddfc",
       "fromNode": "fc7833b2f17ceb23",
       "fromSide": "bottom",
-      "toNode": "2de6a4ac5810ead5",
+      "toNode": "awe-prompt-v02",
       "toSide": "top"
     },
     {
@@ -805,6 +854,39 @@
       "toNode": "20a93a3193e4e8a1",
       "toSide": "right",
       "label": "релевантные данные"
+    },
+    {
+      "id": "awe-prompt-gate-e",
+      "fromNode": "awe-prompt-v02",
+      "fromSide": "bottom",
+      "toNode": "awe-gate-v02",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-gate-main-e",
+      "fromNode": "awe-gate-v02",
+      "fromSide": "bottom",
+      "toNode": "2de6a4ac5810ead5",
+      "toSide": "top",
+      "label": "ДА"
+    },
+    {
+      "id": "awe-gate-clarify-e",
+      "fromNode": "awe-gate-v02",
+      "fromSide": "left",
+      "toNode": "awe-clarify-v02",
+      "toSide": "right",
+      "color": "1",
+      "label": "НЕТ"
+    },
+    {
+      "id": "awe-clarify-prompt-e",
+      "fromNode": "awe-clarify-v02",
+      "fromSide": "top",
+      "toNode": "awe-prompt-v02",
+      "toSide": "left",
+      "color": "1",
+      "label": "уточнено"
     }
   ]
 }
