@@ -16,9 +16,9 @@
       "x": 0,
       "y": 2075,
       "width": 1020,
-      "height": 1395,
+      "height": 2175,
       "color": "2",
-      "label": "03 · ПОДБОР И ИСПОЛНЕНИЕ"
+      "label": "03 · ПЛАНИРОВАНИЕ И ИСПОЛНЕНИЕ ЗАДАЧ"
     },
     {
       "id": "e3db564aef1c0fc0",
@@ -34,7 +34,7 @@
       "id": "e178772b91753992",
       "type": "group",
       "x": 0,
-      "y": 3560,
+      "y": 4390,
       "width": 1100,
       "height": 960,
       "color": "4",
@@ -44,7 +44,7 @@
       "id": "616dcf0176597f89",
       "type": "group",
       "x": 0,
-      "y": 4610,
+      "y": 5440,
       "width": 1020,
       "height": 720,
       "color": "5",
@@ -111,36 +111,36 @@
     {
       "id": "20a93a3193e4e8a1",
       "type": "text",
-      "text": "**Планировщик задач**\n\nЭтапы · зависимости · критерии готовности",
+      "text": "**01 · Планировщик Project Agent**\n\nЦель → задачи → подзадачи → операции. Task DAG, зависимости, приоритеты, критерии приёмки. LLM — только когда нужно.",
       "x": 300,
-      "y": 2155,
+      "y": 2150,
       "width": 420,
-      "height": 110
+      "height": 135
     },
     {
       "id": "59bae40ca662391b",
       "type": "text",
-      "text": "**Реестр возможностей · ToolHive (MCP)**\n\nMCP + собственный каталог JS / Python / CLI / программ.",
+      "text": "**04 · Реестр возможностей · ToolHive + каталог**\n\nПроверенные MCP, программы, JS/Python, API и боты. 4 504 ссылки — *кандидаты*, не установленные инструменты.",
       "x": 300,
-      "y": 2310,
+      "y": 2720,
       "width": 420,
-      "height": 110
+      "height": 135
     },
     {
       "id": "a2abd01e1c5ed026",
       "type": "text",
-      "text": "**Есть готовый исполнитель?**\n\nВыбор по задаче, правам и стоимости",
+      "text": "**05 · Исполнитель подходит и разрешён?**\n\nСовместимость · права · доступность · стоимость · надёжность",
       "x": 300,
-      "y": 2465,
+      "y": 2915,
       "width": 420,
-      "height": 110
+      "height": 115
     },
     {
       "id": "7dfa8d64f836afd7",
       "type": "text",
       "text": "**Независимая проверка · Langfuse**\n\nТрассировка, evals + реальные тесты. Не автозачёт.",
       "x": 300,
-      "y": 3640,
+      "y": 4470,
       "width": 420,
       "height": 110,
       "color": "4"
@@ -150,7 +150,7 @@
       "type": "text",
       "text": "**Сохранить результат и память**\n\nФайлы · решения · состояние задачи · запись в проектную память",
       "x": 300,
-      "y": 4680,
+      "y": 5510,
       "width": 420,
       "height": 110,
       "color": "3"
@@ -160,7 +160,7 @@
       "type": "text",
       "text": "**Есть незавершённые задачи?**\n\nПроверка плана и оставшейся работы",
       "x": 300,
-      "y": 4830,
+      "y": 5660,
       "width": 420,
       "height": 110
     },
@@ -169,7 +169,7 @@
       "type": "text",
       "text": "**Продолжить работу**\n\nВозврат к планировщику проекта",
       "x": 65,
-      "y": 5010,
+      "y": 5840,
       "width": 380,
       "height": 110
     },
@@ -178,7 +178,7 @@
       "type": "text",
       "text": "**Отчёт головному агенту**\n\nСтатус · проверки · итог для пользователя",
       "x": 575,
-      "y": 5010,
+      "y": 5840,
       "width": 380,
       "height": 110,
       "color": "5"
@@ -186,74 +186,74 @@
     {
       "id": "11549a785c57c3f7",
       "type": "text",
-      "text": "**Готовый исполнитель · Hermes / реестр**\n\nПовторное использование агента, скрипта, бота или программы.",
+      "text": "**ДА · Использовать существующего**\n\nАгент / скрипт / бот / программа. Только необходимые права.",
       "x": 55,
-      "y": 2645,
+      "y": 3090,
       "width": 380,
-      "height": 110
+      "height": 125
     },
     {
       "id": "038c869beb9e62fb",
       "type": "text",
-      "text": "**Новый исполнитель · Agno / Hermes**\n\nКонфигурация агента или разработка инструмента.",
+      "text": "**НЕТ · Найти альтернативу / создать временного**\n\nСначала каталог и готовое решение; создание — последнее средство.",
       "x": 575,
-      "y": 2645,
+      "y": 3090,
       "width": 380,
-      "height": 110
+      "height": 125
     },
     {
       "id": "c11e5cf43dbbe833",
       "type": "text",
-      "text": "**Тест и регистрация**\n\nПроверить безопасность и добавить в реестр",
+      "text": "**Проверить и зарегистрировать**\n\nПрава, безопасность, тестовый запуск. Если нельзя — BLOCKED / эскалация.",
       "x": 575,
-      "y": 2795,
+      "y": 3280,
       "width": 380,
-      "height": 110,
+      "height": 120,
       "color": "2"
     },
     {
       "id": "4dca0b8d15b5e4a5",
       "type": "text",
-      "text": "**Выдать задачу · Agno + Hermes**\n\nМинимальный контекст, конкретные права; выбор типа исполнителя.",
+      "text": "**06 · Передать операцию исполнителю**\n\nПроектный контекст, минимальные права, ожидаемый результат, лимиты.",
       "x": 300,
-      "y": 2950,
+      "y": 3430,
       "width": 420,
-      "height": 110,
+      "height": 125,
       "color": "2"
     },
     {
       "id": "652c6192bb9cff32",
       "type": "text",
-      "text": "**LLM-агент**\n\nAgno + OmniRoute",
+      "text": "**LLM-исполнитель**\n\nAgno · OmniRoute\nПроверка вывода",
       "x": 25,
-      "y": 3105,
+      "y": 3605,
       "width": 220,
-      "height": 110
+      "height": 120
     },
     {
       "id": "c06cd6119e6a5133",
       "type": "text",
-      "text": "**JS / Python**\n\nHermes · скрипты",
+      "text": "**JS / Python**\n\nHermes · скрипты\nБез LLM",
       "x": 265,
-      "y": 3105,
+      "y": 3605,
       "width": 220,
-      "height": 110
+      "height": 120
     },
     {
       "id": "df1b1ddf8d83f9a2",
       "type": "text",
-      "text": "**Бот**\n\nHermes · automation",
+      "text": "**Боты / API**\n\nАвтоматизация\nПо правилам",
       "x": 505,
-      "y": 3105,
+      "y": 3605,
       "width": 220,
-      "height": 110
+      "height": 120
     },
     {
       "id": "211b5df0f9924de5",
       "type": "text",
       "text": "**Проверка пройдена?**\n\nРезультат подтверждён?",
       "x": 300,
-      "y": 3780,
+      "y": 4610,
       "width": 420,
       "height": 110
     },
@@ -262,7 +262,7 @@
       "type": "text",
       "text": "**Итоговое ревью**\n\nПолнота требований · согласованность частей",
       "x": 300,
-      "y": 3965,
+      "y": 4795,
       "width": 420,
       "height": 110
     },
@@ -271,34 +271,34 @@
       "type": "text",
       "text": "**Тестирование · Playwright**\n\nE2E, адаптивность, регрессия, визуальная проверка.",
       "x": 300,
-      "y": 4110,
+      "y": 4940,
       "width": 420,
       "height": 110
     },
     {
       "id": "f75810b3f1801faa",
       "type": "text",
-      "text": "**Программа**\n\nИнструменты · API",
+      "text": "**Программы / MCP**\n\nГотовые утилиты\nToolHive · API",
       "x": 745,
-      "y": 3105,
+      "y": 3605,
       "width": 220,
-      "height": 110
+      "height": 120
     },
     {
       "id": "4eac25a00ba63318",
       "type": "text",
-      "text": "**Результат выполнения**\n\nАртефакты · логи · доказательства",
+      "text": "**08 · Зафиксировать результат**\n\nАртефакты · статусы · логи · ошибки · доказательства. Далее независимый блок 04.",
       "x": 300,
-      "y": 3290,
+      "y": 3980,
       "width": 420,
-      "height": 110
+      "height": 130
     },
     {
       "id": "a459d6031b3aef78",
       "type": "text",
       "text": "**Агент проекта принимает результат**\n\nТолько после успешных проверок",
       "x": 300,
-      "y": 4255,
+      "y": 5085,
       "width": 420,
       "height": 110,
       "color": "4"
@@ -420,7 +420,7 @@
       "type": "text",
       "text": "**Исправить ошибки**\n\nВозврат с конкретными замечаниями",
       "x": 780,
-      "y": 3965,
+      "y": 4795,
       "width": 300,
       "height": 110,
       "color": "1"
@@ -790,6 +790,56 @@
       "height": 205,
       "text": "**Экземпляр Project Agent готов**\n\nПаспорт + политика + ресурсы + разрешённые инструменты + задачи + проверки + сохранённое состояние.\n**Создание:** Project Provisioner → применить шаблон → зарегистрировать. **Возобновление:** прочитать конфигурацию и checkpoint → подключить существующие ресурсы. **При расширении:** изменить только нужные модули.",
       "color": "5"
+    },
+    {
+      "id": "awe03-plan-gate-20261105",
+      "type": "text",
+      "x": 300,
+      "y": 2335,
+      "width": 420,
+      "height": 125,
+      "text": "**02 · Проверка плана и неопределённости**\n\nPASS — выполнять; REVISE — исправить план; ASK — уточнить у пользователя. Уверенность ≠ доказательство.",
+      "color": "4"
+    },
+    {
+      "id": "awe03-revise-20261105",
+      "type": "text",
+      "x": 25,
+      "y": 2350,
+      "width": 240,
+      "height": 108,
+      "text": "**REVISE · доработать план**\n\nУстранимый пробел → назад к планировщику.",
+      "color": "1"
+    },
+    {
+      "id": "awe03-ask-20261105",
+      "type": "text",
+      "x": 755,
+      "y": 2350,
+      "width": 235,
+      "height": 108,
+      "text": "**ASK · уточнить у пользователя**\n\nТолько существенная неопределённость; затем перепланировать.",
+      "color": "6"
+    },
+    {
+      "id": "awe03-dispatcher-20261105",
+      "type": "text",
+      "x": 300,
+      "y": 2530,
+      "width": 420,
+      "height": 135,
+      "text": "**03 · Диспетчер / Task Supervisor · КОД**\n\nОчередь и DAG, параллельность, бюджеты, блокировки, project_id, checkpoints. Runtime общий; задачи изолированы.",
+      "color": "5"
+    },
+    {
+      "id": "awe03-supervisor-20261105",
+      "type": "text",
+      "x": 300,
+      "y": 3790,
+      "width": 420,
+      "height": 135,
+      "text": "**07 · Контроль выполнения · КОД**\n\nСтатусы, таймауты, ошибки, ограниченные повторы, checkpoints. При изменениях — перепланировать.",
+      "color": "5"
     }
   ],
   "edges": [
@@ -856,113 +906,6 @@
       "fromNode": "48b1471bd058d54d",
       "fromSide": "bottom",
       "toNode": "20a93a3193e4e8a1",
-      "toSide": "top"
-    },
-    {
-      "id": "f0730f19882cff89",
-      "fromNode": "20a93a3193e4e8a1",
-      "fromSide": "bottom",
-      "toNode": "59bae40ca662391b",
-      "toSide": "top"
-    },
-    {
-      "id": "e6e3064533e3151e",
-      "fromNode": "59bae40ca662391b",
-      "fromSide": "bottom",
-      "toNode": "a2abd01e1c5ed026",
-      "toSide": "top"
-    },
-    {
-      "id": "98669d959f37513f",
-      "fromNode": "a2abd01e1c5ed026",
-      "fromSide": "left",
-      "toNode": "11549a785c57c3f7",
-      "toSide": "top",
-      "label": "ДА"
-    },
-    {
-      "id": "56167ea85abdfe9b",
-      "fromNode": "a2abd01e1c5ed026",
-      "fromSide": "right",
-      "toNode": "038c869beb9e62fb",
-      "toSide": "top",
-      "label": "НЕТ"
-    },
-    {
-      "id": "3e9a2019f6f7f82c",
-      "fromNode": "038c869beb9e62fb",
-      "fromSide": "bottom",
-      "toNode": "c11e5cf43dbbe833",
-      "toSide": "top"
-    },
-    {
-      "id": "626f786d44e7f62b",
-      "fromNode": "c11e5cf43dbbe833",
-      "fromSide": "bottom",
-      "toNode": "4dca0b8d15b5e4a5",
-      "toSide": "right"
-    },
-    {
-      "id": "bf3c253887cc99de",
-      "fromNode": "11549a785c57c3f7",
-      "fromSide": "bottom",
-      "toNode": "4dca0b8d15b5e4a5",
-      "toSide": "left"
-    },
-    {
-      "id": "75bed43e33377ff9",
-      "fromNode": "4dca0b8d15b5e4a5",
-      "fromSide": "bottom",
-      "toNode": "652c6192bb9cff32",
-      "toSide": "top"
-    },
-    {
-      "id": "194d288a337c0a90",
-      "fromNode": "652c6192bb9cff32",
-      "fromSide": "bottom",
-      "toNode": "4eac25a00ba63318",
-      "toSide": "top"
-    },
-    {
-      "id": "1d23f7b3e53c2342",
-      "fromNode": "4dca0b8d15b5e4a5",
-      "fromSide": "bottom",
-      "toNode": "c06cd6119e6a5133",
-      "toSide": "top"
-    },
-    {
-      "id": "3c5b6dc6771818e0",
-      "fromNode": "c06cd6119e6a5133",
-      "fromSide": "bottom",
-      "toNode": "4eac25a00ba63318",
-      "toSide": "top"
-    },
-    {
-      "id": "80af9af763a6b126",
-      "fromNode": "4dca0b8d15b5e4a5",
-      "fromSide": "bottom",
-      "toNode": "df1b1ddf8d83f9a2",
-      "toSide": "top"
-    },
-    {
-      "id": "8707984e24424746",
-      "fromNode": "df1b1ddf8d83f9a2",
-      "fromSide": "bottom",
-      "toNode": "4eac25a00ba63318",
-      "toSide": "top"
-    },
-    {
-      "id": "037abfe4654f7f58",
-      "fromNode": "4dca0b8d15b5e4a5",
-      "fromSide": "bottom",
-      "toNode": "f75810b3f1801faa",
-      "toSide": "top"
-    },
-    {
-      "id": "e02165133dcdb49e",
-      "fromNode": "f75810b3f1801faa",
-      "fromSide": "bottom",
-      "toNode": "4eac25a00ba63318",
       "toSide": "top"
     },
     {
@@ -1296,6 +1239,175 @@
       "toNode": "awe-agent-template-07-slot-03",
       "toSide": "left",
       "color": "6"
+    },
+    {
+      "id": "awe03-plan-gate",
+      "fromNode": "20a93a3193e4e8a1",
+      "fromSide": "bottom",
+      "toNode": "awe03-plan-gate-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-gate-revise",
+      "fromNode": "awe03-plan-gate-20261105",
+      "fromSide": "left",
+      "toNode": "awe03-revise-20261105",
+      "toSide": "right",
+      "label": "REVISE"
+    },
+    {
+      "id": "awe03-revise-plan",
+      "fromNode": "awe03-revise-20261105",
+      "fromSide": "top",
+      "toNode": "20a93a3193e4e8a1",
+      "toSide": "left",
+      "label": "исправить"
+    },
+    {
+      "id": "awe03-gate-ask",
+      "fromNode": "awe03-plan-gate-20261105",
+      "fromSide": "right",
+      "toNode": "awe03-ask-20261105",
+      "toSide": "left",
+      "label": "ASK"
+    },
+    {
+      "id": "awe03-ask-plan",
+      "fromNode": "awe03-ask-20261105",
+      "fromSide": "top",
+      "toNode": "20a93a3193e4e8a1",
+      "toSide": "right",
+      "label": "после ответа"
+    },
+    {
+      "id": "awe03-gate-dispatcher",
+      "fromNode": "awe03-plan-gate-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "top",
+      "label": "PASS"
+    },
+    {
+      "id": "awe03-dispatcher-registry",
+      "fromNode": "awe03-dispatcher-20261105",
+      "fromSide": "bottom",
+      "toNode": "59bae40ca662391b",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-registry-pick",
+      "fromNode": "59bae40ca662391b",
+      "fromSide": "bottom",
+      "toNode": "a2abd01e1c5ed026",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-pick-existing",
+      "fromNode": "a2abd01e1c5ed026",
+      "fromSide": "left",
+      "toNode": "11549a785c57c3f7",
+      "toSide": "top",
+      "label": "ДА"
+    },
+    {
+      "id": "awe03-pick-create",
+      "fromNode": "a2abd01e1c5ed026",
+      "fromSide": "right",
+      "toNode": "038c869beb9e62fb",
+      "toSide": "top",
+      "label": "НЕТ"
+    },
+    {
+      "id": "awe03-create-test",
+      "fromNode": "038c869beb9e62fb",
+      "fromSide": "bottom",
+      "toNode": "c11e5cf43dbbe833",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-test-assign",
+      "fromNode": "c11e5cf43dbbe833",
+      "fromSide": "bottom",
+      "toNode": "4dca0b8d15b5e4a5",
+      "toSide": "right"
+    },
+    {
+      "id": "awe03-existing-assign",
+      "fromNode": "11549a785c57c3f7",
+      "fromSide": "bottom",
+      "toNode": "4dca0b8d15b5e4a5",
+      "toSide": "left"
+    },
+    {
+      "id": "awe03-assign-llm",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "652c6192bb9cff32",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-llm-supervisor",
+      "fromNode": "652c6192bb9cff32",
+      "fromSide": "bottom",
+      "toNode": "awe03-supervisor-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-assign-code",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "c06cd6119e6a5133",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-code-supervisor",
+      "fromNode": "c06cd6119e6a5133",
+      "fromSide": "bottom",
+      "toNode": "awe03-supervisor-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-assign-bot",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "df1b1ddf8d83f9a2",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-bot-supervisor",
+      "fromNode": "df1b1ddf8d83f9a2",
+      "fromSide": "bottom",
+      "toNode": "awe03-supervisor-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-assign-program",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "f75810b3f1801faa",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-program-supervisor",
+      "fromNode": "f75810b3f1801faa",
+      "fromSide": "bottom",
+      "toNode": "awe03-supervisor-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-supervisor-result",
+      "fromNode": "awe03-supervisor-20261105",
+      "fromSide": "bottom",
+      "toNode": "4eac25a00ba63318",
+      "toSide": "top"
+    },
+    {
+      "id": "awe03-supervisor-dispatcher",
+      "fromNode": "awe03-supervisor-20261105",
+      "fromSide": "right",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "right",
+      "label": "повтор / перепланирование"
     }
   ]
 }
