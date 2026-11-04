@@ -1,101 +1,810 @@
 {
-	"nodes":[
-		{"id":"5dac9bb7db7bf822","type":"group","x":1140,"y":755,"width":1170,"height":2220,"color":"3","label":"СКВОЗНАЯ ПАМЯТЬ И ХРАНЕНИЕ"},
-		{"id":"0ca8ed5b18e460e4","type":"group","x":0,"y":1515,"width":1020,"height":1395,"color":"2","label":"03 · ПОДБОР И ИСПОЛНЕНИЕ"},
-		{"id":"e3db564aef1c0fc0","type":"group","x":1140,"y":3070,"width":1170,"height":930,"color":"5","label":"ПРИНЦИПЫ СИСТЕМЫ"},
-		{"id":"e178772b91753992","type":"group","x":0,"y":3000,"width":1100,"height":960,"color":"4","label":"04 · НЕЗАВИСИМАЯ ПРОВЕРКА"},
-		{"id":"616dcf0176597f89","type":"group","x":0,"y":4050,"width":1020,"height":720,"color":"5","label":"05 · РЕЗУЛЬТАТ И ПРОДОЛЖЕНИЕ"},
-		{"id":"9a134fd8d7b0f3eb","type":"group","x":0,"y":0,"width":1020,"height":675,"color":"5","label":"01 · УПРАВЛЕНИЕ"},
-		{"id":"c4ae6ca607927f5a","type":"group","x":0,"y":780,"width":1020,"height":670,"color":"6","label":"02 · ПРОЕКТНАЯ ЛИНИЯ"},
-		{"id":"fc7833b2f17ceb23","type":"text","text":"**Пользователь**\n\nСтавит цель и ограничения","x":300,"y":95,"width":420,"height":110},
-		{"id":"2de6a4ac5810ead5","type":"text","text":"**Головной агент**\n\nПонимает цель · контролирует линии","x":300,"y":240,"width":420,"height":110,"color":"5"},
-		{"id":"b78eefb81fa8c8d7","type":"text","text":"**Оркестратор**\n\nПрограммно управляет задачами и состояниями","x":300,"y":385,"width":420,"height":110},
-		{"id":"dd1b8084523e889c","type":"text","text":"**Менеджер проектных линий**\n\nНаходит, создаёт и восстанавливает проекты","x":300,"y":530,"width":420,"height":110,"color":"6"},
-		{"id":"20a93a3193e4e8a1","type":"text","text":"**Планировщик задач**\n\nЭтапы · зависимости · критерии готовности","x":300,"y":1595,"width":420,"height":110},
-		{"id":"59bae40ca662391b","type":"text","text":"**Реестр возможностей**\n\nКакие агенты, программы и инструменты доступны?","x":300,"y":1750,"width":420,"height":110},
-		{"id":"a2abd01e1c5ed026","type":"text","text":"**Есть готовый исполнитель?**\n\nВыбор по задаче, правам и стоимости","x":300,"y":1905,"width":420,"height":110},
-		{"id":"7dfa8d64f836afd7","type":"text","text":"**Независимая проверка**\n\nСравнить результат с ТЗ и доказательствами","x":300,"y":3080,"width":420,"height":110,"color":"4"},
-		{"id":"70b38105f43b03e8","type":"text","text":"**Сохранить результат и память**\n\nФайлы · решения · состояние задачи · запись в проектную память","x":300,"y":4120,"width":420,"height":110,"color":"3"},
-		{"id":"eeb7def6353bb1d7","type":"text","text":"**Есть незавершённые задачи?**\n\nПроверка плана и оставшейся работы","x":300,"y":4270,"width":420,"height":110},
-		{"id":"2baa33582b24692a","type":"text","text":"**Продолжить работу**\n\nВозврат к планировщику проекта","x":65,"y":4450,"width":380,"height":110},
-		{"id":"4ce20504d90c1146","type":"text","text":"**Отчёт головному агенту**\n\nСтатус · проверки · итог для пользователя","x":575,"y":4450,"width":380,"height":110,"color":"5"},
-		{"id":"11549a785c57c3f7","type":"text","text":"**Выбрать существующего**\n\nАгент / скрипт / бот / программа","x":55,"y":2085,"width":380,"height":110},
-		{"id":"038c869beb9e62fb","type":"text","text":"**Создать нового**\n\nКонфигурация агента или разработка инструмента","x":575,"y":2085,"width":380,"height":110},
-		{"id":"c11e5cf43dbbe833","type":"text","text":"**Тест и регистрация**\n\nПроверить безопасность и добавить в реестр","x":575,"y":2235,"width":380,"height":110,"color":"2"},
-		{"id":"4dca0b8d15b5e4a5","type":"text","text":"**Выдать задачу исполнителям**\n\nМинимальный контекст и необходимые права","x":300,"y":2390,"width":420,"height":110,"color":"2"},
-		{"id":"652c6192bb9cff32","type":"text","text":"**LLM-агент**\n\nАнализ · дизайн · код","x":25,"y":2545,"width":220,"height":110},
-		{"id":"c06cd6119e6a5133","type":"text","text":"**JS / Python**\n\nТочные операции","x":265,"y":2545,"width":220,"height":110},
-		{"id":"df1b1ddf8d83f9a2","type":"text","text":"**Бот**\n\nАвтоматизация","x":505,"y":2545,"width":220,"height":110},
-		{"id":"211b5df0f9924de5","type":"text","text":"**Проверка пройдена?**\n\nРезультат подтверждён?","x":300,"y":3220,"width":420,"height":110},
-		{"id":"444c4c5d5c35bb40","type":"text","text":"**Итоговое ревью**\n\nПолнота требований · согласованность частей","x":300,"y":3405,"width":420,"height":110},
-		{"id":"1c198778e557aea2","type":"text","text":"**Тестирование**\n\nФункциональность · регрессии · визуальная проверка","x":300,"y":3550,"width":420,"height":110},
-		{"id":"f75810b3f1801faa","type":"text","text":"**Программа**\n\nИнструменты · API","x":745,"y":2545,"width":220,"height":110},
-		{"id":"4eac25a00ba63318","type":"text","text":"**Результат выполнения**\n\nАртефакты · логи · доказательства","x":300,"y":2730,"width":420,"height":110},
-		{"id":"a459d6031b3aef78","type":"text","text":"**Агент проекта принимает результат**\n\nТолько после успешных проверок","x":300,"y":3695,"width":420,"height":110,"color":"4"},
-		{"id":"0740a2d06bcfc0c7","type":"text","text":"**LLM ≠ инфраструктура**\n\nМодель применяется там, где нужно интеллектуальное решение. Маршрутизация, хранение и повторяемые операции — программные.","x":1225,"y":3170,"width":1000,"height":185},
-		{"id":"716eb053c823793e","type":"text","text":"**Агент ≠ постоянно запущенная модель**\n\nПроектная линия — состояние, память, конфигурация и процессы. Модели и исполнители вызываются по потребности.","x":1225,"y":3420,"width":1000,"height":185},
-		{"id":"8d7c72ef27a32dcc","type":"text","text":"**Проверка ≠ фраза «готово»**\n\nНужны критерии выполнения, тесты и доказательства. После повторных неудач — эскалация.","x":1225,"y":3670,"width":1000,"height":185},
-		{"id":"e56dee748226a6af","type":"text","text":"**Менеджер памяти**\n\nЕдиная точка доступа · права · поиск · версии","x":1520,"y":840,"width":420,"height":110,"color":"3"},
-		{"id":"21636ed99bcd966d","type":"text","text":"**Системная база**\n\nПроекты · задачи · агенты · статусы","x":1185,"y":1120,"width":330,"height":125},
-		{"id":"5ee29c5217f67fda","type":"text","text":"**Проектная память**\n\nКонтекст · решения · история линии","x":1545,"y":1120,"width":330,"height":125,"color":"3"},
-		{"id":"51b0ff15ea7c9888","type":"text","text":"**Общая база знаний**\n\nПроверенные методы · стандарты","x":1905,"y":1120,"width":330,"height":125},
-		{"id":"06f3b6c738b2106e","type":"text","text":"**Сборка контекста**\n\nВыдать LLM/инструменту только нужные сведения","x":1520,"y":1420,"width":420,"height":115},
-		{"id":"cc98c0e0e8a54bfe","type":"text","text":"**Хранилище артефактов**\n\nИсходники · документы · логи · тестовые отчёты","x":1520,"y":1620,"width":420,"height":110},
-		{"id":"d72862d01898c1c4","type":"text","text":"**Кандидат в общие знания**\n\nУниверсальное решение из проекта","x":1520,"y":1850,"width":420,"height":110},
-		{"id":"4c73f9d4f637ff6f","type":"text","text":"**Проверка и публикация**\n\nПроверить применимость, качество и разрешения","x":1520,"y":2040,"width":420,"height":110,"color":"4"},
-		{"id":"4123c1a0a7542211","type":"text","text":"**Правило изоляции**\n\nЧужие проекты не читают данные друг друга.\nОбщая база НЕ копирует всю память автоматически.","x":1300,"y":2380,"width":850,"height":200,"color":"3"},
-		{"id":"a75504c62cec3f15","type":"text","text":"**Исправить ошибки**\n\nВозврат с конкретными замечаниями","x":780,"y":3405,"width":300,"height":110,"color":"1"},
-		{"id":"438d1d92732926b9","type":"text","text":"**Восстановить линию**\n\nЗагрузить состояние и контекст","x":65,"y":1045,"width":380,"height":110},
-		{"id":"1b630863cb36928f","type":"text","text":"**Проект уже существует?**\n\nПроверка по реестру проектов","x":300,"y":860,"width":420,"height":110},
-		{"id":"48b1471bd058d54d","type":"text","text":"**Агент проекта: «Сайт Жив»**\n\nОтвечает за цели, задачи и результат проекта","x":300,"y":1260,"width":420,"height":110,"color":"6"},
-		{"id":"48199d1b22e2e5ee","type":"text","text":"**Создать линию**\n\nВыделить пространство, память и агента","x":575,"y":1045,"width":380,"height":110}
-	],
-	"edges":[
-		{"id":"9cc113bf1b35ddfc","fromNode":"fc7833b2f17ceb23","fromSide":"bottom","toNode":"2de6a4ac5810ead5","toSide":"top"},
-		{"id":"934625f120b10204","fromNode":"2de6a4ac5810ead5","fromSide":"bottom","toNode":"b78eefb81fa8c8d7","toSide":"top"},
-		{"id":"44651414894788cb","fromNode":"b78eefb81fa8c8d7","fromSide":"bottom","toNode":"dd1b8084523e889c","toSide":"top"},
-		{"id":"ab964d36b2ee16fe","fromNode":"dd1b8084523e889c","fromSide":"bottom","toNode":"1b630863cb36928f","toSide":"top"},
-		{"id":"edf33cfeb897a764","fromNode":"1b630863cb36928f","fromSide":"left","toNode":"438d1d92732926b9","toSide":"top","label":"ДА"},
-		{"id":"e14f8cf64dc6b5bc","fromNode":"1b630863cb36928f","fromSide":"right","toNode":"48199d1b22e2e5ee","toSide":"top","label":"НЕТ"},
-		{"id":"6c36fcf3aa6df5d9","fromNode":"438d1d92732926b9","fromSide":"bottom","toNode":"48b1471bd058d54d","toSide":"left"},
-		{"id":"69afcad8143ab8ee","fromNode":"48199d1b22e2e5ee","fromSide":"bottom","toNode":"48b1471bd058d54d","toSide":"right"},
-		{"id":"caa5f45a3c39eb35","fromNode":"48b1471bd058d54d","fromSide":"bottom","toNode":"20a93a3193e4e8a1","toSide":"top"},
-		{"id":"f0730f19882cff89","fromNode":"20a93a3193e4e8a1","fromSide":"bottom","toNode":"59bae40ca662391b","toSide":"top"},
-		{"id":"e6e3064533e3151e","fromNode":"59bae40ca662391b","fromSide":"bottom","toNode":"a2abd01e1c5ed026","toSide":"top"},
-		{"id":"98669d959f37513f","fromNode":"a2abd01e1c5ed026","fromSide":"left","toNode":"11549a785c57c3f7","toSide":"top","label":"ДА"},
-		{"id":"56167ea85abdfe9b","fromNode":"a2abd01e1c5ed026","fromSide":"right","toNode":"038c869beb9e62fb","toSide":"top","label":"НЕТ"},
-		{"id":"3e9a2019f6f7f82c","fromNode":"038c869beb9e62fb","fromSide":"bottom","toNode":"c11e5cf43dbbe833","toSide":"top"},
-		{"id":"626f786d44e7f62b","fromNode":"c11e5cf43dbbe833","fromSide":"bottom","toNode":"4dca0b8d15b5e4a5","toSide":"right"},
-		{"id":"bf3c253887cc99de","fromNode":"11549a785c57c3f7","fromSide":"bottom","toNode":"4dca0b8d15b5e4a5","toSide":"left"},
-		{"id":"75bed43e33377ff9","fromNode":"4dca0b8d15b5e4a5","fromSide":"bottom","toNode":"652c6192bb9cff32","toSide":"top"},
-		{"id":"194d288a337c0a90","fromNode":"652c6192bb9cff32","fromSide":"bottom","toNode":"4eac25a00ba63318","toSide":"top"},
-		{"id":"1d23f7b3e53c2342","fromNode":"4dca0b8d15b5e4a5","fromSide":"bottom","toNode":"c06cd6119e6a5133","toSide":"top"},
-		{"id":"3c5b6dc6771818e0","fromNode":"c06cd6119e6a5133","fromSide":"bottom","toNode":"4eac25a00ba63318","toSide":"top"},
-		{"id":"80af9af763a6b126","fromNode":"4dca0b8d15b5e4a5","fromSide":"bottom","toNode":"df1b1ddf8d83f9a2","toSide":"top"},
-		{"id":"8707984e24424746","fromNode":"df1b1ddf8d83f9a2","fromSide":"bottom","toNode":"4eac25a00ba63318","toSide":"top"},
-		{"id":"037abfe4654f7f58","fromNode":"4dca0b8d15b5e4a5","fromSide":"bottom","toNode":"f75810b3f1801faa","toSide":"top"},
-		{"id":"e02165133dcdb49e","fromNode":"f75810b3f1801faa","fromSide":"bottom","toNode":"4eac25a00ba63318","toSide":"top"},
-		{"id":"386b96f264338b0a","fromNode":"4eac25a00ba63318","fromSide":"bottom","toNode":"7dfa8d64f836afd7","toSide":"top"},
-		{"id":"710b31ff371ae0ee","fromNode":"7dfa8d64f836afd7","fromSide":"bottom","toNode":"211b5df0f9924de5","toSide":"top"},
-		{"id":"b4834d4714f8d02e","fromNode":"211b5df0f9924de5","fromSide":"right","toNode":"a75504c62cec3f15","toSide":"top","color":"1","label":"НЕТ"},
-		{"id":"48f654c0e903f128","fromNode":"a75504c62cec3f15","fromSide":"right","toNode":"4dca0b8d15b5e4a5","toSide":"right","color":"1","label":"повтор / эскалация"},
-		{"id":"6dce8bb6616cbd01","fromNode":"211b5df0f9924de5","fromSide":"bottom","toNode":"444c4c5d5c35bb40","toSide":"top","color":"4","label":"ДА"},
-		{"id":"13b784d79d03264e","fromNode":"444c4c5d5c35bb40","fromSide":"bottom","toNode":"1c198778e557aea2","toSide":"top"},
-		{"id":"55a1b21fb9bdc06a","fromNode":"1c198778e557aea2","fromSide":"bottom","toNode":"a459d6031b3aef78","toSide":"top"},
-		{"id":"c8a7b080bfcdd2c3","fromNode":"1c198778e557aea2","fromSide":"right","toNode":"a75504c62cec3f15","toSide":"bottom","color":"1","label":"дефект"},
-		{"id":"a66e6552e9bc9f6a","fromNode":"a459d6031b3aef78","fromSide":"bottom","toNode":"70b38105f43b03e8","toSide":"top"},
-		{"id":"678106c9baff06c2","fromNode":"70b38105f43b03e8","fromSide":"bottom","toNode":"eeb7def6353bb1d7","toSide":"top"},
-		{"id":"8cb10fc6cd77b1a7","fromNode":"eeb7def6353bb1d7","fromSide":"left","toNode":"2baa33582b24692a","toSide":"top","label":"ДА"},
-		{"id":"135eed142ded02aa","fromNode":"eeb7def6353bb1d7","fromSide":"right","toNode":"4ce20504d90c1146","toSide":"top","label":"НЕТ"},
-		{"id":"730fc1125efd6d51","fromNode":"e56dee748226a6af","fromSide":"bottom","toNode":"21636ed99bcd966d","toSide":"top"},
-		{"id":"d4b1497d69bd8b48","fromNode":"e56dee748226a6af","fromSide":"bottom","toNode":"5ee29c5217f67fda","toSide":"top"},
-		{"id":"342da62fe44ca80b","fromNode":"e56dee748226a6af","fromSide":"bottom","toNode":"51b0ff15ea7c9888","toSide":"top"},
-		{"id":"e4d596c1642c198f","fromNode":"e56dee748226a6af","fromSide":"bottom","toNode":"06f3b6c738b2106e","toSide":"top","label":"чтение"},
-		{"id":"b095e3851983212f","fromNode":"e56dee748226a6af","fromSide":"right","toNode":"cc98c0e0e8a54bfe","toSide":"right","label":"артефакты"},
-		{"id":"1ae56fcd4d23ec32","fromNode":"5ee29c5217f67fda","fromSide":"bottom","toNode":"d72862d01898c1c4","toSide":"left"},
-		{"id":"757c40b7359a3cff","fromNode":"d72862d01898c1c4","fromSide":"bottom","toNode":"4c73f9d4f637ff6f","toSide":"top"},
-		{"id":"398402fa2768435f","fromNode":"4c73f9d4f637ff6f","fromSide":"right","toNode":"51b0ff15ea7c9888","toSide":"bottom","color":"4","label":"только после проверки"},
-		{"id":"9fcf4eb3ebf908d9","fromNode":"48b1471bd058d54d","fromSide":"right","toNode":"e56dee748226a6af","toSide":"left","label":"контекст проекта"},
-		{"id":"4fcf08da3b9b18b5","fromNode":"06f3b6c738b2106e","fromSide":"left","toNode":"20a93a3193e4e8a1","toSide":"right","label":"релевантные данные"}
-	]
+  "nodes": [
+    {
+      "id": "5dac9bb7db7bf822",
+      "type": "group",
+      "x": 1140,
+      "y": 755,
+      "width": 1170,
+      "height": 2220,
+      "color": "3",
+      "label": "СКВОЗНАЯ ПАМЯТЬ И ХРАНЕНИЕ"
+    },
+    {
+      "id": "0ca8ed5b18e460e4",
+      "type": "group",
+      "x": 0,
+      "y": 1515,
+      "width": 1020,
+      "height": 1395,
+      "color": "2",
+      "label": "03 · ПОДБОР И ИСПОЛНЕНИЕ"
+    },
+    {
+      "id": "e3db564aef1c0fc0",
+      "type": "group",
+      "x": 1140,
+      "y": 3070,
+      "width": 1170,
+      "height": 930,
+      "color": "5",
+      "label": "ПРИНЦИПЫ СИСТЕМЫ"
+    },
+    {
+      "id": "e178772b91753992",
+      "type": "group",
+      "x": 0,
+      "y": 3000,
+      "width": 1100,
+      "height": 960,
+      "color": "4",
+      "label": "04 · НЕЗАВИСИМАЯ ПРОВЕРКА"
+    },
+    {
+      "id": "616dcf0176597f89",
+      "type": "group",
+      "x": 0,
+      "y": 4050,
+      "width": 1020,
+      "height": 720,
+      "color": "5",
+      "label": "05 · РЕЗУЛЬТАТ И ПРОДОЛЖЕНИЕ"
+    },
+    {
+      "id": "9a134fd8d7b0f3eb",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 1020,
+      "height": 675,
+      "color": "5",
+      "label": "01 · AWE GROUP — УПРАВЛЕНИЕ"
+    },
+    {
+      "id": "c4ae6ca607927f5a",
+      "type": "group",
+      "x": 0,
+      "y": 780,
+      "width": 1020,
+      "height": 670,
+      "color": "6",
+      "label": "02 · ПРОЕКТНАЯ ЛИНИЯ"
+    },
+    {
+      "id": "fc7833b2f17ceb23",
+      "type": "text",
+      "text": "**Пользователь**\n\nСтавит цель и ограничения",
+      "x": 300,
+      "y": 95,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "2de6a4ac5810ead5",
+      "type": "text",
+      "text": "**Головной агент**\n\nПонимает цель · контролирует линии",
+      "x": 300,
+      "y": 240,
+      "width": 420,
+      "height": 110,
+      "color": "5"
+    },
+    {
+      "id": "b78eefb81fa8c8d7",
+      "type": "text",
+      "text": "**Оркестратор**\n\nПрограммно управляет задачами и состояниями",
+      "x": 300,
+      "y": 385,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "dd1b8084523e889c",
+      "type": "text",
+      "text": "**Менеджер проектных линий**\n\nНаходит, создаёт и восстанавливает проекты",
+      "x": 300,
+      "y": 530,
+      "width": 420,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "20a93a3193e4e8a1",
+      "type": "text",
+      "text": "**Планировщик задач**\n\nЭтапы · зависимости · критерии готовности",
+      "x": 300,
+      "y": 1595,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "59bae40ca662391b",
+      "type": "text",
+      "text": "**Реестр возможностей**\n\nКакие агенты, программы и инструменты доступны?",
+      "x": 300,
+      "y": 1750,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "a2abd01e1c5ed026",
+      "type": "text",
+      "text": "**Есть готовый исполнитель?**\n\nВыбор по задаче, правам и стоимости",
+      "x": 300,
+      "y": 1905,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "7dfa8d64f836afd7",
+      "type": "text",
+      "text": "**Независимая проверка**\n\nСравнить результат с ТЗ и доказательствами",
+      "x": 300,
+      "y": 3080,
+      "width": 420,
+      "height": 110,
+      "color": "4"
+    },
+    {
+      "id": "70b38105f43b03e8",
+      "type": "text",
+      "text": "**Сохранить результат и память**\n\nФайлы · решения · состояние задачи · запись в проектную память",
+      "x": 300,
+      "y": 4120,
+      "width": 420,
+      "height": 110,
+      "color": "3"
+    },
+    {
+      "id": "eeb7def6353bb1d7",
+      "type": "text",
+      "text": "**Есть незавершённые задачи?**\n\nПроверка плана и оставшейся работы",
+      "x": 300,
+      "y": 4270,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "2baa33582b24692a",
+      "type": "text",
+      "text": "**Продолжить работу**\n\nВозврат к планировщику проекта",
+      "x": 65,
+      "y": 4450,
+      "width": 380,
+      "height": 110
+    },
+    {
+      "id": "4ce20504d90c1146",
+      "type": "text",
+      "text": "**Отчёт головному агенту**\n\nСтатус · проверки · итог для пользователя",
+      "x": 575,
+      "y": 4450,
+      "width": 380,
+      "height": 110,
+      "color": "5"
+    },
+    {
+      "id": "11549a785c57c3f7",
+      "type": "text",
+      "text": "**Выбрать существующего**\n\nАгент / скрипт / бот / программа",
+      "x": 55,
+      "y": 2085,
+      "width": 380,
+      "height": 110
+    },
+    {
+      "id": "038c869beb9e62fb",
+      "type": "text",
+      "text": "**Создать нового**\n\nКонфигурация агента или разработка инструмента",
+      "x": 575,
+      "y": 2085,
+      "width": 380,
+      "height": 110
+    },
+    {
+      "id": "c11e5cf43dbbe833",
+      "type": "text",
+      "text": "**Тест и регистрация**\n\nПроверить безопасность и добавить в реестр",
+      "x": 575,
+      "y": 2235,
+      "width": 380,
+      "height": 110,
+      "color": "2"
+    },
+    {
+      "id": "4dca0b8d15b5e4a5",
+      "type": "text",
+      "text": "**Выдать задачу исполнителям**\n\nМинимальный контекст и необходимые права",
+      "x": 300,
+      "y": 2390,
+      "width": 420,
+      "height": 110,
+      "color": "2"
+    },
+    {
+      "id": "652c6192bb9cff32",
+      "type": "text",
+      "text": "**LLM-агент**\n\nАнализ · дизайн · код",
+      "x": 25,
+      "y": 2545,
+      "width": 220,
+      "height": 110
+    },
+    {
+      "id": "c06cd6119e6a5133",
+      "type": "text",
+      "text": "**JS / Python**\n\nТочные операции",
+      "x": 265,
+      "y": 2545,
+      "width": 220,
+      "height": 110
+    },
+    {
+      "id": "df1b1ddf8d83f9a2",
+      "type": "text",
+      "text": "**Бот**\n\nАвтоматизация",
+      "x": 505,
+      "y": 2545,
+      "width": 220,
+      "height": 110
+    },
+    {
+      "id": "211b5df0f9924de5",
+      "type": "text",
+      "text": "**Проверка пройдена?**\n\nРезультат подтверждён?",
+      "x": 300,
+      "y": 3220,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "444c4c5d5c35bb40",
+      "type": "text",
+      "text": "**Итоговое ревью**\n\nПолнота требований · согласованность частей",
+      "x": 300,
+      "y": 3405,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "1c198778e557aea2",
+      "type": "text",
+      "text": "**Тестирование**\n\nФункциональность · регрессии · визуальная проверка",
+      "x": 300,
+      "y": 3550,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "f75810b3f1801faa",
+      "type": "text",
+      "text": "**Программа**\n\nИнструменты · API",
+      "x": 745,
+      "y": 2545,
+      "width": 220,
+      "height": 110
+    },
+    {
+      "id": "4eac25a00ba63318",
+      "type": "text",
+      "text": "**Результат выполнения**\n\nАртефакты · логи · доказательства",
+      "x": 300,
+      "y": 2730,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "a459d6031b3aef78",
+      "type": "text",
+      "text": "**Агент проекта принимает результат**\n\nТолько после успешных проверок",
+      "x": 300,
+      "y": 3695,
+      "width": 420,
+      "height": 110,
+      "color": "4"
+    },
+    {
+      "id": "0740a2d06bcfc0c7",
+      "type": "text",
+      "text": "**LLM ≠ инфраструктура**\n\nМодель применяется там, где нужно интеллектуальное решение. Маршрутизация, хранение и повторяемые операции — программные.",
+      "x": 1225,
+      "y": 3170,
+      "width": 1000,
+      "height": 185
+    },
+    {
+      "id": "716eb053c823793e",
+      "type": "text",
+      "text": "**Агент ≠ постоянно запущенная модель**\n\nПроектная линия — состояние, память, конфигурация и процессы. Модели и исполнители вызываются по потребности.",
+      "x": 1225,
+      "y": 3420,
+      "width": 1000,
+      "height": 185
+    },
+    {
+      "id": "8d7c72ef27a32dcc",
+      "type": "text",
+      "text": "**Проверка ≠ фраза «готово»**\n\nНужны критерии выполнения, тесты и доказательства. После повторных неудач — эскалация.",
+      "x": 1225,
+      "y": 3670,
+      "width": 1000,
+      "height": 185
+    },
+    {
+      "id": "e56dee748226a6af",
+      "type": "text",
+      "text": "**Менеджер памяти**\n\nЕдиная точка доступа · права · поиск · версии",
+      "x": 1520,
+      "y": 840,
+      "width": 420,
+      "height": 110,
+      "color": "3"
+    },
+    {
+      "id": "21636ed99bcd966d",
+      "type": "text",
+      "text": "**Системная база**\n\nПроекты · задачи · агенты · статусы",
+      "x": 1185,
+      "y": 1120,
+      "width": 330,
+      "height": 125
+    },
+    {
+      "id": "5ee29c5217f67fda",
+      "type": "text",
+      "text": "**Проектная память**\n\nКонтекст · решения · история линии",
+      "x": 1545,
+      "y": 1120,
+      "width": 330,
+      "height": 125,
+      "color": "3"
+    },
+    {
+      "id": "51b0ff15ea7c9888",
+      "type": "text",
+      "text": "**Общая база знаний**\n\nПроверенные методы · стандарты",
+      "x": 1905,
+      "y": 1120,
+      "width": 330,
+      "height": 125
+    },
+    {
+      "id": "06f3b6c738b2106e",
+      "type": "text",
+      "text": "**Сборка контекста**\n\nВыдать LLM/инструменту только нужные сведения",
+      "x": 1520,
+      "y": 1420,
+      "width": 420,
+      "height": 115
+    },
+    {
+      "id": "cc98c0e0e8a54bfe",
+      "type": "text",
+      "text": "**Хранилище артефактов**\n\nИсходники · документы · логи · тестовые отчёты",
+      "x": 1520,
+      "y": 1620,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "d72862d01898c1c4",
+      "type": "text",
+      "text": "**Кандидат в общие знания**\n\nУниверсальное решение из проекта",
+      "x": 1520,
+      "y": 1850,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "4c73f9d4f637ff6f",
+      "type": "text",
+      "text": "**Проверка и публикация**\n\nПроверить применимость, качество и разрешения",
+      "x": 1520,
+      "y": 2040,
+      "width": 420,
+      "height": 110,
+      "color": "4"
+    },
+    {
+      "id": "4123c1a0a7542211",
+      "type": "text",
+      "text": "**Правило изоляции**\n\nЧужие проекты не читают данные друг друга.\nОбщая база НЕ копирует всю память автоматически.",
+      "x": 1300,
+      "y": 2380,
+      "width": 850,
+      "height": 200,
+      "color": "3"
+    },
+    {
+      "id": "a75504c62cec3f15",
+      "type": "text",
+      "text": "**Исправить ошибки**\n\nВозврат с конкретными замечаниями",
+      "x": 780,
+      "y": 3405,
+      "width": 300,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "438d1d92732926b9",
+      "type": "text",
+      "text": "**Восстановить линию**\n\nЗагрузить состояние и контекст",
+      "x": 65,
+      "y": 1045,
+      "width": 380,
+      "height": 110
+    },
+    {
+      "id": "1b630863cb36928f",
+      "type": "text",
+      "text": "**Проект уже существует?**\n\nПроверка по реестру проектов",
+      "x": 300,
+      "y": 860,
+      "width": 420,
+      "height": 110
+    },
+    {
+      "id": "48b1471bd058d54d",
+      "type": "text",
+      "text": "**Агент проекта: «Сайт Жив»**\n\nОтвечает за цели, задачи и результат проекта",
+      "x": 300,
+      "y": 1260,
+      "width": 420,
+      "height": 110,
+      "color": "6"
+    },
+    {
+      "id": "48199d1b22e2e5ee",
+      "type": "text",
+      "text": "**Создать линию**\n\nВыделить пространство, память и агента",
+      "x": 575,
+      "y": 1045,
+      "width": 380,
+      "height": 110
+    }
+  ],
+  "edges": [
+    {
+      "id": "9cc113bf1b35ddfc",
+      "fromNode": "fc7833b2f17ceb23",
+      "fromSide": "bottom",
+      "toNode": "2de6a4ac5810ead5",
+      "toSide": "top"
+    },
+    {
+      "id": "934625f120b10204",
+      "fromNode": "2de6a4ac5810ead5",
+      "fromSide": "bottom",
+      "toNode": "b78eefb81fa8c8d7",
+      "toSide": "top"
+    },
+    {
+      "id": "44651414894788cb",
+      "fromNode": "b78eefb81fa8c8d7",
+      "fromSide": "bottom",
+      "toNode": "dd1b8084523e889c",
+      "toSide": "top"
+    },
+    {
+      "id": "ab964d36b2ee16fe",
+      "fromNode": "dd1b8084523e889c",
+      "fromSide": "bottom",
+      "toNode": "1b630863cb36928f",
+      "toSide": "top"
+    },
+    {
+      "id": "edf33cfeb897a764",
+      "fromNode": "1b630863cb36928f",
+      "fromSide": "left",
+      "toNode": "438d1d92732926b9",
+      "toSide": "top",
+      "label": "ДА"
+    },
+    {
+      "id": "e14f8cf64dc6b5bc",
+      "fromNode": "1b630863cb36928f",
+      "fromSide": "right",
+      "toNode": "48199d1b22e2e5ee",
+      "toSide": "top",
+      "label": "НЕТ"
+    },
+    {
+      "id": "6c36fcf3aa6df5d9",
+      "fromNode": "438d1d92732926b9",
+      "fromSide": "bottom",
+      "toNode": "48b1471bd058d54d",
+      "toSide": "left"
+    },
+    {
+      "id": "69afcad8143ab8ee",
+      "fromNode": "48199d1b22e2e5ee",
+      "fromSide": "bottom",
+      "toNode": "48b1471bd058d54d",
+      "toSide": "right"
+    },
+    {
+      "id": "caa5f45a3c39eb35",
+      "fromNode": "48b1471bd058d54d",
+      "fromSide": "bottom",
+      "toNode": "20a93a3193e4e8a1",
+      "toSide": "top"
+    },
+    {
+      "id": "f0730f19882cff89",
+      "fromNode": "20a93a3193e4e8a1",
+      "fromSide": "bottom",
+      "toNode": "59bae40ca662391b",
+      "toSide": "top"
+    },
+    {
+      "id": "e6e3064533e3151e",
+      "fromNode": "59bae40ca662391b",
+      "fromSide": "bottom",
+      "toNode": "a2abd01e1c5ed026",
+      "toSide": "top"
+    },
+    {
+      "id": "98669d959f37513f",
+      "fromNode": "a2abd01e1c5ed026",
+      "fromSide": "left",
+      "toNode": "11549a785c57c3f7",
+      "toSide": "top",
+      "label": "ДА"
+    },
+    {
+      "id": "56167ea85abdfe9b",
+      "fromNode": "a2abd01e1c5ed026",
+      "fromSide": "right",
+      "toNode": "038c869beb9e62fb",
+      "toSide": "top",
+      "label": "НЕТ"
+    },
+    {
+      "id": "3e9a2019f6f7f82c",
+      "fromNode": "038c869beb9e62fb",
+      "fromSide": "bottom",
+      "toNode": "c11e5cf43dbbe833",
+      "toSide": "top"
+    },
+    {
+      "id": "626f786d44e7f62b",
+      "fromNode": "c11e5cf43dbbe833",
+      "fromSide": "bottom",
+      "toNode": "4dca0b8d15b5e4a5",
+      "toSide": "right"
+    },
+    {
+      "id": "bf3c253887cc99de",
+      "fromNode": "11549a785c57c3f7",
+      "fromSide": "bottom",
+      "toNode": "4dca0b8d15b5e4a5",
+      "toSide": "left"
+    },
+    {
+      "id": "75bed43e33377ff9",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "652c6192bb9cff32",
+      "toSide": "top"
+    },
+    {
+      "id": "194d288a337c0a90",
+      "fromNode": "652c6192bb9cff32",
+      "fromSide": "bottom",
+      "toNode": "4eac25a00ba63318",
+      "toSide": "top"
+    },
+    {
+      "id": "1d23f7b3e53c2342",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "c06cd6119e6a5133",
+      "toSide": "top"
+    },
+    {
+      "id": "3c5b6dc6771818e0",
+      "fromNode": "c06cd6119e6a5133",
+      "fromSide": "bottom",
+      "toNode": "4eac25a00ba63318",
+      "toSide": "top"
+    },
+    {
+      "id": "80af9af763a6b126",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "df1b1ddf8d83f9a2",
+      "toSide": "top"
+    },
+    {
+      "id": "8707984e24424746",
+      "fromNode": "df1b1ddf8d83f9a2",
+      "fromSide": "bottom",
+      "toNode": "4eac25a00ba63318",
+      "toSide": "top"
+    },
+    {
+      "id": "037abfe4654f7f58",
+      "fromNode": "4dca0b8d15b5e4a5",
+      "fromSide": "bottom",
+      "toNode": "f75810b3f1801faa",
+      "toSide": "top"
+    },
+    {
+      "id": "e02165133dcdb49e",
+      "fromNode": "f75810b3f1801faa",
+      "fromSide": "bottom",
+      "toNode": "4eac25a00ba63318",
+      "toSide": "top"
+    },
+    {
+      "id": "386b96f264338b0a",
+      "fromNode": "4eac25a00ba63318",
+      "fromSide": "bottom",
+      "toNode": "7dfa8d64f836afd7",
+      "toSide": "top"
+    },
+    {
+      "id": "710b31ff371ae0ee",
+      "fromNode": "7dfa8d64f836afd7",
+      "fromSide": "bottom",
+      "toNode": "211b5df0f9924de5",
+      "toSide": "top"
+    },
+    {
+      "id": "b4834d4714f8d02e",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "right",
+      "toNode": "a75504c62cec3f15",
+      "toSide": "top",
+      "color": "1",
+      "label": "НЕТ"
+    },
+    {
+      "id": "48f654c0e903f128",
+      "fromNode": "a75504c62cec3f15",
+      "fromSide": "right",
+      "toNode": "4dca0b8d15b5e4a5",
+      "toSide": "right",
+      "color": "1",
+      "label": "повтор / эскалация"
+    },
+    {
+      "id": "6dce8bb6616cbd01",
+      "fromNode": "211b5df0f9924de5",
+      "fromSide": "bottom",
+      "toNode": "444c4c5d5c35bb40",
+      "toSide": "top",
+      "color": "4",
+      "label": "ДА"
+    },
+    {
+      "id": "13b784d79d03264e",
+      "fromNode": "444c4c5d5c35bb40",
+      "fromSide": "bottom",
+      "toNode": "1c198778e557aea2",
+      "toSide": "top"
+    },
+    {
+      "id": "55a1b21fb9bdc06a",
+      "fromNode": "1c198778e557aea2",
+      "fromSide": "bottom",
+      "toNode": "a459d6031b3aef78",
+      "toSide": "top"
+    },
+    {
+      "id": "c8a7b080bfcdd2c3",
+      "fromNode": "1c198778e557aea2",
+      "fromSide": "right",
+      "toNode": "a75504c62cec3f15",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "дефект"
+    },
+    {
+      "id": "a66e6552e9bc9f6a",
+      "fromNode": "a459d6031b3aef78",
+      "fromSide": "bottom",
+      "toNode": "70b38105f43b03e8",
+      "toSide": "top"
+    },
+    {
+      "id": "678106c9baff06c2",
+      "fromNode": "70b38105f43b03e8",
+      "fromSide": "bottom",
+      "toNode": "eeb7def6353bb1d7",
+      "toSide": "top"
+    },
+    {
+      "id": "8cb10fc6cd77b1a7",
+      "fromNode": "eeb7def6353bb1d7",
+      "fromSide": "left",
+      "toNode": "2baa33582b24692a",
+      "toSide": "top",
+      "label": "ДА"
+    },
+    {
+      "id": "135eed142ded02aa",
+      "fromNode": "eeb7def6353bb1d7",
+      "fromSide": "right",
+      "toNode": "4ce20504d90c1146",
+      "toSide": "top",
+      "label": "НЕТ"
+    },
+    {
+      "id": "730fc1125efd6d51",
+      "fromNode": "e56dee748226a6af",
+      "fromSide": "bottom",
+      "toNode": "21636ed99bcd966d",
+      "toSide": "top"
+    },
+    {
+      "id": "d4b1497d69bd8b48",
+      "fromNode": "e56dee748226a6af",
+      "fromSide": "bottom",
+      "toNode": "5ee29c5217f67fda",
+      "toSide": "top"
+    },
+    {
+      "id": "342da62fe44ca80b",
+      "fromNode": "e56dee748226a6af",
+      "fromSide": "bottom",
+      "toNode": "51b0ff15ea7c9888",
+      "toSide": "top"
+    },
+    {
+      "id": "e4d596c1642c198f",
+      "fromNode": "e56dee748226a6af",
+      "fromSide": "bottom",
+      "toNode": "06f3b6c738b2106e",
+      "toSide": "top",
+      "label": "чтение"
+    },
+    {
+      "id": "b095e3851983212f",
+      "fromNode": "e56dee748226a6af",
+      "fromSide": "right",
+      "toNode": "cc98c0e0e8a54bfe",
+      "toSide": "right",
+      "label": "артефакты"
+    },
+    {
+      "id": "1ae56fcd4d23ec32",
+      "fromNode": "5ee29c5217f67fda",
+      "fromSide": "bottom",
+      "toNode": "d72862d01898c1c4",
+      "toSide": "left"
+    },
+    {
+      "id": "757c40b7359a3cff",
+      "fromNode": "d72862d01898c1c4",
+      "fromSide": "bottom",
+      "toNode": "4c73f9d4f637ff6f",
+      "toSide": "top"
+    },
+    {
+      "id": "398402fa2768435f",
+      "fromNode": "4c73f9d4f637ff6f",
+      "fromSide": "right",
+      "toNode": "51b0ff15ea7c9888",
+      "toSide": "bottom",
+      "color": "4",
+      "label": "только после проверки"
+    },
+    {
+      "id": "9fcf4eb3ebf908d9",
+      "fromNode": "48b1471bd058d54d",
+      "fromSide": "right",
+      "toNode": "e56dee748226a6af",
+      "toSide": "left",
+      "label": "контекст проекта"
+    },
+    {
+      "id": "4fcf08da3b9b18b5",
+      "fromNode": "06f3b6c738b2106e",
+      "fromSide": "left",
+      "toNode": "20a93a3193e4e8a1",
+      "toSide": "right",
+      "label": "релевантные данные"
+    }
+  ]
 }
