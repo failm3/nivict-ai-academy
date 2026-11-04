@@ -768,7 +768,7 @@
       "y": 3445,
       "width": 640,
       "height": 180,
-      "text": "**07 · Контроль состояния и качества**\n\nЛоги и checkpoint, восстановление задач, история решений. Исполнение → независимый блок 04; LLM не подтверждает собственный результат.",
+      "text": "**07 · Контроль состояния и качества**\n\nLocal QA каждого этапа: логи, checkpoint, восстановление, история решений; обязательный независимый экзамен блока 04. Исполнитель не подтверждает свой результат.",
       "color": "5"
     },
     {
@@ -858,7 +858,7 @@
       "y": 5160,
       "width": 240,
       "height": 220,
-      "text": "**Локальные отчёты · ЗАПЕЧАТАНЫ ДО ЭКЗАМЕНА**\n\nИз блоков 01–03: hashes, test cases, PASS/FAIL, trace IDs, конфигурация. Доступны аудитору **только после** независимого запуска; экзаменатор их не видит.",
+      "text": "**Локальные отчёты · ЗАПЕЧАТАНЫ ДО ЭКЗАМЕНА**\n\nИз evidence store: QA блоков 01–03, hashes, test cases, PASS/FAIL, trace IDs и конфигурация. Аудитор видит их **после** независимого запуска; экзаменатор не видит.",
       "color": "6"
     },
     {
@@ -1020,6 +1020,16 @@
       "height": 180,
       "text": "**РАЗНАЯ ГЛУБИНА ПО РИСКУ, НО БЕЗ ПРОПУСКА КРИТИЧЕСКОГО**\n\nНизкий риск — кодовые assertions и выборочная независимая проверка; средний — полный test profile и аудит доказательств; высокий/необратимый — adversarial, безопасность, расширенный аудит и разрешение владельца.",
       "color": "5"
+    },
+    {
+      "id": "awe-qa-independent-05-20261105",
+      "type": "text",
+      "x": 745,
+      "y": 6650,
+      "width": 235,
+      "height": 140,
+      "color": "4",
+      "text": "**POST-SAVE AUDIT · 05 / независимый код**\n\nПовторно прочитать артефакт и БД; проверить hashes, статус и отчёт Local QA. Ошибка → BLOCK, не публиковать."
     }
   ],
   "edges": [
@@ -1661,14 +1671,6 @@
       "toSide": "left"
     },
     {
-      "id": "awe-qa05-pass",
-      "fromNode": "awe-qa-local-05-20261105",
-      "fromSide": "bottom",
-      "toNode": "eeb7def6353bb1d7",
-      "toSide": "right",
-      "label": "PASS"
-    },
-    {
       "id": "awe-qa04-tools",
       "fromNode": "1c198778e557aea2",
       "fromSide": "right",
@@ -1749,6 +1751,22 @@
       "toNode": "awe04-profile-matrix-20261105",
       "toSide": "left",
       "label": "risk profile"
+    },
+    {
+      "id": "awe-qa05-audit-in",
+      "fromNode": "awe-qa-local-05-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe-qa-independent-05-20261105",
+      "toSide": "top",
+      "label": "локальный отчёт"
+    },
+    {
+      "id": "awe-qa05-audit-pass",
+      "fromNode": "awe-qa-independent-05-20261105",
+      "fromSide": "left",
+      "toNode": "eeb7def6353bb1d7",
+      "toSide": "right",
+      "label": "PASS"
     }
   ]
 }
