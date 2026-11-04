@@ -29,11 +29,11 @@ if ($branch.Trim() -ne 'main') {
 if (Get-Process -Name 'Obsidian' -ErrorAction SilentlyContinue) {
     throw "Close Obsidian completely before syncing; it may re-save an open Canvas."
 }
-$matches = @(Get-ChildItem -LiteralPath $root -Recurse -File -Filter $canvasName)
-if ($matches.Count -ne 1) {
-    throw "Expected exactly one AWE Canvas, found $($matches.Count)."
+$canvasFiles = @(Get-ChildItem -LiteralPath $root -Recurse -File -Filter $canvasName)
+if ($canvasFiles.Count -ne 1) {
+    throw "Expected exactly one AWE Canvas, found $($canvasFiles.Count)."
 }
-$target = $matches[0].FullName
+$target = $canvasFiles[0].FullName
 $relative = $target.Substring($root.Length).TrimStart('/','\').Replace('\','/')
 Write-Host "Target: $relative"
 
