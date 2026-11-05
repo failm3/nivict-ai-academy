@@ -1620,7 +1620,8 @@
       "fromNode": "c11e5cf43dbbe833",
       "fromSide": "bottom",
       "toNode": "4dca0b8d15b5e4a5",
-      "toSide": "right"
+      "toSide": "right",
+      "label": "PASS"
     },
     {
       "id": "awe03-existing-assign",
@@ -2037,7 +2038,8 @@
       "fromNode": "awe-qa-local-05-20261105",
       "fromSide": "bottom",
       "toNode": "awe-qa-independent-05-20261105",
-      "toSide": "top"
+      "toSide": "top",
+      "label": "PASS + evidence"
     },
     {
       "id": "awe05-audit-checkpoint-20261105",
@@ -2155,6 +2157,41 @@
       "toNode": "awe03-dispatcher-20261105",
       "toSide": "right",
       "label": "FAIL → task_id/replan (bounded)",
+      "color": "1"
+    },
+    {
+      "id": "awe-root-to-user-20261105",
+      "fromNode": "awe-root-v02",
+      "fromSide": "bottom",
+      "toNode": "fc7833b2f17ceb23",
+      "toSide": "top",
+      "label": "вход задачи"
+    },
+    {
+      "id": "awe05-localqa-fail-reconcile-20261105",
+      "fromNode": "awe-qa-local-05-20261105",
+      "fromSide": "right",
+      "toNode": "awe05-save-failure-20261105",
+      "toSide": "right",
+      "label": "FAIL → reconcile",
+      "color": "1"
+    },
+    {
+      "id": "awe03-test-fail-20261105",
+      "fromNode": "c11e5cf43dbbe833",
+      "fromSide": "right",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "right",
+      "label": "FAIL / BLOCKED",
+      "color": "1"
+    },
+    {
+      "id": "awe04-unclear-status-20261105",
+      "fromNode": "awe04-unclear-blocked-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe05-waiting-20261105",
+      "toSide": "left",
+      "label": "status only: UNCLEAR/BLOCKED, no acceptance",
       "color": "1"
     }
   ]
