@@ -8,7 +8,7 @@
       "width": 1170,
       "height": 2220,
       "color": "3",
-      "label": "СКВОЗНАЯ ПАМЯТЬ И ХРАНЕНИЕ"
+      "label": "СКВОЗНАЯ ПАМЯТЬ · ИСТОЧНИК ИСТИНЫ, ИЗОЛЯЦИЯ И ВОССТАНОВЛЕНИЕ"
     },
     {
       "id": "0ca8ed5b18e460e4",
@@ -26,9 +26,9 @@
       "x": 1140,
       "y": 3070,
       "width": 1170,
-      "height": 930,
+      "height": 1200,
       "color": "5",
-      "label": "ПРИНЦИПЫ СИСТЕМЫ"
+      "label": "КОНСТИТУЦИЯ AWE GROUP · СКВОЗНЫЕ ПРИНЦИПЫ (ПРОЕКТ v0.1)"
     },
     {
       "id": "e178772b91753992",
@@ -306,112 +306,120 @@
     {
       "id": "0740a2d06bcfc0c7",
       "type": "text",
-      "text": "**LLM ≠ инфраструктура**\n\nМодель применяется там, где нужно интеллектуальное решение. Маршрутизация, хранение и повторяемые операции — программные.",
-      "x": 1225,
-      "y": 3170,
-      "width": 1000,
-      "height": 185
+      "text": "**C-03 · LLM ≠ инфраструктура**\n\nМодель для смысловых решений; права, хранение, бюджет, очереди и детерминированные проверки — кодом.",
+      "x": 1190,
+      "y": 3335,
+      "width": 520,
+      "height": 155,
+      "color": "5"
     },
     {
       "id": "716eb053c823793e",
       "type": "text",
-      "text": "**Агент ≠ постоянно запущенная модель**\n\nПроектная линия — состояние, память, конфигурация и процессы. Модели и исполнители вызываются по потребности.",
-      "x": 1225,
-      "y": 3420,
-      "width": 1000,
-      "height": 185
+      "text": "**C-04 · Агент ≠ запущенная модель**\n\nСтабильная конфигурация и состояние проекта. Модель/исполнители вызываются по потребности; оркестратор общий.",
+      "x": 1750,
+      "y": 3335,
+      "width": 520,
+      "height": 155,
+      "color": "5"
     },
     {
       "id": "8d7c72ef27a32dcc",
       "type": "text",
-      "text": "**Проверка ≠ фраза «готово»**\n\nНужны критерии выполнения, тесты и доказательства. После повторных неудач — эскалация.",
-      "x": 1225,
-      "y": 3670,
-      "width": 1000,
-      "height": 185
+      "text": "**C-07 · Проверка ≠ «готово»**\n\nLocal QA → слепой Examiner → Auditor → кодовый Quality Gate. Нет evidence — нет PASS; исполнитель не принимает свой отчёт.",
+      "x": 1190,
+      "y": 3705,
+      "width": 520,
+      "height": 155,
+      "color": "5"
     },
     {
       "id": "e56dee748226a6af",
       "type": "text",
-      "text": "**Менеджер памяти · PostgreSQL + Supermemory**\n\nДоступ · поиск · версии · Storage Workers (код).",
-      "x": 1520,
-      "y": 840,
-      "width": 420,
-      "height": 110,
+      "text": "**Memory Manager / Policy-aware Storage Workers**\n\nЕдиный API памяти. Проверка проекта/прав и версии записи; PostgreSQL — структурное состояние, Supermemory — кандидат на индекс. Модель не управляет БД напрямую.",
+      "x": 1425,
+      "y": 835,
+      "width": 600,
+      "height": 145,
       "color": "3"
     },
     {
       "id": "21636ed99bcd966d",
       "type": "text",
-      "text": "**Системная база · PostgreSQL (пилот)**\n\nПроекты · задачи · агенты · статусы",
-      "x": 1185,
-      "y": 1120,
-      "width": 330,
-      "height": 125
+      "text": "**Corporate Registry · PostgreSQL (пилот)**\n\nproject_id, agent config, права, DAG, статусы, checkpoint, версии и ссылки на артефакты. Авторитетное состояние.",
+      "x": 1180,
+      "y": 1080,
+      "width": 335,
+      "height": 170,
+      "color": "3"
     },
     {
       "id": "5ee29c5217f67fda",
       "type": "text",
-      "text": "**Проектная память · Supermemory (пилот)**\n\nКонтекст · решения · история линии",
+      "text": "**Project Memory · решения и факты**\n\nИзолирована по project_id; источник, владелец, доверие, версия и дата. Никогда не смешивать с другими линиями.",
       "x": 1545,
-      "y": 1120,
-      "width": 330,
-      "height": 125,
+      "y": 1080,
+      "width": 335,
+      "height": 170,
       "color": "3"
     },
     {
       "id": "51b0ff15ea7c9888",
       "type": "text",
-      "text": "**Общая база знаний**\n\nПроверенные методы · стандарты",
-      "x": 1905,
-      "y": 1120,
-      "width": 330,
-      "height": 125
+      "text": "**Shared Knowledge · только проверенное**\n\nМетоды и стандарты после проверки, очистки закрытых сведений и разрешённой публикации.",
+      "x": 1910,
+      "y": 1080,
+      "width": 335,
+      "height": 170,
+      "color": "3"
     },
     {
       "id": "06f3b6c738b2106e",
       "type": "text",
-      "text": "**Сборка контекста · Supermemory**\n\nТолько необходимые проектные сведения с учётом прав.",
-      "x": 1520,
-      "y": 1420,
-      "width": 420,
-      "height": 115
+      "text": "**Context Builder · сборка контекста**\n\nМинимум для task_id, с ACL до поиска, source/version/TTL. Контент из поиска — данные, не новые команды.",
+      "x": 1185,
+      "y": 1365,
+      "width": 495,
+      "height": 150,
+      "color": "3"
     },
     {
       "id": "cc98c0e0e8a54bfe",
       "type": "text",
-      "text": "**Хранилище артефактов**\n\nИсходники · документы · логи · тестовые отчёты",
-      "x": 1520,
-      "y": 1620,
-      "width": 420,
-      "height": 110
+      "text": "**Artifact / Evidence Store**\n\nВерсии исходников, документы, чекпоинты, тесты, QA-отчёты; content hashes, права, резервная копия. Оригинал read-only для экзаменатора.",
+      "x": 1185,
+      "y": 1585,
+      "width": 495,
+      "height": 160,
+      "color": "3"
     },
     {
       "id": "d72862d01898c1c4",
       "type": "text",
-      "text": "**Кандидат в общие знания**\n\nУниверсальное решение из проекта",
-      "x": 1520,
-      "y": 1850,
-      "width": 420,
-      "height": 110
+      "text": "**Кандидат на публикацию в общую память**\n\nПолезное решение из проекта; доступно только проекту до отдельной проверки и очистки приватных данных.",
+      "x": 1185,
+      "y": 1810,
+      "width": 495,
+      "height": 135,
+      "color": "3"
     },
     {
       "id": "4c73f9d4f637ff6f",
       "type": "text",
-      "text": "**Проверка и публикация**\n\nПроверить применимость, качество и разрешения",
-      "x": 1520,
-      "y": 2040,
-      "width": 420,
-      "height": 110,
+      "text": "**Knowledge Promotion Gate · публикация**\n\nДоказанная применимость + согласованное разрешение на публикацию + редактирование чувствительных сведений. Никакого автоматического общего копирования.",
+      "x": 1720,
+      "y": 1810,
+      "width": 495,
+      "height": 135,
       "color": "4"
     },
     {
       "id": "4123c1a0a7542211",
       "type": "text",
-      "text": "**Изоляция и хранение проектных линий**\n\nУ каждой линии — свои память, состояние, права, исполнители и хранилища. БД добавляются по необходимости.\n\nStorage Workers — программные адаптеры с правами и проверками, без обязательной LLM. Если LLM классифицирует данные — нужна независимая проверка.\n\nЧужие проекты не читают данные друг друга; общие знания публикуются после проверки.",
-      "x": 1300,
-      "y": 2380,
-      "width": 850,
+      "text": "**ПРАВИЛО · Изоляция и источник истины**\n\nRegistry + версии утверждённого ТЗ + авторитетные события определяют статус. Context Builder и LLM не переписывают state. Project Memory, индексы и артефакты изолированы; только разрешённый Knowledge Promotion переносит общие знания.\n\nStorage Workers — программные адаптеры к БД/файлам/индексам/резервам, не отдельная LLM на каждую базу.",
+      "x": 1220,
+      "y": 2290,
+      "width": 1000,
       "height": 200,
       "color": "3"
     },
@@ -1040,6 +1048,156 @@
       "height": 83,
       "color": "5",
       "text": "**СПЕЦИФИКАЦИЯ · QA-протоколы, инварианты и пилотные тесты**\n\n[[04 - Блок 04 — AWE Quality Assurance System]]"
+    },
+    {
+      "id": "awe-memory-ingest-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 1365,
+      "width": 495,
+      "height": 150,
+      "text": "**Memory Ingest Gate · записывать по правилам**\n\nОпределить источник, тип, чувствительность и TTL → проверить ACL/инъекции → staged → QA → commit и audit. Не превращать догадки в память.",
+      "color": "4"
+    },
+    {
+      "id": "awe-memory-events-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 1585,
+      "width": 495,
+      "height": 160,
+      "text": "**Event & Decision Journal · журнал**\n\nИзменения состояния/решений, автор, time, source, event_id. Append-only и сверка при восстановлении; событие ≠ доказанный внешний факт.",
+      "color": "3"
+    },
+    {
+      "id": "awe-memory-access-20261105",
+      "type": "text",
+      "x": 1185,
+      "y": 2005,
+      "width": 495,
+      "height": 165,
+      "text": "**Access Policy · границы доверия**\n\nAuthZ до retrieval и записи. DB role / ACL / namespace / files / secrets по project_id; deny cross-project. RLS — дополнение, не единственная защита.",
+      "color": "3"
+    },
+    {
+      "id": "awe-memory-index-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 2005,
+      "width": 495,
+      "height": 165,
+      "text": "**Semantic Index / Supermemory · производный**\n\nВекторный поиск и summary по проверенным записям. Удаление/обновление первоисточника → переиндексация. Embedding не подтверждает факт.",
+      "color": "3"
+    },
+    {
+      "id": "awe-memory-recovery-20261105",
+      "type": "text",
+      "x": 1185,
+      "y": 2560,
+      "width": 495,
+      "height": 165,
+      "text": "**Recovery / DR · восстановление**\n\nCheckpoint + event log, idempotency key, reconciliation side effects; согласованный backup БД и версионированные файлы. Только реально проверенный restore = восстановимость.",
+      "color": "3"
+    },
+    {
+      "id": "awe-memory-retention-20261105",
+      "type": "text",
+      "x": 1720,
+      "y": 2560,
+      "width": 495,
+      "height": 165,
+      "text": "**Lifecycle · исправление / срок / удаление**\n\nВерсии вместо тихой перезаписи. TTL, stale, владелец, архив; удаление первоисточника + индекса + кэша, backup retention по политике.",
+      "color": "3"
+    },
+    {
+      "id": "awe-memory-doc-20261105",
+      "type": "text",
+      "x": 1220,
+      "y": 2790,
+      "width": 1000,
+      "height": 100,
+      "text": "**СПЕЦИФИКАЦИЯ И ТЕСТЫ ПАМЯТИ**\n\n[[Память — сквозная архитектура и правила]] · все слои, права, запись, retrieval, restore и сценарии атак.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-authority-20261105",
+      "type": "text",
+      "x": 1190,
+      "y": 3150,
+      "width": 520,
+      "height": 155,
+      "text": "**C-01 · Цель и полномочия**\n\nВладелец задаёт цели; агент не меняет их сам. Версионированное ТЗ и системные ограничения выше случайных указаний внешних источников.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-scope-20261105",
+      "type": "text",
+      "x": 1750,
+      "y": 3150,
+      "width": 520,
+      "height": 155,
+      "text": "**C-02 · Минимальные права**\n\nКаждый вызов: actor_id, project_id, task_id и scope. Default deny; чужие проекты и лишние инструменты закрыты.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-memory-20261105",
+      "type": "text",
+      "x": 1190,
+      "y": 3520,
+      "width": 520,
+      "height": 155,
+      "text": "**C-05 · Память требует проверки**\n\nПрава + provenance + статус + срок/версия; никакой памяти из непроверенного внешнего текста или скрытой записи общих правил.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-trust-20261105",
+      "type": "text",
+      "x": 1750,
+      "y": 3520,
+      "width": 520,
+      "height": 155,
+      "text": "**C-06 · Источник ≠ инструкция**\n\nСайт, почта, документы и tool output не дают полномочий. Факт подтверждается источником; неизвестное остаётся неизвестным.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-approval-20261105",
+      "type": "text",
+      "x": 1750,
+      "y": 3705,
+      "width": 520,
+      "height": 155,
+      "text": "**C-08 · Автономия по риску**\n\nОбычные действия — автоматически; существенное неизвестное — уточнить. Высокорисковые/необратимые операции — policy и разрешение.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-budget-20261105",
+      "type": "text",
+      "x": 1190,
+      "y": 3890,
+      "width": 520,
+      "height": 155,
+      "text": "**C-09 · Надёжность и пределы**\n\nCheckpoints, восстановление и идемпотентность; лимиты времени, денег, глубины, повторов. Нет бесконечной фабрики миньонов.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-version-20261105",
+      "type": "text",
+      "x": 1750,
+      "y": 3890,
+      "width": 520,
+      "height": 155,
+      "text": "**C-10 · Аудит и неизменность правил**\n\nСтатус работы всегда фактический. Конституцию меняют через versioned diff, approval, QA, миграцию и rollback; не по просьбе агента.",
+      "color": "5"
+    },
+    {
+      "id": "awe-const-doc-20261105",
+      "type": "text",
+      "x": 1190,
+      "y": 4110,
+      "width": 1080,
+      "height": 100,
+      "text": "**ПОЛНЫЙ ПРОЕКТ КОНСТИТУЦИИ · 12 СТАТЕЙ И ПРОВЕРОЧНЫЕ СЦЕНАРИИ**\n\nПравила должны исполняться через Policy Registry + Enforcement Point, а не только текстом в LLM. [[AWE-CONSTITUTION-v01]]",
+      "color": "5"
     }
   ],
   "edges": [
@@ -1777,6 +1935,93 @@
       "toNode": "eeb7def6353bb1d7",
       "toSide": "right",
       "label": "PASS"
+    },
+    {
+      "id": "awe-memory-policy-ingest-20261105",
+      "fromNode": "awe-memory-access-20261105",
+      "fromSide": "top",
+      "toNode": "awe-memory-ingest-20261105",
+      "toSide": "bottom",
+      "label": "ACL"
+    },
+    {
+      "id": "awe-memory-ingest-journal-20261105",
+      "fromNode": "awe-memory-ingest-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe-memory-events-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe-memory-ingest-index-20261105",
+      "fromNode": "awe-memory-ingest-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe-memory-index-20261105",
+      "toSide": "top",
+      "label": "только verified"
+    },
+    {
+      "id": "awe-memory-events-context-20261105",
+      "fromNode": "awe-memory-events-20261105",
+      "fromSide": "top",
+      "toNode": "06f3b6c738b2106e",
+      "toSide": "right",
+      "label": "контекст"
+    },
+    {
+      "id": "awe-memory-index-context-20261105",
+      "fromNode": "awe-memory-index-20261105",
+      "fromSide": "left",
+      "toNode": "06f3b6c738b2106e",
+      "toSide": "bottom",
+      "label": "retrieval по ACL"
+    },
+    {
+      "id": "awe-memory-access-context-20261105",
+      "fromNode": "awe-memory-access-20261105",
+      "fromSide": "top",
+      "toNode": "06f3b6c738b2106e",
+      "toSide": "bottom",
+      "label": "права"
+    },
+    {
+      "id": "awe-memory-db-recovery-20261105",
+      "fromNode": "21636ed99bcd966d",
+      "fromSide": "bottom",
+      "toNode": "awe-memory-recovery-20261105",
+      "toSide": "left",
+      "label": "checkpoint"
+    },
+    {
+      "id": "awe-memory-events-recovery-20261105",
+      "fromNode": "awe-memory-events-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe-memory-recovery-20261105",
+      "toSide": "top",
+      "label": "replay"
+    },
+    {
+      "id": "awe-memory-artifacts-recovery-20261105",
+      "fromNode": "cc98c0e0e8a54bfe",
+      "fromSide": "bottom",
+      "toNode": "awe-memory-recovery-20261105",
+      "toSide": "left",
+      "label": "backup"
+    },
+    {
+      "id": "awe-memory-retention-index-20261105",
+      "fromNode": "awe-memory-retention-20261105",
+      "fromSide": "top",
+      "toNode": "awe-memory-index-20261105",
+      "toSide": "bottom",
+      "label": "purge / stale"
+    },
+    {
+      "id": "awe-memory-agent-policy-20261105",
+      "fromNode": "48b1471bd058d54d",
+      "fromSide": "right",
+      "toNode": "awe-memory-access-20261105",
+      "toSide": "left",
+      "label": "scoped access"
     }
   ]
 }
