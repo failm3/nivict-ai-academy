@@ -45,10 +45,10 @@
       "type": "group",
       "x": 0,
       "y": 6400,
-      "width": 1020,
-      "height": 720,
+      "width": 1540,
+      "height": 1680,
       "color": "5",
-      "label": "05 · РЕЗУЛЬТАТ И ПРОДОЛЖЕНИЕ"
+      "label": "05 · ПРИЁМКА, СОХРАНЕНИЕ И ПРОДОЛЖЕНИЕ"
     },
     {
       "id": "9a134fd8d7b0f3eb",
@@ -148,39 +148,39 @@
     {
       "id": "70b38105f43b03e8",
       "type": "text",
-      "text": "**Сохранить результат и память**\n\nФайлы · решения · состояние задачи · запись в проектную память",
-      "x": 300,
-      "y": 6470,
-      "width": 420,
-      "height": 110,
+      "text": "**01 · Commit / Persist · программно**\n\nПосле PASS блока 04: записать artifact_ref, version/hash, task_id, решение и событие, обновить состояние проекта. Транзакция + outbox / идемпотентная операция, не LLM.",
+      "x": 365,
+      "y": 6485,
+      "width": 505,
+      "height": 165,
       "color": "3"
     },
     {
       "id": "eeb7def6353bb1d7",
       "type": "text",
-      "text": "**Есть незавершённые задачи?**\n\nПроверка плана и оставшейся работы",
-      "x": 300,
-      "y": 6620,
-      "width": 420,
-      "height": 110
+      "text": "**05 · Есть незавершённые или зависимые задачи?**\n\nДиспетчер сверяет DAG по project_id и разрешениям. Завершение только если все нужные задачи приняты; WAITING ≠ COMPLETED.",
+      "x": 365,
+      "y": 7180,
+      "width": 505,
+      "height": 140
     },
     {
       "id": "2baa33582b24692a",
       "type": "text",
-      "text": "**Продолжить работу**\n\nВозврат к планировщику проекта",
-      "x": 65,
-      "y": 6800,
-      "width": 380,
-      "height": 110
+      "text": "**ДА · Диспетчер продолжает**\n\nRunnable → очередь Task Supervisor. Не создавать новый Project Agent; при изменении входных данных — replanning.",
+      "x": 35,
+      "y": 7460,
+      "width": 305,
+      "height": 145
     },
     {
       "id": "4ce20504d90c1146",
       "type": "text",
-      "text": "**Отчёт головному агенту**\n\nСтатус · проверки · итог для пользователя",
-      "x": 575,
-      "y": 6800,
-      "width": 380,
-      "height": 110,
+      "text": "**08 · Отчёт Head Agent / пользователю**\n\nЗавершено / частично / WAITING / BLOCKED; ссылки на версии, QA-evidence, стоимость и следующий триггер. Не заявлять релиз без факта.",
+      "x": 1000,
+      "y": 7720,
+      "width": 430,
+      "height": 160,
       "color": "5"
     },
     {
@@ -912,11 +912,11 @@
     {
       "id": "awe-qa-local-05-20261105",
       "type": "text",
-      "x": 745,
-      "y": 6465,
-      "width": 235,
-      "height": 170,
-      "text": "**LOCAL QA · 05 / сохранение**\n\nСверить accepted artifact_id, hashes, status, БД, отчёт, доступность результата. FAIL → блокировать финальный отчёт.",
+      "x": 1000,
+      "y": 6490,
+      "width": 430,
+      "height": 150,
+      "text": "**02 · Local QA сохранения**\n\nФактические записи в БД, файлах, event log, checkpoint; сверка версий/хешей и статуса. Ошибка = не завершено.",
       "color": "3"
     },
     {
@@ -1032,12 +1032,12 @@
     {
       "id": "awe-qa-independent-05-20261105",
       "type": "text",
-      "x": 745,
-      "y": 6650,
-      "width": 235,
-      "height": 140,
+      "x": 1000,
+      "y": 6710,
+      "width": 430,
+      "height": 155,
       "color": "4",
-      "text": "**POST-SAVE AUDIT · 05 / независимый код**\n\nПовторно прочитать артефакт и БД; проверить hashes, статус и отчёт Local QA. Ошибка → BLOCK, не публиковать."
+      "text": "**03 · Post-save independent audit (КОД)**\n\nОтдельный read-back БД/файла; hash/ACL/version, действительный артефакт и следы транзакции. PASS → checkpoint; FAIL/BLOCKED → восстановление."
     },
     {
       "id": "awe04-qa-spec-link-20261105",
@@ -1198,6 +1198,46 @@
       "height": 100,
       "text": "**ПОЛНЫЙ ПРОЕКТ КОНСТИТУЦИИ · 12 СТАТЕЙ И ПРОВЕРОЧНЫЕ СЦЕНАРИИ**\n\nПравила должны исполняться через Policy Registry + Enforcement Point, а не только текстом в LLM. [[AWE-CONSTITUTION-v01]]",
       "color": "5"
+    },
+    {
+      "id": "awe05-checkpoint-20261105",
+      "type": "text",
+      "x": 365,
+      "y": 6940,
+      "width": 505,
+      "height": 155,
+      "color": "3",
+      "text": "**04 · Durable checkpoint / state machine**\n\nState, DAG, event_id, tool versions, lease, next_action, project_id. Восстановление после crash; внешние побочные эффекты reconciled по idempotency key."
+    },
+    {
+      "id": "awe05-save-failure-20261105",
+      "type": "text",
+      "x": 1000,
+      "y": 6925,
+      "width": 430,
+      "height": 165,
+      "color": "1",
+      "text": "**FAIL / BLOCKED · восстановление записи**\n\nОшибка commit/read-back → reconciliation и ограниченный retry хранения. Без подтверждённого commit нельзя COMPLETED, публиковать или отправлять финальный PASS."
+    },
+    {
+      "id": "awe05-final-check-20261105",
+      "type": "text",
+      "x": 1000,
+      "y": 7440,
+      "width": 430,
+      "height": 155,
+      "color": "4",
+      "text": "**07 · Финальная приёмка пакета**\n\nВсе обязательные tasks прошли QA04; версия итогового набора фиксирована. При изменении собранного результата — отдельная интеграционная задача QA04."
+    },
+    {
+      "id": "awe05-waiting-20261105",
+      "type": "text",
+      "x": 365,
+      "y": 7695,
+      "width": 505,
+      "height": 165,
+      "color": "5",
+      "text": "**06 · WAITING / RESUME · событийная пауза**\n\nНе runnable? Сохранить причину, владельца, deadline, webhook/таймер и checkpoints. Возобновление только по событию/условию; BLОCKED → уведомить и эскалировать."
     }
   ],
   "edges": [
@@ -1251,22 +1291,6 @@
       "fromSide": "bottom",
       "toNode": "48b1471bd058d54d",
       "toSide": "right"
-    },
-    {
-      "id": "8cb10fc6cd77b1a7",
-      "fromNode": "eeb7def6353bb1d7",
-      "fromSide": "left",
-      "toNode": "2baa33582b24692a",
-      "toSide": "top",
-      "label": "ДА"
-    },
-    {
-      "id": "135eed142ded02aa",
-      "fromNode": "eeb7def6353bb1d7",
-      "fromSide": "right",
-      "toNode": "4ce20504d90c1146",
-      "toSide": "top",
-      "label": "НЕТ"
     },
     {
       "id": "730fc1125efd6d51",
@@ -1833,13 +1857,6 @@
       "label": "принято"
     },
     {
-      "id": "awe-qa05-check",
-      "fromNode": "70b38105f43b03e8",
-      "fromSide": "right",
-      "toNode": "awe-qa-local-05-20261105",
-      "toSide": "left"
-    },
-    {
       "id": "awe-qa04-tools",
       "fromNode": "1c198778e557aea2",
       "fromSide": "right",
@@ -1920,22 +1937,6 @@
       "toNode": "awe04-profile-matrix-20261105",
       "toSide": "left",
       "label": "risk profile"
-    },
-    {
-      "id": "awe-qa05-audit-in",
-      "fromNode": "awe-qa-local-05-20261105",
-      "fromSide": "bottom",
-      "toNode": "awe-qa-independent-05-20261105",
-      "toSide": "top",
-      "label": "локальный отчёт"
-    },
-    {
-      "id": "awe-qa05-audit-pass",
-      "fromNode": "awe-qa-independent-05-20261105",
-      "fromSide": "left",
-      "toNode": "eeb7def6353bb1d7",
-      "toSide": "right",
-      "label": "PASS"
     },
     {
       "id": "awe-memory-policy-ingest-20261105",
@@ -2023,6 +2024,120 @@
       "toNode": "awe-memory-access-20261105",
       "toSide": "left",
       "label": "scoped access"
+    },
+    {
+      "id": "awe05-commit-localqa-20261105",
+      "fromNode": "70b38105f43b03e8",
+      "fromSide": "right",
+      "toNode": "awe-qa-local-05-20261105",
+      "toSide": "left"
+    },
+    {
+      "id": "awe05-localqa-independent-20261105",
+      "fromNode": "awe-qa-local-05-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe-qa-independent-05-20261105",
+      "toSide": "top"
+    },
+    {
+      "id": "awe05-audit-checkpoint-20261105",
+      "fromNode": "awe-qa-independent-05-20261105",
+      "fromSide": "left",
+      "toNode": "awe05-checkpoint-20261105",
+      "toSide": "right",
+      "label": "PASS",
+      "color": "4"
+    },
+    {
+      "id": "awe05-audit-fail-20261105",
+      "fromNode": "awe-qa-independent-05-20261105",
+      "fromSide": "bottom",
+      "toNode": "awe05-save-failure-20261105",
+      "toSide": "top",
+      "label": "FAIL / BLOCKED",
+      "color": "1"
+    },
+    {
+      "id": "awe05-reconcile-commit-20261105",
+      "fromNode": "awe05-save-failure-20261105",
+      "fromSide": "right",
+      "toNode": "70b38105f43b03e8",
+      "toSide": "right",
+      "label": "reconcile → bounded retry",
+      "color": "1"
+    },
+    {
+      "id": "awe05-checkpoint-remaining-20261105",
+      "fromNode": "awe05-checkpoint-20261105",
+      "fromSide": "bottom",
+      "toNode": "eeb7def6353bb1d7",
+      "toSide": "top"
+    },
+    {
+      "id": "awe05-remaining-continue-20261105",
+      "fromNode": "eeb7def6353bb1d7",
+      "fromSide": "left",
+      "toNode": "2baa33582b24692a",
+      "toSide": "top",
+      "label": "ДА"
+    },
+    {
+      "id": "awe05-remaining-final-20261105",
+      "fromNode": "eeb7def6353bb1d7",
+      "fromSide": "right",
+      "toNode": "awe05-final-check-20261105",
+      "toSide": "top",
+      "label": "НЕТ"
+    },
+    {
+      "id": "awe05-continue-dispatcher-20261105",
+      "fromNode": "2baa33582b24692a",
+      "fromSide": "left",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "left",
+      "label": "runnable → Task Supervisor"
+    },
+    {
+      "id": "awe05-continue-wait-20261105",
+      "fromNode": "2baa33582b24692a",
+      "fromSide": "right",
+      "toNode": "awe05-waiting-20261105",
+      "toSide": "left",
+      "label": "нет runnable"
+    },
+    {
+      "id": "awe05-wait-resume-20261105",
+      "fromNode": "awe05-waiting-20261105",
+      "fromSide": "left",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "left",
+      "label": "event / timer + policy"
+    },
+    {
+      "id": "awe05-wait-report-20261105",
+      "fromNode": "awe05-waiting-20261105",
+      "fromSide": "right",
+      "toNode": "4ce20504d90c1146",
+      "toSide": "left",
+      "label": "промежуточный статус"
+    },
+    {
+      "id": "awe05-failure-report-20261105",
+      "fromNode": "awe05-save-failure-20261105",
+      "fromSide": "bottom",
+      "toNode": "4ce20504d90c1146",
+      "toSide": "top",
+      "label": "exhausted → BLOCKED",
+      "color": "1"
+    },
+    {
+      "id": "awe05-final-report-20261105",
+      "fromNode": "awe05-final-check-20261105",
+      "fromSide": "bottom",
+      "toNode": "4ce20504d90c1146",
+      "toSide": "top",
+      "label": "final QA confirmed",
+      "color": "4"
     }
   ]
 }
