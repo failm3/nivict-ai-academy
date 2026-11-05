@@ -1752,7 +1752,7 @@
       "fromSide": "bottom",
       "toNode": "7dfa8d64f836afd7",
       "toSide": "top",
-      "label": "запрос независимой проверки"
+      "label": "PASS + evidence"
     },
     {
       "id": "awe-qa03-sealed",
@@ -2138,6 +2138,24 @@
       "toSide": "top",
       "label": "final QA confirmed",
       "color": "4"
+    },
+    {
+      "id": "awe-qa02-fail-return-20261105",
+      "fromNode": "awe-qa-local-02-20261105",
+      "fromSide": "right",
+      "toNode": "dd1b8084523e889c",
+      "toSide": "right",
+      "label": "FAIL/BLOCKED → remediation (bounded)",
+      "color": "1"
+    },
+    {
+      "id": "awe-qa03-fail-return-20261105",
+      "fromNode": "awe-qa-local-03-20261105",
+      "fromSide": "left",
+      "toNode": "awe03-dispatcher-20261105",
+      "toSide": "right",
+      "label": "FAIL → task_id/replan (bounded)",
+      "color": "1"
     }
   ]
 }
