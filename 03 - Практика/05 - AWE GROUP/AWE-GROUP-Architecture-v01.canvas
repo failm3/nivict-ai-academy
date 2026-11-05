@@ -1287,7 +1287,8 @@
       "fromNode": "e56dee748226a6af",
       "fromSide": "bottom",
       "toNode": "51b0ff15ea7c9888",
-      "toSide": "top"
+      "toSide": "top",
+      "label": "чтение verified knowledge"
     },
     {
       "id": "e4d596c1642c198f",
