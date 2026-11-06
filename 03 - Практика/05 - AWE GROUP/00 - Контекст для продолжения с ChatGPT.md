@@ -49,6 +49,20 @@ source: discussion-and-repository-review
 
 **Оперативный следующий шаг:** пользователь уже отправил Codex S02–S09. Новые инженерные задания пока не выдавать; после предоставленного итогового отчёта проверить фактические результаты, сравнить с шестью этапами и затем выбрать минимальный следующий технический допуск. Не спрашивать заново, какие первые пользовательские задачи и нужна ли система подагентов.
 
+### SEC-02 офлайн-поставка от Codex — проверка ZIP 2026-11-06
+
+Пользователь предоставил отчёт Codex и ZIP `AWE-GROUP-INT04 (3).zip` с локальной копией проекта. Внутри `SEC-02/engineering/IMPLEMENTATION-REPORT.md`, `FINAL-RESULTS.json`, `PACKAGE-MANIFEST.json`, `COVERAGE-AND-BLOCKERS.md`, `CRITICAL-CHANGE-PLAN.md`.
+
+**Данные отчёта:** offline SEC-02 candidates S02–S09, 351 PASS / 0 FAIL (346 guarded tests + 5 Node restart), 29 PASS syntax; real Hermes NOT_RUN, live LLM NOT_RUN, native PostgreSQL NOT_RUN, independent acceptance и owner acceptance PENDING. Предыдущие E0 1612 тестов NOT_RERUN; Physical DENY. Branch `codex/awe-int04-integration`, HEAD `b0b27f2f405fa520dad4cf0196a791480b9e5b61` указан в отчёте, отдельно в Git-репозитории INT04 не сверялся.
+
+**Что независимо проверил ChatGPT из ZIP 2026-11-06:** пересчитал SHA-256 и размер **5696/5696 защищённых исторических файлов** из `PROTECTED-BASELINE.json` — 0 несоответствий; SHA-256/размер **241/241 файлов нового `PACKAGE-MANIFEST.json`** — 0 несоответствий; точный SHA-256 `engineering-evidence/combined-2026-11-06T00-12-04.895Z/results.json` совпал с `FINAL-RESULTS.json` (`389da85f96ed4ea42095eef26d050e6303bcbb5d1879fded9407e9736da12b73`); `SOURCE-HASHES.json` SHA совпал (`31a8644d9013819823469042ee76ecb961d4888b6147f383faf0d360d28838ab`). В results.json два PASS-checks на 346 и 5 тестов, exit 0, лог записан. **Сами Node-тесты повторно ChatGPT не запускал**; локальная его среда Node 22 вместо pinned Node 24.21.0. Нельзя называть проверку hashes независимым live/rerun acceptance.
+
+**Суть:** кандидат реального кода и офлайн-тестов существенно продвинул реализацию, но native S02–S09 **BLOCKED/NOT_COMPLETED**. Реальная AuthN/durable authority, OS/packet/process containment, D09 native full binding в транзакции, настоящий PostgreSQL, процессный Hermes transport, HTTP/SSE broker, native QA и durable recovery остаются незавершёнными. Процессный restart тестировал локальный Node journal/HOLD, не настоящий Hermes и не разрушающий DB fault.
+
+**Следующая инженерная развилка:** DEC-02 A (один INT03/D09 coordinator, атомарная фиксация task pin и полного SEC native binding) согласован **только концептуально**. `CRITICAL-CHANGE-PLAN.md` — PLAN FOR APPROVAL, не разрешение переписывать historical SQL, менять critical source, применять DDL или снимать DENY. Для продвижения к E1A рекомендовать отдельный ограниченный CR на additive source/schema native binding с проверкой DEC-04 identity lanes, DEC-03/05 counting, DEC-06 dispatch fence; отдельно различать разрешение написать кандидат diff и разрешение применить его к disposable PostgreSQL. Продуктивные БД, реальный Hermes и LIVE LLM запрещены до отдельного допуска. После каждого CR повторять регрессию E0, concurrency/rollback/fault tests и независимую проверку.
+
+**Нельзя заявлять:** «SEC-02 готов», «Hermes подключён», «LLM подключена» или «первый пилот HeadHunter можно запускать». Главная цель и приоритеты HH/портфолио/проектов изложены выше.
+
 ### Отдельная UX-ветка (не блокировать SEC-02)
 
 - Согласованный исходный HTML `AWE GROUP UX 0.1`, более поздний `prototype-v02.html` (UX 0.2); обсуждена более простая демонстрационная версия E2 с широким центральным чатом, сворачиваемыми контекстом/списком задач, четырьмя главными разделами. Создан отдельный **HTML-прототип**, **без подключения** к Hermes, LLM, БД и backend. Локальный путь GitHub UX-файлу не приписывать; исходник предоставлялся через чат. UI можно разрабатывать параллельно при сохранении API-контрактов.
