@@ -86,6 +86,18 @@ ChatGPT прочитал G0-HOME/REPORT.md, RESULTS.json, FINAL-ISOLATION.json, 
 
 Следующий рубеж: отдельное ограниченное согласование G1-01 native workload identity и полномочий (DEC04), согласование правил учёта (DEC03/05), позже fenced dispatch, QA, recovery, D07. Не путать G0 PASS с готовностью G1/E1A.
 
+### Согласовано параллельное исполнение четырёх направлений — 2026-11-06
+
+Пользователь согласовал **параллельную подготовку** четырёх отдельных инженерных направлений при сохранении одного интеграционного владельца:
+1. `AWE-GROUP-INT04`: **G1-01 native identity/authority**; не открывать физические действия без отдельной приёмки, интеграционный контракт и critical state имеют одного владельца.
+2. `AWE-GROUP-RT01`: **Hermes Runtime adapter** и дерево parent/child workers с изолированными mock-processes, scoped context, cancellation, resource limits, evidence, recovery; без реального Hermes и native dispatch.
+3. `AWE-GROUP-LLM01`: **model broker** с pinned provider/model policy, ledger-compatible accounting, quota/cost admission, retries, fail-closed, mock transports; без реальных API keys и платных/живых запросов.
+4. `AWE-GROUP-Implementation`: **UI MVP integration shell** (чат, task tree, agent statuses, approvals, QA evidence, results) с mock backend и контрактной адаптацией, без live API и самостоятельного определения authoritative endpoints.
+
+Эти линии допускается вести параллельно **только в отдельных рабочих каталогах/ветках**; общий источник истины о task, reserve/attempt, authority, budget, QA остаётся у INT03/D09/SEC/QA. Нельзя добавлять второй orchestrator, ledger, самостоятельный AuthN, либо изменять защищённые CR/G0/исторические исходники чужой веткой. Любое расхождение интерфейса/контрактов оформлять как typed proposal для INT-04, не интегрировать самовольно. По завершении каждая линия отдаёт diff, isolated fixtures/tests, blockers, evidence и integration contract, без commit/merge/push/deploy; физические действия, REAL_HERMES, LIVE_LLM, реальные секреты, working DB, Physical ALLOW требуют отдельного допуска. Полную сборку после независимых проверок ведёт INT-04.
+
+Это **решение о способе работы**, не подтверждение, что пользователь уже вручную отправил задания во все Codex-проекты. Следующий контрольный пункт: фактические отчёты четырёх направлений и готовность к одному end-to-end pilot, далее допустимый HeadHunter retrieval и портфолио согласно предыдущей сводке.
+
 ### Отдельная UX-ветка (не блокировать SEC-02)
 
 - Согласованный исходный HTML `AWE GROUP UX 0.1`, более поздний `prototype-v02.html` (UX 0.2); обсуждена более простая демонстрационная версия E2 с широким центральным чатом, сворачиваемыми контекстом/списком задач, четырьмя главными разделами. Создан отдельный **HTML-прототип**, **без подключения** к Hermes, LLM, БД и backend. Локальный путь GitHub UX-файлу не приписывать; исходник предоставлялся через чат. UI можно разрабатывать параллельно при сохранении API-контрактов.
