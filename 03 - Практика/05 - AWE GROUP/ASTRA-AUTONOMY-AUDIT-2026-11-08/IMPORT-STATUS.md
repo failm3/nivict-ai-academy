@@ -2,11 +2,25 @@
 type: audit-import-status
 project: AWE GROUP
 date: 2026-11-08
-status: PARTIAL_MATERIALS_IMPORTED
+status: COMPLETE_ORIGINAL_AUDIT_PACKAGE
 source: user-uploaded audit files and local Codex worktree e74f
 ---
 
 # Astra Autonomy Audit — состояние импорта исходного пакета
+
+**Обновление 08.11.2026.** Комплект из e74f включает восемь Markdown-файлов и две утилиты. Семь ранее опубликованных глав сохранены. Для трёх добавленных файлов проверены содержимое, отсутствие признаков ключей/токенов и идентичность оригинальным байтам SHA-256. Сверять байты Git blob, поскольку checkout на Windows может преобразовать LF в CRLF.
+
+| Перенесённый оригинал | Байт | SHA-256 |
+|---|---:|---|
+| [02-inventory.md](02-inventory.md) | 17835 | `3685e8e1049bd4b8b97ae807e516c0f23bead1d7bd290fae9e3884ca335ee634` |
+| [verify-inputs.mjs](verify-inputs.mjs) | 3743 | `98fc2a0e2f1a33e10833f313e85ef1a321d5b051ff6bce216c3c8b5d3e4064b0` |
+| [career-crash-fixture.mjs](career-crash-fixture.mjs) | 4345 | `057811de12bc817b72b6c7a1a3adcee5a780c9f49479a491ba23c0289b4b0aea` |
+
+Утилита сверки предназначена для размещения в пакете рядом с checkout AWE и чтения дерева Sol. Исторические ссылки `../awe/`, `../MASTER-INTEGRATION-01/` и аналогичные разрешаются в дереве AWE. Навигация по новому этапу — [текущее состояние](../AWE-CURRENT-STATE.md). Отдельный публичный снимок HH YAML находится за пределами десяти оригиналов. Ни runtime, ни приватные данные AWE для импорта не требуются.
+
+## История первоначального частичного импорта
+
+Ниже сохранена запись первого переноса. Перечень трёх недостающих файлов и рекомендация об их экспорте относятся к состоянию до текущего дополнения.
 
 Аудит завершён Astra в отдельном локальном дереве `C:/Users/1/.codex/worktrees/e74f/AWE-GROUP-INT04/ASTRA-AUTONOMY-AUDIT-2026-11-08/`. Источником истины по происхождению исходников остаётся локальный worktree 92ef и приложенные checkpoint/evidence. Эта папка в NIVICT Academy — **архив доступной текстовой части**, а не исходный runtime, и сама по себе не доказывает выполнение E1.
 
