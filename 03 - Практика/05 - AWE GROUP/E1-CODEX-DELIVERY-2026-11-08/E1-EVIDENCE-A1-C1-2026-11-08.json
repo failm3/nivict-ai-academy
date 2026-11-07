@@ -1,0 +1,103 @@
+{
+  "schema": "awe-e1.sanitized-handoff-evidence.v1",
+  "date": "2026-11-08",
+  "status": "TESTED_OFFLINE",
+  "gates": {
+    "G0": "RECORDED_E0_EVIDENCE_VERIFIED",
+    "G1": "PARTIAL",
+    "G2": "NOT_RUN",
+    "G3": "NOT_RUN",
+    "G4": "NOT_RUN",
+    "G5": "NOT_RUN",
+    "G6": "NOT_RUN"
+  },
+  "source": {
+    "commit": "b689248952a3282fdda0b9f020f4cc014f610926",
+    "location": "LOCAL_ONLY_NOT_PUBLISHED",
+    "branch": "codex/awe-e1-a1-c1-20261108",
+    "base_evidence": "3579aeeda379caf78dafe5351704956f1ecc0ea5",
+    "executed_e0": "c53d1fb3606218a4f3961f37f57ebc41ac6681ef",
+    "historical_files_changed": 0
+  },
+  "release": "AWE_E1/1",
+  "contract": "awe.e1.contracts/1",
+  "build_digest": "sha256:891bb008f1a0c7bf7a0303c98990cd8c44d000cee84d2b65ec2dd54c0d0159c1",
+  "verification": {
+    "command": "node E1/release/verify.mjs",
+    "start_utc": "2026-11-07T23:44:17.691Z",
+    "finish_utc": "2026-11-07T23:45:03.353Z",
+    "node": "v24.21.0",
+    "npm": "11.19.0",
+    "platform": "win32-x64",
+    "total": 679,
+    "pass": 679,
+    "fail": 0,
+    "skipped": 0,
+    "groups": {
+      "e0_regression": 464,
+      "a1": 54,
+      "c1": 22,
+      "integration": 9,
+      "independent_qa": 130
+    },
+    "actual_link_tests": "PASS",
+    "committed_source_and_log_hashes_verified": 52,
+    "independent_source_file_hashes_verified": 38,
+    "independent_log_hashes_verified": 14,
+    "test_result_sha256": "1a3e28e20b0dcc5dd15b119563ad6069de546888ade0126c4e2767de9d6d557b"
+  },
+  "agents": [
+    "/root/contracts_a1",
+    "/root/infrastructure_c1",
+    "/root/independent_qa"
+  ],
+  "effects": {
+    "actual_external": 0,
+    "live_model_calls": 0,
+    "postgresql_invoked": false,
+    "real_mission_workers": false,
+    "accepted": false,
+    "execution_authorized": false
+  },
+  "baseline": {
+    "manifest_entries": 534,
+    "signature": "ED25519_VERIFIED",
+    "criteria_pass": 7,
+    "criteria_total": 7,
+    "source_pins": 29,
+    "d03_commit": 54,
+    "original_worktree_tracked_changes": 0,
+    "original_untracked_entries": 97
+  },
+  "not_run": [
+    "E1 PostgreSQL creation/start/connection/migration/restore",
+    "Native historical integration_v3 (guard blocked its version probes before process execution)",
+    "Real OS/DB identity and vault/QA key isolation",
+    "Live local model and measured authority uptime",
+    "E1 mission dispatch/concurrent workers",
+    "External readback/application/deploy",
+    "24h operation and Full",
+    "Signed D08 and owner acceptance"
+  ],
+  "publication": {
+    "runtime": "STOPPED_CLOSED_E0_ANCESTRY",
+    "runtime_repository_created_by_task": false,
+    "runtime_pushes": 0,
+    "runtime_pr": "NOT_CREATED",
+    "closed_metadata_objects": 17,
+    "source_ancestor_commits": 41,
+    "source_ancestor_blobs": 2175,
+    "history_rewritten": false,
+    "raw_receipts_or_closed_values_in_this_summary": false
+  },
+  "limitations": [
+    "Executed offline contract and local process/filesystem fixtures only",
+    "JavaScript regression guards are not proof of OS sandbox enforcement",
+    "Heuristic publication scan is not a proof of absence of all secrets or personal data"
+  ],
+  "next_parallel": [
+    "A2 code/offline preparation",
+    "A3 code/canary preparation",
+    "B1 approved fact/source preparation"
+  ]
+}
