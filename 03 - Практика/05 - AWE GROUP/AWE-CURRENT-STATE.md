@@ -14,3 +14,12 @@
 **Версия действующего комплекта документов:** [77fe177c411239034ee2851c0f3e9fbf3f4cfe03](https://github.com/failm3/nivict-ai-academy/commit/77fe177c411239034ee2851c0f3e9fbf3f4cfe03). Полный исходный аудит собран в [8c8faa2fca4c8a889e3cd27fcc0da93e6e5da47f](https://github.com/failm3/nivict-ai-academy/commit/8c8faa2fca4c8a889e3cd27fcc0da93e6e5da47f). SHA последнего изменения **самого указателя** доступен в [истории этого файла](https://github.com/failm3/nivict-ai-academy/commits/main/03%20-%20Практика/05%20-%20AWE%20GROUP/AWE-CURRENT-STATE.md). Так указатель может ссылаться на точную версию спецификаций без самоссылки на ещё не созданный commit.
 
 [Модели и benchmark](ASTRA-AUTONOMY-AUDIT-2026-11-08/09-llm-routing-decision.md) · [Портфолио и B](ASTRA-AUTONOMY-AUDIT-2026-11-08/10-portfolio-production-plan.md) · [Исполнители](ASTRA-AUTONOMY-AUDIT-2026-11-08/11-executor-capability-architecture.md) · [Runtime и обучение](ASTRA-AUTONOMY-AUDIT-2026-11-08/12-agent-runtime-and-learning.md) · [Полнота импорта](ASTRA-AUTONOMY-AUDIT-2026-11-08/IMPORT-STATUS.md)
+
+
+## 08.11.2026 — пакет исполняемых ТЗ Codex (добавлено ChatGPT)
+
+**Статус:** `E1_TECHNICAL_TASKS_READY / IMPLEMENTATION_NOT_STARTED`. На основе архитектурных документов Astra созданы [10 отдельных технических заданий для Codex](E1-CODEX-DELIVERY-2026-11-08/README.md). Внутри: общий runtime-contract (A1), отдельный E1 namespace (C1), durable coordinator (A2), live LLM и реестр исполнителей (A3), карьерный ingest/package (B1/B2), разрешённый effect+monitor (B3), вторая предметная область и QA (B4/A4), E1 Full (B5/C2), сквозные критерии приёмки. **Дизайнерские концепции не утверждены и не предложены вместо brief владельца.**
+
+Задания опубликованы **в ветке открытого PR #24**, не в `main`. Для запуска Codex читать [индекс](E1-CODEX-DELIVERY-2026-11-08/README.md) на ветке `codex/awe-master-architecture-e1-20261108`. Первоисточник архитектуры Astra закреплён коммитом `0ebbe9352daeb0fd5c6b1b309793d81ecf754937`; исходное дерево E0 `92ef` — только для чтения. Исполняемый AWE runtime в Academy не хранится. **Подготовка ТЗ не разрешает запуск E1, новых PostgreSQL, платных API, реальных откликов или деплоя** без подходящего мандата.
+
+Первый логический параллельный пакет: **A1 + C1 + подготовительная B1**. После этого A2 и A3. Отчёт по каждому этапу публиковать с actual code commit, independent QA и измеренным уровнем доказательств.
