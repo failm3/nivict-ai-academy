@@ -1,0 +1,260 @@
+{
+  "schema": "awe.e1.a2a3.academy-evidence/1",
+  "created_at": "2026-11-08T01:49:19.755Z",
+  "runtime_repository": "https://github.com/failm3/awe-group-runtime",
+  "private": true,
+  "branch": "codex/e1-a2-a3-20261108",
+  "commit": "09f1a864e6fa26afa62ffac3249c6532a6116175",
+  "pr": "https://github.com/failm3/awe-group-runtime/pull/1",
+  "baseline_commit": "351719536815efcec25a56bc43c21525864f61a4",
+  "source_revision": "c6c2db24c4648d96fd93c8fe7da63ba98dd9af19",
+  "docs_parent": "ef1ebfbd434eeb0997161b71a91a8857d444cddb",
+  "specifications_commit": "b7cd9c78f94a76ae06eda4b324d25ad4f3403555",
+  "tests": {
+    "offline": {
+      "tests": 442,
+      "pass": 442,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "native": {
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "independent_qa": {
+      "total": 45,
+      "pass": 45,
+      "fail": 0,
+      "skip": 0,
+      "native_pg_process_host_quiescence": 20,
+      "offline_contract_model_oracle": 25,
+      "command": "node --test --test-concurrency=1 --test-reporter=tap E1/qa2/model-seams.test.mjs E1/qa2/maintenance-oracle.test.mjs E1/qa2/native-seams.test.mjs E1/qa2/native-processes.test.mjs E1/qa2/host-seams.test.mjs E1/qa2/quiescence-seams.test.mjs",
+      "started_at": "2026-11-08T01:18:25.172Z",
+      "finished_at": "2026-11-08T01:18:46.249Z",
+      "source_pin_count": 42,
+      "implementation_stable_during_run": true,
+      "log_sha256": "cb559582050f00209ae6f9bd816da9f6a70af95f6156d9d46c92062fa3155c64"
+    },
+    "qa_tests_overlap_integrator": true,
+    "source_stable": true
+  },
+  "model": {
+    "mission_id": "mission_code_compact_mw7543y4",
+    "model": "qwen3:4b-instruct",
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "successful_attempts": [
+      {
+        "task_id": "head_control",
+        "usage": {
+          "input_tokens": 623,
+          "output_tokens": 162,
+          "total_duration_ns": 18228662600,
+          "eval_duration_ns": 9726171000,
+          "load_duration_ns": 4155247100,
+          "prompt_eval_duration_ns": 4333747000,
+          "latency_ms": 18240,
+          "model": "qwen3:4b-instruct",
+          "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "wire_attempts": 1
+        },
+        "wire_attempts": 1,
+        "accounting_status": "CONFIRMED"
+      },
+      {
+        "task_id": "review-logic",
+        "usage": {
+          "input_tokens": 144,
+          "output_tokens": 235,
+          "total_duration_ns": 13795048000,
+          "eval_duration_ns": 12611802000,
+          "load_duration_ns": 4670200,
+          "prompt_eval_duration_ns": 1121892000,
+          "latency_ms": 13800,
+          "model": "qwen3:4b-instruct",
+          "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "wire_attempts": 1
+        },
+        "wire_attempts": 1,
+        "accounting_status": "CONFIRMED"
+      }
+    ],
+    "initial_timeout_attempts": 1,
+    "initial_timeout_state": "OUTCOME_UNKNOWN_HOLD_QUOTA_1_RETAINED",
+    "project_quota_used": 3,
+    "code_changes_applied": 0,
+    "github_tasks_executed": 0,
+    "accepted": false
+  },
+  "postgresql": {
+    "schema": "awe.e1.final-isolation-check/1",
+    "status": "PASS",
+    "checked_at": "2026-11-08T01:24:28.684075+00:00",
+    "resource_id": "awe_e1_a2a3_20261108",
+    "port": 5433,
+    "pgdata_mode": "0700",
+    "preexisting_postgres_processes_unchanged": 9,
+    "e0_read_denied_unix_principals": [
+      "awe_e1_test",
+      "awe_e1_coord",
+      "awe_e1_worker",
+      "awe_e1_qa"
+    ],
+    "e1_tcp_connection": "REJECTED",
+    "peer_impersonation": "REJECTED",
+    "qa_other_database": "REJECTED",
+    "application_roles_privileged": false,
+    "e0_connections": 0,
+    "e0_private_metadata_exported": false,
+    "source_or_e0_writes": 0
+  },
+  "backup_restore": {
+    "schema": "awe.e1.c1-pinned-restore/1",
+    "status": "PASS",
+    "checked_at": "2026-11-08T01:00:31.403514+00:00",
+    "migration_digest": "sha256:a1b34a1f082fda04eb707c3640d954f231f51dbe72df8045a17da5027285e8e1",
+    "migration_metadata_matches_source": true,
+    "restored_metadata_matches_source": true,
+    "test_dataset_digest": "e6752a0fd6bd335edfe372d2e84d59c3",
+    "test_rows": 2,
+    "backup_bytes": 6237,
+    "preexisting_pg_processes_unchanged": 9,
+    "cluster_restarts_this_check": 0,
+    "e0_connections": 0,
+    "pgdata_published": false
+  },
+  "original_preservation": {
+    "schema": "awe.e1.original-source-preservation/1",
+    "checked_at": "2026-11-08T01:23:44.613Z",
+    "original_repositories_modified_by_this_stage": false,
+    "old_e0_connections": 0,
+    "worktrees": [
+      {
+        "worktree_id": "51d0",
+        "head": "c6c2db24c4648d96fd93c8fe7da63ba98dd9af19",
+        "expected_head": "c6c2db24c4648d96fd93c8fe7da63ba98dd9af19",
+        "head_matches": true,
+        "tracked_changes": 0,
+        "untracked_entries": 0,
+        "status_mode": "porcelain_v1_untracked_normal_trim_final_newline",
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "prior_status_matches": null,
+        "operations": "READ_ONLY_GIT_NO_OPTIONAL_LOCKS"
+      },
+      {
+        "worktree_id": "92ef",
+        "head": "3579aeeda379caf78dafe5351704956f1ecc0ea5",
+        "expected_head": "3579aeeda379caf78dafe5351704956f1ecc0ea5",
+        "head_matches": true,
+        "tracked_changes": 0,
+        "untracked_entries": 97,
+        "status_mode": "porcelain_v1_untracked_normal_trim_final_newline",
+        "status_sha256": "ad7c93d9a5064e839231bbd6b8eee6d232347b4fd370b87cb9d018557d106624",
+        "prior_status_matches": true,
+        "operations": "READ_ONLY_GIT_NO_OPTIONAL_LOCKS"
+      }
+    ]
+  },
+  "subagents": [
+    "coordinator_a2",
+    "broker_a3",
+    "qa_a2_a3"
+  ],
+  "pilot_acceptance": "NOT_ACCEPTED",
+  "owner_acceptance": "NOT_ISSUED",
+  "paid_api_calls": 0,
+  "external_effects": 0,
+  "production_releases": 0,
+  "automatic_merges": 0,
+  "publication_review_status": "GO_EXACT_554_REVIEWED_FILES_PLUS_THIS_CHAINED_REVIEW_555_TOTAL",
+  "artifacts": [
+    {
+      "file": "release/EXPORT-PROVENANCE.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/release/EXPORT-PROVENANCE.json",
+      "sha256": "b20791e6d091f90939f9599d83b14695192ab6ffe2b431960519422efd0a829f"
+    },
+    {
+      "file": "release/E1-SOURCE-MANIFEST.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/release/E1-SOURCE-MANIFEST.json",
+      "sha256": "972984325760d979583b6cffd365e3768d295d758aea8cd38c1b7ff3a7f137d5"
+    },
+    {
+      "file": "E1/HANDOFF-A2-A3.md",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/HANDOFF-A2-A3.md",
+      "sha256": "c19a58cc1ca0cb56d79888dabf311e73faa3e5ee289c2a2ec57c04d3454cc176"
+    },
+    {
+      "file": "E1/qa2/PUBLICATION-REVIEW.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/qa2/PUBLICATION-REVIEW.json",
+      "sha256": "60455848670c2dd122b170dab1aa1e4bcf2379bf5b44ea676b9b66a33128e63c"
+    },
+    {
+      "file": "E1/qa2/actual-contour-review.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/qa2/actual-contour-review.json",
+      "sha256": "9353a7b1cc6b55f9fb529bb105c38e53af0e5236f8e8c4d3b2960b128fd04075"
+    },
+    {
+      "file": "E1/evidence2/LOCAL-CONTOUR.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/evidence2/LOCAL-CONTOUR.json",
+      "sha256": "644635114f8cb1e7e7e9c913e21ef3cee345faefbf20091a862df68fecf8b5e2"
+    },
+    {
+      "file": "E1/evidence2/COLD-READBACK.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/evidence2/COLD-READBACK.json",
+      "sha256": "b8be07ff76a8f6e5609bb1e41dc1078e9842cd7be73b85647d413bd45cc0582f"
+    },
+    {
+      "file": "E1/evidence2/OFFLINE-TESTS.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/evidence2/OFFLINE-TESTS.json",
+      "sha256": "eb56d82565614592de90b3054fc83c4b24aa45f616fca49fcc19ac06ff4d93fd"
+    },
+    {
+      "file": "E1/evidence2/NATIVE-TESTS.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/evidence2/NATIVE-TESTS.json",
+      "sha256": "13915ef8de794101e3c5d938e2b5fd1ccc4fb7595b751d9b69bfc972debf3e39"
+    },
+    {
+      "file": "E1/evidence2/CLEAN-EXPORT-TESTS.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/evidence2/CLEAN-EXPORT-TESTS.json",
+      "sha256": "efba241b8743e0c407ba46ea5d57c907d2928a9fd324771f26a052cac4b01dfa"
+    },
+    {
+      "file": "E1/qa2/PORTABILITY-TESTS.json",
+      "url": "https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/qa2/PORTABILITY-TESTS.json",
+      "sha256": "aea65e392f52675724364ca29c2bdcff4e161e2e3fc5e3443cb26e30388cd6f0"
+    }
+  ],
+  "clean_export_verification": {
+    "totals": {
+      "tests": 442,
+      "pass": 442,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "scope": {
+      "public_snapshot_commit": "132e315ebf8184c17a8c3a64740ce40ad7360332",
+      "reviewed_fixture_repair": {
+        "file": "E1/qa2/model-seams.test.mjs",
+        "sha256": "1d8db5017fec55ba998ae64549d786ca62f28a950f3ea6b93e1bbbbeff396ace"
+      },
+      "implementation_and_runner_pins_match_candidate": true,
+      "private_resource_descriptor_present_before": false,
+      "private_resource_descriptor_present_after": false,
+      "private_reference_inputs_copied": false,
+      "postgresql_connections": 0,
+      "new_model_generation_requests": 0,
+      "scope": "Public-only checkout plus exact reviewed QA-fixture portability repair; implementation bytes match the candidate delivery."
+    },
+    "independent_qa_totals": {
+      "tests": 23,
+      "pass": 23,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    }
+  }
+}
