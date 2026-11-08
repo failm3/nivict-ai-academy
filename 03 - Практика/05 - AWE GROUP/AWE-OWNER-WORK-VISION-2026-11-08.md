@@ -175,3 +175,30 @@
 **Проверенные источники:** [Router.Cheap API](https://router.cheap/openai-compatible-api), [публикация OpenAI о gpt-oss](https://openai.com/index/introducing-gpt-oss/), [runtime PR #1](https://github.com/failm3/awe-group-runtime/pull/1).
 
 **Статус:** `PROPOSED_CLOUD_ADAPTER / NOT_IMPLEMENTED / NO_PAID_GRANT`. Обсуждение не разрешает расходы, выдачу credentials, продакшен или публикации.
+
+## 12. Astra как виртуальный владелец и автономный испытательный контур (обсуждение 08.11.2026)
+
+**[ИДЕЯ ВЛАДЕЛЬЦА]** После подключения сильных LLM запустить непрерывный тестовый сценарий, в котором **Astra имитирует владельца**, отправляет реальные по структуре задания AWE, наблюдает за поведением системы, выявляет ошибки и готовит исправления/обратную связь. Цель — ускорить достижение полезной автономности, снять с владельца ручные повторные проверки и проверять возникающие сложности ещё до полного завершения всех подсистем.
+
+**[ПРЕДЛОЖЕНИЕ]** Выделить `AWE Autonomy Lab` (название рабочее): независимый *evaluation harness* вокруг того же ограниченного E1 runtime, а не отдельного параллельного ядра.
+
+### Разделение ролей
+1. `Astra/Test User`: генерирует **синтетические** цели и диалоговые уточнения от имени **тестового персонажа**, включая изменение требований, отказ инструмента, неполный ответ, отмену, повторы, конкуренцию и восстановление. Astra не является реальным владельцем, не получает и не подписывает его права.
+2. `E1/System Under Test`: обычные A1 mission/grant/plan → A2 native coordinator/ledger → A3/LLM/capability → executors → QA/persisted artifacts. Не выдавать заглушки за настоящие операции.
+3. `Independent Oracle`: отдельные детерминированные assertions, DB readback, frozen artifacts, test fixtures, hidden scenario expectations и независимый reviewer; Astra не оценивает единолично собственный сценарий.
+4. `Sol/Engineering`: получает минимальное воспроизводимое доказательство отказа, исправляет по отдельным code grants, запускает контрольные regression tests. Astra может предлагать решения и оформлять Issue, но не сливать защищённые изменения и не расширять себе grant.
+5. `Owner`: утверждает границы полномочий, бюджеты, доступ к реальным эффектам, критерии приёмки и переходы между этапами.
+
+### Возможность запуска поэтапно
+- **Сейчас**: тестировать существующий synthetic maintenance contour и модельные/координаторные сбои с PostgreSQL E1, event replay, readback и QA; Astra выдаёт заранее ограниченные тестовые миссии через отдельный harness/test authority. Отсутствующие функции честно отмечать `NOT_IMPLEMENTED`/`BLOCKED`.
+- **После live Coding Executor**: задачи на код, Git branches/worktrees, sandboxed fixed tests, independent QA, подготовка scoped draft PR. Первым практическим кейсом можно использовать [runtime Issue #2](https://github.com/failm3/awe-group-runtime/issues/2), но создание issue не является запуском.
+- **Позже**: browser executor, реальные продуктовые tasks по owner briefs, длительные параллельные миссии, chaos/recovery и сравнение моделей через Router.Cheap при отдельном платном разрешении.
+
+### Безопасность и достоверность измерений
+- Для simulation нужен **ограниченный тестовый контур**: отдельный project/resource namespace, синтетические данные и тестовая authority, строго различённая с реальными owner grants. Ни Astra, ни AWE не могут создать сами себе настоящие права и не могут отправлять отклики, тратить деньги, публиковать сайт, изменять E0 или делать merge в main.
+- Test harness наблюдает за состояниями `WAIT/BLOCK/UNKNOWN/HOLD`, не считает их успехом и не запускает повторно неоднозначно завершённый LLM-вызов без reconciliation.
+- Достоверность требует независимых детерминированных oracle, скрытых негативных кейсов, проверки реального DB/FS/Git outcome и периодической человеческой калибровки. Различать `simulated user` и `human owner`, `synthetic execution` и `verified live`.
+- Каждая итерация сохраняет pins (модель, source SHA, spec/grant, environment), trace/receipts, route/cost/latency, причины отказа, измеренное количество ручных вмешательств. Часть тестов воспроизводить многократно из чистой среды.
+- Сравнивать с исходной серией: доля завершённых сценариев, истинная успешность конечного состояния, ошибки, время, цена, восстановление, вмешательства владельца. **Без базового замера нельзя обещать конкретное ускорение.**
+
+**[ТЕКУЩИЙ СТАТУС]** `PROPOSED / NOT_IMPLEMENTED`. Опорная проверенная архитектура — [runtime PR #1](https://github.com/failm3/awe-group-runtime/pull/1), [handoff](https://github.com/failm3/awe-group-runtime/blob/09f1a864e6fa26afa62ffac3249c6532a6116175/E1/HANDOFF-A2-A3.md). Внешние подходы: [Anthropic agent evals](https://www.anthropic.com/research/demystifying-evals-for-ai-agents), [OpenAI agent workflow evals](https://developers.openai.com/api/docs/guides/agent-evals). Эта запись — фиксация обсуждения, не grant на запуск тестов, код или платные LLM.
