@@ -1,0 +1,138 @@
+{
+  "schema": "awe.e1.issue3.academy-evidence/1",
+  "at": "2026-11-08T03:40:38.678Z",
+  "status": "PARTIAL_IMPLEMENTATION_NO_GO_PAID",
+  "source": {
+    "repository": "failm3/awe-group-runtime",
+    "private": true,
+    "base_commit": "09f1a864e6fa26afa62ffac3249c6532a6116175",
+    "commit": "3c22522c52cb6428757fd391e8630c912016b61b",
+    "branch": "codex/e1-router-cheap-issue3-20261108",
+    "pull_request": "https://github.com/failm3/awe-group-runtime/pull/6",
+    "manifest": "https://github.com/failm3/awe-group-runtime/blob/3c22522c52cb6428757fd391e8630c912016b61b/release/ISSUE3-SOURCE.json",
+    "independent_publication_review": "https://github.com/failm3/awe-group-runtime/blob/3c22522c52cb6428757fd391e8630c912016b61b/E1/qa3/INDEX-REVIEW.json"
+  },
+  "actual_provider": {
+    "observed_at": "2026-11-08T03:16:42.687725+00:00",
+    "authenticated_models": 75,
+    "compatibility_limits_usd": {
+      "soft": 10,
+      "hard": 10,
+      "system_hard": 10
+    },
+    "reported_usage_us_cents": 0,
+    "paid_generation_requests": 0,
+    "actual_charge_limit_after_source_coefficients": "UNVERIFIED",
+    "executable_price_quote": "UNVERIFIED",
+    "readback": "https://github.com/failm3/awe-group-runtime/blob/3c22522c52cb6428757fd391e8630c912016b61b/E1/evidence3/READONLY-PREFLIGHT-FINAL.json",
+    "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2"
+  },
+  "tests": {
+    "independent_offline": {
+      "tests": 29,
+      "pass": 29,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "independent_native_real_pg_fake_provider": {
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "host_synthetic": {
+      "tests": 7,
+      "pass": 7,
+      "fail": 0
+    },
+    "public_export_repeat": {
+      "tests": 29,
+      "pass": 29,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "regression_offline": {
+      "tests": 442,
+      "pass": 442,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "regression_native": {
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "astra_contract_subset": {
+      "tests": 50,
+      "pass": 50,
+      "fail": 0,
+      "skipped": 0,
+      "provider": "NOT_CONNECTED",
+      "postgresql": "NOT_CONNECTED",
+      "unique_additional_coverage": false
+    }
+  },
+  "funding": {
+    "schema": "awe.e1.cloud-funding-readback/1",
+    "at": "2026-11-08T03:25:29.072Z",
+    "authenticated_funding_rows": 0,
+    "synthetic_funding_rows": 34,
+    "authenticated_reserved": 0,
+    "authenticated_spent": 0,
+    "paid_generation_requests": 0,
+    "real_limits": [
+      0,
+      0,
+      0
+    ],
+    "resource": "ISOLATED_E1_5433",
+    "query": "READ_ONLY_COUNTERS_NO_KEYS",
+    "readback": "https://github.com/failm3/awe-group-runtime/blob/3c22522c52cb6428757fd391e8630c912016b61b/E1/evidence3/REAL-FUNDING-DISABLED.json"
+  },
+  "canary": {
+    "status": "BLOCKED_NOT_AUTHORIZED",
+    "proposal_only": {
+      "total_usd": "0.50",
+      "per_attempt_usd": "0.25",
+      "max_attempts": 2,
+      "models": [
+        "gpt-6-sol",
+        "claude-opus-4-8"
+      ]
+    },
+    "grant": "NOT_ISSUED",
+    "executed_attempts": 0,
+    "plan": "https://github.com/failm3/awe-group-runtime/blob/3c22522c52cb6428757fd391e8630c912016b61b/E1/cloud/canary-plan.json"
+  },
+  "financial_semantics": {
+    "confirmed": "BOOKED_CONFIRMED",
+    "observed_unconfirmed": "HELD_OBSERVATION_NOT_ZERO",
+    "missing_charge": "UNKNOWN_NOT_ZERO",
+    "unknown_reserve": "RETAINED_NO_REFUND_OR_BLIND_RETRY"
+  },
+  "preservation": {
+    "ollama": "UNCHANGED_SOURCE_NO_NEW_INFERENCE_CLAIM",
+    "e0_worktree": "UNCHANGED",
+    "e0_database_connections": 0,
+    "original_source_writes": 0,
+    "merge_to_main": false
+  },
+  "astra": {
+    "role": "ACTUAL_CODEX_TEST_LEAD",
+    "original_career_mission": "NOT_RUN",
+    "owner_acceptance": "NOT_SUBMITTED",
+    "handoff": "https://github.com/failm3/awe-group-runtime/blob/3c22522c52cb6428757fd391e8630c912016b61b/E1/astra3/LEAD-HANDOFF.md"
+  },
+  "notes": [
+    "Native charged amounts are synthetic ledger fixtures, not paid provider receipts.",
+    "Passing GET discovery does not prove a generation, exact price, hard actual-charge cap or mission completion.",
+    "Paid host transport and policy minting remain disabled; future activation must bind the real native accounting authority.",
+    "Account-wide balance, electricity and Codex orchestration cost are not measured."
+  ]
+}
