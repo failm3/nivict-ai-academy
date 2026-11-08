@@ -1,0 +1,149 @@
+{
+  "schema": "awe.e1.sandbox.academy-summary/1",
+  "at": "2026-11-08T04:53:34.390Z",
+  "source": {
+    "repository": "failm3/awe-group-runtime",
+    "private": true,
+    "commit": "9c3eaa182a862dadd5a326836408063b45f7219c",
+    "branch": "codex/e1-sandbox-recruit-01-20261108",
+    "pull_request": "https://github.com/failm3/awe-group-runtime/pull/7",
+    "base_commit": "3c22522c52cb6428757fd391e8630c912016b61b",
+    "manifest": "https://github.com/failm3/awe-group-runtime/blob/9c3eaa182a862dadd5a326836408063b45f7219c/release/SANDBOX-RECRUIT-SOURCE.json"
+  },
+  "status": "BOUNDED_SYNTHETIC_MISSION_PASS_CLOUD_PROVIDER_BLOCKED",
+  "mission": "SANDBOX-RECRUIT-01",
+  "real_career": "NOT_RUN",
+  "e1_pilot": "NOT_ACCEPTED",
+  "external_effects": 0,
+  "run_results": [
+    {
+      "run": "cycle01_4101",
+      "status": "PARTIAL",
+      "pipeline": "PASS",
+      "recovery": "PROVEN",
+      "coding": "BLOCKED"
+    },
+    {
+      "run": "cycle02_4101",
+      "status": "PARTIAL",
+      "pipeline": "PASS",
+      "recovery": "PROVEN",
+      "coding": "BLOCKED"
+    },
+    {
+      "run": "cycle03_4101",
+      "variant": "holdout",
+      "status": "PARTIAL",
+      "pipeline": "PASS",
+      "recovery": "PROVEN",
+      "coding": "BLOCKED"
+    },
+    {
+      "run": "score01_4101",
+      "status": "INDEPENDENT_QA_VERIFIED",
+      "scope": "ONE_PURE_PYTHON_SCORE_FUNCTION"
+    },
+    {
+      "run": "cycle04_4101",
+      "variant": "holdout",
+      "status": "PASS",
+      "pipeline": "PASS",
+      "recovery": "PROVEN",
+      "coding": "AWE_CODE_VERIFIED"
+    }
+  ],
+  "actual_inputs": {
+    "sources": 2,
+    "synthetic_listings": 30,
+    "score_inputs": 29,
+    "selected": 5,
+    "drafts": 5,
+    "sends": 0
+  },
+  "model_usage": {
+    "source": "LOCAL_OLLAMA_ACTUAL",
+    "route": "ollama.local.qwen3-4b-instruct",
+    "model": "qwen3:4b-instruct",
+    "calls": 5,
+    "input_tokens": 1899,
+    "output_tokens": 191,
+    "actual_api_cost_micros": 0,
+    "accounting": "NATIVE_D09_CONFIRMED_ONE_WIRE_PER_CALL",
+    "codex_orchestration_cost": "NOT_OBSERVABLE"
+  },
+  "code": {
+    "source_digest": "sha256:59437dbb6107295bbfb10264691743e9fcd98dba031d183da75bbc050ad80cfa",
+    "producer": "AWE_LOCAL_MODEL",
+    "developer_work": "DAG_CAPABILITIES_BINDINGS_SANDBOX_AND_FIXES",
+    "used_for_ranking": true,
+    "developer_score_fallback": false,
+    "generic_github_executor": "NOT_PROVEN",
+    "file": "https://github.com/failm3/awe-group-runtime/blob/9c3eaa182a862dadd5a326836408063b45f7219c/E1/recruit/generated/score_helper.py"
+  },
+  "independent_qa": {
+    "final_status": "PASS",
+    "evidence": "https://github.com/failm3/awe-group-runtime/blob/9c3eaa182a862dadd5a326836408063b45f7219c/E1/qa4/COLD-cycle04_4101.json",
+    "financial_native": {
+      "pass": 11,
+      "fail": 0,
+      "skip": 0,
+      "independent_repeat_of_same_cases": true
+    },
+    "regression_offline": {
+      "pass": 442,
+      "fail": 0,
+      "skip": 0
+    },
+    "regression_native": {
+      "pass": 38,
+      "fail": 0,
+      "skip": 0
+    }
+  },
+  "cloud": {
+    "owner_consent": "ISSUED",
+    "actual_total_authorized_usd": "10.00",
+    "canary": {
+      "total_usd": "0.50",
+      "per_attempt_usd": "0.25",
+      "attempts": 2
+    },
+    "post_independent_canary": {
+      "total_usd": "9.50",
+      "per_request_usd": "1.00",
+      "attempts": 20
+    },
+    "technical_grant": "SIGNED_HOST_ATTESTED_NATIVE_PREPARED_PROVIDER_BLOCKED",
+    "authorization_digest": "sha256:e88054feccd4ed7a4a7af9ff61b57e5f2f8d50773a82c4142ee5fcfa033b0372",
+    "scope_projects": 6,
+    "real_funding": "DISABLED_ZERO",
+    "paid_generation_calls": 0,
+    "reported_usage_us_cents": 0,
+    "nominal_key_limit_usd": "10.00",
+    "actual_debit_cap": "UNVERIFIED",
+    "charged_ack": "UNVERIFIED",
+    "blocker": "PROVIDER_CONTRACT_NOT_OWNER_CONSENT",
+    "evidence": "https://github.com/failm3/awe-group-runtime/blob/9c3eaa182a862dadd5a326836408063b45f7219c/E1/cloud4/evidence/FINANCIAL-REVIEW.json"
+  },
+  "limits": {
+    "cycles": 12,
+    "local_model_wires": 6,
+    "local_model_wires_used": 5,
+    "stop_at": "2026-11-08T05:33:52.393Z",
+    "reset_authority": false
+  },
+  "preserved": {
+    "e0": true,
+    "original_worktrees": true,
+    "main_merged": false
+  },
+  "not_proven": [
+    "Dynamic specialist provisioning",
+    "Dynamic executor implementation creation",
+    "Operator-free supervisor restart",
+    "Generic GitHub Issue2 coding pilot",
+    "Live Career mission",
+    "E1 Pilot acceptance"
+  ],
+  "resume": "https://github.com/failm3/awe-group-runtime/blob/9c3eaa182a862dadd5a326836408063b45f7219c/E1/RESUME-SANDBOX-RECRUIT.md"
+}
