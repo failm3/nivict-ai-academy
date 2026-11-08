@@ -1,0 +1,61 @@
+{
+  "schema": "awe.e1.targeted-coding-audit-evidence/1",
+  "audited_at": "2026-11-08T08:45:42.072Z",
+  "mode": "STATIC_CODE_AND_PUBLISHED_EVIDENCE_ONLY",
+  "runtime_pr": "https://github.com/failm3/awe-group-runtime/pull/7",
+  "source_commit": "9c3eaa182a862dadd5a326836408063b45f7219c",
+  "runtime_tracked_diff_paths": 0,
+  "release_manifest": {
+    "path": "release/SANDBOX-RECRUIT-SOURCE.json",
+    "entries": 112,
+    "matching": 112,
+    "sha256": "fa86f4b5804f6797afd30b01a5c374d2e6f89707348164ecf716cdb4aef9a63b"
+  },
+  "independent_source_pins": {
+    "path": "E1/qa4/SOURCE-PINS.json",
+    "entries": 53,
+    "matching": 53
+  },
+  "oracle_sha256": "c96003fc698f16fdca6b24e5c14deff52e475df9893079fdc0557a62c42aae8e",
+  "awe_source_sha256": "59437dbb6107295bbfb10264691743e9fcd98dba031d183da75bbc050ad80cfa",
+  "published_observation": {
+    "runtime_run": "cycle04_4101",
+    "observed_at": "2026-11-08T04:36:55.180Z",
+    "status": "PASS",
+    "pipeline": "PASS",
+    "recovery": "PROVEN",
+    "coding": "AWE_CODE_VERIFIED",
+    "source_scope": "PURE_SCORE_FUNCTION_ONLY",
+    "author_native_usage": {
+      "attempt_id": "attempt_2bf9d74e1b0af3a0d52aac5180422602f219e8c6225409bebbb289d6d19bebb0",
+      "route_id": "ollama.local.qwen3-4b-instruct",
+      "model": "qwen3:4b-instruct",
+      "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "input_tokens": 221,
+      "output_tokens": 87,
+      "wire_attempts": 1,
+      "actual_cost_micros": 0
+    },
+    "does_not_prove": [
+      "GENERIC_MULTI_FILE_EXECUTION",
+      "ADAPTIVE_CODE_REPAIR",
+      "DYNAMIC_AGENT_PROVISIONING",
+      "UNATTENDED_CONTROLLER_RECOVERY"
+    ]
+  },
+  "audit_new_execution": {
+    "awe_model_calls": 0,
+    "provider_generation_calls": 0,
+    "postgresql_connections": 0,
+    "migrations": 0,
+    "runtime_code_changes": 0,
+    "secret_file_reads": 0,
+    "test_runs": 0
+  },
+  "epistemic_labels": {
+    "FACT": "Owning source or hash-verified historic receipt",
+    "INFERENCE": "Conclusion from observed code path, not a fresh runtime experiment",
+    "PROPOSAL": "Unimplemented future work",
+    "NOT_PROVEN": "No supporting live evidence in reviewed tree"
+  }
+}
