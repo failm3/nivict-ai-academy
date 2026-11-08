@@ -1,5 +1,5 @@
 # AWE GROUP · E1 — исполняемые технические задания для Codex
-**Дата:** 2026-11-08 · **Статус ТЗ:** READY_FOR_OWNER_HANDOFF. Реализация A1/C1 и bounded A2/A3 выполнена в указанном в outcome scope; Issue 3 — PARTIAL / NO_GO_PAID, E1 Pilot не принят.
+**Дата:** 2026-11-08 · **Статус:** bounded SANDBOX-RECRUIT-01 PASS; Router owner authorization ISSUED / technical PROVIDER_BLOCKED; E1 Pilot не принят. Исходные ТЗ и исторические outcomes сохранены.
 **Основание:** независимый аудит Astra и комплект спецификаций в PR [#24](https://github.com/failm3/nivict-ai-academy/pull/24), исходная редакция `0ebbe9352daeb0fd5c6b1b309793d81ecf754937`.
 
 ## Цель
@@ -50,3 +50,8 @@
 ## Результат Issue 3
 
 [Router.Cheap outcome](E1-OUTCOME-ISSUE3-CLOUD-2026-11-08.md) · [Очищенная сводка](E1-EVIDENCE-ISSUE3-CLOUD-2026-11-08.json). Код и evidence опубликованы в отдельном приватном runtime PR; здесь только документация. Paid canary NOT_RUN. Astra запущена как тест-лид Codex; исходная карьерная миссия не исполнена.
+
+
+## Настоящий sandbox recruiting run
+
+[Outcome](E1-OUTCOME-SANDBOX-RECRUIT-2026-11-08.md) · [Очищенная сводка](E1-EVIDENCE-SANDBOX-RECRUIT-2026-11-08.json). Astra/Sol выполнили и независимо проверили native AWE pipeline, один AWE-authored score artifact и recovery. Платных генераций/реальных откликов — 0.
