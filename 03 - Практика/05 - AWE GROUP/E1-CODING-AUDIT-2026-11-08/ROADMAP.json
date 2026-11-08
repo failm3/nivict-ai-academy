@@ -1,0 +1,314 @@
+{
+  "schema": "awe.e1.targeted-coding-roadmap/1",
+  "status": "AUDIT_AND_PROPOSAL_ONLY_NOT_EXECUTED",
+  "source_commit": "9c3eaa182a862dadd5a326836408063b45f7219c",
+  "base_pr": "https://github.com/failm3/awe-group-runtime/pull/7",
+  "critical_path": [
+    "P0",
+    "P1+P2+P3",
+    "G1",
+    "P4+G2",
+    "P5+G3"
+  ],
+  "reuse": [
+    "A1 versioned contracts/publication",
+    "A2 native queue, D09 ledger, leases/fences/events/revisions",
+    "A3 local broker/registry/Head compiler",
+    "Existing generic Coding Executor and actual score sandbox/QA lineage"
+  ],
+  "new_architecture_required": false,
+  "proposed_G2_limits": {
+    "code_attempts_total": 3,
+    "unknown_attempts_consume_limit": true,
+    "head_calls": 1,
+    "total_model_wires": 4,
+    "one_wire_per_attempt": true,
+    "extra_head_calls_also_consume_total": true,
+    "automatic_retry_or_fallback": false,
+    "resource_authorization_issued_by_this_audit": false
+  },
+  "audit_execution": {
+    "runtime_changes": 0,
+    "model_calls": 0,
+    "postgresql_connections": 0,
+    "test_runs": 0,
+    "secret_file_reads": 0
+  },
+  "tasks": [
+    {
+      "id": "P0",
+      "title": "Immutable code scope and host authority",
+      "depends_on": [],
+      "extend": [
+        "E1/executors/coding/contracts.mjs"
+      ],
+      "create": [
+        "E1/host/coding/policy.mjs",
+        "E1/host/coding/grant-authority.mjs"
+      ],
+      "checks": [
+        "Trusted immutable brief digest compared before model",
+        "Exact base/read/write paths and fixed test profile",
+        "Protected host/QA/private paths cannot enter positive allowlist",
+        "Native context expiry/revocation and A1-to-coding permission binding"
+      ],
+      "scope": "AUTHORITY_AND_DATA_CONTRACT"
+    },
+    {
+      "id": "P1",
+      "title": "Live generic Coding Executor ports",
+      "depends_on": [
+        "P0"
+      ],
+      "extend": [
+        "E1/executors/coding/executor.mjs",
+        "E1/broker/registry.mjs"
+      ],
+      "create": [
+        "E1/host/coding/issue-reader.mjs",
+        "E1/host/coding/repository-context.mjs",
+        "E1/host/coding/git-port.mjs",
+        "E1/host/coding/coordinator-binding.mjs",
+        "E1/host/coding/publisher-intent.mjs"
+      ],
+      "checks": [
+        "One actual A3/D09 patch generation with original provider provenance",
+        "Raw proposal output versus enriched artifact envelope binds actual A2 result",
+        "Recoverable multi-file apply/readback linked to original and candidate tree",
+        "Native WAIT_QA transition and truthful failed-test/UNKNOWN persistence",
+        "Real local draft intent persisted; no external write"
+      ],
+      "scope": "EXISTING_GENERIC_ENGINE_NOT_SECOND_CODING_KERNEL"
+    },
+    {
+      "id": "P2",
+      "title": "Bounded multi-file Python program runner",
+      "depends_on": [
+        "P0"
+      ],
+      "create": [
+        "E1/host/program-runner/profiles.mjs",
+        "E1/host/program-runner/runner.mjs",
+        "E1/host/program-runner/sandbox.py",
+        "E1/host/program-runner/receipts.mjs",
+        "E1/tests/program-runner/"
+      ],
+      "checks": [
+        "CLI imports separate library under actual bwrap",
+        "Network/host/private/QA writes and arbitrary commands denied",
+        "Hidden expected answers/evaluator not mounted in candidate",
+        "Timeout kills descendants and aggregate resource bounds are demonstrated",
+        "Receipt binds tested tree/head, command/profile/toolchain, inputs and nonce"
+      ],
+      "scope": "NEW_VERSIONED_PROFILE_PRESERVE_SCORE_PROFILE"
+    },
+    {
+      "id": "P3",
+      "title": "General independent component QA",
+      "depends_on": [
+        "P0"
+      ],
+      "create": [
+        "E1/qa-coding/oracle.mjs",
+        "E1/qa-coding/leaf.mjs",
+        "E1/qa-coding/cold-readback.mjs",
+        "E1/qa-coding/negative-controls.mjs"
+      ],
+      "checks": [
+        "Wrong code and single-file-only mutations fail",
+        "Trusted out-of-sandbox comparator validates bounded program outputs",
+        "Fake PASS/stdout/judge shadowing/stale-tree test receipt rejected",
+        "Different QA principal and exact immutable artifact binding"
+      ],
+      "scope": "PRODUCT_QA_OUTSIDE_CANDIDATE_AND_WRITER_SCOPE"
+    },
+    {
+      "id": "G1",
+      "title": "First live multi-file task; one-shot integration proof",
+      "depends_on": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "proposed_component_files": [
+        "normalizer.py",
+        "cli.py"
+      ],
+      "checks": [
+        "Predeclared ordinary A1 plan with exact two-file code grant",
+        "Base and either one changed file alone fail; both cooperating AWE-authored files pass hidden integration tests",
+        "Actual native model/QA and independent tree/cold readback",
+        "One model attempt, preserved UNKNOWN guard, no manual code edit",
+        "Immutable component/head/test/QA bundle and local draft intent"
+      ],
+      "claim": "LIVE_MULTI_FILE_TASK_EXECUTION_ONLY",
+      "not_claimed": [
+        "ADAPTIVE_REPAIR",
+        "GENERAL_GOAL_TO_PLAN_AUTONOMY",
+        "DYNAMIC_AGENTS",
+        "LIVE_GITHUB_PUBLICATION"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Durable coding controller, general Head and bounded repair",
+      "depends_on": [
+        "P0"
+      ],
+      "release_depends_on": [
+        "G1"
+      ],
+      "extend": [
+        "E1/broker/head.mjs",
+        "E1/broker/schemas.mjs",
+        "E1/coordinator/admission.mjs"
+      ],
+      "create": [
+        "E1/host/mission-runner.mjs",
+        "E1/coordinator/coding-run.mjs",
+        "E1/broker/coding-head.mjs",
+        "E1/broker/coding-schemas.mjs"
+      ],
+      "migration_proposal": {
+        "filename": "0007-coding-run-state.sql",
+        "number_must_be_resolved_at_current_head": true,
+        "only_for_missing_state": true
+      },
+      "checks": [
+        "Head drafts only approved capability refs under A1",
+        "Persist only missing run decisions/operation intent refs in existing A2 transaction domain",
+        "Outer cap covers all code attempts including unknown; no grant/task/revision reset",
+        "Distinct per-round native task IDs and derived exact candidate base preserve chain",
+        "Accepted failure report cannot mark final product or mission successful",
+        "Controller reconciles Git/test/QA boundaries and stop reason after restart"
+      ],
+      "scope": "REUSE_A2_QUEUE_LEDGER_FENCE_AND_REVISIONS"
+    },
+    {
+      "id": "G2",
+      "title": "First proven autonomous multi-file software component",
+      "depends_on": [
+        "G1",
+        "P4"
+      ],
+      "proposed_component_files": [
+        "parser.py",
+        "normalizer.py",
+        "cli.py"
+      ],
+      "checks": [
+        "After initial goal/grant no Sol code edits, next-step selections or manual phase resume",
+        "Actual AWE goal-to-plan, code/run/test feedback and bounded repair",
+        "Immutable original oracle and real quality failure-to-fixed proof; declared fault injection attributed separately",
+        "Crash at Git/test/QA boundaries then automatic same-run recovery, no duplicate model send",
+        "Independent final product QA and cold tree/artifact/quotas verification"
+      ],
+      "claim": "BOUNDED_AUTONOMOUS_MULTI_FILE_COMPONENT",
+      "not_claimed": [
+        "PRODUCTION_AUTHN",
+        "UNIVERSAL_CODING_QUALITY",
+        "DYNAMIC_EXECUTOR_IMPLEMENTATION"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Bounded dynamic role instances",
+      "depends_on": [
+        "G2"
+      ],
+      "extend": [
+        "E1/coordinator/authority-server.mjs",
+        "E1/broker/registry.mjs"
+      ],
+      "create": [
+        "E1/agents/profile-catalog.mjs",
+        "E1/agents/request.mjs",
+        "E1/agents/delegation.mjs",
+        "E1/agents/factory.mjs",
+        "E1/agents/worker.mjs"
+      ],
+      "migration_proposal": {
+        "filename": "0008-agent-instances.sql",
+        "number_must_be_resolved_at_current_head": true,
+        "only_for_missing_state": true
+      },
+      "checks": [
+        "Preapproved principal pool/catalog; parent requests role rather than mints credentials",
+        "Child principal/context/caps/deadline limited by parent policy",
+        "Model calls remain LLM tasks through A3/D09",
+        "Persistent instance/revocation/generation/lease refs; restart cannot revive wider authority",
+        "Parent counters/shared financial key are not duplicated per child"
+      ],
+      "scope": "SPECIALIZATION_AND_INSTANCE_PROVISIONING_NOT_NEW_KERNEL"
+    },
+    {
+      "id": "G3",
+      "title": "Dynamic specialized agents proof",
+      "depends_on": [
+        "P5"
+      ],
+      "checks": [
+        "Two distinct briefs change actual AWE-selected role/multiplicity",
+        "Actual child processes/native claims/fences/model accounting and independent QA",
+        "Unauthorized role/QA/owner/tool/cross-project requests denied",
+        "Parent cancellation/revocation/restart preserves total quotas and stops children",
+        "Single isolated project or separately proven host-global resource gate"
+      ],
+      "claim": "BOUNDED_DYNAMIC_AGENT_INSTANCES",
+      "not_claimed": [
+        "NEW_EXECUTOR_CODE_GENERATION_OR_INSTALLATION",
+        "UNBOUNDED_RECURSIVE_SELF_MODIFICATION"
+      ]
+    },
+    {
+      "id": "P6_G4",
+      "title": "Later: new executor implementation and host activation",
+      "depends_on": [
+        "G2",
+        "G3"
+      ],
+      "create": [
+        "E1/broker/capability-candidates.mjs",
+        "E1/broker/activation.mjs"
+      ],
+      "checks": [
+        "Generated implementation is a frozen candidate artifact",
+        "Sandbox/independent QA/canary then trusted host activation of exact version",
+        "A1 exact refs/grants remain bound; derived registration scope required",
+        "Unsafe candidate/revoke/rollback does not edit protected core or grant policy"
+      ],
+      "claim": "SEPARATELY_PROVEN_DYNAMIC_EXECUTOR_IMPLEMENTATION",
+      "optional_for_first_dynamic_roles": true
+    },
+    {
+      "id": "PARALLEL_CLOUD",
+      "title": "Provider actual-charge contract",
+      "depends_on": [],
+      "checks": [
+        "Retain existing issued owner authorization and shared D09 budget",
+        "No paid send before actual-debit cap/source-price/ACK/full-input/live-binding proof"
+      ],
+      "not_a_dependency_of": [
+        "G1",
+        "G2",
+        "G3"
+      ]
+    },
+    {
+      "id": "PARALLEL_PUBLISH",
+      "title": "Actual scoped GitHub draft dispatch",
+      "depends_on": [
+        "G1"
+      ],
+      "checks": [
+        "Real scoped host reader/publisher, never connector access inferred from Sol",
+        "D09 effect intent/outbox, idempotent result lookup after ambiguous ACK",
+        "No automatic merge or production release"
+      ],
+      "not_a_dependency_of": [
+        "G1",
+        "G2"
+      ]
+    }
+  ]
+}
