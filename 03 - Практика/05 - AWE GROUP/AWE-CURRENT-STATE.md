@@ -1,6 +1,6 @@
 # AWE GROUP · текущее состояние
 
-**08.11.2026 · SANDBOX-RECRUIT-01: независимый native QA PASS с AWE-authored score-кодом и восстановлением. Router.Cheap: owner grant ISSUED / PREPARED_PROVIDER_BLOCKED, paid calls 0. Live Career и E1 Pilot не приняты.**
+**08.11.2026 · Coding implementation: STOPPED на 4/4 model wires; продукт G1/G2 не принят. Два tool task получили native QA PASS, cold-readback корректируется без повторного запуска. Исторический SANDBOX-RECRUIT-01 PASS сохраняется в узком scope. Router.Cheap NO_GO_PAID, E1 Pilot/Full не приняты.**
 
 | Что проверять в начале следующего чата | Актуальная запись |
 |---|---|
@@ -60,3 +60,10 @@
 **BOUNDED_SYNTHETIC_MISSION_PASS / CLOUD_PROVIDER_BLOCKED.** Astra реально руководила испытаниями через AWE E1. Первые три run сохранили PARTIAL при coding BLOCKED; после developer fixes AWE написала чистую Python функцию в отдельной capability, прошла независимые 19 holdouts и применила точный артефакт в четвёртом recruiting run. Независимый native/cold QA подтвердил PASS и recovery, без реальных отправок. DAG/адаптеры/sandbox — Sol, score-код — AWE. Динамическое создание специалистов и универсальный GitHub Coding Executor не доказаны.
 
 Финансовое согласие теперь ISSUED, подписанный host grant/native phase/scope guards реализованы; прежние NOT_ISSUED записи исторические. Paid canary NOT_RUN из-за отсутствия доказанного actual-charge cap/ACK; повторное согласие не требуется. E0 и main сохранены. [Outcome](E1-CODEX-DELIVERY-2026-11-08/E1-OUTCOME-SANDBOX-RECRUIT-2026-11-08.md) · [Evidence](E1-CODEX-DELIVERY-2026-11-08/E1-EVIDENCE-SANDBOX-RECRUIT-2026-11-08.json).
+
+
+## 08.11.2026 — coding P0/P1/P2/P3 и bounded repair
+
+Реализованы реальные multi-file host ports, program sandbox, независимый QA и durable repair state поверх A1/A2/A3. Реальный Qwen4B run не получил product PASS: первая code-попытка и repair r02 сохранили CLI SyntaxError; r03 вернула no-op. Четыре CONFIRMED wire, 4725 input / 1789 output tokens, API actual 0, UNKNOWN 0. Два автоматических child-restart продолжили сохранённые native attempt/result; полный G2/G3 не доказан. После stop Sol отдельно закрыл новую mission и leases, без изменения старого G1/E0.
+
+[Подробный outcome](E1-CODING-IMPLEMENTATION-2026-11-08/README.md) · [Числовые evidence](E1-CODING-IMPLEMENTATION-2026-11-08/EVIDENCE.json) · [Resume](E1-CODING-IMPLEMENTATION-2026-11-08/RESUME.md) · [Runtime draft PR #9](https://github.com/failm3/awe-group-runtime/pull/9). Закрытый лимит не сбрасывать новым project/task. Интеграция tool_registry использует существующие 4504 кандидата и отдельную проверку малого installed subset; массовой установки/парсинга нет.

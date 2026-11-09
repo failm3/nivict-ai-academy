@@ -1,0 +1,169 @@
+{
+  "schema": "awe.github-sync-summary/1",
+  "date": "2026-11-09",
+  "task": "SYNCHRONIZATION_ONLY",
+  "runtime": {
+    "pr": "https://github.com/failm3/awe-group-runtime/pull/10",
+    "branch": "codex/awe-sync-safe-20261109",
+    "published_commit": "0975b891645fe9f0523415c09dd8e21ebbe3a9dd",
+    "base": "b68c35480836dbafd27208d0eca69383fb0532b9",
+    "source_head": "c9f8fd548175b68029e8dcecc061b77a154170c9",
+    "source_branch_preserved": "codex/e1-coding-g1-20261108",
+    "included_files": 66,
+    "byte_hash_matches": 66,
+    "scope": "PARTIAL_NOT_SELF_CONTAINED",
+    "withheld_files": [
+      {
+        "path": "E1/coordinator/coding-run.mjs",
+        "bytes": 12040,
+        "sha256": "12b04a480728b0da01d5a8099a826e6deb8cb8501d664f1a2eb39b273b50dd1d",
+        "findings": [
+          "HOST_PG_BINDING"
+        ]
+      },
+      {
+        "path": "E1/coordinator/migrations/0007-coding-run-state.sql",
+        "bytes": 30440,
+        "sha256": "806a619f1012ccf7911b89396533fea12b05eca488b099306988a7abef004ee1",
+        "findings": [
+          "HOST_PG_BINDING"
+        ]
+      },
+      {
+        "path": "E1/coordinator/migrations/0008-coding-head-authority.sql",
+        "bytes": 8039,
+        "sha256": "3ee459c7989a4b6c93a72ae2bcec257d3560b325f9b7e1d5732bd2d2e835cfa3",
+        "findings": [
+          "HOST_PG_BINDING"
+        ]
+      }
+    ]
+  },
+  "academy": {
+    "source_head": "9fc932e14acacaf295f918e8777514bb430715ba",
+    "branch": "codex/awe-e1-coding-implementation-20261108",
+    "original_files_preserved_byte_for_byte": [
+      {
+        "path": "03 - Практика/05 - AWE GROUP/AWE-CURRENT-STATE.md",
+        "bytes": 15673,
+        "sha256": "03b8f66329037501bcdc27fd1472ae19d591beb4cee34e6310c146873e66ac03",
+        "findings": []
+      },
+      {
+        "path": "03 - Практика/05 - AWE GROUP/E1-CODING-IMPLEMENTATION-2026-11-08/EVIDENCE.json",
+        "bytes": 2365,
+        "sha256": "3278d379f0a45af58a2b94570b985cc32220d16aeb68e98e5628e1ba879da348",
+        "findings": []
+      },
+      {
+        "path": "03 - Практика/05 - AWE GROUP/E1-CODING-IMPLEMENTATION-2026-11-08/README.md",
+        "bytes": 9510,
+        "sha256": "b708d93c9ac4ee5488ca560010fc04de5a3098da92d2b749ac91f5490fa7c63e",
+        "findings": []
+      },
+      {
+        "path": "03 - Практика/05 - AWE GROUP/E1-CODING-IMPLEMENTATION-2026-11-08/RESUME.md",
+        "bytes": 1719,
+        "sha256": "f41113cf528105fcee3dc069c4ce0a25425ff2abea8fa2ed15e9b07dca49d900",
+        "findings": []
+      }
+    ]
+  },
+  "legacy_validation_archive": {
+    "source_alias": "clean-verify",
+    "source_head": "132e315ebf8184c17a8c3a64740ce40ad7360332",
+    "path": "legacy-validation/clean-verify-OFFLINE-TESTS.json",
+    "sha256": "c42d150c61bef19e3090da073e1c7a66cda2d6b444cf7ab6a2d8639e49f14a59",
+    "scope": "HISTORICAL_SEPARATE_VALIDATION_LINE_NOT_CURRENT_RUNTIME_TEST",
+    "modified_test_already_identical_to_published_PR9": true
+  },
+  "preserved_worktrees": [
+    {
+      "alias": "coding-g1",
+      "head": "c9f8fd548175b68029e8dcecc061b77a154170c9",
+      "branch": "codex/e1-coding-g1-20261108",
+      "uncommitted_paths_retained": 14,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "docs",
+      "head": "9fc932e14acacaf295f918e8777514bb430715ba",
+      "branch": "codex/awe-e1-coding-implementation-20261108",
+      "uncommitted_paths_retained": 4,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "clean-verify",
+      "head": "132e315ebf8184c17a8c3a64740ce40ad7360332",
+      "branch": "codex/e1-a2-a3-20261108",
+      "uncommitted_paths_retained": 2,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "cloud",
+      "head": "3c22522c52cb6428757fd391e8630c912016b61b",
+      "branch": "codex/e1-router-cheap-issue3-20261108",
+      "uncommitted_paths_retained": 12,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "sandbox-recruit",
+      "head": "9c3eaa182a862dadd5a326836408063b45f7219c",
+      "branch": "codex/e1-sandbox-recruit-01-20261108",
+      "uncommitted_paths_retained": 8,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "runtime-base",
+      "head": "09f1a864e6fa26afa62ffac3249c6532a6116175",
+      "branch": "codex/e1-a2-a3-20261108",
+      "uncommitted_paths_retained": 52,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "original-51d0",
+      "head": "c6c2db24c4648d96fd93c8fe7da63ba98dd9af19",
+      "branch": "codex/awe-e1-a1-c1-20261108",
+      "uncommitted_paths_retained": 0,
+      "status_error_as_found": null
+    },
+    {
+      "alias": "E0-92ef",
+      "head": "3579aeeda379caf78dafe5351704956f1ecc0ea5",
+      "branch": "codex/awe-master-integration-01",
+      "uncommitted_paths_retained": null,
+      "status_error_as_found": 128
+    }
+  ],
+  "not_published": [
+    "Host-specific source binding files listed above",
+    "Original local commits that contain those bindings",
+    "Private configuration and raw evidence/logs",
+    "Credential/key stores and PGDATA",
+    "Unrelated legacy source branches"
+  ],
+  "evidence_limits": {
+    "coding_G1": "FAILED_AS_RECORDED",
+    "full_G2": "NOT_PROVEN",
+    "dynamic_G3": "NOT_PROVEN",
+    "tool_corrected_native_cold_proof": "ABSENT_SOURCE_ONLY_UNVERIFIED",
+    "current_software_health": "NOT_TESTED_BY_SYNC",
+    "stored_test_pass_claims": "HISTORICAL_NOT_RERUN",
+    "paid_provider_proof": "NOT_ESTABLISHED_BY_SYNC"
+  },
+  "sync_actions": {
+    "program_logic_changes": 0,
+    "fixes": 0,
+    "awe_or_utility_executions": 0,
+    "llm_or_paid_calls": 0,
+    "database_connections": 0,
+    "migrations": 0,
+    "test_runs": 0,
+    "force_push": false,
+    "reset": false,
+    "rebase": false,
+    "merge": false,
+    "E0_writes": false,
+    "private_secret_file_reads": false
+  }
+}

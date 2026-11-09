@@ -1,0 +1,85 @@
+{
+  "schema": "awe.e1.coding-implementation-outcome/1",
+  "date": "2026-11-08",
+  "audit_commit": "9fc932e14acacaf295f918e8777514bb430715ba",
+  "runtime_pr": "https://github.com/failm3/awe-group-runtime/pull/9",
+  "runtime_branch": "codex/e1-coding-g1-20261108",
+  "coding_source_commit": "28ad8f2e33267ed66fce466c8eb21b62cab4a482",
+  "coding": {
+    "status": "STOPPED_MODEL_ATTEMPT_CAP_EXHAUSTED",
+    "scope": "TWO_FILE_BOUNDED_REPAIR",
+    "G1": "NOT_PASSED",
+    "G2": "NOT_PROVEN",
+    "G3": "NOT_IMPLEMENTED",
+    "native_model_wires": 4,
+    "confirmed": 4,
+    "unknown": 0,
+    "input_tokens": 4725,
+    "output_tokens": 1789,
+    "actual_api_micros": 0,
+    "infra_and_codex_costs": "NOT_MEASURED",
+    "remaining_attempts": 0,
+    "automatic_child_restarts": 2,
+    "sol_candidate_edits": 0,
+    "sol_manual_phase_commands_during_execution": 0,
+    "sol_post_stop_finalization": 1,
+    "source_pins_independently_verified": 66,
+    "independent_witness_sha256": "b4e7d8bc05d88cf4ad422d7d1710cd05ab84e603285902cb5624957879a98a6a",
+    "successful_product": false
+  },
+  "tools": {
+    "catalog_records": 4504,
+    "catalog_sha256": "5a83c501b290b83a17f6ffaeb0fe9cae772e26be7a6a4c5cbcb948908fc76b56",
+    "installed_subset": [
+      "ripgrep 15.2.0",
+      "ripgrep-all 0.10.9"
+    ],
+    "native_tasks_accepted": 2,
+    "native_qa_pass": 2,
+    "cold_status": "PENDING_TIMESTAMP_CORRECTION_READ_ONLY",
+    "model_calls": 0,
+    "paid_calls": 0,
+    "mass_install": false,
+    "mass_refresh": false,
+    "four_way_policy": "IMPLEMENTED_OFFLINE_TESTED",
+    "four_way_live_model_comparison": "NOT_RUN"
+  },
+  "tests": {
+    "legacy_regression": {
+      "tests": 69,
+      "pass": 69,
+      "skip": 0
+    },
+    "combined_repair_host": {
+      "tests": 85,
+      "pass": 85,
+      "skip": 0
+    },
+    "actual_bwrap": {
+      "tests": 7,
+      "pass": 7,
+      "skip": 0
+    },
+    "native_state_harness": {
+      "tests": 2,
+      "pass": 2,
+      "skip": 0
+    },
+    "counts_overlap_do_not_sum": true
+  },
+  "boundaries": {
+    "E0_changed": false,
+    "PG5432_connected": false,
+    "PGDATA_exported": false,
+    "key_file_read": false,
+    "paid_generation": false,
+    "external_recruiting_effects": false,
+    "merge": false,
+    "production_ready": false
+  },
+  "agents": [
+    "astra_test_lead",
+    "coding_host_p1",
+    "program_runner_p2"
+  ]
+}
