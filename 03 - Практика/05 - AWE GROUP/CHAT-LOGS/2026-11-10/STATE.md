@@ -40,3 +40,17 @@
 Владелец запросил простой полный статус, **не** сообщение для команды. Подготовлен и проверен GitHub-файл `REPORTS/2026-11-10-AWE-SIMPLE-STATUS-FOR-OWNER-2025.md`, исходный запрос `CHAT-LOGS/2026-11-10/0007-user.md`.
 
 Коротко: OpenCode строит AWE; фундамент native execution/cursor/file journal/atomic lifecycle/QA sandbox и тестовая отмена продвинулись. 268/268 + 442/442 PASS — **самоотчёт** и пересекающиеся наборы. В scripted QA holdouts три неверных PASS прошли технический hash/RPC gate, внешний evaluator их заметил. На 20:25 host-only terminal lifecycle ещё создавался; реальные LLM vertical slice, динамические команды, параллельность, маршрутизация и CAREER-01 **не доказаны**. Первая контрольная точка `NOT MET`. Блокеры owner — путь авторизованного Router.Cheap ключа, exact model ID, трактовка $20. Есть `ECONNRESET`; текущее здоровье после 20:25 отдельно не проверено. Не использовать `/abort` по одному сообщению об ошибке, не подменять исходный /goal.
+
+## Полный локальный снимок: latest verified state
+
+Пользователь прикрепил архив `awe-full-snapshot-20261110-204749.tar.gz`, SHA-256 `e0d97d64c8ff57ee09e24cead68b0fac25e7baa91a77c0cf374881f2f063f974`; запись о вложении `CHAT-LOGS/2026-11-10/0010-user.md`. Содержимое прочитано из 51 файла; полный пользовательский отчёт: `REPORTS/AWE-GROUP-FULL-OWNER-AUDIT-v1.md`, commit `36adfc09`.
+
+**Новый прогресс после предыдущего среза:** в `E1/launch/CHECKPOINT.json` теперь зафиксирован `review_terminal_combined_pass=307`, `442` baseline, `first_checkpoint_met=false`, `real_llm_vertical_slice=NOT_RUN`. Реализована и fixture-проверена дополнительная **optional host-only terminalAuthority**: атомарный receipt + exact root/children cancel после FAIL/BLOCKED, 14 SIGKILL windows, UNKNOWN => HOLD, ноль повторов model sends; production отключён, не native acceptance.
+
+**Критическое изменение в живой системе:** snapshot `session-active.json` содержит `{"data":{}}`, запрос старого OpenCode session ID `ses_e3a47ffd4ffeQRGUXN5dr8rOk6` вернул `SessionNotFoundError`, todo/messages/children по старому ID — HTTP 404. OpenCode server **PID 361** продолжал слушать `127.0.0.1:49374`, Telegram node PID 113, PostgreSQL PID 266/2008; последние файлы и AUDIT/CHECKPOINT изменены около 20:45 МСК. **Нельзя утверждать, что /goal прямо сейчас продолжает исполняться; причину исчезновения сессии не установили.** Не отправлять /abort и новый /goal вслепую; найти сессию через /recent/историю либо безопасно продолжить из checkpoint.
+
+Git original `/home/nox/awe-e1-live-runtime` и launch worktree всё ещё на `29db82e`; launch worktree 242 untracked файлов, новый commit не подтверждён (Git author identity отсутствует). Тестовый PG 5545 изолирован; реальный D09 и production PG не проверены. Параметры owner blocking paid E1: **путь к разрешённому Router.Cheap ключу (без секрета), exact model ID, USD20 общий/дополнительный лимит**. Утверждение `0 new paid generations` относится только к текущим инструментам launch, не ко всей истории E1 (локальный Qwen G1 действительно использовался) и не к стоимости OpenCode сессии.
+
+Исторический полный E0 принят с реальным commit 54 и QA 7/7; это не полная агентность. CAREER-01 восемь направлений восстановлены из `E1/launch/CAREER-01.md`. Всесторонняя архитектура и инженерный процесс объяснены в полном отчёте; текущая AWE действует **как вызываемая OpenCode тестовая среда**, не как отдельный постоянно автономный управляющий сервис.
+
+Полный отчёт сохранён в GitHub и прочитан обратно; не подменять его устаревшими промежуточными отчётами.
