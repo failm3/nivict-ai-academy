@@ -58,3 +58,14 @@ Git original `/home/nox/awe-e1-live-runtime` и launch worktree всё ещё н
 Исторический полный E0 принят с реальным commit 54 и QA 7/7; это не полная агентность. CAREER-01 восемь направлений восстановлены из `E1/launch/CAREER-01.md`. Всесторонняя архитектура и инженерный процесс объяснены в полном отчёте; текущая AWE действует **как вызываемая OpenCode тестовая среда**, не как отдельный постоянно автономный управляющий сервис.
 
 Полный отчёт сохранён в GitHub и прочитан обратно; не подменять его устаревшими промежуточными отчётами.
+
+## Текущий контрольный снимок v2 (проектно scoped; supersedes вывод о сессии)
+
+**Архив:** `awe-full-snapshot-20261110-210707.tar.gz`, SHA-256 `870c364d37cbd3352a5cb01cc8d0f191a65071ec59f2f4c644bbc3b0d41c588c`, 59 tar entries. Полный аудит по v2: `REPORTS/AWE-GROUP-FULL-OWNER-AUDIT-v2.md`, commit `2d9b4f0`. **Для восстановления читать v2 вместо v1**, далее первоисточники AUDIT/CHECKPOINT по необходимости.
+
+- v2 скрипт перед вызовами API выполнил `cd /home/nox/awe-e1-launch-20261110`, отдельно проверил original; active в обоих вернул `{"data":{}}`; parsed session list показывает 0 entries, но **raw list был удалён и неизвестна корректность endpoint/парсера**. OpenCode (PID 361) и Telegram node (PID 113) работали, последние файлы `cloud-envelope` менялись прямо перед снимком. Нельзя выводить из данных «сессия исчезла» или «сессия точно активна». Пользователь видит работу в Telegram. Попросить `/recent` или `/status` без `/abort`.
+- **Новая инженерная работа:** `ROUTE-BUDGET-AUDIT.md` и офлайн-синтетический dry-run: `route_budget_contract_pass=56`, `route_budget_cloud_combined_pass=96`, baseline `442`; фиктивная одна модель в ролях head/worker/reviewer/repair, трактовки total/incremental $20, UNKNOWN HOLD, network 0, D09 НЕ проверен. `E1/live/cloud-envelope.mjs`, `cloud-envelope.test.mjs`, `E1/launch/cloud-envelope-cold.test.mjs` создан/изменён, **ещё нет evidence о завершённой проверке**.
+- Предыдущая QA terminal проверка сохраняет `307/307` PASS; тесты пересекаются, сумма не показатель общего качества.
+- `CHECKPOINT.json`: `status=PARTIAL_BLOCKED_PAID_IDENTITY_AND_MODEL`, `first_checkpoint_met=false`, `real_llm_vertical_slice=NOT_RUN`, `independent_agent_qa=NOT_RUN`. `new_paid_generations_initiated_by_tools=0` — не все расходы OpenCode.
+- Git launch branch `awe/e1-autonomous-launch-20261110` HEAD `29db82e`, **259 untracked** (ранее 242), 23 tracked diff files; код ещё не коммичен из-за отсутствующей Git identity по AUDIT. `awe-group-runtime` GitHub main НЕ включает автоматически свежие файлы.
+- Участие владельца сейчас: разрешённый локальный key path (НЕ секрет), точный Router.Cheap model ID, $20 TOTAL_KEY_SPEND или INCREMENTAL_ALLOWANCE, утверждённые Git author name/email в worktree, проверка Telegram /recent. Позднее — production PG grant, HH/внешние действия.
