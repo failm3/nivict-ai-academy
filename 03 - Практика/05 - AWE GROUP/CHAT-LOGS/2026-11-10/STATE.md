@@ -24,3 +24,13 @@
 - `real_llm_vertical_slice=NOT_RUN`; `independent_agent_qa=NOT_RUN`; `new_paid_generations_initiated_by_tools=0`, стоимость OpenCode сессии `NOT_MEASURED`.
 - Три явных блокера: локальный путь разрешённого Router.Cheap ключа, model ID, трактовка $20 лимита (общий/дополнительный). Никаких платных операций E1 до явного разрешения.
 - Worktree содержит неотслеживаемые QA файлы; их существование не подтверждает commit/push. Не останавливать исходный большой /goal, по-прежнему не завершены этапы 3–6.
+
+## Дополнение: события исполнителя 2026-11-10, 20:11–20:25 МСК
+
+Дословное Telegram-сообщение пользователя: `CHAT-LOGS/2026-11-10/0006-user.md`. Инженерная оценка: `REPORTS/2026-11-10-E1-LIVE-STATUS-UPDATE-2025-MSK.md`.
+
+- OpenCode сообщил о sandbox holdouts, scripted четырёхходовых проверках Head → worker → reviewer tool read → reviewer verdict; три **семантически неверных PASS** прошли RPC/hash gate, но были выявлены evaluator. Принцип: hash integrity не эквивалентен correctness, фиксировать критический gap до real LLM acceptance.
+- Новая проверка: **268/268 PASS**, 0 FAIL / 0 SKIP; baseline **442/442 PASS**. Наборы пересекаются, не суммировать. По сообщению агента приватный проверенный архив — 258 файлов. Это self-reported результаты, самостоятельный запуск тестов из ChatGPT не выполнялся.
+- Native cancellation тесты: отдельно авторизованные root и child с известным результатом допускают CANCELLED, без каскада; UNKNOWN/SENDING остаётся HOLD. Автоматический terminal lifecycle ещё не подключён. Агент приступил к host-only terminal port и receipt для atomic FAIL/BLOCKED + root/children native cancellation; документ `E1/launch/TERMINAL-LIFECYCLE.md`.
+- В 20:11 и 20:24 возникало `ECONNRESET`; сообщения с новым прогрессом и командой на чтение SQL есть в 20:25. Не делать вывода о полной остановке и не отправлять /abort автоматически. Для нового состояния проверить `opencode api get /api/session/active`.
+- Первая контрольная точка остаётся `NOT MET`. Нет подтверждённой реальной LLM E1 vertical slice. Платный транспорт заблокирован до определения разрешённого локального ключа, exact model ID и трактовки лимита $20. Не переформулировать или заменять исходный большой /goal.
