@@ -34,3 +34,9 @@
 - Native cancellation тесты: отдельно авторизованные root и child с известным результатом допускают CANCELLED, без каскада; UNKNOWN/SENDING остаётся HOLD. Автоматический terminal lifecycle ещё не подключён. Агент приступил к host-only terminal port и receipt для atomic FAIL/BLOCKED + root/children native cancellation; документ `E1/launch/TERMINAL-LIFECYCLE.md`.
 - В 20:11 и 20:24 возникало `ECONNRESET`; сообщения с новым прогрессом и командой на чтение SQL есть в 20:25. Не делать вывода о полной остановке и не отправлять /abort автоматически. Для нового состояния проверить `opencode api get /api/session/active`.
 - Первая контрольная точка остаётся `NOT MET`. Нет подтверждённой реальной LLM E1 vertical slice. Платный транспорт заблокирован до определения разрешённого локального ключа, exact model ID и трактовки лимита $20. Не переформулировать или заменять исходный большой /goal.
+
+## Личный сводный отчёт для владельца (10 ноября, доказательства до 20:25)
+
+Владелец запросил простой полный статус, **не** сообщение для команды. Подготовлен и проверен GitHub-файл `REPORTS/2026-11-10-AWE-SIMPLE-STATUS-FOR-OWNER-2025.md`, исходный запрос `CHAT-LOGS/2026-11-10/0007-user.md`.
+
+Коротко: OpenCode строит AWE; фундамент native execution/cursor/file journal/atomic lifecycle/QA sandbox и тестовая отмена продвинулись. 268/268 + 442/442 PASS — **самоотчёт** и пересекающиеся наборы. В scripted QA holdouts три неверных PASS прошли технический hash/RPC gate, внешний evaluator их заметил. На 20:25 host-only terminal lifecycle ещё создавался; реальные LLM vertical slice, динамические команды, параллельность, маршрутизация и CAREER-01 **не доказаны**. Первая контрольная точка `NOT MET`. Блокеры owner — путь авторизованного Router.Cheap ключа, exact model ID, трактовка $20. Есть `ECONNRESET`; текущее здоровье после 20:25 отдельно не проверено. Не использовать `/abort` по одному сообщению об ошибке, не подменять исходный /goal.
