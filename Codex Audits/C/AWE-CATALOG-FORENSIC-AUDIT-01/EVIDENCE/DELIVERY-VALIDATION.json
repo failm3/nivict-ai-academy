@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "Data/evidence assertions only; NOT runtime, security, external-family or Owner acceptance",
+  "checks": {
+    "original_id_set_equal": true,
+    "unique_row_count": true,
+    "original_content_equal": true,
+    "all_required_fields": true,
+    "external_attempt_evidence_for_every_row": true,
+    "metadata_queue_complete": true,
+    "body_never_read": true,
+    "source_totals_sum": true,
+    "category_totals_sum": true,
+    "no_false_runtime_pass": true,
+    "no_approval_or_integration_counts": true,
+    "technical_review_count": true,
+    "technical_no_false_pass": true,
+    "primary_blob_hashes_equal": true,
+    "primary_document_count": true,
+    "category_links_complete": true,
+    "flag_reviews_linked": true
+  },
+  "errors": [],
+  "flag_review_count": 12,
+  "raw_counts": {
+    "iirepresent.json": 1331,
+    "Радар.json": 3173
+  },
+  "external_attempted": 4504,
+  "independent_model_family_gate": "NOT_SATISFIED"
+}

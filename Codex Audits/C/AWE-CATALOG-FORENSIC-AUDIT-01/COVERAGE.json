@@ -1,0 +1,1177 @@
+{
+  "status": "PARTIAL",
+  "source_commit": "5c611773bff3ccba76b78337534ed8944e137236",
+  "checked_at": "2026-11-12",
+  "definitions": {
+    "external_attempted": "Each record had a repository-entity API lookup OR original-URL HEAD attempt. Repository subpaths were not fetched by metadata lookup.",
+    "external_observed": "Successful repository metadata OR any HTTP response; not content identity/function/safety proof.",
+    "repo_inspected": "README/LICENSE desk review by exact project identity; not full code/security audit.",
+    "externally_verified": "Reserved for completed independent verification; cross-family requirement is unsatisfied, so zero.",
+    "license_text_inspected": "Root license text read at pinned SHA, scoped exceptions documented; not dependency/legal approval.",
+    "unresolved": "AWE admission/function/security acceptance remains unresolved for every record."
+  },
+  "overall": {
+    "total": 4504,
+    "processed": 4504,
+    "source_preserved": 4504,
+    "classified_rule_based": 4504,
+    "external_attempted": 4504,
+    "external_observed": 4169,
+    "repo_inspected": 32,
+    "license_text_inspected": 32,
+    "externally_verified": 0,
+    "license_verified": 0,
+    "sandbox_tested": 0,
+    "approved": 0,
+    "integrated": 0,
+    "unresolved": 4504
+  },
+  "by_source": {
+    "iirepresent.json": {
+      "total": 1331,
+      "processed": 1331,
+      "source_preserved": 1331,
+      "classified_rule_based": 1331,
+      "external_attempted": 1331,
+      "external_observed": 1231,
+      "repo_inspected": 4,
+      "license_text_inspected": 4,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 1331
+    },
+    "Радар.json": {
+      "total": 3173,
+      "processed": 3173,
+      "source_preserved": 3173,
+      "classified_rule_based": 3173,
+      "external_attempted": 3173,
+      "external_observed": 2938,
+      "repo_inspected": 28,
+      "license_text_inspected": 28,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 3173
+    }
+  },
+  "by_category": {
+    "AI - API и маршрутизация": {
+      "total": 7,
+      "processed": 7,
+      "source_preserved": 7,
+      "classified_rule_based": 7,
+      "external_attempted": 7,
+      "external_observed": 6,
+      "repo_inspected": 3,
+      "license_text_inspected": 3,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 7
+    },
+    "AI - RAG и память": {
+      "total": 47,
+      "processed": 47,
+      "source_preserved": 47,
+      "classified_rule_based": 47,
+      "external_attempted": 47,
+      "external_observed": 43,
+      "repo_inspected": 5,
+      "license_text_inspected": 5,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 47
+    },
+    "AI - Агенты и MCP": {
+      "total": 365,
+      "processed": 365,
+      "source_preserved": 365,
+      "classified_rule_based": 365,
+      "external_attempted": 365,
+      "external_observed": 314,
+      "repo_inspected": 6,
+      "license_text_inspected": 6,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 365
+    },
+    "AI - Модели и инференс": {
+      "total": 645,
+      "processed": 645,
+      "source_preserved": 645,
+      "classified_rule_based": 645,
+      "external_attempted": 645,
+      "external_observed": 600,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 645
+    },
+    "AI - Обучение и оценка моделей": {
+      "total": 38,
+      "processed": 38,
+      "source_preserved": 38,
+      "classified_rule_based": 38,
+      "external_attempted": 38,
+      "external_observed": 38,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 38
+    },
+    "Безопасность - Справочные материалы": {
+      "total": 1,
+      "processed": 1,
+      "source_preserved": 1,
+      "classified_rule_based": 1,
+      "external_attempted": 1,
+      "external_observed": 1,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 1
+    },
+    "Безопасность и приватность": {
+      "total": 246,
+      "processed": 246,
+      "source_preserved": 246,
+      "classified_rule_based": 246,
+      "external_attempted": 246,
+      "external_observed": 228,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 246
+    },
+    "Бизнес - Маркетинг и продажи": {
+      "total": 68,
+      "processed": 68,
+      "source_preserved": 68,
+      "classified_rule_based": 68,
+      "external_attempted": 68,
+      "external_observed": 62,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 68
+    },
+    "Визуализация - Картография и терминал": {
+      "total": 1,
+      "processed": 1,
+      "source_preserved": 1,
+      "classified_rule_based": 1,
+      "external_attempted": 1,
+      "external_observed": 1,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 1
+    },
+    "Дизайн - UI UX и прототипирование": {
+      "total": 34,
+      "processed": 34,
+      "source_preserved": 34,
+      "classified_rule_based": 34,
+      "external_attempted": 34,
+      "external_observed": 31,
+      "repo_inspected": 1,
+      "license_text_inspected": 1,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 34
+    },
+    "Дизайн - Скриншоты и графика": {
+      "total": 1,
+      "processed": 1,
+      "source_preserved": 1,
+      "classified_rule_based": 1,
+      "external_attempted": 1,
+      "external_observed": 1,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 1
+    },
+    "Знания - Обучение и исследования": {
+      "total": 247,
+      "processed": 247,
+      "source_preserved": 247,
+      "classified_rule_based": 247,
+      "external_attempted": 247,
+      "external_observed": 229,
+      "repo_inspected": 1,
+      "license_text_inspected": 1,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 247
+    },
+    "Игры и интерактив": {
+      "total": 96,
+      "processed": 96,
+      "source_preserved": 96,
+      "classified_rule_based": 96,
+      "external_attempted": 96,
+      "external_observed": 83,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 96
+    },
+    "Инфраструктура - DevOps и хостинг": {
+      "total": 250,
+      "processed": 250,
+      "source_preserved": 250,
+      "classified_rule_based": 250,
+      "external_attempted": 250,
+      "external_observed": 237,
+      "repo_inspected": 1,
+      "license_text_inspected": 1,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 250
+    },
+    "Инфраструктура - Данные и БД": {
+      "total": 89,
+      "processed": 89,
+      "source_preserved": 89,
+      "classified_rule_based": 89,
+      "external_attempted": 89,
+      "external_observed": 87,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 89
+    },
+    "Медиа - Аудио и речь": {
+      "total": 223,
+      "processed": 223,
+      "source_preserved": 223,
+      "classified_rule_based": 223,
+      "external_attempted": 223,
+      "external_observed": 206,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 223
+    },
+    "Медиа - Видео и 3D": {
+      "total": 473,
+      "processed": 473,
+      "source_preserved": 473,
+      "classified_rule_based": 473,
+      "external_attempted": 473,
+      "external_observed": 442,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 473
+    },
+    "Медиа - Изображения и графика": {
+      "total": 303,
+      "processed": 303,
+      "source_preserved": 303,
+      "classified_rule_based": 303,
+      "external_attempted": 303,
+      "external_observed": 281,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 303
+    },
+    "Продуктивность и приложения": {
+      "total": 212,
+      "processed": 212,
+      "source_preserved": 212,
+      "classified_rule_based": 212,
+      "external_attempted": 212,
+      "external_observed": 196,
+      "repo_inspected": 3,
+      "license_text_inspected": 3,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 212
+    },
+    "Разработка - Браузер и автоматизация": {
+      "total": 17,
+      "processed": 17,
+      "source_preserved": 17,
+      "classified_rule_based": 17,
+      "external_attempted": 17,
+      "external_observed": 17,
+      "repo_inspected": 4,
+      "license_text_inspected": 4,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 17
+    },
+    "Разработка - Редакторы и CLI": {
+      "total": 250,
+      "processed": 250,
+      "source_preserved": 250,
+      "classified_rule_based": 250,
+      "external_attempted": 250,
+      "external_observed": 239,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 250
+    },
+    "Разработка - Тесты и качество": {
+      "total": 69,
+      "processed": 69,
+      "source_preserved": 69,
+      "classified_rule_based": 69,
+      "external_attempted": 69,
+      "external_observed": 65,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 69
+    },
+    "Разработка - Фреймворки и библиотеки": {
+      "total": 210,
+      "processed": 210,
+      "source_preserved": 210,
+      "classified_rule_based": 210,
+      "external_attempted": 210,
+      "external_observed": 193,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 210
+    },
+    "Системы - ОС и устройства": {
+      "total": 228,
+      "processed": 228,
+      "source_preserved": 228,
+      "classified_rule_based": 228,
+      "external_attempted": 228,
+      "external_observed": 216,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 228
+    },
+    "Требует ручной классификации": {
+      "total": 384,
+      "processed": 384,
+      "source_preserved": 384,
+      "classified_rule_based": 384,
+      "external_attempted": 384,
+      "external_observed": 353,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 384
+    }
+  },
+  "by_prior_category": {
+    "AI - API и маршрутизация": {
+      "total": 7,
+      "processed": 7,
+      "source_preserved": 7,
+      "classified_rule_based": 7,
+      "external_attempted": 7,
+      "external_observed": 6,
+      "repo_inspected": 3,
+      "license_text_inspected": 3,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 7
+    },
+    "AI - RAG и память": {
+      "total": 48,
+      "processed": 48,
+      "source_preserved": 48,
+      "classified_rule_based": 48,
+      "external_attempted": 48,
+      "external_observed": 44,
+      "repo_inspected": 5,
+      "license_text_inspected": 5,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 48
+    },
+    "AI - Агенты и MCP": {
+      "total": 365,
+      "processed": 365,
+      "source_preserved": 365,
+      "classified_rule_based": 365,
+      "external_attempted": 365,
+      "external_observed": 314,
+      "repo_inspected": 6,
+      "license_text_inspected": 6,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 365
+    },
+    "AI - Модели и инференс": {
+      "total": 645,
+      "processed": 645,
+      "source_preserved": 645,
+      "classified_rule_based": 645,
+      "external_attempted": 645,
+      "external_observed": 600,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 645
+    },
+    "AI - Обучение и оценка моделей": {
+      "total": 38,
+      "processed": 38,
+      "source_preserved": 38,
+      "classified_rule_based": 38,
+      "external_attempted": 38,
+      "external_observed": 38,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 38
+    },
+    "Безопасность и приватность": {
+      "total": 246,
+      "processed": 246,
+      "source_preserved": 246,
+      "classified_rule_based": 246,
+      "external_attempted": 246,
+      "external_observed": 228,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 246
+    },
+    "Бизнес - Маркетинг и продажи": {
+      "total": 68,
+      "processed": 68,
+      "source_preserved": 68,
+      "classified_rule_based": 68,
+      "external_attempted": 68,
+      "external_observed": 62,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 68
+    },
+    "Дизайн - UI UX и прототипирование": {
+      "total": 34,
+      "processed": 34,
+      "source_preserved": 34,
+      "classified_rule_based": 34,
+      "external_attempted": 34,
+      "external_observed": 31,
+      "repo_inspected": 1,
+      "license_text_inspected": 1,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 34
+    },
+    "Знания - Обучение и исследования": {
+      "total": 247,
+      "processed": 247,
+      "source_preserved": 247,
+      "classified_rule_based": 247,
+      "external_attempted": 247,
+      "external_observed": 229,
+      "repo_inspected": 1,
+      "license_text_inspected": 1,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 247
+    },
+    "Игры и интерактив": {
+      "total": 96,
+      "processed": 96,
+      "source_preserved": 96,
+      "classified_rule_based": 96,
+      "external_attempted": 96,
+      "external_observed": 83,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 96
+    },
+    "Инфраструктура - DevOps и хостинг": {
+      "total": 250,
+      "processed": 250,
+      "source_preserved": 250,
+      "classified_rule_based": 250,
+      "external_attempted": 250,
+      "external_observed": 237,
+      "repo_inspected": 1,
+      "license_text_inspected": 1,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 250
+    },
+    "Инфраструктура - Данные и БД": {
+      "total": 90,
+      "processed": 90,
+      "source_preserved": 90,
+      "classified_rule_based": 90,
+      "external_attempted": 90,
+      "external_observed": 88,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 90
+    },
+    "Медиа - Аудио и речь": {
+      "total": 224,
+      "processed": 224,
+      "source_preserved": 224,
+      "classified_rule_based": 224,
+      "external_attempted": 224,
+      "external_observed": 207,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 224
+    },
+    "Медиа - Видео и 3D": {
+      "total": 473,
+      "processed": 473,
+      "source_preserved": 473,
+      "classified_rule_based": 473,
+      "external_attempted": 473,
+      "external_observed": 442,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 473
+    },
+    "Медиа - Изображения и графика": {
+      "total": 303,
+      "processed": 303,
+      "source_preserved": 303,
+      "classified_rule_based": 303,
+      "external_attempted": 303,
+      "external_observed": 281,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 303
+    },
+    "Продуктивность и приложения": {
+      "total": 212,
+      "processed": 212,
+      "source_preserved": 212,
+      "classified_rule_based": 212,
+      "external_attempted": 212,
+      "external_observed": 196,
+      "repo_inspected": 3,
+      "license_text_inspected": 3,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 212
+    },
+    "Разработка - Браузер и автоматизация": {
+      "total": 17,
+      "processed": 17,
+      "source_preserved": 17,
+      "classified_rule_based": 17,
+      "external_attempted": 17,
+      "external_observed": 17,
+      "repo_inspected": 4,
+      "license_text_inspected": 4,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 17
+    },
+    "Разработка - Редакторы и CLI": {
+      "total": 250,
+      "processed": 250,
+      "source_preserved": 250,
+      "classified_rule_based": 250,
+      "external_attempted": 250,
+      "external_observed": 239,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 250
+    },
+    "Разработка - Тесты и качество": {
+      "total": 69,
+      "processed": 69,
+      "source_preserved": 69,
+      "classified_rule_based": 69,
+      "external_attempted": 69,
+      "external_observed": 65,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 69
+    },
+    "Разработка - Фреймворки и библиотеки": {
+      "total": 210,
+      "processed": 210,
+      "source_preserved": 210,
+      "classified_rule_based": 210,
+      "external_attempted": 210,
+      "external_observed": 193,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 210
+    },
+    "Системы - ОС и устройства": {
+      "total": 228,
+      "processed": 228,
+      "source_preserved": 228,
+      "classified_rule_based": 228,
+      "external_attempted": 228,
+      "external_observed": 216,
+      "repo_inspected": 0,
+      "license_text_inspected": 0,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 228
+    },
+    "Требует ручной классификации": {
+      "total": 384,
+      "processed": 384,
+      "source_preserved": 384,
+      "classified_rule_based": 384,
+      "external_attempted": 384,
+      "external_observed": 353,
+      "repo_inspected": 2,
+      "license_text_inspected": 2,
+      "externally_verified": 0,
+      "license_verified": 0,
+      "sandbox_tested": 0,
+      "approved": 0,
+      "integrated": 0,
+      "unresolved": 384
+    }
+  },
+  "field_coverage": {
+    "architectural_needs": {
+      "present": 4504,
+      "nonempty": 2378,
+      "total": 4504
+    },
+    "awe_admission": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "blocking_reason": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "canonical_url": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "capabilities": {
+      "present": 4504,
+      "nonempty": 2378,
+      "total": 4504
+    },
+    "capability_basis": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "categories": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "checked_at": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "classification_review": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "confidence": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "duplicate_group": {
+      "present": 4504,
+      "nonempty": 66,
+      "total": 4504
+    },
+    "entity_id": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "evidence_refs": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "external_attempted": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "external_observed": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "external_verification": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "flag_review": {
+      "present": 12,
+      "nonempty": 12,
+      "total": 4504
+    },
+    "integration_decision": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "integration_type": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "license_scope": {
+      "present": 32,
+      "nonempty": 32,
+      "total": 4504
+    },
+    "license_status": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "license_text_inspected": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "maintenance_status": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "name": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "note_path": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "note_sha256": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "original_description": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "original_url": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "original_url_check": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "prior_classification": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "priority": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "raw_record": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "repo_desk_reviewed": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "repository_observation": {
+      "present": 3295,
+      "nonempty": 3295,
+      "total": 4504
+    },
+    "resource_type": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "runtime_verification": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "security_flags": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "source_commit": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "source_file": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "source_id": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "source_issues": {
+      "present": 4504,
+      "nonempty": 0,
+      "total": 4504
+    },
+    "source_row": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "source_sha": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "source_verification": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    },
+    "technical_review_rank": {
+      "present": 32,
+      "nonempty": 32,
+      "total": 4504
+    },
+    "url_observation": {
+      "present": 1209,
+      "nonempty": 1209,
+      "total": 4504
+    },
+    "verification_levels": {
+      "present": 4504,
+      "nonempty": 4504,
+      "total": 4504
+    }
+  },
+  "verification_levels": {
+    "SOURCE_PRESERVED": 4504,
+    "CLASSIFIED_RULE_BASED": 4504,
+    "HTTP_RESPONSE_OBSERVED": 1122,
+    "REPOSITORY_METADATA_OBSERVED": 3047,
+    "REPO_INSPECTED_DESK_ONLY": 32,
+    "LICENSE_TEXT_INSPECTED": 32
+  },
+  "external_statuses": {
+    "HTTP_RESPONSE_OBSERVED": 973,
+    "HTTP_ERROR_OBSERVED": 149,
+    "METADATA_OBSERVED": 3015,
+    "REDIRECT_REQUIRES_REVIEW": 209,
+    "NETWORK_OR_POLICY_UNKNOWN": 87,
+    "REPOSITORY_DESK_REVIEWED_NOT_RUNTIME_TESTED": 32,
+    "UNRESOLVED": 39
+  },
+  "security_flags": {
+    "UNTRUSTED_DESCRIPTION": 4504,
+    "NOT_SECURITY_AUDITED": 4504,
+    "CLEARTEXT_HTTP": 79,
+    "DESCRIPTION_MULTIPLE_ENTITIES": 611,
+    "ARCHIVED_REPOSITORY": 69,
+    "DUAL_USE_KEYWORD_REVIEW": 9,
+    "PROMPT_INJECTION_KEYWORD_REVIEW": 3
+  },
+  "resource_types": {
+    "website_or_resource_unknown": 1172,
+    "github_project_url_candidate": 3221,
+    "post_channel_or_media_candidate": 15,
+    "repository_index_or_reference_candidate": 71,
+    "app_store_listing": 22,
+    "image_design_editor": 1,
+    "reference_collection": 1,
+    "terminal_map_renderer": 1
+  },
+  "github_projects": {
+    "attempted": 3256,
+    "statuses": {
+      "METADATA_OBSERVED": 3010,
+      "REDIRECT_REQUIRES_REVIEW": 207,
+      "UNRESOLVED": 39
+    },
+    "archived": 68
+  },
+  "web_distinct_urls": {
+    "attempted": 1209,
+    "statuses": {
+      "HTTP_RESPONSE_OBSERVED": 973,
+      "HTTP_ERROR_OBSERVED": 149,
+      "NETWORK_OR_POLICY_UNKNOWN": 87
+    },
+    "http_statuses": {
+      "200": 973,
+      "503": 4,
+      "403": 59,
+      "UNKNOWN": 87,
+      "429": 12,
+      "502": 1,
+      "302": 1,
+      "404": 38,
+      "405": 16,
+      "400": 1,
+      "520": 1,
+      "402": 7,
+      "410": 1,
+      "401": 4,
+      "406": 2,
+      "303": 1,
+      "500": 1
+    }
+  },
+  "technical_desk_reviews": 50,
+  "primary_document_count": 98,
+  "machine_checks": {
+    "source_counts": {
+      "iirepresent.json": 1331,
+      "Радар.json": 3173
+    },
+    "expected_total": 4504,
+    "processed_total": 4504,
+    "processed_id_set_equal": true,
+    "processed_id_unique": true,
+    "classified_ids_equal": true,
+    "csv_ids_equal": true,
+    "note_ids_equal": true,
+    "note_count": 4504,
+    "all_git_blob_hashes_match": true,
+    "reported_source_sha256_match": false,
+    "manifest_counts_match": true,
+    "issue_rows_match_classification_flags": true,
+    "prior_issue_rows": 4090,
+    "expected_issue_rows": 4090,
+    "derivative_mismatch_count": 0,
+    "unique_counts": {
+      "exact_url": 4472,
+      "conservative_url": 4471,
+      "project_or_resource": 4465,
+      "legacy_full_url": 4466,
+      "legacy_host_path": 4424
+    },
+    "duplicate_extra_rows": {
+      "exact_url": 32,
+      "conservative_url": 33,
+      "project_or_resource": 39,
+      "legacy_full_url": 38,
+      "legacy_host_path": 80
+    },
+    "raw_record_key_shapes": {
+      "iirepresent.json": {
+        "description,link": 1331
+      },
+      "Радар.json": {
+        "description,link": 3173
+      }
+    },
+    "prior_duplicate_rows": 71,
+    "note_file_count": 4504,
+    "note_ids_unique": true,
+    "historical_hashes_explained_by_crlf": true
+  }
+}

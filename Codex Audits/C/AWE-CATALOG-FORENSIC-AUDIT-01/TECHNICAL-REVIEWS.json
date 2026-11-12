@@ -1,0 +1,2447 @@
+[
+  {
+    "rank": 1,
+    "repo": "agent0ai/agent-zero",
+    "canonical_repo": "agent0ai/agent-zero",
+    "need": "recursive_agents",
+    "head": "ba9b67df0f54ac78106ae85c552ef5d2458f7c9a",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Создание и возобновление дочерних контекстов, terminal/browser/desktop executor",
+    "requirements": "Docker/Linux workspace; Windows launcher documented; model backend",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "call_subordinate validates available profiles; profile creation and full AWE governance need separate proof",
+    "integration_type": "Docker/Linux workspace",
+    "decision": "PILOT",
+    "minimum_acceptance": "Создать новый профиль по неизвестной миссии, дочернего и внучатого агента; resume context_id, cancel, depth/concurrency/budget denial, crash recovery",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md",
+        "git_blob": "00dbb86de1b2d2f9a196ee5a1833f1d7c6c35764",
+        "sha256": "b776433681d02bbef0d04cc1da916d8ca0b80dbd1bf4fb518b040377afc9e33a"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/LICENSE",
+        "git_blob": "50b7754de5cde0fbb796ffae376fb03dc19236d1",
+        "sha256": "23844ed5fb9976b15e6c0be1b617918cb1c32e13e8d70b74100dae08d40fbf23"
+      }
+    ],
+    "activity": {
+      "repo": "agent0ai/agent-zero",
+      "head": "ba9b67df0f54ac78106ae85c552ef5d2458f7c9a",
+      "commit_date": "2026-11-01T21:10:32Z",
+      "tree_sha": "45e9a6f77ef1300ad7c5b90f1d77a69dc52fc0b3",
+      "signature_verified": false,
+      "latest_release": {
+        "tag": "v2.15",
+        "published_at": "2026-11-01T23:52:00Z",
+        "url": "https://github.com/agent0ai/agent-zero/releases/tag/v2.15",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 2,
+    "repo": "NousResearch/hermes-agent",
+    "canonical_repo": "NousResearch/hermes-agent",
+    "need": "executor_skills",
+    "head": "67664e236ddcc45824b871d575677287599af152",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Skills, isolated conversations and leaf/orchestrator delegation primitives",
+    "requirements": "CLI/gateway, selectable terminal backend; native Windows/WSL/Linux documented",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Backend defines isolation; README antivirus exclusion is not malware analysis or an accepted operating instruction",
+    "integration_type": "CLI/gateway, selectable terminal backend",
+    "decision": "PILOT",
+    "minimum_acceptance": "Два параллельных изолированных child, вложенный orchestrator, запрет инструментов/путей, остановка и восстановление без дублирования эффекта",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/67664e236ddcc45824b871d575677287599af152/README.md",
+        "git_blob": "830be257308736e48f25ac4f2d097888b3a63a2c",
+        "sha256": "ca5c9f03262a10f7f996aa803b26a33f41a236f876c105da50367ff79de08271"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/67664e236ddcc45824b871d575677287599af152/LICENSE",
+        "git_blob": "75410e73319c72cd3e991a501c5455eb78f38375",
+        "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6"
+      }
+    ],
+    "activity": {
+      "repo": "NousResearch/hermes-agent",
+      "head": "67664e236ddcc45824b871d575677287599af152",
+      "commit_date": "2026-11-12T11:46:33Z",
+      "tree_sha": "2060ef7dbf2b9b10a397987e3e48dc4a15ce33fa",
+      "signature_verified": false,
+      "latest_release": {
+        "tag": "v0.23.1",
+        "published_at": "2026-11-10T01:42:15Z",
+        "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.1",
+        "target_commitish": "3b421578588243f920886e6fe79a6faa87ea026e"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 3,
+    "repo": "mastra-ai/mastra",
+    "canonical_repo": "mastra-ai/mastra",
+    "need": "current_head",
+    "head": "6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Agents, structured output, graph workflows with branch/parallel, memory, eval/trace interfaces",
+    "requirements": "TypeScript/Node; existing Head first, adapter to its exact pinned packages",
+    "license_scope": "Apache-2.0 core; Mastra Enterprise in ee/",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Published AWE main lacks current cleanroom Head; EE production entitlement and actual package versions require proof",
+    "integration_type": "TypeScript/Node",
+    "decision": "REUSE",
+    "minimum_acceptance": "На копии текущего Head: неизменяемое ТЗ, новая/возобновлённая миссия, bounded delegation, suspend/resume and independent critical gate",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/README.md",
+        "git_blob": "f6465bcaf53f737e3754c28660e142ca44e07c97",
+        "sha256": "49dd3ceb119209ed5130d4c8654c9082bae072191ca0ef4d43ecc3ecd5c80d28"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/LICENSE.md",
+        "git_blob": "e1b6e4b6455a882dbbf66ee0b13101ec584d5e63",
+        "sha256": "f0351b469d1548e547882f01d2486a90f6bd0ff3c89defec841bbf5641265776"
+      }
+    ],
+    "activity": {
+      "repo": "mastra-ai/mastra",
+      "head": "6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef",
+      "commit_date": "2026-11-12T14:05:50Z",
+      "tree_sha": "4567cac78209638a1f1f660c749309c6f3ba3baa",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "@mastra/core@1.82.0",
+        "published_at": "2026-11-04T10:59:56Z",
+        "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.82.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 4,
+    "repo": "langchain-ai/langgraph",
+    "canonical_repo": "langchain-ai/langgraph",
+    "need": "durable_orchestration",
+    "head": "b4cb0f19e3d8984e8a57f85667b8d1bec018f0ab",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Stateful orchestration, persistence, interrupts and subgraph building blocks",
+    "requirements": "Python SDK, explicit graph/checkpointer/storage integration",
+    "license_scope": "MIT core; managed services separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "SDK requires engineering; MIT core is not a grant for every deployment service; effects still need idempotency",
+    "integration_type": "Python SDK, explicit graph/checkpointer/storage integration",
+    "decision": "DEFER",
+    "minimum_acceptance": "Kill a persisted workflow between effect and acknowledgement; replay must produce one effect and preserve Owner criteria",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/langchain-ai/langgraph/blob/b4cb0f19e3d8984e8a57f85667b8d1bec018f0ab/README.md",
+        "git_blob": "97c31e9cb4d8fe56be8d768ce3eb5e22400e897e",
+        "sha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/langchain-ai/langgraph/blob/b4cb0f19e3d8984e8a57f85667b8d1bec018f0ab/LICENSE",
+        "git_blob": "fc0602feecdd6748623c852ab534e1ca612673c7",
+        "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+      }
+    ],
+    "activity": {
+      "repo": "langchain-ai/langgraph",
+      "head": "b4cb0f19e3d8984e8a57f85667b8d1bec018f0ab",
+      "commit_date": "2026-11-12T01:43:53Z",
+      "tree_sha": "7123c4dcf4dbb9fb6c8189aed49412fed1335650",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "sdk==0.4.14",
+        "published_at": "2026-11-06T03:03:34Z",
+        "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.14",
+        "target_commitish": "5847733bcb186c26b32da5cc822eaf8a89deffeb"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 5,
+    "repo": "agno-agi/agno",
+    "canonical_repo": "agno-agi/agno",
+    "need": "teams_agentos",
+    "head": "dc03a2c6f1dd760f2ead89140ea946321fb211e4",
+    "source_ids": [
+      "Радар-3152"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Agents, teams, workflows, storage and control interfaces",
+    "requirements": "Python/AgentOS REST and MCP; PostgreSQL storage; telemetry configuration",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Teams do not prove arbitrary dynamic recursion; hosted control and model costs are separate; verify telemetry choice",
+    "integration_type": "Python/AgentOS REST and MCP",
+    "decision": "PILOT",
+    "minimum_acceptance": "Same sealed recursion/resume/budget mission as Mastra and Agent Zero; compare artifacts and operator effort",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/agno-agi/agno/blob/dc03a2c6f1dd760f2ead89140ea946321fb211e4/README.md",
+        "git_blob": "5d0d4b7a149df35a1cbbe6c3cb6db51022f04405",
+        "sha256": "12dd410bfe18679095d2b63fe0cd0852d4e60c47d9b53245d2237836c1eedcae"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/agno-agi/agno/blob/dc03a2c6f1dd760f2ead89140ea946321fb211e4/LICENSE",
+        "git_blob": "51032f045aafc8732c072ed31aa96f2994f29081",
+        "sha256": "7504bf0fe32a486487ec309d5ef30597ca87d2508450be380f6ef4772c3371ca"
+      }
+    ],
+    "activity": {
+      "repo": "agno-agi/agno",
+      "head": "dc03a2c6f1dd760f2ead89140ea946321fb211e4",
+      "commit_date": "2026-11-12T14:01:27Z",
+      "tree_sha": "42e9caa776133606a6150cdd57df5d7c79cbbeb9",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v3.1.12",
+        "published_at": "2026-10-29T14:00:55Z",
+        "url": "https://github.com/agno-agi/agno/releases/tag/v3.1.12",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 6,
+    "repo": "microsoft/agent-framework",
+    "canonical_repo": "microsoft/agent-framework",
+    "need": "agent_sdk",
+    "head": "30285709c1d60736a9b8b8ad87cd4f94a3719f6a",
+    "source_ids": [
+      "Радар-1187"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Agent and workflow SDK with orchestration primitives",
+    "requirements": "Python or .NET SDK; application composition required",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Not a preconfigured AWE operator product; cross-language stack adds support burden",
+    "integration_type": "Python or .NET SDK",
+    "decision": "DEFER",
+    "minimum_acceptance": "Prove one model/tool adapter and checkpoint contract before considering replacement of the current Head",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/microsoft/agent-framework/blob/30285709c1d60736a9b8b8ad87cd4f94a3719f6a/README.md",
+        "git_blob": "937539b95ce86f9e636c96ed22bbfe38546261a1",
+        "sha256": "7ee5d282e0758150152e1f45f66c6648059686fe3121e2908fc7ca556e4474df"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/microsoft/agent-framework/blob/30285709c1d60736a9b8b8ad87cd4f94a3719f6a/LICENSE",
+        "git_blob": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+      }
+    ],
+    "activity": {
+      "repo": "microsoft/agent-framework",
+      "head": "30285709c1d60736a9b8b8ad87cd4f94a3719f6a",
+      "commit_date": "2026-11-12T13:35:49Z",
+      "tree_sha": "414506b5fb9598b3efe526306ceb16d260f7e163",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "python-1.25.0",
+        "published_at": "2026-11-07T15:52:42Z",
+        "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0",
+        "target_commitish": "7bca1df23ea97b778dd5cd7a50d9db8d1ef832db"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 7,
+    "repo": "camel-ai/camel",
+    "canonical_repo": "camel-ai/camel",
+    "need": "workforce",
+    "head": "0366b64bf3609c76f50e396715aab73ba58a930c",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Agent cooperation and task decomposition building blocks",
+    "requirements": "Python SDK/workforce integration and configured model/tools",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Workforce description does not establish durable crash recovery or per-project policy",
+    "integration_type": "Python SDK/workforce integration and configured model/tools",
+    "decision": "DEFER",
+    "minimum_acceptance": "Dynamically decompose a new mission, enforce resource limits, recover state and pass blind QA",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/camel-ai/camel/blob/0366b64bf3609c76f50e396715aab73ba58a930c/README.md",
+        "git_blob": "92076babf5e2e66552069caea60ce56363823d1d",
+        "sha256": "a2be9addbef3d31c4e691dcf1ef17aa40754f640a5eb05e1985eca4e12a82d8d"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/camel-ai/camel/blob/0366b64bf3609c76f50e396715aab73ba58a930c/LICENSE",
+        "git_blob": "c46213dce5875ed087fc9fe3ce329b69d98713ed",
+        "sha256": "950deb34b1341a0ac95236fae92fe247c318c3a83a62c9ebacbe1882530ab1f6"
+      }
+    ],
+    "activity": {
+      "repo": "camel-ai/camel",
+      "head": "0366b64bf3609c76f50e396715aab73ba58a930c",
+      "commit_date": "2026-11-09T10:25:05Z",
+      "tree_sha": "3e6198a52bc1a427a8d6c11fabea4d0c2f0e0ca7",
+      "signature_verified": false,
+      "latest_release": {
+        "tag": "v0.2.90",
+        "published_at": "2026-03-22T08:37:36Z",
+        "url": "https://github.com/camel-ai/camel/releases/tag/v0.2.90",
+        "target_commitish": "master"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 8,
+    "repo": "BerriAI/litellm",
+    "canonical_repo": "BerriAI/litellm",
+    "need": "model_gateway",
+    "head": "52d1c4cd80162fbf03d7f92def0cb1631f1edfd4",
+    "source_ids": [
+      "Радар-1437"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Model routing, retries, virtual keys and spend instrumentation",
+    "requirements": "Python SDK or local OpenAI-compatible gateway; provider keys separate",
+    "license_scope": "MIT outside litellm/enterprise; enterprise terms excluded",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Gateway is not a token seller; entitlement, provider capability, double retry and budget overshoot require testing",
+    "integration_type": "Python SDK or local OpenAI-compatible gateway",
+    "decision": "PILOT",
+    "minimum_acceptance": "Mock upstream: tool/vision/JSON compatibility, streaming, 429/timeouts, bounded fallback, stop-on-budget and no credential forwarding",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/README.md",
+        "git_blob": "c07905759dea8bbbbd9a8a9504d6b30f999af6d1",
+        "sha256": "f91dae0bf8aa3c786ec4dce936814cf8374e11dd6c08b2490d83fa419e142bf6"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/LICENSE",
+        "git_blob": "2ffbfec19ad5a1fd2a489d1f4f7ce81a899eb77b",
+        "sha256": "4a5f5d029fb0fa6410cc3d416093d1f41571f0911f04b518088a54ea335bab30"
+      }
+    ],
+    "activity": {
+      "repo": "BerriAI/litellm",
+      "head": "52d1c4cd80162fbf03d7f92def0cb1631f1edfd4",
+      "commit_date": "2026-11-12T09:10:23Z",
+      "tree_sha": "02810bea38354ac10a1ea21554633287b5b866f2",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v1.109.1",
+        "published_at": "2026-11-12T02:07:01Z",
+        "url": "https://github.com/BerriAI/litellm/releases/tag/v1.109.1",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 9,
+    "repo": "diegosouzapw/OmniRoute",
+    "canonical_repo": "cheaper-inference/OmniRoute",
+    "need": "existing_gateway_candidate",
+    "head": "5a5894a77604e3148b0f76b14d8b0d9e4411edcb",
+    "source_ids": [
+      "iirepresent-0146",
+      "Радар-0621"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Provider routing/fallback and optional context compression interfaces",
+    "requirements": "Node gateway; original URL now cheaper-inference/OmniRoute",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Free/savings claims unmeasured; avoid MITM/trust-store changes and broad subscription/OAuth credential reuse",
+    "integration_type": "Node gateway",
+    "decision": "PILOT",
+    "minimum_acceptance": "Read existing config first; mock one allowlisted upstream, no secret forwarding, bounded retries; compare quality before enabling compression",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/cheaper-inference/OmniRoute/blob/5a5894a77604e3148b0f76b14d8b0d9e4411edcb/README.md",
+        "git_blob": "05e96909ff5c810ba5c962e70d33c0a31cbb8a24",
+        "sha256": "c87749640b9c53c7f5083aca6b7ff0e5604ffc38b48e0f223dcbceaad8ed0b93"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/cheaper-inference/OmniRoute/blob/5a5894a77604e3148b0f76b14d8b0d9e4411edcb/LICENSE",
+        "git_blob": "b5c9f58d06b1cef61ebf96f580d90c3dba5e1dac",
+        "sha256": "5f3caa52b2c2ce5dfb40c85404a370d23b6dc3e26a1447d17dc7e56f773b91de"
+      }
+    ],
+    "activity": {
+      "repo": "cheaper-inference/OmniRoute",
+      "head": "5a5894a77604e3148b0f76b14d8b0d9e4411edcb",
+      "commit_date": "2026-11-12T09:58:01Z",
+      "tree_sha": "590d0e90581b1162113e73b4d32fe977071c5567",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v3.8.53",
+        "published_at": "2026-11-06T10:53:35Z",
+        "url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.53",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 10,
+    "repo": "stacklok/toolhive",
+    "canonical_repo": "stacklok/toolhive",
+    "need": "mcp_gateway",
+    "head": "ac4a1326dc0ab75a43c7ccd2d3932965eab24201",
+    "source_ids": [
+      "Радар-2978"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "MCP runtime, access and registry primitives",
+    "requirements": "Go CLI/gateway with Docker/Podman/Kubernetes; each managed server separately licensed",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Containers and curated listings are not source audits or AWE approval; runtime auth must be configured",
+    "integration_type": "Go CLI/gateway with Docker/Podman/Kubernetes",
+    "decision": "PILOT",
+    "minimum_acceptance": "Harmless MCP only: deny unauthenticated calls, cross-project paths/egress and excess capabilities; record actor/project/tool version",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/stacklok/toolhive/blob/ac4a1326dc0ab75a43c7ccd2d3932965eab24201/README.md",
+        "git_blob": "1ac01d277987d747df5b9a6361c2025bf85af2d8",
+        "sha256": "46623bc2ef84c0483e829fdf923222fc6f8b877f64599e293678cb5bdc4821f4"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/stacklok/toolhive/blob/ac4a1326dc0ab75a43c7ccd2d3932965eab24201/LICENSE",
+        "git_blob": "5d19730a604c467f93437238d205f8e793dddb40",
+        "sha256": "269187c8b1d9569c2a3a381eeb428150f96b2a2c93e168be7ce45e1247853168"
+      }
+    ],
+    "activity": {
+      "repo": "stacklok/toolhive",
+      "head": "ac4a1326dc0ab75a43c7ccd2d3932965eab24201",
+      "commit_date": "2026-11-12T14:01:45Z",
+      "tree_sha": "5ea41f28b5203d555a27a51a3c0e0b9b53e77e79",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.64.0",
+        "published_at": "2026-11-10T11:46:58Z",
+        "url": "https://github.com/stacklok/toolhive/releases/tag/v0.64.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 11,
+    "repo": "modelcontextprotocol/inspector",
+    "canonical_repo": "modelcontextprotocol/inspector",
+    "need": "mcp_qa",
+    "head": "488c30d9d16e4993bc548ad298eb7450f5125c93",
+    "source_ids": [
+      "Радар-1349"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "MCP list/call/protocol debugging",
+    "requirements": "Node inspection UI/CLI; fake credentials only",
+    "license_scope": "MIT-to-Apache-2.0 transition; retained MIT and CC-BY-4.0 docs",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Not a sandbox or visual examiner; keychain fallback may store unencrypted secrets",
+    "integration_type": "Node inspection UI/CLI",
+    "decision": "REUSE",
+    "minimum_acceptance": "Malformed responses/timeouts and tool schemas; inspect actual secret-storage backend using canaries and verify redacted logs",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/modelcontextprotocol/inspector/blob/488c30d9d16e4993bc548ad298eb7450f5125c93/README.md",
+        "git_blob": "7f5c529411172c33889e678496ed8bb1463c1a3a",
+        "sha256": "a7141b0cb29ad8af66b20e4c53b28c0e36cda08532d596a084468bd8922250d8"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/modelcontextprotocol/inspector/blob/488c30d9d16e4993bc548ad298eb7450f5125c93/LICENSE",
+        "git_blob": "4a93985763241755401a10678395303de4e720ba",
+        "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+      }
+    ],
+    "activity": {
+      "repo": "modelcontextprotocol/inspector",
+      "head": "488c30d9d16e4993bc548ad298eb7450f5125c93",
+      "commit_date": "2026-11-12T00:40:59Z",
+      "tree_sha": "6bf80bc03472f3fa8d71f3bbae4e9b798d89640e",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "2.15.0",
+        "published_at": "2026-11-12T00:46:29Z",
+        "url": "https://github.com/modelcontextprotocol/inspector/releases/tag/2.15.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 12,
+    "repo": "modelcontextprotocol/servers",
+    "canonical_repo": "modelcontextprotocol/servers",
+    "need": "mcp_reference_servers",
+    "head": "e1dc4b18dbb948921da37f3d4224a628730b43b0",
+    "source_ids": [
+      "Радар-2476"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Reference MCP implementations and protocol examples",
+    "requirements": "Select one exact reference server and its runtime",
+    "license_scope": "MIT-to-Apache-2.0 transition; docs distinct",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Educational/reference status is not production assurance; no bulk enablement",
+    "integration_type": "Select one exact reference server and its runtime",
+    "decision": "DEFER",
+    "minimum_acceptance": "One server: traversal/symlink/URI tests, narrow roots, auth, cancellation and evidence; inspect its own license/dependencies",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/README.md",
+        "git_blob": "9e612a110babdaac685a0279ec7ac4b14a9eec71",
+        "sha256": "92581188edbaa1e732885f11a408176e038d8bc41704b327d19dbd3d853a5c4b"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/LICENSE",
+        "git_blob": "4a93985763241755401a10678395303de4e720ba",
+        "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+      }
+    ],
+    "activity": {
+      "repo": "modelcontextprotocol/servers",
+      "head": "e1dc4b18dbb948921da37f3d4224a628730b43b0",
+      "commit_date": "2026-11-11T06:50:30Z",
+      "tree_sha": "25499a9839d4df8585d935934d0a083ab3994610",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v2.4.0",
+        "published_at": "2026-11-11T07:07:16Z",
+        "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.4.0",
+        "target_commitish": "e1dc4b18dbb948921da37f3d4224a628730b43b0"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 13,
+    "repo": "microsoft/playwright-mcp",
+    "canonical_repo": "microsoft/playwright-mcp",
+    "need": "browser_tools",
+    "head": "78eca85361efb545a4c0f59b6140aef0721c5412",
+    "source_ids": [
+      "Радар-3084"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Accessibility-based browser tools and screenshots",
+    "requirements": "Node >=18 per README; browser binary; isolated or dedicated profile",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Explicitly not a security boundary; origin filters do not secure redirects; persistent profiles risk cookie sharing",
+    "integration_type": "Node >=18 per README",
+    "decision": "PILOT",
+    "minimum_acceptance": "Two viewports + DOM assertions; separate profiles per agent, deny local files and redirected egress, verify download handling",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/microsoft/playwright-mcp/blob/78eca85361efb545a4c0f59b6140aef0721c5412/README.md",
+        "git_blob": "87f3a3391791cb16b1c57be2848252b27f607f9a",
+        "sha256": "db4a7eee3e3bd4be105f8f9a10945cda390fe3bd955d05183e961f4e91f0b7ef"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/microsoft/playwright-mcp/blob/78eca85361efb545a4c0f59b6140aef0721c5412/LICENSE",
+        "git_blob": "cefe596afef12e19a8e5e923f1a04c7da3188760",
+        "sha256": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda"
+      }
+    ],
+    "activity": {
+      "repo": "microsoft/playwright-mcp",
+      "head": "78eca85361efb545a4c0f59b6140aef0721c5412",
+      "commit_date": "2026-11-11T18:08:38Z",
+      "tree_sha": "ba9401ad1622454ae4a3216f94f26a38aa157ac9",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.0.85",
+        "published_at": "2026-11-09T18:28:53Z",
+        "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.85",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 14,
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "canonical_repo": "ChromeDevTools/chrome-devtools-mcp",
+    "need": "browser_debug",
+    "head": "83d2ba4dde9663a8cd0bdb8af6c99fea50726003",
+    "source_ids": [
+      "Радар-1491"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Console, network and browser-performance debugging",
+    "requirements": "Node/Chrome versions per pinned package; isolated Chrome debugging session",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Debugger can expose page secrets; no automatic visual or security acceptance",
+    "integration_type": "Node/Chrome versions per pinned package",
+    "decision": "PILOT",
+    "minimum_acceptance": "Collect one trace/error/screenshot from a disposable app; enforce profile separation and redact headers/tokens",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/83d2ba4dde9663a8cd0bdb8af6c99fea50726003/README.md",
+        "git_blob": "2dca1a052a314a7c2635fb9da68c96221441e380",
+        "sha256": "c419e4a59a6ca70691848cd7c11b1a1e72d03765f34bce093e99e9dc6e42a8e9"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/83d2ba4dde9663a8cd0bdb8af6c99fea50726003/LICENSE",
+        "git_blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      }
+    ],
+    "activity": {
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "head": "83d2ba4dde9663a8cd0bdb8af6c99fea50726003",
+      "commit_date": "2026-11-12T06:58:55Z",
+      "tree_sha": "33d4715a042b5a14bb52f584832279b5d6c7b226",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "chrome-devtools-mcp-v1.13.0",
+        "published_at": "2026-11-11T12:40:09Z",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases/tag/chrome-devtools-mcp-v1.13.0",
+        "target_commitish": "b1e35e3ab1774664dfc66a2cb813a392535fe160"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 15,
+    "repo": "browser-use/browser-use",
+    "canonical_repo": "browser-use/browser-use",
+    "need": "browser_agent",
+    "head": "7fdd63c03fd342aab4fe44507c77c3221ffd43c6",
+    "source_ids": [
+      "iirepresent-0664"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Browser-agent planning and interaction",
+    "requirements": "Python, browser backend and configured model/vision provider",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Extra inference/latency and credential exposure; do not replace deterministic tests with agent prose",
+    "integration_type": "Python, browser backend and configured model/vision provider",
+    "decision": "DEFER",
+    "minimum_acceptance": "Same browser task against Playwright baseline; measure completion, calls and cost with separately authorized model budget",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/browser-use/browser-use/blob/7fdd63c03fd342aab4fe44507c77c3221ffd43c6/README.md",
+        "git_blob": "69f67f1d637ea08fd6a4209e5e26d04e4df7b9fe",
+        "sha256": "839649f50f8095d858d4bd4632437464379af49f152c82cf3fcf4c14a0cfc792"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/browser-use/browser-use/blob/7fdd63c03fd342aab4fe44507c77c3221ffd43c6/LICENSE",
+        "git_blob": "1ea3836ce58a4cd32c90c0b4f4e736d840d23780",
+        "sha256": "135c57671b0ee957669b05a0ca00cc06f645496d351e2e732832c6e276da9a5e"
+      }
+    ],
+    "activity": {
+      "repo": "browser-use/browser-use",
+      "head": "7fdd63c03fd342aab4fe44507c77c3221ffd43c6",
+      "commit_date": "2026-11-11T00:05:55Z",
+      "tree_sha": "9ea38a938c460e8b78891202cbe66986b328cecc",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "1.0.2",
+        "published_at": "2026-11-11T04:00:00Z",
+        "url": "https://github.com/browser-use/browser-use/releases/tag/1.0.2",
+        "target_commitish": "37e1d75ce239e0591da55e31aac4abf59bdd6cdb"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 16,
+    "repo": "github/github-mcp-server",
+    "canonical_repo": "github/github-mcp-server",
+    "need": "github_tools",
+    "head": "6fbcd00b2034502ba3001a49dfaf93593aee7069",
+    "source_ids": [
+      "Радар-3090"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Repository, issue and coding-workflow tool integration",
+    "requirements": "OAuth/PAT; remote MCP or Go/container local server; exact toolsets",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Read access is not write/admin permission; connector availability in Codex does not prove AWE integration",
+    "integration_type": "OAuth/PAT",
+    "decision": "PILOT",
+    "minimum_acceptance": "Disposable repository with read-only token/allowlist; prove denied writes and repo boundaries, then test leased/idempotent writes only if authorized",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/README.md",
+        "git_blob": "432541f4342321f88225308ebb70402632798a56",
+        "sha256": "371e8c991df6e5e61ca6a864d692141dbf1a728ae0790d376b54c96b91e4ff13"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/LICENSE",
+        "git_blob": "9a9cc50d37ea399f7ccc2f14b6c6d4cc4de02efc",
+        "sha256": "9e48ecfa18e2b15169746a3c97beda4d1d6c6796097038498ca434ca7e0ccd44"
+      }
+    ],
+    "activity": {
+      "repo": "github/github-mcp-server",
+      "head": "6fbcd00b2034502ba3001a49dfaf93593aee7069",
+      "commit_date": "2026-11-09T14:28:25Z",
+      "tree_sha": "f1228c0ec7109444ed8a17c3cc467b9533b7efd8",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v2.1.0",
+        "published_at": "2026-11-03T11:11:41Z",
+        "url": "https://github.com/github/github-mcp-server/releases/tag/v2.1.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 17,
+    "repo": "googleworkspace/cli",
+    "canonical_repo": "googleworkspace/cli",
+    "need": "workspace_tools",
+    "head": "cd3697e07eb520056dcf142d0c7439bbb9ba32e9",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Discovery-driven Google Workspace API CLI and agent-facing commands",
+    "requirements": "Rust CLI/npm distribution; Node >=18 for npm install; GCP OAuth project",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "README says not officially supported Google product; broad test-mode scope presets can fail",
+    "integration_type": "Rust CLI/npm distribution",
+    "decision": "PILOT",
+    "minimum_acceptance": "Dedicated test user, chosen read scopes/services, revocation and token isolation; deny mail/calendar/Drive mutation",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/googleworkspace/cli/blob/cd3697e07eb520056dcf142d0c7439bbb9ba32e9/README.md",
+        "git_blob": "04c532d0a6936d06d96c0572771feba4274a834e",
+        "sha256": "499ff9600cc36f6c547e16ef5b56e7baee05afa35240c010b8873441928a39aa"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/googleworkspace/cli/blob/cd3697e07eb520056dcf142d0c7439bbb9ba32e9/LICENSE",
+        "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "activity": {
+      "repo": "googleworkspace/cli",
+      "head": "cd3697e07eb520056dcf142d0c7439bbb9ba32e9",
+      "commit_date": "2026-10-30T15:47:59Z",
+      "tree_sha": "37c679a1f683c9b6448d3bd3d10620c90e24e14a",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.22.5",
+        "published_at": "2026-03-31T18:53:24Z",
+        "url": "https://github.com/googleworkspace/cli/releases/tag/v0.22.5",
+        "target_commitish": "705fb0ecac6f4249679958f6325b809b63fdde17"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 18,
+    "repo": "taylorwilsdon/google_workspace_mcp",
+    "canonical_repo": "taylorwilsdon/google_workspace_mcp",
+    "need": "workspace_mcp",
+    "head": "65286d80c77589fbe43c85b870979d67794cc91c",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Workspace tools, service filters, read-only and multi-user modes",
+    "requirements": "Python >=3.10, OAuth and enabled Google APIs; stdio/HTTP MCP",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Community implementation; OAuth version and README claims do not prove tenant isolation or dependency licensing",
+    "integration_type": "Python >=3.10, OAuth and enabled Google APIs",
+    "decision": "PILOT",
+    "minimum_acceptance": "Two disjoint test users: cross-user denial, token audience/issuer, tool filters, secret storage and no content leakage",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/taylorwilsdon/google_workspace_mcp/blob/65286d80c77589fbe43c85b870979d67794cc91c/README.md",
+        "git_blob": "3d850b5bcf967ba757a8e88426c1077e761e2bb2",
+        "sha256": "6f4171de850800402ff47b7a88b037314cff77115288c60b2dc2c7d1d69ec0a7"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/taylorwilsdon/google_workspace_mcp/blob/65286d80c77589fbe43c85b870979d67794cc91c/LICENSE",
+        "git_blob": "bc5b15a5fb2d98aad3b8abea7a82339708a8fc7b",
+        "sha256": "6c1f0beeb232472e68f961f11a0bd1b98f21513ccdbb88770d392fc95f17149a"
+      }
+    ],
+    "activity": {
+      "repo": "taylorwilsdon/google_workspace_mcp",
+      "head": "65286d80c77589fbe43c85b870979d67794cc91c",
+      "commit_date": "2026-11-11T23:16:44Z",
+      "tree_sha": "4e6c69a727a0eea696dd4c791bfa4025aef7eff5",
+      "signature_verified": false,
+      "latest_release": {
+        "tag": "v2.4.2",
+        "published_at": "2026-11-12T02:48:04Z",
+        "url": "https://github.com/taylorwilsdon/google_workspace_mcp/releases/tag/v2.4.2",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 19,
+    "repo": "sonnylazuardi/cursor-talk-to-figma-mcp",
+    "canonical_repo": "grab/cursor-talk-to-figma-mcp",
+    "need": "figma_bridge",
+    "head": "ddd90f3a6d454ea0b2fc29f1b084f50fd062b880",
+    "source_ids": [
+      "iirepresent-0637"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Read/write Figma document bridge",
+    "requirements": "Community Figma plugin plus socket/Bun bridge; Windows/WSL documented",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Moved to grab; socket binding/auth and broad design-write access need review; prefer official service where compatible",
+    "integration_type": "Community Figma plugin plus socket/Bun bridge",
+    "decision": "DEFER",
+    "minimum_acceptance": "Disposable file, loopback-only connection, auth/channel isolation, rollback, text/design-token fidelity and independent visual QA",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/grab/cursor-talk-to-figma-mcp/blob/ddd90f3a6d454ea0b2fc29f1b084f50fd062b880/README.md",
+        "git_blob": "d1ccd6c62d01b83877d704e6cd0e111c03f08e50",
+        "sha256": "dc7db373813b3898f73bdfe5f12f62edefb03358ddf04b0c036f13877656e2e2"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/grab/cursor-talk-to-figma-mcp/blob/ddd90f3a6d454ea0b2fc29f1b084f50fd062b880/LICENSE",
+        "git_blob": "db5ef900a57312e0532c247e74fdf472f2ebd03c",
+        "sha256": "4381826279ec9bec074481549644fc5fb58e037b87813e085f06e15e82deb1f7"
+      }
+    ],
+    "activity": {
+      "repo": "grab/cursor-talk-to-figma-mcp",
+      "head": "ddd90f3a6d454ea0b2fc29f1b084f50fd062b880",
+      "commit_date": "2026-07-26T07:14:26Z",
+      "tree_sha": "fcac89fda4915941fa60bf08a68df376078e68d7",
+      "signature_verified": true,
+      "latest_release": {
+        "status": "NOT_OBSERVED",
+        "reason": {
+          "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/releases/releases#get-the-latest-release\",\"status\":\"404\"}",
+          "error_code": "NOT_FOUND",
+          "error_data": {
+            "message": "Not Found",
+            "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+            "status": "404"
+          }
+        }
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 20,
+    "repo": "activepieces/activepieces",
+    "canonical_repo": "activepieces/activepieces",
+    "need": "workflow_connectors",
+    "head": "4f4ab8973b76e474770a57d544c2fdc967d0e0e2",
+    "source_ids": [
+      "Радар-3154"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Deterministic integration flows and reusable connectors",
+    "requirements": "Self-hosted workflow/connectors; per-piece credentials",
+    "license_scope": "MIT community outside EE directories; commercial EE",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Workflow automation is not recursive AWE governance; retries can duplicate account effects",
+    "integration_type": "Self-hosted workflow/connectors",
+    "decision": "PILOT",
+    "minimum_acceptance": "One read-only connector with fake/test credentials; cancellation, timeout, retry/idempotency and exported evidence",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/activepieces/activepieces/blob/4f4ab8973b76e474770a57d544c2fdc967d0e0e2/README.md",
+        "git_blob": "a0b8adff34d2909d02480a2ed61a13b4e87a2ce4",
+        "sha256": "b159d84d19ea2505143a1d369416b8f5ef63540e9530bd2f20f8bd0e3e0c70bf"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/activepieces/activepieces/blob/4f4ab8973b76e474770a57d544c2fdc967d0e0e2/LICENSE",
+        "git_blob": "73e0a2f7acf13c780655de40183b06a0a93e091b",
+        "sha256": "d490fc48488c4f5a721d354f0a5cce0972c7e3de768ac3e0c5851c3de79f3c9b"
+      }
+    ],
+    "activity": {
+      "repo": "activepieces/activepieces",
+      "head": "4f4ab8973b76e474770a57d544c2fdc967d0e0e2",
+      "commit_date": "2026-11-12T13:01:42Z",
+      "tree_sha": "300f477747b5863c4c27e15a59b79f90e61ff91e",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "0.93.0",
+        "published_at": "2026-11-08T14:30:22Z",
+        "url": "https://github.com/activepieces/activepieces/releases/tag/0.93.0",
+        "target_commitish": "release/0.93.0"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 21,
+    "repo": "n8n-io/n8n",
+    "canonical_repo": "n8n-io/n8n",
+    "need": "workflow_engine",
+    "head": "1ae5175a008fc464cc27579b4d7613b60e203ed1",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Visual workflows and integrations",
+    "requirements": "Self-hosted or hosted workflow engine; exact permitted use case",
+    "license_scope": "Sustainable Use License with Enterprise/branch/file exceptions",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Do not label unrestricted OSS or presume hosted resale/redistribution rights; duplicate engine may add burden",
+    "integration_type": "Self-hosted or hosted workflow engine",
+    "decision": "DEFER",
+    "minimum_acceptance": "Scope license first; one disposable workflow with narrow credentials, replay/idempotency and backup/restore",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/n8n-io/n8n/blob/1ae5175a008fc464cc27579b4d7613b60e203ed1/README.md",
+        "git_blob": "2d2053d58750e70ca43f946ab75a6ec5d532f87c",
+        "sha256": "2883ac16a971679a2b46fbedd2b8361fc3bde58388ac463a707ff66687a34225"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/n8n-io/n8n/blob/1ae5175a008fc464cc27579b4d7613b60e203ed1/LICENSE.md",
+        "git_blob": "f85f59baa906530c26cee26e0c9ddd6bd5f86dbd",
+        "sha256": "d2f621f59aa4c10eab79b6333e59d9d3d5b53307dcfd16dbd75e40e679e84965"
+      }
+    ],
+    "activity": {
+      "repo": "n8n-io/n8n",
+      "head": "1ae5175a008fc464cc27579b4d7613b60e203ed1",
+      "commit_date": "2026-11-12T14:03:18Z",
+      "tree_sha": "45b94a4212d4877119e4e798442a21e312f406f1",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "n8n@2.47.5",
+        "published_at": "2026-11-12T08:34:10Z",
+        "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.5",
+        "target_commitish": "release/2.47.5"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 22,
+    "repo": "langfuse/langfuse",
+    "canonical_repo": "langfuse/langfuse",
+    "need": "observability",
+    "head": "9621bc46d0e67e7580f6425dea07996f347f0412",
+    "source_ids": [
+      "Радар-1734"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Traces, prompts, evaluations and cost instrumentation",
+    "requirements": "OTel/SDK instrumentation; separate self-host stack or cloud",
+    "license_scope": "MIT outside listed EE directories; commercial EE",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Not an independent examiner; traces can retain secrets; provider invoices remain authoritative for spend",
+    "integration_type": "OTel/SDK instrumentation",
+    "decision": "PILOT",
+    "minimum_acceptance": "Canary secrets in synthetic traces: redact before export, enforce retention/ACL, detect missing tool events and compare usage ledger",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/langfuse/langfuse/blob/9621bc46d0e67e7580f6425dea07996f347f0412/README.md",
+        "git_blob": "bd8a1cf07920249a10cca128aa0349559b3b0443",
+        "sha256": "1dae4f71cec43ff4aa0b1309f450d019f1600ecc241d1374fad898a8b3c3abf0"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/langfuse/langfuse/blob/9621bc46d0e67e7580f6425dea07996f347f0412/LICENSE",
+        "git_blob": "eaa2e5e444c8634f35b2a1137f7ea06e8353f475",
+        "sha256": "9ee6ca42e813fb58bcad18bed834438503bcc997da3b452d3f9ad4af4292b6b3"
+      }
+    ],
+    "activity": {
+      "repo": "langfuse/langfuse",
+      "head": "9621bc46d0e67e7580f6425dea07996f347f0412",
+      "commit_date": "2026-11-12T13:47:32Z",
+      "tree_sha": "9436a2f4ada354ee8763cde9ad2e672463a951f0",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v4.79.0",
+        "published_at": "2026-11-12T09:40:45Z",
+        "url": "https://github.com/langfuse/langfuse/releases/tag/v4.79.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 23,
+    "repo": "promptfoo/promptfoo",
+    "canonical_repo": "promptfoo/promptfoo",
+    "need": "adversarial_evals",
+    "head": "e4ecd0e48b08aedebe186b2ee868b0f31c62e3fe",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "LLM evaluation and adversarial/prompt-injection scenarios",
+    "requirements": "Node CLI and explicit providers; deterministic vs paid judge modes separate",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "A judge score is not truth or independent acceptance; generated/evaluation calls may cost money",
+    "integration_type": "Node CLI and explicit providers",
+    "decision": "REUSE",
+    "minimum_acceptance": "Sealed requirements, negative tool/policy cases and reproducible fixtures; any paid judge run needs a separate ceiling and authorization",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/promptfoo/promptfoo/blob/e4ecd0e48b08aedebe186b2ee868b0f31c62e3fe/README.md",
+        "git_blob": "2a56017c2609e3a92d7d5539147c9c7e620a3420",
+        "sha256": "7fd57809624e22da73bf6b6feb027c9e09aec74e0099bdea711fe2e276e87c4a"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/promptfoo/promptfoo/blob/e4ecd0e48b08aedebe186b2ee868b0f31c62e3fe/LICENSE",
+        "git_blob": "af3fa111d9303b3041d225fb851534e50a4bbec2",
+        "sha256": "bf813686553f451e1b833fbd827488aee49b60b189626915bf3108d10b754e44"
+      }
+    ],
+    "activity": {
+      "repo": "promptfoo/promptfoo",
+      "head": "e4ecd0e48b08aedebe186b2ee868b0f31c62e3fe",
+      "commit_date": "2026-11-12T07:12:47Z",
+      "tree_sha": "063bc172396bc445e492d6bf74f23ead40436963",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "0.125.1",
+        "published_at": "2026-10-25T01:53:11Z",
+        "url": "https://github.com/promptfoo/promptfoo/releases/tag/0.125.1",
+        "target_commitish": "8569e72ed6cf7737082a6042be8d925e40f9739d"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 24,
+    "repo": "confident-ai/deepeval",
+    "canonical_repo": "confident-ai/deepeval",
+    "need": "evals",
+    "head": "debe7955c0029add96f8340e38932ae62a77907c",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Evaluation metrics and Python test integration",
+    "requirements": "Python >=3.10 and configured evaluator/provider",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "LLM grading variance and external calls; test quality and independence require their own checks",
+    "integration_type": "Python >=3.10 and configured evaluator/provider",
+    "decision": "DEFER",
+    "minimum_acceptance": "Same positive/negative corpus as Promptfoo, deterministic critical failures cannot be overridden by score; measure evaluator disagreement",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/confident-ai/deepeval/blob/debe7955c0029add96f8340e38932ae62a77907c/README.md",
+        "git_blob": "f2efc9d0c81cb34bbe92a40d4d0dd1462e2c6e48",
+        "sha256": "e3acb524e2faa6acdfb5d468499a896c05d0cfa0969a653091f9964235955dbe"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/confident-ai/deepeval/blob/debe7955c0029add96f8340e38932ae62a77907c/LICENSE.md",
+        "git_blob": "a27de83203ab2f62f489794d0996e9c8704c5aa1",
+        "sha256": "d004e4b8bbfa420b094c13835070b945a93f3c0ac0ea0bf6b7b8a72733533f7f"
+      }
+    ],
+    "activity": {
+      "repo": "confident-ai/deepeval",
+      "head": "debe7955c0029add96f8340e38932ae62a77907c",
+      "commit_date": "2026-11-11T20:11:29Z",
+      "tree_sha": "034c1079618fd1f41f3e0aade003075560382ce1",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "python-v4.2.4",
+        "published_at": "2026-09-22T16:36:00Z",
+        "url": "https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 25,
+    "repo": "pgvector/pgvector",
+    "canonical_repo": "pgvector/pgvector",
+    "need": "vector_memory",
+    "head": "66accb3af6705ea9975a33f6704f1cde50d99447",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Vector search inside existing relational storage",
+    "requirements": "Extension supports PostgreSQL >=13; Windows build needs C++ toolchain; SQL interface",
+    "license_scope": "PostgreSQL License",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Vector ranking does not establish facts or tenant ACL; no extension was installed in this audit",
+    "integration_type": "Extension supports PostgreSQL >=13",
+    "decision": "REUSE",
+    "minimum_acceptance": "Disposable matching PG version: pre-retrieval project auth, cross-tenant deny, recall baseline, versioned deletion and restored checkpoint",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/pgvector/pgvector/blob/66accb3af6705ea9975a33f6704f1cde50d99447/README.md",
+        "git_blob": "f5fde78f3a110cc3fcbc000046c13ca21a90f3fa",
+        "sha256": "19cebadeeb8d3181d01ef00399674ec41bd2f0363850cdccc7685d4260c5a1c6"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/pgvector/pgvector/blob/66accb3af6705ea9975a33f6704f1cde50d99447/LICENSE",
+        "git_blob": "fc5f177fa5d9c0d20a949f4b4faa028999977008",
+        "sha256": "6bba9ebeb73e27477463b05e5ef1bf303bccbddb3db9bbc95905d351604d6a87"
+      }
+    ],
+    "activity": {
+      "repo": "pgvector/pgvector",
+      "head": "66accb3af6705ea9975a33f6704f1cde50d99447",
+      "commit_date": "2026-11-11T07:47:38Z",
+      "tree_sha": "64e93b61481e8a5149a715530762a42c341567f3",
+      "signature_verified": false,
+      "latest_release": {
+        "status": "NOT_OBSERVED",
+        "reason": {
+          "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/releases/releases#get-the-latest-release\",\"status\":\"404\"}",
+          "error_code": "NOT_FOUND",
+          "error_data": {
+            "message": "Not Found",
+            "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+            "status": "404"
+          }
+        }
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 26,
+    "repo": "supermemoryai/supermemory",
+    "canonical_repo": "supermemoryai/supermemory",
+    "need": "memory_service",
+    "head": "8af3b9108f1a4dce45b10cfa4f8f0af027b4197b",
+    "source_ids": [
+      "iirepresent-0059",
+      "Радар-1876"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Memory/context ingestion and retrieval interfaces",
+    "requirements": "Local API/container or hosted API; model/embedding backend; API key even on localhost",
+    "license_scope": "MIT repository; service/EE terms separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "URL ingestion can use hosted reader; telemetry/provider paths and memory truth require control",
+    "integration_type": "Local API/container or hosted API",
+    "decision": "PILOT",
+    "minimum_acceptance": "Start with text-only synthetic records; auth before retrieval, TTL/update/delete, poisoned-memory rejection and restore without duplicate facts",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/supermemoryai/supermemory/blob/8af3b9108f1a4dce45b10cfa4f8f0af027b4197b/README.md",
+        "git_blob": "8c719544597ee0bc4efff8bc58c3fda9549b1c46",
+        "sha256": "1b3e6d9804718bc94c6309e29a870ce6eabe3fedabb2739152ab85910a29b5f9"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/supermemoryai/supermemory/blob/8af3b9108f1a4dce45b10cfa4f8f0af027b4197b/LICENSE",
+        "git_blob": "7b20e33c1b3d277e200ff1872a109c6d9304bacc",
+        "sha256": "9ce388a89cce6a2dc109579d044f7f16e1397d8ee6fdb1f3bd3b980d365a07ae"
+      }
+    ],
+    "activity": {
+      "repo": "supermemoryai/supermemory",
+      "head": "8af3b9108f1a4dce45b10cfa4f8f0af027b4197b",
+      "commit_date": "2026-11-11T06:38:24Z",
+      "tree_sha": "517c47f2b89a69ed74edd7c8f3ebf4879bbde9b9",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "server-v0.0.9",
+        "published_at": "2026-10-12T18:59:36Z",
+        "url": "https://github.com/supermemoryai/supermemory/releases/tag/server-v0.0.9",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 27,
+    "repo": "mem0ai/mem0",
+    "canonical_repo": "mem0ai/mem0",
+    "need": "memory_layer",
+    "head": "f1791daa86d469249c9b002f62644d58a1eb96a0",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "User/session/agent memory extraction and retrieval",
+    "requirements": "Python/JS memory layer with explicit model, embedding and vector-store configuration",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Default external providers and inferred memories can expand data exposure; provenance and approval not automatic",
+    "integration_type": "Python/JS memory layer with explicit model, embedding and vector-store configuration",
+    "decision": "DEFER",
+    "minimum_acceptance": "Adversarial corrections and project isolation; compare against existing SQL+vector baseline before adding another memory store",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/mem0ai/mem0/blob/f1791daa86d469249c9b002f62644d58a1eb96a0/README.md",
+        "git_blob": "c9ed6dbfbe14a2fe60b8f3761a083786157a6987",
+        "sha256": "f72db3426438dbdf6879a2b50583fbee8e7e2dde5d01308c6295bcd09fd3db86"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/mem0ai/mem0/blob/f1791daa86d469249c9b002f62644d58a1eb96a0/LICENSE",
+        "git_blob": "d20d5102c3cf97ecbee54afd65893de4a11d26fe",
+        "sha256": "0bbcbe931c353293a2fafce08326181dfeea0e568c566afd4ce8337a70f5e219"
+      }
+    ],
+    "activity": {
+      "repo": "mem0ai/mem0",
+      "head": "f1791daa86d469249c9b002f62644d58a1eb96a0",
+      "commit_date": "2026-11-06T16:53:06Z",
+      "tree_sha": "5df2019ade928c46e2d9917ac6c11ed51d60e289",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "ts-v3.3.1",
+        "published_at": "2026-09-25T17:36:35Z",
+        "url": "https://github.com/mem0ai/mem0/releases/tag/ts-v3.3.1",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 28,
+    "repo": "getzep/graphiti",
+    "canonical_repo": "getzep/graphiti",
+    "need": "knowledge_graph",
+    "head": "ebef986a0b2360211b65751c111cacb4a7d790eb",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Temporal entity/fact graph framework",
+    "requirements": "Python >=3.10; supported graph DB and LLM/embedding configuration",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Additional database and LLM extraction burden; framework is not a turnkey verified corporate memory",
+    "integration_type": "Python >=3.10",
+    "decision": "DEFER",
+    "minimum_acceptance": "Versioned conflicting facts, time-window queries, tenant deny, deletion and recovery; only pilot if relational baseline has a measured gap",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/getzep/graphiti/blob/ebef986a0b2360211b65751c111cacb4a7d790eb/README.md",
+        "git_blob": "64fb8be4524f09fcdc222eba36db02c6413549bc",
+        "sha256": "831ab734e5b6713741dbfc15712f01f78fff7e0d6b5be86c5c20acd17c4249e4"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/getzep/graphiti/blob/ebef986a0b2360211b65751c111cacb4a7d790eb/LICENSE",
+        "git_blob": "5feb0d9d299a1107adfa8331306b13cc0eff2d78",
+        "sha256": "2825300b20d7b951209835a4a331f29e24725a39d65168e4b831df53aa372650"
+      }
+    ],
+    "activity": {
+      "repo": "getzep/graphiti",
+      "head": "ebef986a0b2360211b65751c111cacb4a7d790eb",
+      "commit_date": "2026-11-11T01:25:27Z",
+      "tree_sha": "54dd4f3abc3c1e5c5c9d0d874804a35875646568",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.31.2",
+        "published_at": "2026-10-20T17:25:21Z",
+        "url": "https://github.com/getzep/graphiti/releases/tag/v0.31.2",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 29,
+    "repo": "DeusData/codebase-memory-mcp",
+    "canonical_repo": "DeusData/codebase-memory-mcp",
+    "need": "code_graph",
+    "head": "ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd",
+    "source_ids": [
+      "Радар-0206"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Code graph/navigation and code-context retrieval",
+    "requirements": "Local C binary/MCP; supported OS builds claimed in README",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Not corporate truth memory; indexing can ingest secrets or follow paths beyond project",
+    "integration_type": "Local C binary/MCP",
+    "decision": "PILOT",
+    "minimum_acceptance": "Index a disposable repo, deny symlinks/secrets/outside roots; check answer provenance and compare latency/tokens against text search",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/DeusData/codebase-memory-mcp/blob/ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd/README.md",
+        "git_blob": "8eebe8bd9c882cc33f3ec69e814937b2f801b127",
+        "sha256": "34b1acd12050d2052056fafde0ab0c3dc74ae6ef9e47aee2d60e20f03bff6a9d"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/DeusData/codebase-memory-mcp/blob/ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd/LICENSE",
+        "git_blob": "0b95352746a97a8cf2d1f3ba568bc7bb5e514d1f",
+        "sha256": "1f58f9911dc5e3bcb96de28bb28e7b6bb7eb323952d29569c5d7214a152146bb"
+      }
+    ],
+    "activity": {
+      "repo": "DeusData/codebase-memory-mcp",
+      "head": "ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd",
+      "commit_date": "2026-11-11T23:13:14Z",
+      "tree_sha": "bacfe2912509944732d6991d75814f36934e4fff",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.12.1",
+        "published_at": "2026-10-16T23:35:48Z",
+        "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.12.1",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 30,
+    "repo": "temporalio/temporal",
+    "canonical_repo": "temporalio/temporal",
+    "need": "recovery",
+    "head": "03ecd1d228d2b8d9d433da55785afc9aeeead918",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Durable workflow replay and retry primitives",
+    "requirements": "Temporal server plus worker SDK and persistent store",
+    "license_scope": "MIT server; cloud terms separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Activities need idempotency; operational stack is material; avoid a second orchestration engine without failure evidence",
+    "integration_type": "Temporal server plus worker SDK and persistent store",
+    "decision": "DEFER",
+    "minimum_acceptance": "Crash after an external-effect stub before acknowledgement; replay yields exactly one durable effect and correct checkpoint",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/temporalio/temporal/blob/03ecd1d228d2b8d9d433da55785afc9aeeead918/README.md",
+        "git_blob": "d89e30ebb9863ea82c9203e1e696170ea9484af9",
+        "sha256": "269838d3de5da90d4c2c0b45bf7fc745b384a5a05c0932582e923638e8994189"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/temporalio/temporal/blob/03ecd1d228d2b8d9d433da55785afc9aeeead918/LICENSE",
+        "git_blob": "3349f76795f4409cba6ae18ea56adf9fbd8346f3",
+        "sha256": "6aab9afd99ceb1dcaf6a0d91386b46baef9bce17ae4006044e0f231e31430b69"
+      }
+    ],
+    "activity": {
+      "repo": "temporalio/temporal",
+      "head": "03ecd1d228d2b8d9d433da55785afc9aeeead918",
+      "commit_date": "2026-11-11T03:39:18Z",
+      "tree_sha": "40df5297eb357fdcffe2adf54a4b7ece4081e360",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v1.32.2",
+        "published_at": "2026-11-02T18:38:48Z",
+        "url": "https://github.com/temporalio/temporal/releases/tag/v1.32.2",
+        "target_commitish": "release/v1.32.x"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 31,
+    "repo": "Infisical/infisical",
+    "canonical_repo": "Infisical/infisical",
+    "need": "secrets",
+    "head": "4dcb599d9455c117e7de0ac176744eb20cc37f0e",
+    "source_ids": [
+      "Радар-2707"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Secret storage and distribution primitives",
+    "requirements": "CLI/SDK or self-hosted vault; narrow machine identity",
+    "license_scope": "MIT outside EE; enterprise production conditions",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Vault does not prevent downstream model/log exfiltration; some advertised features are enterprise",
+    "integration_type": "CLI/SDK or self-hosted vault",
+    "decision": "PILOT",
+    "minimum_acceptance": "Fake secret: scope denial, expiry/rotation/revocation, subprocess/log/model redaction and disposable restore",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/README.md",
+        "git_blob": "a35a3d0ab31ae75a85e75e19e8c5e941c196212e",
+        "sha256": "977beaedaac4919c0b8720ae1de0708482f0f9d80e90aef459520a27a739f742"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/LICENSE",
+        "git_blob": "35d53252fdf304d2f39c7d2496e71ae3f6709d22",
+        "sha256": "ec701a993a5e14b71f1fc6ffb649ca6e704a2e3bc7d06fd5dd47f6334324cf8a"
+      }
+    ],
+    "activity": {
+      "repo": "Infisical/infisical",
+      "head": "4dcb599d9455c117e7de0ac176744eb20cc37f0e",
+      "commit_date": "2026-11-12T12:12:15Z",
+      "tree_sha": "fa1ae32c5fe234e49c85d5e62aa12276c1324840",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.167.8",
+        "published_at": "2026-11-10T18:04:03Z",
+        "url": "https://github.com/Infisical/infisical/releases/tag/v0.167.8",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 32,
+    "repo": "open-policy-agent/opa",
+    "canonical_repo": "open-policy-agent/opa",
+    "need": "policy",
+    "head": "1c62a3e715055a013c184fe87da6d1d5c3006bc8",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Reusable policy decision engine",
+    "requirements": "OPA/Rego decision API or embedded policy evaluation",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Enforcement point and AWE actor/project context still need implementation; LLM prompts cannot replace it",
+    "integration_type": "OPA/Rego decision API or embedded policy evaluation",
+    "decision": "PILOT",
+    "minimum_acceptance": "Default deny, project/tool/action matrix, immutable policy version, denied actions never invoke tool and decisions are auditable",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/open-policy-agent/opa/blob/1c62a3e715055a013c184fe87da6d1d5c3006bc8/README.md",
+        "git_blob": "860399b5b7ac265f89508796831990a45eb485c4",
+        "sha256": "e69b5027d2200383478d14c61a51f07bfd48a66bce826869448c2329e8ad2103"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/open-policy-agent/opa/blob/1c62a3e715055a013c184fe87da6d1d5c3006bc8/LICENSE",
+        "git_blob": "8f71f43fee3f78649d238238cbde51e6d7055c82",
+        "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+      }
+    ],
+    "activity": {
+      "repo": "open-policy-agent/opa",
+      "head": "1c62a3e715055a013c184fe87da6d1d5c3006bc8",
+      "commit_date": "2026-11-12T10:53:02Z",
+      "tree_sha": "31421555145db381ffc7d6bc0c6329f4605f8161",
+      "signature_verified": false,
+      "latest_release": {
+        "tag": "v1.22.4",
+        "published_at": "2026-11-12T10:35:24Z",
+        "url": "https://github.com/open-policy-agent/opa/releases/tag/v1.22.4",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 33,
+    "repo": "alibaba/OpenSandbox",
+    "canonical_repo": "opensandbox-group/OpenSandbox",
+    "need": "execution_sandbox",
+    "head": "dc4c26eaf06131c74c1067ec62e309d11f77040d",
+    "source_ids": [
+      "Радар-1331"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Code/command/file/browser sandbox lifecycle interfaces",
+    "requirements": "Docker local/Kubernetes backend, SDKs/CLI/MCP; Python >=3.10 examples",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Moved to opensandbox-group; README records umbrella signing/provenance gap; benchmark claims not reproduced",
+    "integration_type": "Docker local/Kubernetes backend, SDKs/CLI/MCP",
+    "decision": "DEFER",
+    "minimum_acceptance": "Verify selected image/binary provenance first; then deny host paths/egress, quotas, kill, cleanup and checkpoint recovery",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/opensandbox-group/OpenSandbox/blob/dc4c26eaf06131c74c1067ec62e309d11f77040d/README.md",
+        "git_blob": "d32141a2917f759014d1fcc96271117c9e3992e1",
+        "sha256": "39535d8f0c100407c2a7bbd3c9e47a058e5ac1aaf1751d6a6dab59c5a51ac48e"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/opensandbox-group/OpenSandbox/blob/dc4c26eaf06131c74c1067ec62e309d11f77040d/LICENSE",
+        "git_blob": "b09cd7856d58590578ee1a4f3ad45d1310a97f87",
+        "sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+      }
+    ],
+    "activity": {
+      "repo": "opensandbox-group/OpenSandbox",
+      "head": "dc4c26eaf06131c74c1067ec62e309d11f77040d",
+      "commit_date": "2026-11-12T14:06:17Z",
+      "tree_sha": "e86c39733f720d69501bbfb2dcff81d35627ef39",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "release-1.2.0",
+        "published_at": "2026-10-27T12:50:49Z",
+        "url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.2.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 34,
+    "repo": "OpenHands/OpenHands",
+    "canonical_repo": "OpenHands/OpenHands",
+    "need": "autonomous_coding",
+    "head": "5b40cc2da4c2bf10f6b6b00204141eab274c4255",
+    "source_ids": [
+      "Радар-1731"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Autonomous coding/operator agent interface",
+    "requirements": "Local default with optional agent backends/containers/VMs; exact backend matters",
+    "license_scope": "MIT root; external components/services separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Local/default execution and a conversation sandbox do not isolate the whole host/Canvas",
+    "integration_type": "Local default with optional agent backends/containers/VMs",
+    "decision": "PILOT",
+    "minimum_acceptance": "One disposable checkout/backend: scoped patch, meaningful tests, artifact hashes, no host-secret access and independent review",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/OpenHands/OpenHands/blob/5b40cc2da4c2bf10f6b6b00204141eab274c4255/README.md",
+        "git_blob": "a54ff31e9256438c02a1f84c67ff18ef754f5829",
+        "sha256": "86361418e329ce000239cd73de1cfd802c7f2d528727890e735b31b801344227"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/OpenHands/OpenHands/blob/5b40cc2da4c2bf10f6b6b00204141eab274c4255/LICENSE",
+        "git_blob": "f6f60f52368bcc96f82fbe59ec65049c2c3af9db",
+        "sha256": "e1d1fa9f3a8d7bef24449d488fcd8f00f8f272cac297bb9bed161eb6175b876a"
+      }
+    ],
+    "activity": {
+      "repo": "OpenHands/OpenHands",
+      "head": "5b40cc2da4c2bf10f6b6b00204141eab274c4255",
+      "commit_date": "2026-11-12T14:00:01Z",
+      "tree_sha": "1af8a170e0b90e4446afa1d9e5af11a794578a7b",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v1.40.0",
+        "published_at": "2026-11-12T14:22:00Z",
+        "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0",
+        "target_commitish": "5095273deaddd77b3cf4ab252d6bdea3ec03ff6c"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 35,
+    "repo": "Aider-AI/aider",
+    "canonical_repo": "Aider-AI/aider",
+    "need": "coding_cli",
+    "head": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Code editing, repository context and test-driven iteration",
+    "requirements": "Python CLI, Git checkout and chosen model provider",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Coding worker is not recursive Head/QA; provider spend and workspace writes need bounds",
+    "integration_type": "Python CLI, Git checkout and chosen model provider",
+    "decision": "DEFER",
+    "minimum_acceptance": "Same small issue as existing executor: minimal diff, tests, token ledger and rollback; compare maintenance before adding another worker",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/README.md",
+        "git_blob": "816c876cb67021fa9f8d37267c8e57923eabdb07",
+        "sha256": "e40e05367ceacf7138a2605484bf7d1cb5a262d2dba03f52a5327c023b3cd0dc"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/LICENSE.txt",
+        "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "activity": {
+      "repo": "Aider-AI/aider",
+      "head": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "commit_date": "2026-05-22T14:02:20Z",
+      "tree_sha": "3a8257195db51e5c5cd3680dfd2022027f9c7904",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.86.0",
+        "published_at": "2025-08-09T17:42:19Z",
+        "url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.0",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 36,
+    "repo": "continuedev/continue",
+    "canonical_repo": "continuedev/continue",
+    "need": "coding_ide",
+    "head": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Coding-agent source for possible reuse",
+    "requirements": "CLI/editor extensions; README final 2.0.0 release",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "README explicitly no longer actively maintained/read-only; recent repository activity is not a support promise",
+    "integration_type": "CLI/editor extensions",
+    "decision": "DEFER",
+    "minimum_acceptance": "Do not select a new dependency without a maintained owner/fork and security/update plan",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md",
+        "git_blob": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+        "sha256": "054b77f9573011fa4ebf89d960300aabd1ebecc37d8f6f261341ba7d27d885e7"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/LICENSE",
+        "git_blob": "c25dc1768217ba50d454fcc06290d66886512872",
+        "sha256": "b14a17598cb08c4c7c82c070731126304e0a75d001ed59fb9ea3955a0b561802"
+      }
+    ],
+    "activity": {
+      "repo": "continuedev/continue",
+      "head": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "commit_date": "2026-07-21T04:00:09Z",
+      "tree_sha": "bbcc2608abd0c2794cc01084ca5bad376f2e731a",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v2.0.0-vscode",
+        "published_at": "2026-06-19T00:24:01Z",
+        "url": "https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode",
+        "target_commitish": "release/v2.0.0-vscode"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 37,
+    "repo": "upstash/context7",
+    "canonical_repo": "upstash/context7",
+    "need": "current_library_docs",
+    "head": "c5e26f6919055d29b8d3ead20500eb06e8036295",
+    "source_ids": [
+      "Радар-3106"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Version-aware library documentation retrieval",
+    "requirements": "ctx7 CLI requires Node >=22.13; OAuth/API or MCP mode",
+    "license_scope": "MIT client; hosted API terms separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Retrieved text remains untrusted and cannot replace compilation/tests; hosted quota/cost unknown here",
+    "integration_type": "ctx7 CLI requires Node >=22.13",
+    "decision": "PILOT",
+    "minimum_acceptance": "Pin library version, resolve correct docs, test citation/version mismatches and prompt injection; verify generated API usage in normal checks",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/upstash/context7/blob/c5e26f6919055d29b8d3ead20500eb06e8036295/README.md",
+        "git_blob": "4c806dab8b5b7852523be8f07282c0ee134eb8f2",
+        "sha256": "a23306f5d9a04eb8588b619071a418d901f27549ace077ecbb28f21161a46912"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/upstash/context7/blob/c5e26f6919055d29b8d3ead20500eb06e8036295/LICENSE",
+        "git_blob": "17900de42d69131467aaa7a53fa88b92d238dc63",
+        "sha256": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c"
+      }
+    ],
+    "activity": {
+      "repo": "upstash/context7",
+      "head": "c5e26f6919055d29b8d3ead20500eb06e8036295",
+      "commit_date": "2026-11-12T11:47:48Z",
+      "tree_sha": "60a28594c72b10f64ccbce374a43f4d2ddfa2ec2",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "@upstash/context7-tools-ai-sdk@1.0.4",
+        "published_at": "2026-11-12T09:03:18Z",
+        "url": "https://github.com/upstash/context7/releases/tag/%40upstash/context7-tools-ai-sdk%401.0.4",
+        "target_commitish": "master"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 38,
+    "repo": "unstructured-io/unstructured",
+    "canonical_repo": "Unstructured-IO/unstructured",
+    "need": "document_ingest",
+    "head": "293d235cfcd5f5e89c3cc5ff85562005e182ae33",
+    "source_ids": [
+      "Радар-3165"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Document partitioning and ingestion",
+    "requirements": "Python document parsing; format-specific system/model dependencies",
+    "license_scope": "Apache-2.0 library; extras/models separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Untrusted documents, parser attack surface and model downloads; Manus attested test is not local AWE proof",
+    "integration_type": "Python document parsing",
+    "decision": "DEFER",
+    "minimum_acceptance": "Small synthetic PDF/HTML corpus, malformed files, time/memory limits, deterministic provenance and zero network without approval",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/Unstructured-IO/unstructured/blob/293d235cfcd5f5e89c3cc5ff85562005e182ae33/README.md",
+        "git_blob": "3a6f34957c17d2e065c0ad1e58072cfc2aee4d5d",
+        "sha256": "1bfbe83efecca7e534636346d6f91792df6db63bb4e4f9949e6866d02b6d5db0"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/Unstructured-IO/unstructured/blob/293d235cfcd5f5e89c3cc5ff85562005e182ae33/LICENSE.md",
+        "git_blob": "b807bcb4281598fdb402807621127fad312b3f74",
+        "sha256": "4b190a3ffeb6b8800a6fd99bd5e1fb147e0a9f66984f4f5f8232a926de4fc939"
+      }
+    ],
+    "activity": {
+      "repo": "Unstructured-IO/unstructured",
+      "head": "293d235cfcd5f5e89c3cc5ff85562005e182ae33",
+      "commit_date": "2026-11-06T20:48:09Z",
+      "tree_sha": "f7034f9929e3e2daeba7c053c0856407b7d22828",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "0.27.37",
+        "published_at": "2026-11-06T21:29:04Z",
+        "url": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.27.37",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 39,
+    "repo": "huggingface/tokenizers",
+    "canonical_repo": "huggingface/tokenizers",
+    "need": "context_tokenization",
+    "head": "aeaf6c9d6aa069e3f5b1cada4b15d77b067056e6",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "Local tokenization primitives for supported tokenizers",
+    "requirements": "Rust tokenizer engine with language bindings and exact tokenizer assets",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Cannot infer proprietary chat/tool/reasoning framing or invoice from a generic tokenizer",
+    "integration_type": "Rust tokenizer engine with language bindings and exact tokenizer assets",
+    "decision": "REUSE",
+    "minimum_acceptance": "Known tokenizer vectors; per-provider capability profiles and conservative context headroom; server usage compared only in authorized live tests",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/huggingface/tokenizers/blob/aeaf6c9d6aa069e3f5b1cada4b15d77b067056e6/README.md",
+        "git_blob": "c72dde885ae86971075d127af038a3e78ce45060",
+        "sha256": "4b61eca894fe62bde89ce988d3e95cf78de9d00701f47fbf778fc8c6fcf7dd3a"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/huggingface/tokenizers/blob/aeaf6c9d6aa069e3f5b1cada4b15d77b067056e6/LICENSE",
+        "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ],
+    "activity": {
+      "repo": "huggingface/tokenizers",
+      "head": "aeaf6c9d6aa069e3f5b1cada4b15d77b067056e6",
+      "commit_date": "2026-11-12T13:44:44Z",
+      "tree_sha": "0f3c5cccbf880cb7669bb968f4d79d7d50c7237d",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v0.23.3",
+        "published_at": "2026-10-09T10:20:12Z",
+        "url": "https://github.com/huggingface/tokenizers/releases/tag/v0.23.3",
+        "target_commitish": "main"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 40,
+    "repo": "jlowin/fastmcp",
+    "canonical_repo": "PrefectHQ/fastmcp",
+    "need": "mcp_adapters",
+    "head": "713042447f2db8c16dcf2f1ff5b8e837be1ea3b4",
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION_NOT_IN_ORIGINAL_PROJECT_URLS",
+    "documented_capability": "MCP adapter primitives and transport integration",
+    "requirements": "Python MCP server/client SDK; moved to PrefectHQ/fastmcp",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Not an approval registry or sandbox; auth/transport versions and tool permissions need tests",
+    "integration_type": "Python MCP server/client SDK",
+    "decision": "REUSE",
+    "minimum_acceptance": "One minimal read-only adapter: schema, auth, cancellation, bad input, context boundaries and redacted evidence",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/PrefectHQ/fastmcp/blob/713042447f2db8c16dcf2f1ff5b8e837be1ea3b4/README.md",
+        "git_blob": "436e1a9d3d88404dcb5c2ec904d60c8a27e57d23",
+        "sha256": "8028da944d332c96c903639500c259d0d2154ad9a2b866cf7d76f740258a96af"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/PrefectHQ/fastmcp/blob/713042447f2db8c16dcf2f1ff5b8e837be1ea3b4/LICENSE",
+        "git_blob": "f49a4e16e68b128803cc2dcea614603632b04eac",
+        "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+      }
+    ],
+    "activity": {
+      "repo": "PrefectHQ/fastmcp",
+      "head": "713042447f2db8c16dcf2f1ff5b8e837be1ea3b4",
+      "commit_date": "2026-11-11T23:34:05Z",
+      "tree_sha": "c935638ccab31cae4ba564a64b7fefd3b2d39f6c",
+      "signature_verified": true,
+      "latest_release": {
+        "tag": "v4.1.8",
+        "published_at": "2026-11-10T20:44:13Z",
+        "url": "https://github.com/PrefectHQ/fastmcp/releases/tag/v4.1.8",
+        "target_commitish": "release/4.1"
+      }
+    },
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 41,
+    "repo": null,
+    "canonical_repo": null,
+    "need": "official_figma",
+    "head": null,
+    "source_ids": [],
+    "archive_membership": "ARCHITECTURE_ADDITION",
+    "documented_capability": "Official remote MCP documents design context, native canvas writes and code-to-canvas workflows",
+    "requirements": "Compatible remote MCP client and file permissions; Full seat for writes outside drafts",
+    "license_scope": "Hosted service terms, not an OSS grant",
+    "cost": "Write beta currently free; docs say future usage charging. Existing plan/access not checked",
+    "risk": "Beta/plan/client constraints; actual AWE connection and visual correctness unproven",
+    "integration_type": "REMOTE_MCP",
+    "decision": "PILOT",
+    "minimum_acceptance": "Disposable draft: read design context, make one authorized write, independent screenshot/token/layout QA and exact file rollback",
+    "evidence_refs": [
+      {
+        "kind": "official_documentation",
+        "url": "https://developers.figma.com/docs/figma-mcp-server/",
+        "checked_at": "2026-11-12"
+      }
+    ],
+    "technical_status": "OFFICIAL_DOC_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 42,
+    "repo": "cloudflare/security-audit-skill",
+    "canonical_repo": "cloudflare/security-audit-skill",
+    "need": "archive_extension",
+    "head": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+    "source_ids": [
+      "Радар-0017"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Coverage ledger, candidate validation and independent source-claim review method",
+    "requirements": "Coding-agent skill with isolated subagents, Node validators and OS-enforced sandbox",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "A methodology is not security certification; its commands/permissions are untrusted until separately admitted",
+    "integration_type": "Coding-agent skill with isolated subagents, Node validators and OS-enforced sandbox",
+    "decision": "REUSE",
+    "minimum_acceptance": "Use only the reviewed ledger/schema as a reference; injected false finding and uncovered trust boundary must be rejected or left unresolved",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+        "git_blob": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/LICENSE",
+        "git_blob": "6dbc9ecb3a5b9080e95b962869e8c7ab16cfdc20",
+        "sha256": "e598e694aa506650c7192d5ea3be0e50aca0d356ea00551c53429f0b01eb6391"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 43,
+    "repo": "vercel-labs/dev3000",
+    "canonical_repo": "vercel-labs/dev3000",
+    "need": "archive_extension",
+    "head": "e5573ae23a62fad58194881ef8642a7ee2b273fe",
+    "source_ids": [
+      "Радар-2620"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Combined application/browser console, network and interaction timeline",
+    "requirements": "d3k runtime; Node >=24, pnpm/Chrome; Bun source path; remote/sandbox path macOS-only per README",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Timeline is bounded/ephemeral, not durable audit; Portless may need admin; README $5-cap vs uncapped-default paths conflict, so default budget UNKNOWN",
+    "integration_type": "d3k runtime",
+    "decision": "DEFER",
+    "minimum_acceptance": "Disposable profile, no trust-store changes in audit; inspect exact backend spending controls, redaction, shutdown and external durable evidence export",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/vercel-labs/dev3000/blob/e5573ae23a62fad58194881ef8642a7ee2b273fe/README.md",
+        "git_blob": "41efea0460c5c412e38358f1960ba53d3e5ac8a1",
+        "sha256": "a3a233e867fdd5657f396431b6c53e41801932ff581c31bd7b802897ccb97a8c"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/vercel-labs/dev3000/blob/e5573ae23a62fad58194881ef8642a7ee2b273fe/LICENSE",
+        "git_blob": "8be9a6ce05f2ea75b93fa6c2f0bca3a09d6db596",
+        "sha256": "efe76166c0f9311ef730431b14e9cb28545ddb4acca69dee4e5166901a89ced5"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 44,
+    "repo": "teimurjan/blazediff",
+    "canonical_repo": "teimurjan/blazediff",
+    "need": "archive_extension",
+    "head": "eafe393ce40ee22833a9aefe593ff779a7e8f8f3",
+    "source_ids": [
+      "Радар-2875"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Deterministic pixel/perceptual comparison for visual regression",
+    "requirements": "Image-diff libraries/CLI and test-runner adapters",
+    "license_scope": "MIT own code; embedded MILO weights Apache-2.0; reference algorithm notices differ",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Reference research-only notices do not automatically license independent implementations; no blanket rights clearance; diff is not UX acceptance",
+    "integration_type": "Image-diff libraries/CLI and test-runner adapters",
+    "decision": "PILOT",
+    "minimum_acceptance": "Map selected package/code/weights first; fixed fonts/viewports, seeded regression and tolerated anti-alias noise; independent layout review remains required",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/README.md",
+        "git_blob": "61925e2d5497f22b37e042f22d3601d2d1d5614c",
+        "sha256": "57ab65c0f227bbff8f8f0503c94f2d8b36e03b731f839faaecf3cf1b942bdf3b"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/LICENSE.md",
+        "git_blob": "9cd347bf687003c7b812193793dcc3bbd9754f0c",
+        "sha256": "3763aa4131ec32b9246beb7cdbb5589456e6596ac4ea3054d67c2177befe1170"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 45,
+    "repo": "browser-use/browser-harness",
+    "canonical_repo": "browser-use/browser-harness",
+    "need": "archive_extension",
+    "head": "c2420943526d41b9af6182d5c5f11b9cad506ab9",
+    "source_ids": [
+      "Радар-1167"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Browser operation through a real Chrome session",
+    "requirements": "Browser Harness now engine inside Browser Use; CDP/CLI/MCP surfaces",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Personal logged-in Chrome has broad powers; not an independent second engine or isolation boundary",
+    "integration_type": "Browser Harness now engine inside Browser Use",
+    "decision": "DEFER",
+    "minimum_acceptance": "Reuse only after existing browser inventory; dedicated disposable profile, explicit sites/actions, cookie separation and cancellation",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/browser-use/browser-harness/blob/c2420943526d41b9af6182d5c5f11b9cad506ab9/README.md",
+        "git_blob": "a2864bd04953c61a9d42573da1543558c379d639",
+        "sha256": "7979c7221cebf99812886462f74e6d51baef3dd2cb89497ae2d98ccd247c00e1"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/browser-use/browser-harness/blob/c2420943526d41b9af6182d5c5f11b9cad506ab9/LICENSE",
+        "git_blob": "271d8e2807d0d79aee85a231f5c9dbb007902783",
+        "sha256": "5afa3d97bf1e6f998d587fa101e3fe0d0c416840b7fe77bcd6ae97690a334631"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 46,
+    "repo": "microsoft/markitdown",
+    "canonical_repo": "microsoft/markitdown",
+    "need": "archive_extension",
+    "head": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+    "source_ids": [
+      "Радар-2474"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Document-to-Markdown conversion with structure preservation",
+    "requirements": "Python 3.10-3.14; choose format extras; narrow convert_local/stream APIs",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Current-process I/O privileges and optional cloud paths; URL/ZIP/path attacks are threats to validate, not vulnerabilities established here",
+    "integration_type": "Python 3.10-3.14",
+    "decision": "PILOT",
+    "minimum_acceptance": "Offline synthetic corpus, deny network/path traversal, limit recursion/file size and preserve source/page provenance",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md",
+        "git_blob": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+        "sha256": "7d27ea30126c35a18fb7392454a30da72f62def2cc0cd222926e6207ac82a9d8"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/LICENSE",
+        "git_blob": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 47,
+    "repo": "HKUDS/LightRAG",
+    "canonical_repo": "HKUDS/LightRAG",
+    "need": "archive_extension",
+    "head": "9929013d1d8ead19b485a43a3ccb373e633cb5e9",
+    "source_ids": [
+      "Радар-1714"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "RAG indexing/retrieval and optional local backends",
+    "requirements": "Python >=3.11 per README; configured models/embedding/storage",
+    "license_scope": "MIT",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Default binds all interfaces/auth off; enabling auth alone leaves API whitelist exposure; not an AWE ACL replacement",
+    "integration_type": "Python >=3.11 per README",
+    "decision": "DEFER",
+    "minimum_acceptance": "Require auth, loopback and restricted API whitelist before pilot; poisoned docs, project isolation, deletion and grounded retrieval baseline",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/HKUDS/LightRAG/blob/9929013d1d8ead19b485a43a3ccb373e633cb5e9/README.md",
+        "git_blob": "d875c12baeaf289c40fd0b609b81cdd49d8ef72b",
+        "sha256": "4d251d18810d67243fc04cc18dd716c4ff681c38efdd7e1b9fc1dbad80d1d572"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/HKUDS/LightRAG/blob/9929013d1d8ead19b485a43a3ccb373e633cb5e9/LICENSE",
+        "git_blob": "ff0c29b4790f767e8abdc14f43ca0495330e89e4",
+        "sha256": "0c16924564059e493c86854574660a47ed1dcc2a476ba7b5f949d3f2f73a1984"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 48,
+    "repo": "alibaba/zvec",
+    "canonical_repo": "alibaba/zvec",
+    "need": "archive_extension",
+    "head": "0e83a2b15926aeb9791222edc46760064a50e705",
+    "source_ids": [
+      "Радар-1691"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Dense/sparse/multivector indexing without a separate server",
+    "requirements": "Embedded local vector engine with OS-specific SDK/build matrix and single-process writer constraint",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Do not copy performance claims to AWE; concurrency, auth and durability are not equivalent to PostgreSQL",
+    "integration_type": "Embedded local vector engine with OS-specific SDK/build matrix and single-process writer constraint",
+    "decision": "DEFER",
+    "minimum_acceptance": "Synthetic corpus: writer/process conflicts, recall, crash/reopen, corrupt files, isolation wrapper and measured advantage over pgvector",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/alibaba/zvec/blob/0e83a2b15926aeb9791222edc46760064a50e705/README.md",
+        "git_blob": "f46951dba83b98fdcf15452ae5babc46338b804e",
+        "sha256": "efc5081a3b464874b4430294134b81bae0db801e520af0dfeef62e29425c7fb0"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/alibaba/zvec/blob/0e83a2b15926aeb9791222edc46760064a50e705/LICENSE",
+        "git_blob": "f49a4e16e68b128803cc2dcea614603632b04eac",
+        "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 49,
+    "repo": "VectifyAI/PageIndex",
+    "canonical_repo": "VectifyAI/PageIndex",
+    "need": "archive_extension",
+    "head": "2ac8694bf8fe89a3840dda9bdb88db5119b77fc4",
+    "source_ids": [
+      "Радар-1902"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Tree/document-oriented reasoning retrieval",
+    "requirements": "Python/local or hosted document-index/search SDK; configured LLM",
+    "license_scope": "MIT repository; cloud/subscription terms separate",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "Local mode is not offline inference; model data transfer remains; token-saving claims unmeasured and subscription auth not blanket permission",
+    "integration_type": "Python/local or hosted document-index/search SDK",
+    "decision": "DEFER",
+    "minimum_acceptance": "Long-document gold set with exact page evidence, privacy/backend inspection, latency/token ledger and bounded retries",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/VectifyAI/PageIndex/blob/2ac8694bf8fe89a3840dda9bdb88db5119b77fc4/README.md",
+        "git_blob": "757d2685b804b42d5b9fdf38a6ec2cb638102686",
+        "sha256": "d84268d6bef642f15ef69321617256e584c6f253cfd4974bef2a350837d4b953"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/VectifyAI/PageIndex/blob/2ac8694bf8fe89a3840dda9bdb88db5119b77fc4/LICENSE",
+        "git_blob": "c9081e44901e1584a323377a072f29efb997d718",
+        "sha256": "bca9c3d401fdfd0965a2a2224f7dcf9945b512eaf5802b91d312ba739dbe9584"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  },
+  {
+    "rank": 50,
+    "repo": "google/langextract",
+    "canonical_repo": "google/langextract",
+    "need": "archive_extension",
+    "head": "0e441bf77ddc3119dd0aa413322959234dd84ee5",
+    "source_ids": [
+      "Радар-2132"
+    ],
+    "archive_membership": "EXACT_PROJECT_MATCH",
+    "documented_capability": "Structured text extraction with source-linked spans",
+    "requirements": "Python library, few-shot schema and explicit cloud/local provider; not officially supported Google product",
+    "license_scope": "Apache-2.0",
+    "dependency_licenses": "NOT_AUDITED",
+    "cost": "License scope above; model/API/hosting and EE charges separate; actual AWE cost NOT_MEASURED",
+    "risk": "README allows ungrounded spans with char_interval=None; schema is not truth; model cost and privacy vary",
+    "integration_type": "Python library, few-shot schema and explicit cloud/local provider",
+    "decision": "PILOT",
+    "minimum_acceptance": "Reject/filter ungrounded spans; negative documents, contradictory fields, injection, exact source offsets, abstention and deterministic critical checks",
+    "evidence_refs": [
+      {
+        "kind": "readme",
+        "url": "https://github.com/google/langextract/blob/0e441bf77ddc3119dd0aa413322959234dd84ee5/README.md",
+        "git_blob": "7fdba9d5d447e20aeabbf58288ed523d8ef5c43b",
+        "sha256": "94e3bc80c96336a97a21281b596fd2e00b28acc5410ea0920bae398c741190e4"
+      },
+      {
+        "kind": "license",
+        "url": "https://github.com/google/langextract/blob/0e441bf77ddc3119dd0aa413322959234dd84ee5/LICENSE",
+        "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "activity": null,
+    "technical_status": "SOURCE_LINKED_DESK_REVIEW",
+    "runtime": "NOT_RUN",
+    "security_audit": "NOT_PERFORMED",
+    "awe_acceptance": "NOT_PROVEN",
+    "approved": false
+  }
+]

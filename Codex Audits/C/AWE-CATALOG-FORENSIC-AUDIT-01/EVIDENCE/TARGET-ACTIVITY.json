@@ -1,0 +1,534 @@
+[
+  {
+    "repo": "agent0ai/agent-zero",
+    "head": "ba9b67df0f54ac78106ae85c552ef5d2458f7c9a",
+    "commit_date": "2026-11-01T21:10:32Z",
+    "tree_sha": "45e9a6f77ef1300ad7c5b90f1d77a69dc52fc0b3",
+    "signature_verified": false,
+    "latest_release": {
+      "tag": "v2.15",
+      "published_at": "2026-11-01T23:52:00Z",
+      "url": "https://github.com/agent0ai/agent-zero/releases/tag/v2.15",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "NousResearch/hermes-agent",
+    "head": "67664e236ddcc45824b871d575677287599af152",
+    "commit_date": "2026-11-12T11:46:33Z",
+    "tree_sha": "2060ef7dbf2b9b10a397987e3e48dc4a15ce33fa",
+    "signature_verified": false,
+    "latest_release": {
+      "tag": "v0.23.1",
+      "published_at": "2026-11-10T01:42:15Z",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.1",
+      "target_commitish": "3b421578588243f920886e6fe79a6faa87ea026e"
+    }
+  },
+  {
+    "repo": "mastra-ai/mastra",
+    "head": "6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef",
+    "commit_date": "2026-11-12T14:05:50Z",
+    "tree_sha": "4567cac78209638a1f1f660c749309c6f3ba3baa",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "@mastra/core@1.82.0",
+      "published_at": "2026-11-04T10:59:56Z",
+      "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.82.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "langchain-ai/langgraph",
+    "head": "b4cb0f19e3d8984e8a57f85667b8d1bec018f0ab",
+    "commit_date": "2026-11-12T01:43:53Z",
+    "tree_sha": "7123c4dcf4dbb9fb6c8189aed49412fed1335650",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "sdk==0.4.14",
+      "published_at": "2026-11-06T03:03:34Z",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.14",
+      "target_commitish": "5847733bcb186c26b32da5cc822eaf8a89deffeb"
+    }
+  },
+  {
+    "repo": "agno-agi/agno",
+    "head": "dc03a2c6f1dd760f2ead89140ea946321fb211e4",
+    "commit_date": "2026-11-12T14:01:27Z",
+    "tree_sha": "42e9caa776133606a6150cdd57df5d7c79cbbeb9",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v3.1.12",
+      "published_at": "2026-10-29T14:00:55Z",
+      "url": "https://github.com/agno-agi/agno/releases/tag/v3.1.12",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "microsoft/agent-framework",
+    "head": "30285709c1d60736a9b8b8ad87cd4f94a3719f6a",
+    "commit_date": "2026-11-12T13:35:49Z",
+    "tree_sha": "414506b5fb9598b3efe526306ceb16d260f7e163",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "python-1.25.0",
+      "published_at": "2026-11-07T15:52:42Z",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0",
+      "target_commitish": "7bca1df23ea97b778dd5cd7a50d9db8d1ef832db"
+    }
+  },
+  {
+    "repo": "camel-ai/camel",
+    "head": "0366b64bf3609c76f50e396715aab73ba58a930c",
+    "commit_date": "2026-11-09T10:25:05Z",
+    "tree_sha": "3e6198a52bc1a427a8d6c11fabea4d0c2f0e0ca7",
+    "signature_verified": false,
+    "latest_release": {
+      "tag": "v0.2.90",
+      "published_at": "2026-03-22T08:37:36Z",
+      "url": "https://github.com/camel-ai/camel/releases/tag/v0.2.90",
+      "target_commitish": "master"
+    }
+  },
+  {
+    "repo": "BerriAI/litellm",
+    "head": "52d1c4cd80162fbf03d7f92def0cb1631f1edfd4",
+    "commit_date": "2026-11-12T09:10:23Z",
+    "tree_sha": "02810bea38354ac10a1ea21554633287b5b866f2",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v1.109.1",
+      "published_at": "2026-11-12T02:07:01Z",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.109.1",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "cheaper-inference/OmniRoute",
+    "head": "5a5894a77604e3148b0f76b14d8b0d9e4411edcb",
+    "commit_date": "2026-11-12T09:58:01Z",
+    "tree_sha": "590d0e90581b1162113e73b4d32fe977071c5567",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v3.8.53",
+      "published_at": "2026-11-06T10:53:35Z",
+      "url": "https://github.com/cheaper-inference/OmniRoute/releases/tag/v3.8.53",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "stacklok/toolhive",
+    "head": "ac4a1326dc0ab75a43c7ccd2d3932965eab24201",
+    "commit_date": "2026-11-12T14:01:45Z",
+    "tree_sha": "5ea41f28b5203d555a27a51a3c0e0b9b53e77e79",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.64.0",
+      "published_at": "2026-11-10T11:46:58Z",
+      "url": "https://github.com/stacklok/toolhive/releases/tag/v0.64.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "modelcontextprotocol/inspector",
+    "head": "488c30d9d16e4993bc548ad298eb7450f5125c93",
+    "commit_date": "2026-11-12T00:40:59Z",
+    "tree_sha": "6bf80bc03472f3fa8d71f3bbae4e9b798d89640e",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "2.15.0",
+      "published_at": "2026-11-12T00:46:29Z",
+      "url": "https://github.com/modelcontextprotocol/inspector/releases/tag/2.15.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "modelcontextprotocol/servers",
+    "head": "e1dc4b18dbb948921da37f3d4224a628730b43b0",
+    "commit_date": "2026-11-11T06:50:30Z",
+    "tree_sha": "25499a9839d4df8585d935934d0a083ab3994610",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v2.4.0",
+      "published_at": "2026-11-11T07:07:16Z",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.4.0",
+      "target_commitish": "e1dc4b18dbb948921da37f3d4224a628730b43b0"
+    }
+  },
+  {
+    "repo": "microsoft/playwright-mcp",
+    "head": "78eca85361efb545a4c0f59b6140aef0721c5412",
+    "commit_date": "2026-11-11T18:08:38Z",
+    "tree_sha": "ba9401ad1622454ae4a3216f94f26a38aa157ac9",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.0.85",
+      "published_at": "2026-11-09T18:28:53Z",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.85",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "head": "83d2ba4dde9663a8cd0bdb8af6c99fea50726003",
+    "commit_date": "2026-11-12T06:58:55Z",
+    "tree_sha": "33d4715a042b5a14bb52f584832279b5d6c7b226",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "chrome-devtools-mcp-v1.13.0",
+      "published_at": "2026-11-11T12:40:09Z",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases/tag/chrome-devtools-mcp-v1.13.0",
+      "target_commitish": "b1e35e3ab1774664dfc66a2cb813a392535fe160"
+    }
+  },
+  {
+    "repo": "browser-use/browser-use",
+    "head": "7fdd63c03fd342aab4fe44507c77c3221ffd43c6",
+    "commit_date": "2026-11-11T00:05:55Z",
+    "tree_sha": "9ea38a938c460e8b78891202cbe66986b328cecc",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "1.0.2",
+      "published_at": "2026-11-11T04:00:00Z",
+      "url": "https://github.com/browser-use/browser-use/releases/tag/1.0.2",
+      "target_commitish": "37e1d75ce239e0591da55e31aac4abf59bdd6cdb"
+    }
+  },
+  {
+    "repo": "github/github-mcp-server",
+    "head": "6fbcd00b2034502ba3001a49dfaf93593aee7069",
+    "commit_date": "2026-11-09T14:28:25Z",
+    "tree_sha": "f1228c0ec7109444ed8a17c3cc467b9533b7efd8",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v2.1.0",
+      "published_at": "2026-11-03T11:11:41Z",
+      "url": "https://github.com/github/github-mcp-server/releases/tag/v2.1.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "googleworkspace/cli",
+    "head": "cd3697e07eb520056dcf142d0c7439bbb9ba32e9",
+    "commit_date": "2026-10-30T15:47:59Z",
+    "tree_sha": "37c679a1f683c9b6448d3bd3d10620c90e24e14a",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.22.5",
+      "published_at": "2026-03-31T18:53:24Z",
+      "url": "https://github.com/googleworkspace/cli/releases/tag/v0.22.5",
+      "target_commitish": "705fb0ecac6f4249679958f6325b809b63fdde17"
+    }
+  },
+  {
+    "repo": "taylorwilsdon/google_workspace_mcp",
+    "head": "65286d80c77589fbe43c85b870979d67794cc91c",
+    "commit_date": "2026-11-11T23:16:44Z",
+    "tree_sha": "4e6c69a727a0eea696dd4c791bfa4025aef7eff5",
+    "signature_verified": false,
+    "latest_release": {
+      "tag": "v2.4.2",
+      "published_at": "2026-11-12T02:48:04Z",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp/releases/tag/v2.4.2",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "grab/cursor-talk-to-figma-mcp",
+    "head": "ddd90f3a6d454ea0b2fc29f1b084f50fd062b880",
+    "commit_date": "2026-07-26T07:14:26Z",
+    "tree_sha": "fcac89fda4915941fa60bf08a68df376078e68d7",
+    "signature_verified": true,
+    "latest_release": {
+      "status": "NOT_OBSERVED",
+      "reason": {
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/releases/releases#get-the-latest-release\",\"status\":\"404\"}",
+        "error_code": "NOT_FOUND",
+        "error_data": {
+          "message": "Not Found",
+          "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+          "status": "404"
+        }
+      }
+    }
+  },
+  {
+    "repo": "activepieces/activepieces",
+    "head": "4f4ab8973b76e474770a57d544c2fdc967d0e0e2",
+    "commit_date": "2026-11-12T13:01:42Z",
+    "tree_sha": "300f477747b5863c4c27e15a59b79f90e61ff91e",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "0.93.0",
+      "published_at": "2026-11-08T14:30:22Z",
+      "url": "https://github.com/activepieces/activepieces/releases/tag/0.93.0",
+      "target_commitish": "release/0.93.0"
+    }
+  },
+  {
+    "repo": "n8n-io/n8n",
+    "head": "1ae5175a008fc464cc27579b4d7613b60e203ed1",
+    "commit_date": "2026-11-12T14:03:18Z",
+    "tree_sha": "45b94a4212d4877119e4e798442a21e312f406f1",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "n8n@2.47.5",
+      "published_at": "2026-11-12T08:34:10Z",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.5",
+      "target_commitish": "release/2.47.5"
+    }
+  },
+  {
+    "repo": "langfuse/langfuse",
+    "head": "9621bc46d0e67e7580f6425dea07996f347f0412",
+    "commit_date": "2026-11-12T13:47:32Z",
+    "tree_sha": "9436a2f4ada354ee8763cde9ad2e672463a951f0",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v4.79.0",
+      "published_at": "2026-11-12T09:40:45Z",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.79.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "promptfoo/promptfoo",
+    "head": "e4ecd0e48b08aedebe186b2ee868b0f31c62e3fe",
+    "commit_date": "2026-11-12T07:12:47Z",
+    "tree_sha": "063bc172396bc445e492d6bf74f23ead40436963",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "0.125.1",
+      "published_at": "2026-10-25T01:53:11Z",
+      "url": "https://github.com/promptfoo/promptfoo/releases/tag/0.125.1",
+      "target_commitish": "8569e72ed6cf7737082a6042be8d925e40f9739d"
+    }
+  },
+  {
+    "repo": "confident-ai/deepeval",
+    "head": "debe7955c0029add96f8340e38932ae62a77907c",
+    "commit_date": "2026-11-11T20:11:29Z",
+    "tree_sha": "034c1079618fd1f41f3e0aade003075560382ce1",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "python-v4.2.4",
+      "published_at": "2026-09-22T16:36:00Z",
+      "url": "https://github.com/confident-ai/deepeval/releases/tag/python-v4.2.4",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "pgvector/pgvector",
+    "head": "66accb3af6705ea9975a33f6704f1cde50d99447",
+    "commit_date": "2026-11-11T07:47:38Z",
+    "tree_sha": "64e93b61481e8a5149a715530762a42c341567f3",
+    "signature_verified": false,
+    "latest_release": {
+      "status": "NOT_OBSERVED",
+      "reason": {
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/releases/releases#get-the-latest-release\",\"status\":\"404\"}",
+        "error_code": "NOT_FOUND",
+        "error_data": {
+          "message": "Not Found",
+          "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release",
+          "status": "404"
+        }
+      }
+    }
+  },
+  {
+    "repo": "supermemoryai/supermemory",
+    "head": "8af3b9108f1a4dce45b10cfa4f8f0af027b4197b",
+    "commit_date": "2026-11-11T06:38:24Z",
+    "tree_sha": "517c47f2b89a69ed74edd7c8f3ebf4879bbde9b9",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "server-v0.0.9",
+      "published_at": "2026-10-12T18:59:36Z",
+      "url": "https://github.com/supermemoryai/supermemory/releases/tag/server-v0.0.9",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "mem0ai/mem0",
+    "head": "f1791daa86d469249c9b002f62644d58a1eb96a0",
+    "commit_date": "2026-11-06T16:53:06Z",
+    "tree_sha": "5df2019ade928c46e2d9917ac6c11ed51d60e289",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "ts-v3.3.1",
+      "published_at": "2026-09-25T17:36:35Z",
+      "url": "https://github.com/mem0ai/mem0/releases/tag/ts-v3.3.1",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "getzep/graphiti",
+    "head": "ebef986a0b2360211b65751c111cacb4a7d790eb",
+    "commit_date": "2026-11-11T01:25:27Z",
+    "tree_sha": "54dd4f3abc3c1e5c5c9d0d874804a35875646568",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.31.2",
+      "published_at": "2026-10-20T17:25:21Z",
+      "url": "https://github.com/getzep/graphiti/releases/tag/v0.31.2",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "DeusData/codebase-memory-mcp",
+    "head": "ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd",
+    "commit_date": "2026-11-11T23:13:14Z",
+    "tree_sha": "bacfe2912509944732d6991d75814f36934e4fff",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.12.1",
+      "published_at": "2026-10-16T23:35:48Z",
+      "url": "https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.12.1",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "temporalio/temporal",
+    "head": "03ecd1d228d2b8d9d433da55785afc9aeeead918",
+    "commit_date": "2026-11-11T03:39:18Z",
+    "tree_sha": "40df5297eb357fdcffe2adf54a4b7ece4081e360",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v1.32.2",
+      "published_at": "2026-11-02T18:38:48Z",
+      "url": "https://github.com/temporalio/temporal/releases/tag/v1.32.2",
+      "target_commitish": "release/v1.32.x"
+    }
+  },
+  {
+    "repo": "Infisical/infisical",
+    "head": "4dcb599d9455c117e7de0ac176744eb20cc37f0e",
+    "commit_date": "2026-11-12T12:12:15Z",
+    "tree_sha": "fa1ae32c5fe234e49c85d5e62aa12276c1324840",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.167.8",
+      "published_at": "2026-11-10T18:04:03Z",
+      "url": "https://github.com/Infisical/infisical/releases/tag/v0.167.8",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "open-policy-agent/opa",
+    "head": "1c62a3e715055a013c184fe87da6d1d5c3006bc8",
+    "commit_date": "2026-11-12T10:53:02Z",
+    "tree_sha": "31421555145db381ffc7d6bc0c6329f4605f8161",
+    "signature_verified": false,
+    "latest_release": {
+      "tag": "v1.22.4",
+      "published_at": "2026-11-12T10:35:24Z",
+      "url": "https://github.com/open-policy-agent/opa/releases/tag/v1.22.4",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "opensandbox-group/OpenSandbox",
+    "head": "dc4c26eaf06131c74c1067ec62e309d11f77040d",
+    "commit_date": "2026-11-12T14:06:17Z",
+    "tree_sha": "e86c39733f720d69501bbfb2dcff81d35627ef39",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "release-1.2.0",
+      "published_at": "2026-10-27T12:50:49Z",
+      "url": "https://github.com/opensandbox-group/OpenSandbox/releases/tag/release-1.2.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "OpenHands/OpenHands",
+    "head": "5b40cc2da4c2bf10f6b6b00204141eab274c4255",
+    "commit_date": "2026-11-12T14:00:01Z",
+    "tree_sha": "1af8a170e0b90e4446afa1d9e5af11a794578a7b",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v1.40.0",
+      "published_at": "2026-11-12T14:22:00Z",
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.40.0",
+      "target_commitish": "5095273deaddd77b3cf4ab252d6bdea3ec03ff6c"
+    }
+  },
+  {
+    "repo": "Aider-AI/aider",
+    "head": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+    "commit_date": "2026-05-22T14:02:20Z",
+    "tree_sha": "3a8257195db51e5c5cd3680dfd2022027f9c7904",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.86.0",
+      "published_at": "2025-08-09T17:42:19Z",
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.0",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "continuedev/continue",
+    "head": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+    "commit_date": "2026-07-21T04:00:09Z",
+    "tree_sha": "bbcc2608abd0c2794cc01084ca5bad376f2e731a",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v2.0.0-vscode",
+      "published_at": "2026-06-19T00:24:01Z",
+      "url": "https://github.com/continuedev/continue/releases/tag/v2.0.0-vscode",
+      "target_commitish": "release/v2.0.0-vscode"
+    }
+  },
+  {
+    "repo": "upstash/context7",
+    "head": "c5e26f6919055d29b8d3ead20500eb06e8036295",
+    "commit_date": "2026-11-12T11:47:48Z",
+    "tree_sha": "60a28594c72b10f64ccbce374a43f4d2ddfa2ec2",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "@upstash/context7-tools-ai-sdk@1.0.4",
+      "published_at": "2026-11-12T09:03:18Z",
+      "url": "https://github.com/upstash/context7/releases/tag/%40upstash/context7-tools-ai-sdk%401.0.4",
+      "target_commitish": "master"
+    }
+  },
+  {
+    "repo": "Unstructured-IO/unstructured",
+    "head": "293d235cfcd5f5e89c3cc5ff85562005e182ae33",
+    "commit_date": "2026-11-06T20:48:09Z",
+    "tree_sha": "f7034f9929e3e2daeba7c053c0856407b7d22828",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "0.27.37",
+      "published_at": "2026-11-06T21:29:04Z",
+      "url": "https://github.com/Unstructured-IO/unstructured/releases/tag/0.27.37",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "huggingface/tokenizers",
+    "head": "aeaf6c9d6aa069e3f5b1cada4b15d77b067056e6",
+    "commit_date": "2026-11-12T13:44:44Z",
+    "tree_sha": "0f3c5cccbf880cb7669bb968f4d79d7d50c7237d",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v0.23.3",
+      "published_at": "2026-10-09T10:20:12Z",
+      "url": "https://github.com/huggingface/tokenizers/releases/tag/v0.23.3",
+      "target_commitish": "main"
+    }
+  },
+  {
+    "repo": "PrefectHQ/fastmcp",
+    "head": "713042447f2db8c16dcf2f1ff5b8e837be1ea3b4",
+    "commit_date": "2026-11-11T23:34:05Z",
+    "tree_sha": "c935638ccab31cae4ba564a64b7fefd3b2d39f6c",
+    "signature_verified": true,
+    "latest_release": {
+      "tag": "v4.1.8",
+      "published_at": "2026-11-10T20:44:13Z",
+      "url": "https://github.com/PrefectHQ/fastmcp/releases/tag/v4.1.8",
+      "target_commitish": "release/4.1"
+    }
+  }
+]

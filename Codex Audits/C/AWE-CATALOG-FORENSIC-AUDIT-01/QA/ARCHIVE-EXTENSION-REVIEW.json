@@ -1,0 +1,386 @@
+{
+  "status": "SOURCE_TEXT_REVIEW_COMPLETED_FOR_RANKS_42_TO_50_OVERALL_PARTIAL",
+  "checked_at": "2026-11-12",
+  "reviewer": "Independent separate agent; same GPT family, cross-family requirement NOT_SATISFIED",
+  "reviewed_count": 9,
+  "technical_reviews_snapshot_sha256": "df5de105879195f5e7f8aaf9631c46bba5407783e16cd28072c4480cf1948e3c",
+  "archive_linkage_check": {
+    "technical_review_rows": 50,
+    "exact_project_review_rows": 30,
+    "unique_original_source_ids": 32,
+    "architecture_addition_rows": 20,
+    "mismatches": [],
+    "id_project_match": true
+  },
+  "scope": "Pinned cached README/license text for nine added archive candidates; six extra BlazeDiff upstream/license texts. No code installed or executed, no API/model inference, no runtime certification.",
+  "findings": [
+    {
+      "rank": 42,
+      "repo": "cloudflare/security-audit-skill",
+      "head": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "source_ids": [
+        "Радар-0017"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+        "readme_blob": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "readme_line_count": 106,
+        "cache_sha256": "b8a6611bbd9a3f794eaac7f3da68b821c7a17b4b666e31260f0d14e889df511e"
+      },
+      "verdict": "SUPPORTED_WITH_REQUIREMENT_QUALIFICATION",
+      "corrections": [
+        {
+          "field": "requirements",
+          "text": "Add Node.js for validators and an OS-enforced sandbox with sanitized environment, networking disabled and resource/write limits before executing any target-controlled tests. Tool-using subagents alone do not provide that boundary.",
+          "readme_lines": [
+            86,
+            97
+          ]
+        },
+        {
+          "field": "decision",
+          "text": "Keep REUSE explicitly limited to reviewed methodology/ledger/schema as already described in the acceptance criterion; it is not approval to install/execute the skill or a completed security certification.",
+          "readme_lines": [
+            9,
+            22
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 43,
+      "repo": "vercel-labs/dev3000",
+      "head": "e5573ae23a62fad58194881ef8642a7ee2b273fe",
+      "source_ids": [
+        "Радар-2620"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/vercel-labs/dev3000/blob/e5573ae23a62fad58194881ef8642a7ee2b273fe/README.md",
+        "readme_blob": "41efea0460c5c412e38358f1960ba53d3e5ac8a1",
+        "readme_line_count": 255,
+        "cache_sha256": "2f014da385fdedfe4b3280183c953e91efdceab074e71cea683bb4c41c3d5212"
+      },
+      "verdict": "SUPPORTED_WITH_MATERIAL_SCOPE_AND_BUDGET_QUALIFICATIONS",
+      "corrections": [
+        {
+          "field": "requirements",
+          "text": "Separate local d3k requirements from the remote/sandbox launcher, which the README limits to macOS, with Vercel login/access and additional tools. Do not imply Windows supports the sandbox mode.",
+          "readme_lines": [
+            74,
+            91
+          ]
+        },
+        {
+          "field": "risk",
+          "text": "The source has inconsistent budget descriptions: an earlier fx section says a non-renewing $5 session cap, while the newer Eve default section says no session spending cap. Budget default must remain UNKNOWN/harness-dependent until source-code/configuration review and a bounded test; do not claim a safe cap from this README.",
+          "readme_lines": [
+            85,
+            89
+          ],
+          "additional_readme_lines": [
+            128,
+            140
+          ]
+        },
+        {
+          "field": "minimum_acceptance",
+          "text": "The live timeline is bounded to 5,000 events/8 MiB and disappears on exit; body/redaction capture is selective and best effort. Add evidence-gap/eviction handling and an explicitly authorized durable evidence export rather than treating d3k as a durable audit ledger.",
+          "readme_lines": [
+            46,
+            58
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 44,
+      "repo": "teimurjan/blazediff",
+      "head": "eafe393ce40ee22833a9aefe593ff779a7e8f8f3",
+      "source_ids": [
+        "Радар-2875"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/README.md",
+        "readme_blob": "61925e2d5497f22b37e042f22d3601d2d1d5614c",
+        "readme_line_count": 128,
+        "cache_sha256": "3fb3093246285c6568c501c67acfb8fbfb20789c2c282310c9634592e3fe7650"
+      },
+      "verdict": "SUPPORTED_WITH_LICENSE_SCOPE_CORRECTION",
+      "corrections": [
+        {
+          "field": "license_scope",
+          "text": "Use: MIT for inspected BlazeDiff code; embedded MILO weights are Apache-2.0; original reference-code terms and notices are separately described. Algorithm/dependency/commercial-rights clearance remains NOT_AUDITED. The reference MATLAB SSIM/MS-SSIM restrictions must not be blindly applied to the independently MIT-claimed implementation, or ignored for imported reference code.",
+          "readme_lines": [
+            107,
+            124
+          ],
+          "supplemental_sources": "BLAZEDIFF-SUPPLEMENTAL-SOURCES.json"
+        },
+        {
+          "field": "risk",
+          "text": "Distinguish deterministic core/metric calculations from the optional agent-in-the-loop product. Vendor speed/parity claims and learned perceptual metrics are not independently tested or UX acceptance.",
+          "readme_lines": [
+            24,
+            56
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 45,
+      "repo": "browser-use/browser-harness",
+      "head": "c2420943526d41b9af6182d5c5f11b9cad506ab9",
+      "source_ids": [
+        "Радар-1167"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/browser-use/browser-harness/blob/c2420943526d41b9af6182d5c5f11b9cad506ab9/README.md",
+        "readme_blob": "a2864bd04953c61a9d42573da1543558c379d639",
+        "readme_line_count": 136,
+        "cache_sha256": "743ab5a23146fbd2ad4eab5233c3df09cccce5ccb8c8a0ac49b7cdeca8f2ba3d"
+      },
+      "verdict": "SUPPORTED_NO_SUBSTANTIVE_CORRECTION",
+      "corrections": [
+        {
+          "field": "risk",
+          "text": "Retain the explicit whole-running-Chrome/logged-in-user boundary and DEFER decision. The current README says Browser Harness is the engine inside Browser Use; installing both is not an independent engine comparison. Its benchmark used a shared fresh cloud browser, not each tool's default local session.",
+          "readme_lines": [
+            3,
+            18
+          ],
+          "additional_readme_lines": [
+            61,
+            91
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 46,
+      "repo": "microsoft/markitdown",
+      "head": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+      "source_ids": [
+        "Радар-2474"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md",
+        "readme_blob": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+        "readme_line_count": 475,
+        "cache_sha256": "b57c919feffa7f4921e59a169e6cdd2109c1f81b6daeaf4e5d3b4cee222fc46e"
+      },
+      "verdict": "SUPPORTED_WITH_RISK_WORDING_QUALIFICATION",
+      "corrections": [
+        {
+          "field": "risk",
+          "text": "Replace ambiguous URL/ZIP traversal wording with: untrusted file paths, remote URLs and archive contents require validation and resource limits; no specific path-traversal vulnerability was demonstrated. The README expressly states current-process I/O privileges, broad convert(), and narrower convert_local/convert_stream APIs. Narrow APIs are not a sandbox by themselves.",
+          "readme_lines": [
+            459,
+            467
+          ]
+        },
+        {
+          "field": "requirements",
+          "text": "Python 3.10-3.14 is supported by README. Preserve selective extras/plugins-off-by-default and local-only dependencies; image captioning/transcription and Azure conversion paths are remote/billable options.",
+          "readme_lines": [
+            26,
+            38
+          ],
+          "additional_readme_lines": [
+            92,
+            117
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 47,
+      "repo": "HKUDS/LightRAG",
+      "head": "9929013d1d8ead19b485a43a3ccb373e633cb5e9",
+      "source_ids": [
+        "Радар-1714"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/HKUDS/LightRAG/blob/9929013d1d8ead19b485a43a3ccb373e633cb5e9/README.md",
+        "readme_blob": "d875c12baeaf289c40fd0b609b81cdd49d8ef72b",
+        "readme_line_count": 704,
+        "cache_sha256": "5fd4b386985f39724b8d4a62df96d9e940173a47b9e0abcde8da3b7a5cf9b6f7"
+      },
+      "verdict": "SUPPORTED_WITH_AUTH_ROUTE_AND_STORAGE_QUALIFICATIONS",
+      "corrections": [
+        {
+          "field": "risk",
+          "text": "Authentication configuration alone does not close the README's default-open Ollama-compatible /api/* routes. Include the documented whitelist restriction and verify unauthenticated access is denied across every exposed route. The host=0.0.0.0/auth-off statement is a pinned README observation, not a current AWE runtime finding.",
+          "readme_lines": [
+            98,
+            105
+          ]
+        },
+        {
+          "field": "requirements",
+          "text": "Default KV/vector/graph/doc-status backends are in-memory with local file persistence and are described as evaluation-only, not production. Storage/model/embedding configuration and reindex/delete behavior need separate acceptance.",
+          "readme_lines": [
+            289,
+            299
+          ],
+          "additional_readme_lines": [
+            339,
+            343
+          ],
+          "additional_readme_line": 391
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 48,
+      "repo": "alibaba/zvec",
+      "head": "0e83a2b15926aeb9791222edc46760064a50e705",
+      "source_ids": [
+        "Радар-1691"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/alibaba/zvec/blob/0e83a2b15926aeb9791222edc46760064a50e705/README.md",
+        "readme_blob": "f46951dba83b98fdcf15452ae5babc46338b804e",
+        "readme_line_count": 148,
+        "cache_sha256": "d8ade4f6993a3ac6497f00d0acb2caf0ee78772d18c66441ef00534d28101ca2"
+      },
+      "verdict": "SUPPORTED_WITH_CONCURRENCY_QUALIFICATION",
+      "corrections": [
+        {
+          "field": "requirements",
+          "text": "README now lists Windows as well as Linux/macOS/mobile and OS-specific SDK features; do not preserve a Linux-only assumption. It specifies 64-bit Python 3.10-3.14. Writes are single-process exclusive although multiple processes may read.",
+          "readme_lines": [
+            36,
+            44
+          ],
+          "additional_readme_lines": [
+            57,
+            85
+          ]
+        },
+        {
+          "field": "risk",
+          "text": "WAL durability/performance claims are source assertions to test, not evidence of PostgreSQL transaction/RLS/auth equivalence. Keep the crash/reopen, isolation and measured-advantage pilot rather than replacing current storage.",
+          "readme_lines": [
+            50,
+            59
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 49,
+      "repo": "VectifyAI/PageIndex",
+      "head": "2ac8694bf8fe89a3840dda9bdb88db5119b77fc4",
+      "source_ids": [
+        "Радар-1902"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/VectifyAI/PageIndex/blob/2ac8694bf8fe89a3840dda9bdb88db5119b77fc4/README.md",
+        "readme_blob": "757d2685b804b42d5b9fdf38a6ec2cb638102686",
+        "readme_line_count": 263,
+        "cache_sha256": "9c1298100276a9fab603e664bb9972d6628c0fc52fe3dfdaaf1e73953aa37bc2"
+      },
+      "verdict": "SUPPORTED_WITH_LOCAL_DATAFLOW_QUALIFICATION",
+      "corrections": [
+        {
+          "field": "risk",
+          "text": "Local SDK/index storage does not imply offline inference: source examples still use an LLM API key. Cloud mode also transfers indexing/storage to the vendor; make dataflow, model cost and cloud storage explicit. Subscription-based Claude invocation remains an advertised integration, not an independent grant of provider permission or guaranteed quota.",
+          "readme_lines": [
+            84,
+            105
+          ],
+          "additional_readme_lines": [
+            179,
+            217
+          ]
+        },
+        {
+          "field": "cost",
+          "text": "Keep source benchmark/indexing-cost headlines separate from AWE measurements and from cloud/subscription pricing. No quoted savings/cost/accuracy figure has been reproduced in this audit.",
+          "readme_lines": [
+            116,
+            165
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    },
+    {
+      "rank": 50,
+      "repo": "google/langextract",
+      "head": "0e441bf77ddc3119dd0aa413322959234dd84ee5",
+      "source_ids": [
+        "Радар-2132"
+      ],
+      "evidence": {
+        "readme_url": "https://github.com/google/langextract/blob/0e441bf77ddc3119dd0aa413322959234dd84ee5/README.md",
+        "readme_blob": "7fdba9d5d447e20aeabbf58288ed523d8ef5c43b",
+        "readme_line_count": 545,
+        "cache_sha256": "dc639420f191d5a4c1a4a7011ad1a3c68e1ed17a65ff263f3b16d9d516dd2f5a"
+      },
+      "verdict": "SUPPORTED_WITH_GROUNDING_AND_SUPPORT_QUALIFICATIONS",
+      "corrections": [
+        {
+          "field": "minimum_acceptance",
+          "text": "Explicitly reject/filter extractions whose char_interval is None. The README acknowledges hallucinated extraction from few-shot examples; a valid schema or source-looking text is insufficient. Also test wrong/overlapping spans and factual attributes that go beyond source text.",
+          "readme_lines": [
+            106,
+            108
+          ],
+          "additional_readme_lines": [
+            153,
+            157
+          ]
+        },
+        {
+          "field": "requirements",
+          "text": "Do not promise identical schema enforcement across providers: the README says Ollama does not currently support output_schema. Google organization ownership does not mean an officially supported Google product; the disclaimer says otherwise.",
+          "readme_lines": [
+            403,
+            405
+          ],
+          "additional_readme_lines": [
+            535,
+            541
+          ]
+        }
+      ],
+      "decision_change": false,
+      "runtime": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN"
+    }
+  ],
+  "framing": "50 source-linked desk reviews are not 50 runtime or security audits."
+}

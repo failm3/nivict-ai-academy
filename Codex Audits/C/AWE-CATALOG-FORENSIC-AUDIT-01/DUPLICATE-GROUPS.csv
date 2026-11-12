@@ -1,0 +1,212 @@
+kind,group_id,key,count,source_ids,interpretation
+exact_url,exact_url:458c04cd04ca960b,https://github.com/morluto/rea,2,iirepresent-0024|Радар-0081,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:82d803b5a5c59170,https://github.com/supermemoryai/supermemory,2,iirepresent-0059|Радар-1876,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:6d32ae3701008a01,https://github.com/htdt/godogen,2,iirepresent-0076|Радар-1199,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:6d3bd03b49986330,https://github.com/calesthio/OpenMontage,2,iirepresent-0078|Радар-0734,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:291d5eb46511b79f,https://github.com/Leonxlnx/taste-skill,2,iirepresent-0081|Радар-1348,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:8b93800629a09a9e,https://github.com/upscayl/upscayl,2,iirepresent-0091|Радар-0881,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:3fbb0d0462685f17,https://github.com/lightpanda-io/browser,2,iirepresent-0107|Радар-0288,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:4fcf7dd2b25b7a7c,https://github.com/firecrawl/pdf-inspector,2,iirepresent-0111|Радар-0498,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:e1ae8aa0ded84424,https://github.com/pascalorg/editor,2,iirepresent-0132|Радар-1430,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:18ff38e9ffed9a69,https://github.com/tw93/Pake,2,iirepresent-0133|Радар-0784,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:3db40af345d5afa2,https://github.com/p-e-w/heretic,2,iirepresent-0134|Радар-1773,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:11b86268bb2d567a,https://github.com/baidu/Unlimited-OCR,2,iirepresent-0137|Радар-0733,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:cb2c51bc30a37065,https://github.com/every-app/open-seo,2,iirepresent-0139|Радар-0622,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:0446821518e71993,https://github.com/diegosouzapw/OmniRoute,2,iirepresent-0146|Радар-0621,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:69c387406bac4f5b,https://github.com/wslyvh/paperweight,2,iirepresent-0149|Радар-0088,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:e1a6a40ad4d703a0,https://github.com/reconurge/flowsint,2,iirepresent-0157|Радар-0429,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:041055887f823eb7,https://github.com/hardikpandya/stop-slop,2,iirepresent-0183|Радар-0950,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:0324644180e42841,https://github.com/YouMind-OpenLab/awesome-gpt-image-2,2,iirepresent-0207|Радар-1182,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:815f9f38aaaaf285,https://github.com/webadderall/Recordly,2,iirepresent-0209|Радар-1384,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:8d6a4b13c5d73cd6,https://github.com/moeru-ai/airi,2,iirepresent-0213|Радар-1644,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:76a435bcb8eeb8bd,https://github.com/bytedance/UI-TARS-desktop,2,iirepresent-0280|Радар-1237,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:415cb25759660433,https://github.com/public-apis/public-apis,2,iirepresent-0343|Радар-1505,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:40ccb910ec1dd1ab,https://github.com/MiroMindAI/MiroThinker,2,iirepresent-0364|Радар-2547,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:5611639b29cb7693,https://github.com/ashishpatel26/500-AI-Agents-Projects,2,iirepresent-0451|Радар-1139,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:53c9cfc459730775,https://github.com/onlook-dev/onlook,2,iirepresent-0506|Радар-1671,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:4652214c4230d2a7,https://github.com/nari-labs/dia,2,iirepresent-0581|Радар-3102,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:64b8369a52fdec98,https://github.com/louis-e/arnis,2,iirepresent-0636|Радар-1479,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:839f5acdc65fd3f7,https://github.com/Wan-Video/Wan2.1,2,iirepresent-0663|Радар-3110,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:e70af22d37d15b2a,https://github.com/siyuan-note/siyuan,2,iirepresent-0694|Радар-0174,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:7e01176c9d1442c2,https://github.com/abus-aikorea/voice-pro,2,iirepresent-0769|Радар-1543,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:ec2a1fb5129b99e9,https://github.com/hacksider/Deep-Live-Cam,2,iirepresent-0789|Радар-0869,DUPLICATE_RESOURCE_URL
+exact_url,exact_url:805755d5f70adc4e,https://github.com/friuns2/BlackFriday-GPTs-Prompts,2,iirepresent-1161|Радар-1577,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:458c04cd04ca960b,https://github.com/morluto/rea,2,iirepresent-0024|Радар-0081,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:82d803b5a5c59170,https://github.com/supermemoryai/supermemory,2,iirepresent-0059|Радар-1876,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:6d32ae3701008a01,https://github.com/htdt/godogen,2,iirepresent-0076|Радар-1199,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:6d3bd03b49986330,https://github.com/calesthio/OpenMontage,2,iirepresent-0078|Радар-0734,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:291d5eb46511b79f,https://github.com/Leonxlnx/taste-skill,2,iirepresent-0081|Радар-1348,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:8b93800629a09a9e,https://github.com/upscayl/upscayl,2,iirepresent-0091|Радар-0881,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:3fbb0d0462685f17,https://github.com/lightpanda-io/browser,2,iirepresent-0107|Радар-0288,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:4fcf7dd2b25b7a7c,https://github.com/firecrawl/pdf-inspector,2,iirepresent-0111|Радар-0498,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:e1ae8aa0ded84424,https://github.com/pascalorg/editor,2,iirepresent-0132|Радар-1430,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:18ff38e9ffed9a69,https://github.com/tw93/Pake,2,iirepresent-0133|Радар-0784,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:3db40af345d5afa2,https://github.com/p-e-w/heretic,2,iirepresent-0134|Радар-1773,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:11b86268bb2d567a,https://github.com/baidu/Unlimited-OCR,2,iirepresent-0137|Радар-0733,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:cb2c51bc30a37065,https://github.com/every-app/open-seo,2,iirepresent-0139|Радар-0622,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:0446821518e71993,https://github.com/diegosouzapw/OmniRoute,2,iirepresent-0146|Радар-0621,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:69c387406bac4f5b,https://github.com/wslyvh/paperweight,2,iirepresent-0149|Радар-0088,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:e1a6a40ad4d703a0,https://github.com/reconurge/flowsint,2,iirepresent-0157|Радар-0429,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:041055887f823eb7,https://github.com/hardikpandya/stop-slop,2,iirepresent-0183|Радар-0950,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:0324644180e42841,https://github.com/YouMind-OpenLab/awesome-gpt-image-2,2,iirepresent-0207|Радар-1182,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:815f9f38aaaaf285,https://github.com/webadderall/Recordly,2,iirepresent-0209|Радар-1384,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:8d6a4b13c5d73cd6,https://github.com/moeru-ai/airi,2,iirepresent-0213|Радар-1644,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:76a435bcb8eeb8bd,https://github.com/bytedance/UI-TARS-desktop,2,iirepresent-0280|Радар-1237,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:415cb25759660433,https://github.com/public-apis/public-apis,2,iirepresent-0343|Радар-1505,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:40ccb910ec1dd1ab,https://github.com/MiroMindAI/MiroThinker,2,iirepresent-0364|Радар-2547,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:5611639b29cb7693,https://github.com/ashishpatel26/500-AI-Agents-Projects,2,iirepresent-0451|Радар-1139,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:53c9cfc459730775,https://github.com/onlook-dev/onlook,2,iirepresent-0506|Радар-1671,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:4652214c4230d2a7,https://github.com/nari-labs/dia,2,iirepresent-0581|Радар-3102,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:64b8369a52fdec98,https://github.com/louis-e/arnis,2,iirepresent-0636|Радар-1479,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:839f5acdc65fd3f7,https://github.com/Wan-Video/Wan2.1,2,iirepresent-0663|Радар-3110,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:4c6997ad8b652fe6,https://github.com/Axorax/awesome-free-apps,2,iirepresent-0692|Радар-1441,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:e70af22d37d15b2a,https://github.com/siyuan-note/siyuan,2,iirepresent-0694|Радар-0174,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:7e01176c9d1442c2,https://github.com/abus-aikorea/voice-pro,2,iirepresent-0769|Радар-1543,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:ec2a1fb5129b99e9,https://github.com/hacksider/Deep-Live-Cam,2,iirepresent-0789|Радар-0869,DUPLICATE_RESOURCE_URL
+conservative_url,conservative_url:805755d5f70adc4e,https://github.com/friuns2/BlackFriday-GPTs-Prompts,2,iirepresent-1161|Радар-1577,DUPLICATE_RESOURCE_URL
+project_or_resource,project_or_resource:b5f845b7e878404e,github:morluto/rea,2,iirepresent-0024|Радар-0081,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:bc43cb2c4e5546a5,github:supermemoryai/supermemory,2,iirepresent-0059|Радар-1876,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:274b13f3278aac2b,github:htdt/godogen,2,iirepresent-0076|Радар-1199,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:3a1aa4e5ee097c1a,github:calesthio/openmontage,2,iirepresent-0078|Радар-0734,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:66c590bf9cf09139,github:leonxlnx/taste-skill,2,iirepresent-0081|Радар-1348,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:78d03c385ae2d823,github:upscayl/upscayl,2,iirepresent-0091|Радар-0881,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:efde33f42fa02ac6,github:lightpanda-io/browser,2,iirepresent-0107|Радар-0288,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:b007113dbc417f3f,github:firecrawl/pdf-inspector,2,iirepresent-0111|Радар-0498,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:852e221f2fc7c44a,github:pascalorg/editor,2,iirepresent-0132|Радар-1430,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:53baa4234d122b8b,github:tw93/pake,2,iirepresent-0133|Радар-0784,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:c0f68e8faec6850b,github:p-e-w/heretic,2,iirepresent-0134|Радар-1773,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:04401e9dca31326e,github:baidu/unlimited-ocr,2,iirepresent-0137|Радар-0733,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:72bf368870c7f1af,github:every-app/open-seo,2,iirepresent-0139|Радар-0622,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:0c615b40f4dca450,github:diegosouzapw/omniroute,2,iirepresent-0146|Радар-0621,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:2a1979547e7f2214,github:wslyvh/paperweight,2,iirepresent-0149|Радар-0088,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:b69fcb782ad2ff7d,github:reconurge/flowsint,2,iirepresent-0157|Радар-0429,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:a9d26569b121f560,github:hardikpandya/stop-slop,2,iirepresent-0183|Радар-0950,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:f6abd54625d51404,github:youmind-openlab/awesome-gpt-image-2,2,iirepresent-0207|Радар-1182,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:64e1432b3fd2297a,github:webadderall/recordly,2,iirepresent-0209|Радар-1384,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:88281a8a22155191,github:moeru-ai/airi,2,iirepresent-0213|Радар-1644,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:26e2889d345914e5,github:bytedance/ui-tars-desktop,2,iirepresent-0280|Радар-1237,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:8788da12e058b190,github:gtsteffaniak/filebrowser,2,iirepresent-0339|Радар-0490,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:66c1bbd984413b99,github:public-apis/public-apis,2,iirepresent-0343|Радар-1505,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:3a462f44d9f76146,github:resemble-ai/chatterbox,2,iirepresent-0361|Радар-2854,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:6b455f16e65da6d1,github:miromindai/mirothinker,2,iirepresent-0364|Радар-2547,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:eb988b8d8bef1d82,github:srwi/everythingtoolbar,2,iirepresent-0367|Радар-0055,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:b653ae8b5fc091da,github:ashishpatel26/500-ai-agents-projects,2,iirepresent-0451|Радар-1139,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:9d61f05ffc62f5cb,github:onlook-dev/onlook,2,iirepresent-0506|Радар-1671,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:eeaf2dfcac6061cc,github:hacksider/deep-live-cam,3,iirepresent-0549|iirepresent-0789|Радар-0869,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:73bfaa64605ec1b1,github:nari-labs/dia,2,iirepresent-0581|Радар-3102,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:93ab394e6c9296ee,github:louis-e/arnis,2,iirepresent-0636|Радар-1479,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:769acdc734eeb89d,github:wan-video/wan2.1,2,iirepresent-0663|Радар-3110,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:cc194bc37d04f9e4,github:axorax/awesome-free-apps,2,iirepresent-0692|Радар-1441,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:54c34584ecfa5296,github:siyuan-note/siyuan,2,iirepresent-0694|Радар-0174,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:217bbeb33bd5ebf2,github:abus-aikorea/voice-pro,2,iirepresent-0769|Радар-1543,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:53f2a5c1067f3960,github:friuns2/blackfriday-gpts-prompts,2,iirepresent-1161|Радар-1577,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:0ccba1bdd9e02cfa,github:mikeroyal/self-hosting-guide,2,Радар-0172|Радар-2935,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+project_or_resource,project_or_resource:064debcb3ed7891c,github:winscp/winscp,2,Радар-0860|Радар-0861,SAME_GITHUB_PROJECT_NOT_NECESSARILY_SAME_RESOURCE
+legacy_full_url,legacy_full_url:235dd3f23a5cbb76,"('https', 'github.com', '/morluto/rea', '', '')",2,iirepresent-0024|Радар-0081,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:27679d664cea6fd9,"('https', 'github.com', '/supermemoryai/supermemory', '', '')",2,iirepresent-0059|Радар-1876,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:6fc96e113dc0210d,"('https', 'github.com', '/htdt/godogen', '', '')",2,iirepresent-0076|Радар-1199,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:a0c8916b9a5d8c8e,"('https', 'github.com', '/calesthio/openmontage', '', '')",2,iirepresent-0078|Радар-0734,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:1825cf0a5ccc1102,"('https', 'github.com', '/leonxlnx/taste-skill', '', '')",2,iirepresent-0081|Радар-1348,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:eb0d5c4482b7bdc9,"('https', 'github.com', '/upscayl/upscayl', '', '')",2,iirepresent-0091|Радар-0881,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:6049e6e0d460c1a2,"('https', 'github.com', '/lightpanda-io/browser', '', '')",2,iirepresent-0107|Радар-0288,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:af5856f49ad9988a,"('https', 'github.com', '/firecrawl/pdf-inspector', '', '')",2,iirepresent-0111|Радар-0498,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:8b3d307236b86570,"('https', 'github.com', '/pascalorg/editor', '', '')",2,iirepresent-0132|Радар-1430,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:42cfc2073daaa2ad,"('https', 'github.com', '/tw93/pake', '', '')",2,iirepresent-0133|Радар-0784,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:9810c7d37768e983,"('https', 'github.com', '/p-e-w/heretic', '', '')",2,iirepresent-0134|Радар-1773,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:8b94c61adae8b143,"('https', 'github.com', '/baidu/unlimited-ocr', '', '')",2,iirepresent-0137|Радар-0733,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:ea6c8c05449b3ed5,"('https', 'github.com', '/every-app/open-seo', '', '')",2,iirepresent-0139|Радар-0622,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:05ca5c9138437f44,"('https', 'github.com', '/diegosouzapw/omniroute', '', '')",2,iirepresent-0146|Радар-0621,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:494928eb2e2a1989,"('https', 'github.com', '/wslyvh/paperweight', '', '')",2,iirepresent-0149|Радар-0088,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:69bbf282d56161c1,"('https', 'github.com', '/reconurge/flowsint', '', '')",2,iirepresent-0157|Радар-0429,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:22281b61f4026630,"('https', 'github.com', '/hardikpandya/stop-slop', '', '')",2,iirepresent-0183|Радар-0950,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:aaf129d146cbb97a,"('https', 'github.com', '/youmind-openlab/awesome-gpt-image-2', '', '')",2,iirepresent-0207|Радар-1182,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:a25fc6980f8a7748,"('https', 'github.com', '/webadderall/recordly', '', '')",2,iirepresent-0209|Радар-1384,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:ef7626e5291346c9,"('https', 'github.com', '/moeru-ai/airi', '', '')",2,iirepresent-0213|Радар-1644,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:afd6807fcea5e124,"('https', 'github.com', '/bytedance/ui-tars-desktop', '', '')",2,iirepresent-0280|Радар-1237,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:5310c73f6c4aaa0f,"('https', 'github.com', '/public-apis/public-apis', '', '')",2,iirepresent-0343|Радар-1505,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:bee47d417825eea9,"('https', 'github.com', '/miromindai/mirothinker', '', '')",2,iirepresent-0364|Радар-2547,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:f4b2ec494c7923e1,"('https', 'github.com', '/ashishpatel26/500-ai-agents-projects', '', '')",2,iirepresent-0451|Радар-1139,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:48a33a5a12132bd8,"('https', 'github.com', '/onlook-dev/onlook', '', '')",2,iirepresent-0506|Радар-1671,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:3a7b2e9a6df3d73d,"('https', 'github.com', '/nari-labs/dia', '', '')",2,iirepresent-0581|Радар-3102,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:b2a8ecd369669107,"('https', 'github.com', '/louis-e/arnis', '', '')",2,iirepresent-0636|Радар-1479,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:cea062580ad76ad3,"('https', 'github.com', '/wan-video/wan2.1', '', '')",2,iirepresent-0663|Радар-3110,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:6b7a3ce5555919ee,"('https', 'github.com', '/axorax/awesome-free-apps', '', '')",2,iirepresent-0692|Радар-1441,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:fabf1bc80e711a48,"('https', 'github.com', '/siyuan-note/siyuan', '', '')",2,iirepresent-0694|Радар-0174,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:5830a11d297caece,"('https', 'krea.ai', '', '', '')",2,iirepresent-0710|iirepresent-0742,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:aee4556f54655775,"('https', 'kaiber.ai', '', '', '')",2,iirepresent-0761|iirepresent-1319,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:c7ca60e298e59b0c,"('https', 'github.com', '/abus-aikorea/voice-pro', '', '')",2,iirepresent-0769|Радар-1543,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:1bdb840a30b8f458,"('https', 'vidu.studio', '', '', '')",2,iirepresent-0781|iirepresent-0836,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:2ce489fb1ed3b115,"('https', 'github.com', '/hacksider/deep-live-cam', '', '')",2,iirepresent-0789|Радар-0869,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:c5642ccc9f3a8f49,"('https', 'lumalabs.ai', '/dream-machine', '', '')",2,iirepresent-0918|iirepresent-0980,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:497f65dc5d13452f,"('https', 'sberbank.com', '/promo/kandinsky', '', '')",2,iirepresent-1011|iirepresent-1231,CANDIDATE_ONLY
+legacy_full_url,legacy_full_url:44ef755dc872bdb1,"('https', 'github.com', '/friuns2/blackfriday-gpts-prompts', '', '')",2,iirepresent-1161|Радар-1577,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:b70d40c284c09eb3,"('github.com', '/morluto/rea')",2,iirepresent-0024|Радар-0081,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:792e88f92eab4fa9,"('syntx.ai', '')",2,iirepresent-0033|iirepresent-0206,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:379556702b568087,"('github.com', '/supermemoryai/supermemory')",2,iirepresent-0059|Радар-1876,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:6168d36f88177013,"('neurosphere.pro', '')",2,iirepresent-0066|iirepresent-0286,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:c8bb7aea983489c5,"('github.com', '/htdt/godogen')",2,iirepresent-0076|Радар-1199,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:8b4137db9be56711,"('github.com', '/calesthio/openmontage')",2,iirepresent-0078|Радар-0734,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:38b93232cf698af8,"('github.com', '/leonxlnx/taste-skill')",2,iirepresent-0081|Радар-1348,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:7f01d32dc2d4a243,"('github.com', '/upscayl/upscayl')",2,iirepresent-0091|Радар-0881,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:c7668ae6651f1c7c,"('github.com', '/lightpanda-io/browser')",2,iirepresent-0107|Радар-0288,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:2dbd7b6bd2f82445,"('github.com', '/firecrawl/pdf-inspector')",2,iirepresent-0111|Радар-0498,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:2e0d70a758e0f63c,"('github.com', '/pascalorg/editor')",2,iirepresent-0132|Радар-1430,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:8938f8d4663bd634,"('github.com', '/tw93/pake')",2,iirepresent-0133|Радар-0784,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:f7ac63cd4588d246,"('github.com', '/p-e-w/heretic')",2,iirepresent-0134|Радар-1773,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:bc72ba78cde4432f,"('github.com', '/baidu/unlimited-ocr')",2,iirepresent-0137|Радар-0733,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:0cb335c6985c4a42,"('github.com', '/every-app/open-seo')",2,iirepresent-0139|Радар-0622,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:d4c9d432b19ba854,"('github.com', '/diegosouzapw/omniroute')",2,iirepresent-0146|Радар-0621,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:bd2a3743b40ac460,"('github.com', '/wslyvh/paperweight')",2,iirepresent-0149|Радар-0088,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:5568ba258adbb2e7,"('chatgpt.com', '')",2,iirepresent-0154|iirepresent-1010,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:be7580a9d70aa2c3,"('github.com', '/reconurge/flowsint')",2,iirepresent-0157|Радар-0429,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:7a0919636cb3cc7a,"('github.com', '/hardikpandya/stop-slop')",2,iirepresent-0183|Радар-0950,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:f748fc9120370279,"('fyro.ai', '')",2,iirepresent-0194|iirepresent-0245,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:31a8d5cc2b613600,"('github.com', '/youmind-openlab/awesome-gpt-image-2')",2,iirepresent-0207|Радар-1182,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:623044b86f927bcd,"('github.com', '/webadderall/recordly')",2,iirepresent-0209|Радар-1384,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:8886316902c50cbb,"('github.com', '/moeru-ai/airi')",2,iirepresent-0213|Радар-1644,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:3e1921a7c67bd766,"('education.github.com', '')",2,iirepresent-0265|iirepresent-0266,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:c263894132d72129,"('character.ai', '')",2,iirepresent-0278|iirepresent-0422,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:33428be2f1fdb2ba,"('github.com', '/bytedance/ui-tars-desktop')",2,iirepresent-0280|Радар-1237,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:3434d1d10e6cc22d,"('notebooklm.google', '')",2,iirepresent-0298|iirepresent-0564,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:0933032fb080cc07,"('playphrase.me', '')",2,iirepresent-0306|iirepresent-0474,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:685ef0f94956173a,"('grok.com', '')",2,iirepresent-0335|iirepresent-0467,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:8ddca6bca33c75b7,"('github.com', '/gtsteffaniak/filebrowser')",2,iirepresent-0339|Радар-0490,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:edd63310f8f7b9d0,"('github.com', '/public-apis/public-apis')",2,iirepresent-0343|Радар-1505,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:584c35825aaba4bc,"('github.com', '/resemble-ai/chatterbox')",2,iirepresent-0361|Радар-2854,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:afbf7838fd23623d,"('github.com', '/miromindai/mirothinker')",2,iirepresent-0364|Радар-2547,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:12a7b7ce13e745a1,"('replit.com', '')",2,iirepresent-0365|iirepresent-0468,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:105a3b70194f7365,"('github.com', '/srwi/everythingtoolbar')",2,iirepresent-0367|Радар-0055,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:453e5456bdf4a216,"('recraft.ai', '')",2,iirepresent-0443|iirepresent-0756,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:56bdb11f5d9ad3c5,"('github.com', '/ashishpatel26/500-ai-agents-projects')",2,iirepresent-0451|Радар-1139,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:437b33f75c8d15cd,"('gptunnel.ru', '')",2,iirepresent-0492|iirepresent-0693,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:5f6d7580df4e7fa5,"('app.otio.ai', '')",2,iirepresent-0495|iirepresent-0930,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:d360539fcbf376e0,"('github.com', '/onlook-dev/onlook')",2,iirepresent-0506|Радар-1671,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:a8ef8be4e06e46a9,"('play.google.com', '/store/apps/details')",10,iirepresent-0512|iirepresent-0667|iirepresent-0669|iirepresent-0671|iirepresent-0750|iirepresent-0992|iirepresent-1027|iirepresent-1034|iirepresent-1085|iirepresent-1119,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:dfb098462a432cd0,"('chat.qwen.ai', '')",2,iirepresent-0525|iirepresent-0554,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:01f2d3b8f5212295,"('github.com', '/hacksider/deep-live-cam')",3,iirepresent-0549|iirepresent-0789|Радар-0869,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:008f64102caa12bb,"('github.com', '/nari-labs/dia')",2,iirepresent-0581|Радар-3102,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:278f9a0e59880203,"('github.com', '/louis-e/arnis')",2,iirepresent-0636|Радар-1479,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:0d6558f4ed8ea59b,"('claude.ai', '')",2,iirepresent-0654|iirepresent-0727,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:82053aaf0d95f52a,"('github.com', '/wan-video/wan2.1')",2,iirepresent-0663|Радар-3110,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:637f09fbedec0d54,"('github.com', '/axorax/awesome-free-apps')",2,iirepresent-0692|Радар-1441,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:4ce51e489e53f180,"('github.com', '/siyuan-note/siyuan')",2,iirepresent-0694|Радар-0174,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:bd892f4695e77588,"('krea.ai', '')",2,iirepresent-0710|iirepresent-0742,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:9dcc02a827fa39a6,"('consensus.app', '')",2,iirepresent-0739|iirepresent-0815,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:e9944422087c3909,"('kaiber.ai', '')",2,iirepresent-0761|iirepresent-1319,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:b75baa051e48579b,"('github.com', '/abus-aikorea/voice-pro')",2,iirepresent-0769|Радар-1543,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:90d1472ffaccb026,"('vidu.studio', '')",2,iirepresent-0781|iirepresent-0836,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:e1bc08d9d61573cf,"('perplexity.ai', '')",2,iirepresent-0782|iirepresent-0809,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:e1502475d186b0d5,"('ideogram.ai', '')",2,iirepresent-0796|iirepresent-1071,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:125a4c1e2d1be0f4,"('lumalabs.ai', '')",2,iirepresent-0820|iirepresent-0935,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:6d0f044f8a772706,"('lumalabs.ai', '/dream-machine')",2,iirepresent-0918|iirepresent-0980,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:0cad18a15db0aa28,"('sberbank.com', '/promo/kandinsky')",2,iirepresent-1011|iirepresent-1231,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:28387d6d961e9426,"('youtube.com', '/watch')",3,iirepresent-1054|iirepresent-1269|iirepresent-1305,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:415f1ba105f6942f,"('chat.openai.com', '')",2,iirepresent-1090|iirepresent-1326,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:2f8c714b490ac645,"('magnific.ai', '')",2,iirepresent-1108|iirepresent-1135,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:9d1fe527208b1eff,"('midjourney.com', '/home')",2,iirepresent-1118|iirepresent-1288,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:08bc88ea5943365c,"('replicate.com', '/stability-ai/stable-video-diffusion/versions/3f0457e4619daac51203dedb472816fd4af51f3149fa7a9e0b5ffcf1b8172438')",2,iirepresent-1130|iirepresent-1144,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:f76f9c63d928a946,"('leonardo.ai', '')",2,iirepresent-1141|iirepresent-1228,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:5c87044b883a6188,"('github.com', '/friuns2/blackfriday-gpts-prompts')",2,iirepresent-1161|Радар-1577,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:d6922862b1251c8f,"('magicstudio.com', '/ru/backgroundblur')",2,iirepresent-1179|iirepresent-1182,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:949309080cee361d,"('github.com', '/mikeroyal/self-hosting-guide')",2,Радар-0172|Радар-2935,CANDIDATE_ONLY
+legacy_host_path,legacy_host_path:2dc93a8062ddb80f,"('github.com', '/winscp/winscp')",2,Радар-0860|Радар-0861,CANDIDATE_ONLY

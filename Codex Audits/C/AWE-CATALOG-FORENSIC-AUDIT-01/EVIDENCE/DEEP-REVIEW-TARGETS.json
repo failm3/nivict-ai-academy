@@ -1,0 +1,202 @@
+[
+  {
+    "rank": 1,
+    "repo": "agent0ai/agent-zero",
+    "need": "recursive_agents"
+  },
+  {
+    "rank": 2,
+    "repo": "NousResearch/hermes-agent",
+    "need": "executor_skills"
+  },
+  {
+    "rank": 3,
+    "repo": "mastra-ai/mastra",
+    "need": "current_head"
+  },
+  {
+    "rank": 4,
+    "repo": "langchain-ai/langgraph",
+    "need": "durable_orchestration"
+  },
+  {
+    "rank": 5,
+    "repo": "agno-agi/agno",
+    "need": "teams_agentos"
+  },
+  {
+    "rank": 6,
+    "repo": "microsoft/agent-framework",
+    "need": "agent_sdk"
+  },
+  {
+    "rank": 7,
+    "repo": "camel-ai/camel",
+    "need": "workforce"
+  },
+  {
+    "rank": 8,
+    "repo": "BerriAI/litellm",
+    "need": "model_gateway"
+  },
+  {
+    "rank": 9,
+    "repo": "diegosouzapw/OmniRoute",
+    "need": "existing_gateway_candidate"
+  },
+  {
+    "rank": 10,
+    "repo": "stacklok/toolhive",
+    "need": "mcp_gateway"
+  },
+  {
+    "rank": 11,
+    "repo": "modelcontextprotocol/inspector",
+    "need": "mcp_qa"
+  },
+  {
+    "rank": 12,
+    "repo": "modelcontextprotocol/servers",
+    "need": "mcp_reference_servers"
+  },
+  {
+    "rank": 13,
+    "repo": "microsoft/playwright-mcp",
+    "need": "browser_tools"
+  },
+  {
+    "rank": 14,
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "need": "browser_debug"
+  },
+  {
+    "rank": 15,
+    "repo": "browser-use/browser-use",
+    "need": "browser_agent"
+  },
+  {
+    "rank": 16,
+    "repo": "github/github-mcp-server",
+    "need": "github_tools"
+  },
+  {
+    "rank": 17,
+    "repo": "googleworkspace/cli",
+    "need": "workspace_tools"
+  },
+  {
+    "rank": 18,
+    "repo": "taylorwilsdon/google_workspace_mcp",
+    "need": "workspace_mcp"
+  },
+  {
+    "rank": 19,
+    "repo": "sonnylazuardi/cursor-talk-to-figma-mcp",
+    "need": "figma_bridge"
+  },
+  {
+    "rank": 20,
+    "repo": "activepieces/activepieces",
+    "need": "workflow_connectors"
+  },
+  {
+    "rank": 21,
+    "repo": "n8n-io/n8n",
+    "need": "workflow_engine"
+  },
+  {
+    "rank": 22,
+    "repo": "langfuse/langfuse",
+    "need": "observability"
+  },
+  {
+    "rank": 23,
+    "repo": "promptfoo/promptfoo",
+    "need": "adversarial_evals"
+  },
+  {
+    "rank": 24,
+    "repo": "confident-ai/deepeval",
+    "need": "evals"
+  },
+  {
+    "rank": 25,
+    "repo": "pgvector/pgvector",
+    "need": "vector_memory"
+  },
+  {
+    "rank": 26,
+    "repo": "supermemoryai/supermemory",
+    "need": "memory_service"
+  },
+  {
+    "rank": 27,
+    "repo": "mem0ai/mem0",
+    "need": "memory_layer"
+  },
+  {
+    "rank": 28,
+    "repo": "getzep/graphiti",
+    "need": "knowledge_graph"
+  },
+  {
+    "rank": 29,
+    "repo": "DeusData/codebase-memory-mcp",
+    "need": "code_graph"
+  },
+  {
+    "rank": 30,
+    "repo": "temporalio/temporal",
+    "need": "recovery"
+  },
+  {
+    "rank": 31,
+    "repo": "Infisical/infisical",
+    "need": "secrets"
+  },
+  {
+    "rank": 32,
+    "repo": "open-policy-agent/opa",
+    "need": "policy"
+  },
+  {
+    "rank": 33,
+    "repo": "alibaba/OpenSandbox",
+    "need": "execution_sandbox"
+  },
+  {
+    "rank": 34,
+    "repo": "OpenHands/OpenHands",
+    "need": "autonomous_coding"
+  },
+  {
+    "rank": 35,
+    "repo": "Aider-AI/aider",
+    "need": "coding_cli"
+  },
+  {
+    "rank": 36,
+    "repo": "continuedev/continue",
+    "need": "coding_ide"
+  },
+  {
+    "rank": 37,
+    "repo": "upstash/context7",
+    "need": "current_library_docs"
+  },
+  {
+    "rank": 38,
+    "repo": "unstructured-io/unstructured",
+    "need": "document_ingest"
+  },
+  {
+    "rank": 39,
+    "repo": "huggingface/tokenizers",
+    "need": "context_tokenization"
+  },
+  {
+    "rank": 40,
+    "repo": "jlowin/fastmcp",
+    "need": "mcp_adapters"
+  }
+]

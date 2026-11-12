@@ -1,0 +1,273 @@
+{
+  "status": "PARTIAL_SOURCE_REVIEW_COMPLETED_FOR_12_FLAGS",
+  "checked_at": "2026-11-12",
+  "scope": "All records tagged DUAL_USE_KEYWORD_REVIEW (9) or PROMPT_INJECTION_KEYWORD_REVIEW (3) in the audited registry. Separate same-family auditor; no upstream code executed or installed; no paid services called.",
+  "flagged_records": 12,
+  "source_readmes_observed": 10,
+  "source_unavailable": 2,
+  "per_id": [
+    {
+      "source_id": "Радар-0259",
+      "repo": "Sophomoresty/turnstile-bypass",
+      "classification": "RISK_REVIEW",
+      "risk_class": "ANTI_BOT_BYPASS_AUTOMATION",
+      "observation": "README describes browser automation to pass Cloudflare challenges. This supports a dual-use classification; it does not demonstrate malware or permission to bypass a third-party site's controls.",
+      "decision": "DEFER_NOT_REQUIRED_FOR_AWE_BASELINE",
+      "caution": "Do not install helpers/extensions or reuse clearance cookies. Any future authorized test needs its own target scope and isolated profile.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/Sophomoresty/turnstile-bypass/blob/main/README.md",
+        "readme_blob_sha": "23cb3282bd1f1f3e7a0888b4aa71bb8c7e22e0d9",
+        "immutable_blob_url": "https://api.github.com/repos/Sophomoresty/turnstile-bypass/git/blobs/23cb3282bd1f1f3e7a0888b4aa71bb8c7e22e0d9",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-0977",
+      "repo": "LiveContainer/LiveContainer",
+      "classification": "RISK_REVIEW",
+      "risk_class": "IOS_APP_LAUNCHER_WITH_CODESIGN_BOUNDARY_IMPLICATIONS",
+      "observation": "README describes an iOS app launcher rather than an emulator/hypervisor, and discusses signing bypass under particular conditions. It warns that third-party builds can access contained app data. This is a platform-boundary risk, not proof that the upstream project is malicious.",
+      "decision": "DEFER_OUTSIDE_AWE_SCOPE",
+      "caution": "Do not infer container isolation from the name. No mobile build or IPA was downloaded or run.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/LiveContainer/LiveContainer/blob/main/README.md",
+        "readme_blob_sha": "7b0b92201ad0cca01e523cc0d129f00b63b28398",
+        "immutable_blob_url": "https://api.github.com/repos/LiveContainer/LiveContainer/git/blobs/7b0b92201ad0cca01e523cc0d129f00b63b28398",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-1101",
+      "repo": "Z4nzu/hackingtool",
+      "classification": "RISK_REVIEW",
+      "risk_class": "DUAL_USE_SECURITY_TESTING_TOOLKIT",
+      "observation": "README frames the project as authorized security testing but includes offensive testing categories and an AI-guided command layer. A lawful-use claim does not make every bundled tool safe or licensed for a target.",
+      "decision": "DEFER_EXECUTION_NOT_AUTHORIZED",
+      "caution": "Do not execute its installer, bundled tools or AI-generated commands. Upstream dependencies and every proposed test target require separate review.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/Z4nzu/hackingtool/blob/master/README.md",
+        "readme_blob_sha": "dea7e850bca267a04e3039f617068d6f7b9365c2",
+        "immutable_blob_url": "https://api.github.com/repos/Z4nzu/hackingtool/git/blobs/dea7e850bca267a04e3039f617068d6f7b9365c2",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-1212",
+      "repo": "crowdsecurity/crowdsec",
+      "classification": "FALSE_POSITIVE",
+      "risk_class": "DEFENSIVE_IDS_IPS_WAF",
+      "observation": "README describes a defensive detection/protection system against malicious traffic. The Russian source mention of preventing attacks triggered the broad keyword rule. The flag is a false positive for inferring an offensive or malicious tool.",
+      "decision": "PILOT_ONLY_IF_HOST_DEFENSE_GAP_EXISTS",
+      "caution": "No deployment or firewall change performed; detection accuracy, telemetry handling, privileges and availability remain untested.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+        "readme_blob_sha": "5a4bb31438a2f1c9d313db17550b6bd382d1dafd",
+        "immutable_blob_url": "https://api.github.com/repos/crowdsecurity/crowdsec/git/blobs/5a4bb31438a2f1c9d313db17550b6bd382d1dafd",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-1219",
+      "repo": "CyberAlbSecOP/Awesome_GPT_Super_Prompting",
+      "classification": "UNKNOWN",
+      "risk_class": "PUBLIC_SOURCE_UNAVAILABLE",
+      "observation": "README and repository API both returned 404. The archived description suggests adversarial prompt reference material, but current content, license and provenance could not be established.",
+      "decision": "DEFER_SOURCE_UNAVAILABLE",
+      "caution": "A 404 does not prove maliciousness, deletion, or abandonment; preserve the record and original claim as unverified.",
+      "checked_at": "2026-11-12",
+      "source_review": "UNKNOWN_PUBLIC_SOURCE_UNAVAILABLE",
+      "evidence": {
+        "url": "https://github.com/CyberAlbSecOP/Awesome_GPT_Super_Prompting",
+        "readme_blob_sha": null,
+        "immutable_blob_url": null,
+        "error": "README_AND_REPOSITORY_API_HTTP_404"
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-1386",
+      "repo": "Piebald-AI/claude-code-system-prompts",
+      "classification": "FALSE_POSITIVE",
+      "risk_class": "SYSTEM_PROMPT_REFERENCE_COLLECTION",
+      "observation": "README presents extracted/versioned system prompts. The original description is descriptive reference text and does not itself instruct this auditor to change behavior. The prompt-injection keyword flag is a false positive for active injection in that description.",
+      "decision": "REFERENCE_ONLY_PROVENANCE_AND_RIGHTS_UNKNOWN",
+      "caution": "Never import collected third-party system prompts as privileged AWE instructions. Completeness, currency, extraction authorization and reuse rights were not independently established.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/Piebald-AI/claude-code-system-prompts/blob/main/README.md",
+        "readme_blob_sha": "032d1cfe685b5fd781b688dedbd7eda36397c4a9",
+        "immutable_blob_url": "https://api.github.com/repos/Piebald-AI/claude-code-system-prompts/git/blobs/032d1cfe685b5fd781b688dedbd7eda36397c4a9",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-1499",
+      "repo": "matro7sh/BypassAV",
+      "classification": "RISK_REVIEW",
+      "risk_class": "DEFENSE_EVASION_REFERENCE_MAP",
+      "observation": "README presents a map/reference of antivirus and EDR bypass techniques. It is not evidence of a malware binary, and the inspected README is mainly an index; the evasion subject matter justifies review.",
+      "decision": "DEFER_OUTSIDE_AWE_BASELINE",
+      "caution": "No evasion technique, payload, exclusion or linked tool was executed. Do not use the material to weaken current endpoint protections.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/matro7sh/BypassAV/blob/main/README.md",
+        "readme_blob_sha": "4a85290bae372d0703445b44d9394a606d176c3d",
+        "immutable_blob_url": "https://api.github.com/repos/matro7sh/BypassAV/git/blobs/4a85290bae372d0703445b44d9394a606d176c3d",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-2226",
+      "repo": "SteamAutoCracks/ManifestHub",
+      "classification": "UNKNOWN",
+      "risk_class": "STEAM_MANIFEST_CACHE_AND_API",
+      "observation": "README describes a Steam depot-manifest cache/API. The organization name triggers a broad crack keyword rule; that alone is not evidence of malicious code. Rights to redistribute or fetch particular game data and API trust were not established.",
+      "decision": "DEFER_UNRELATED_AND_AUTHORIZATION_UNKNOWN",
+      "caution": "Do not contact the API, obtain keys or download game content. Treat as a data resource, not a validated AWE dependency.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/SteamAutoCracks/ManifestHub/blob/main/README.md",
+        "readme_blob_sha": "4c408559c8d1d128a9358deeb7ff3db464711490",
+        "immutable_blob_url": "https://api.github.com/repos/SteamAutoCracks/ManifestHub/git/blobs/4c408559c8d1d128a9358deeb7ff3db464711490",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-2541",
+      "repo": "l0gicx/ai-model-bypass",
+      "classification": "RISK_REVIEW",
+      "risk_class": "JAILBREAK_PROMPT_PAYLOAD_COLLECTION",
+      "observation": "README contains prompt payloads intended to override model restrictions. The content was read only as untrusted data; its success claims were not tested. This is adversarial prompt-reference material rather than proof of host malware.",
+      "decision": "ADVERSARIAL_QA_REFERENCE_ONLY_AFTER_SCOPE_REVIEW",
+      "caution": "Do not load payloads as system instructions or execute suggested browser/account changes. Any use should be a bounded safety-evaluation fixture with separate authorization.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/l0gicx/ai-model-bypass/blob/main/README.md",
+        "readme_blob_sha": "b6ea2d4d748b9a6ccb29eeaee1e1495de9d579e7",
+        "immutable_blob_url": "https://api.github.com/repos/l0gicx/ai-model-bypass/git/blobs/b6ea2d4d748b9a6ccb29eeaee1e1495de9d579e7",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-3062",
+      "repo": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "classification": "FALSE_POSITIVE",
+      "risk_class": "COLLECTED_OR_CLAIMED_EXTRACTED_PROMPTS",
+      "observation": "README presents a collection of prompts and model/tool information. The original record describes a dataset and is not an active instruction directed at the auditor. The name/keywords alone cannot establish prompt injection or accurate model internals.",
+      "decision": "REFERENCE_ONLY_PROVENANCE_AND_RIGHTS_UNKNOWN",
+      "caution": "Do not auto-promote copied prompts to trusted memory, reproduce secrets from linked dumps, or assume source legitimacy, ownership or freshness.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md",
+        "readme_blob_sha": "0818aad79d047048f3be277623e876b1aa230cb0",
+        "immutable_blob_url": "https://api.github.com/repos/x1xhlol/system-prompts-and-models-of-ai-tools/git/blobs/0818aad79d047048f3be277623e876b1aa230cb0",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-3116",
+      "repo": "asgeirtj/system_prompts_leaks",
+      "classification": "FALSE_POSITIVE",
+      "risk_class": "CLAIMED_LEAKED_SYSTEM_PROMPT_COLLECTION",
+      "observation": "README describes purported leaked system prompts and versions. The archived source description is descriptive rather than an active injection. Authenticity, collection authority and complete/correct versions remain unknown.",
+      "decision": "REFERENCE_ONLY_PROVENANCE_AND_RIGHTS_UNKNOWN",
+      "caution": "Keep content behind an untrusted-data boundary. Do not reproduce potentially sensitive third-party dump content or use it as AWE policy.",
+      "checked_at": "2026-11-12",
+      "source_review": "README_OBSERVED",
+      "evidence": {
+        "url": "https://github.com/asgeirtj/system_prompts_leaks/blob/main/README.md",
+        "readme_blob_sha": "d89e8a30d999820f0bc57de221ba36d78352d7c2",
+        "immutable_blob_url": "https://api.github.com/repos/asgeirtj/system_prompts_leaks/git/blobs/d89e8a30d999820f0bc57de221ba36d78352d7c2",
+        "error": null
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    },
+    {
+      "source_id": "Радар-3127",
+      "repo": "Gezine/BD-JB-1250",
+      "classification": "UNKNOWN",
+      "risk_class": "PUBLIC_SOURCE_UNAVAILABLE_CONSOLE_EXPLOIT_CLAIM",
+      "observation": "README and repository API both returned 404. The archived description concerns console exploitation, but current repository content and licensing were not available.",
+      "decision": "DEFER_SOURCE_UNAVAILABLE_OUTSIDE_AWE_SCOPE",
+      "caution": "Do not infer malware or a confirmed working exploit from the URL/description; no payload or firmware interaction occurred.",
+      "checked_at": "2026-11-12",
+      "source_review": "UNKNOWN_PUBLIC_SOURCE_UNAVAILABLE",
+      "evidence": {
+        "url": "https://github.com/Gezine/BD-JB-1250",
+        "readme_blob_sha": null,
+        "immutable_blob_url": null,
+        "error": "README_AND_REPOSITORY_API_HTTP_404"
+      },
+      "malware_verdict": "NOT_DETERMINED_NO_CODE_OR_BINARY_AUDIT",
+      "runtime_verification": "NOT_RUN",
+      "instructions_treated_as_data": true,
+      "cross_family_gate": "NOT_SATISFIED"
+    }
+  ],
+  "verdict_semantics": {
+    "FALSE_POSITIVE": "False positive for inferring offensive/malicious behavior or active injection from the original description; does not certify source safety.",
+    "RISK_REVIEW": "Subject matter warrants bounded trust/authorization review; malware and runtime safety not determined.",
+    "UNKNOWN": "Evidence insufficient for the relevant current content/authorization question."
+  },
+  "limitations": [
+    "README/source review is not a malware scan, license clearance or sandbox acceptance.",
+    "No model was asked to execute jailbreaks or bypass endpoint protections.",
+    "Descriptions and repository instructions remained untrusted data.",
+    "Different-model-family independent review remains NOT_SATISFIED."
+  ]
+}

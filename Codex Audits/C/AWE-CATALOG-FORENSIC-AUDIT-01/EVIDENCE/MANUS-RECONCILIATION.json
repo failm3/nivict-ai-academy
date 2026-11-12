@@ -1,0 +1,49 @@
+{
+  "registry_rows": 3415,
+  "registry_unique_ids": 3415,
+  "json_export_type": "dict",
+  "json_export_keys": [
+    "schema_version",
+    "catalog_type",
+    "resources"
+  ],
+  "bundle_hash_match": true,
+  "backup_hashes_match": {
+    "registry.dump": true,
+    "evidence.tar.gz": true
+  },
+  "claimed_git_commit": "58d3132c139b3e45ff7cd24289a2d618d87d373a",
+  "registry_sha256": "2da51063b9da385d97df3c61d8d0f3eb1125b159734f079367862fa8d1b2c1f4",
+  "json_jsonl_equal": true,
+  "stages": {
+    "DOCUMENTED": 8,
+    "LIVE_TESTED": 4,
+    "DISCOVERED": 3403
+  },
+  "approved_for_export": 0,
+  "nested_rows": {
+    "claims": 33653,
+    "provenance": 3619,
+    "versions": 204,
+    "verification_runs": 28,
+    "live_tests": 5,
+    "approvals": 0,
+    "integration_specs": 143,
+    "license_evidence": 21
+  },
+  "missing_urls": 0,
+  "overlap_nivict_rows_by_basis": {
+    "NO_STABLE_ID_MATCH": 1195,
+    "exact": 1898,
+    "entity": 1411
+  },
+  "matched_manus_rows": 3270,
+  "unmatched_manus_rows": 145,
+  "nivict_entity_keys": 4465,
+  "manus_entity_keys": 3457,
+  "intersection_entity_keys": 3270,
+  "description_relations_nivict_rows": {
+    "NOT_APPLICABLE": 1195,
+    "TEXT_DIFFERENT_NOT_A_CONTRADICTION_PROOF": 3309
+  }
+}

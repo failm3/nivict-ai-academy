@@ -1,0 +1,811 @@
+{
+  "status": "PARTIAL",
+  "reviewer": "separate independent agent, same GPT family",
+  "method": "Manual review of 19 pinned source README/license caches plus six supplemental license texts. No code executed, no service configured, no paid API called. Cached metadata may differ from text; text controls the recorded licensing scope.",
+  "reviewed_ranks": [
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    31,
+    33,
+    34
+  ],
+  "reviewed_count": 19,
+  "findings": [
+    {
+      "rank": 1,
+      "requested_repo": "agent0ai/agent-zero",
+      "canonical_repo": "agent0ai/agent-zero",
+      "head": "ba9b67df0f54ac78106ae85c552ef5d2458f7c9a",
+      "cache_sha256": "eb9b4b3bd99e8c5246730698aaf8f6ebd6df67ee313b42913a1cf719ed7e379a",
+      "checked_at": "2026-11-12",
+      "license": "Root LICENSE text is MIT; GitHub metadata is NOASSERTION. Dependency/plugin licenses are outside this check.",
+      "license_class": "MIT_TEXT_OBSERVED_METADATA_NOASSERTION",
+      "facts": "README documents a Linux workspace in Docker, desktop launchers including Windows, persistent storage, browser/desktop access, and optional host access. It still requires a model account/key or local inference.",
+      "do_not_infer": "A Docker workspace and launcher do not establish isolation from mounted host files, safe recursive delegation, or AWE recovery. Do not run the README installer commands as part of this audit.",
+      "pilot": "Disposable workspace; no host secrets; demonstrate recursive delegation limits, independent QA, abort propagation, deny host-file access, and recover a checkpoint after process termination.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md",
+          "blob_sha": "00dbb86de1b2d2f9a196ee5a1833f1d7c6c35764",
+          "observed_content_sha256": "b776433681d02bbef0d04cc1da916d8ca0b80dbd1bf4fb518b040377afc9e33a",
+          "content_characters": 19498,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/LICENSE",
+          "blob_sha": "50b7754de5cde0fbb796ffae376fb03dc19236d1",
+          "observed_content_sha256": "23844ed5fb9976b15e6c0be1b617918cb1c32e13e8d70b74100dae08d40fbf23",
+          "content_characters": 1150,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 2,
+      "requested_repo": "NousResearch/hermes-agent",
+      "canonical_repo": "NousResearch/hermes-agent",
+      "head": "67664e236ddcc45824b871d575677287599af152",
+      "cache_sha256": "c173daf23d3b197212a1a5c82a768af7b0113598b13753ca6ac849b7dc14d1fa",
+      "checked_at": "2026-11-12",
+      "license": "MIT text and metadata agree for the inspected repository.",
+      "license_class": "MIT_TEXT_OBSERVED",
+      "facts": "README currently claims native Windows as well as Linux/macOS/WSL2, and local/Docker/SSH plus hosted terminal backends. Backend selection changes the execution boundary.",
+      "do_not_infer": "Do not preserve the outdated assumption that Hermes requires WSL. Do not infer all plugins/backends work on Windows. The README assertion that an antivirus alert is a false positive is not independent malware analysis; do not operationalize its antivirus exclusion instruction.",
+      "pilot": "Pin a release/artifact; verify provenance separately; exercise only a disposable terminal backend on the target OS, denied paths/network and a killed/resumed session. No blanket antivirus exclusions.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/67664e236ddcc45824b871d575677287599af152/README.md",
+          "blob_sha": "830be257308736e48f25ac4f2d097888b3a63a2c",
+          "observed_content_sha256": "ca5c9f03262a10f7f996aa803b26a33f41a236f876c105da50367ff79de08271",
+          "content_characters": 17384,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/67664e236ddcc45824b871d575677287599af152/LICENSE",
+          "blob_sha": "75410e73319c72cd3e991a501c5455eb78f38375",
+          "observed_content_sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+          "content_characters": 1070,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 3,
+      "requested_repo": "mastra-ai/mastra",
+      "canonical_repo": "mastra-ai/mastra",
+      "head": "6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef",
+      "cache_sha256": "1f8b12f770bfa5fa0e91d216cc259c6cd34a0720baa33bb4b00330374de6d3b1",
+      "checked_at": "2026-11-12",
+      "license": "Apache-2.0 outside ee directories; Enterprise License in ee areas, including auth, agent-builder and editor. Additional pinned LICENSE.md and ee/LICENSE inspected.",
+      "license_class": "MIXED_APACHE2_ENTERPRISE",
+      "facts": "README offers agents/workflows, evals, observability and Node/React/Next integration. Those are source descriptions, not proof of the installed Head behavior.",
+      "do_not_infer": "Do not label all Mastra functionality Apache-2.0/free. Enterprise production needs both an appropriate written agreement and an enabling valid license key. Existing runtime identity must be established from owning code, not a product comparison.",
+      "pilot": "Map the exact packages/features to licenses. Use a copy of the present Head to compare bounded recursion, cancellation, session recovery and QA separation before considering any replacement.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/README.md",
+          "blob_sha": "f6465bcaf53f737e3754c28660e142ca44e07c97",
+          "observed_content_sha256": "49dd3ceb119209ed5130d4c8654c9082bae072191ca0ef4d43ecc3ecd5c80d28",
+          "content_characters": 7195,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/LICENSE.md",
+          "blob_sha": "e1b6e4b6455a882dbbf66ee0b13101ec584d5e63",
+          "observed_content_sha256": "f0351b469d1548e547882f01d2486a90f6bd0ff3c89defec841bbf5641265776",
+          "content_characters": 1258,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [
+        {
+          "key": "mastra-root",
+          "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/LICENSE.md",
+          "git_blob_sha": "e1b6e4b6455a882dbbf66ee0b13101ec584d5e63",
+          "checked_at": "2026-11-12",
+          "summary": "Mastra core uses Apache-2.0 outside ee directories. The mapping explicitly names core auth, agent-builder, and editor EE areas.",
+          "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+        },
+        {
+          "key": "mastra-ee",
+          "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/ee/LICENSE",
+          "git_blob_sha": "689ca0ad0738b43358c8c6c61f1b05667dba4fac",
+          "checked_at": "2026-11-12",
+          "summary": "Enterprise code is source available. Production use requires both a written agreement permitting the relevant feature and a valid feature-enabling license key; development/testing is separately defined. Production, redistribution and evaluation must not be treated as interchangeable.",
+          "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+        }
+      ],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 8,
+      "requested_repo": "BerriAI/litellm",
+      "canonical_repo": "BerriAI/litellm",
+      "head": "52d1c4cd80162fbf03d7f92def0cb1631f1edfd4",
+      "cache_sha256": "ce4ec3192451a6a421b0846ef0235c9f4c7bf6f36a3e0fd74c42e3e1a17d4acd",
+      "checked_at": "2026-11-12",
+      "license": "MIT outside litellm/enterprise; that subtree has commercial terms. Root reference without extension returns 404; actual pinned license is LICENSE.md.",
+      "license_class": "MIXED_MIT_ENTERPRISE",
+      "facts": "README documents a gateway/SDK, routing, spend tracking, virtual keys and provider integrations. Some authentication/administration functions are enterprise features.",
+      "do_not_infer": "The gateway is not a token seller or a guarantee of provider availability, payment support, cost accuracy or hard spending limits. Readme production-ready and benchmark claims are unproven for AWE.",
+      "pilot": "Without paid inference, use a controlled mock upstream to test timeout/retry budgets, duplicate effects, model/tool capability filters, auth and stop-on-budget. Later real inference needs its own cost authorization.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/README.md",
+          "blob_sha": "c07905759dea8bbbbd9a8a9504d6b30f999af6d1",
+          "observed_content_sha256": "f91dae0bf8aa3c786ec4dce936814cf8374e11dd6c08b2490d83fa419e142bf6",
+          "content_characters": 40564,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/LICENSE",
+          "blob_sha": "2ffbfec19ad5a1fd2a489d1f4f7ce81a899eb77b",
+          "observed_content_sha256": "4a5f5d029fb0fa6410cc3d416093d1f41571f0911f04b518088a54ea335bab30",
+          "content_characters": 1435,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [
+        {
+          "key": "litellm-ee-actual",
+          "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/litellm/enterprise/LICENSE.md",
+          "git_blob_sha": "c8607439adfe19df15cf78a04e5964237a89b9bc",
+          "checked_at": "2026-11-12",
+          "summary": "Enterprise-directory production use requires an applicable agreement and valid enterprise license for the correct seats. Development/testing permissions do not grant unrestricted redistribution or production rights.",
+          "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+        }
+      ],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 9,
+      "requested_repo": "diegosouzapw/OmniRoute",
+      "canonical_repo": "cheaper-inference/OmniRoute",
+      "head": "5a5894a77604e3148b0f76b14d8b0d9e4411edcb",
+      "cache_sha256": "6e0e16702e030b58135136432e96ff9c05c8f733bcd289153dd39f7d189d1e91",
+      "checked_at": "2026-11-12",
+      "license": "MIT text and metadata agree for this source repository.",
+      "license_class": "MIT_TEXT_OBSERVED",
+      "facts": "README documents eligible provider routing, free-tier pools, opt-in masking, TLS/proxy/MITM features, and exclusions for providers marked avoid.",
+      "do_not_infer": "Free-tier headlines and savings are vendor claims; they do not prove usable models, account eligibility, legal/provider permission, recurring quota, RF payment access, or quality. Do not activate trust-store/MITM installation or reuse broad OAuth/subscription tokens.",
+      "pilot": "Read-only configuration review first; then mock capability/failover/budget tests with one explicit allowed provider. Prove no unapproved credential forwarding, retries or route to avoid-marked providers.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/cheaper-inference/OmniRoute/blob/5a5894a77604e3148b0f76b14d8b0d9e4411edcb/README.md",
+          "blob_sha": "05e96909ff5c810ba5c962e70d33c0a31cbb8a24",
+          "observed_content_sha256": "c87749640b9c53c7f5083aca6b7ff0e5604ffc38b48e0f223dcbceaad8ed0b93",
+          "content_characters": 139524,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/cheaper-inference/OmniRoute/blob/5a5894a77604e3148b0f76b14d8b0d9e4411edcb/LICENSE",
+          "blob_sha": "b5c9f58d06b1cef61ebf96f580d90c3dba5e1dac",
+          "observed_content_sha256": "5f3caa52b2c2ce5dfb40c85404a370d23b6dc3e26a1447d17dc7e56f773b91de",
+          "content_characters": 1069,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 10,
+      "requested_repo": "stacklok/toolhive",
+      "canonical_repo": "stacklok/toolhive",
+      "head": "ac4a1326dc0ab75a43c7ccd2d3932965eab24201",
+      "cache_sha256": "3caec8523c6821b7fa8c88ab9a6107b1a92965db3d23afb7d4a9bc7c66e37ae2",
+      "checked_at": "2026-11-12",
+      "license": "Apache-2.0 text and metadata agree for ToolHive itself; managed servers retain their own licenses.",
+      "license_class": "APACHE2_TEXT_OBSERVED",
+      "facts": "README documents Docker/Podman/Kubernetes runtime, MCP gateway/registry, and identity/access policy when configured with an authentication source.",
+      "do_not_infer": "Containerization is not an independent code-safety audit. Do not claim per-request identity enforcement without configuring and testing its auth source. A curated registry entry is not APPROVED for AWE.",
+      "pilot": "Use a harmless test MCP with minimum mounts/caps and no credentials; prove deny filesystem/network/unauthenticated call, per-user access, complete audit evidence and termination.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/stacklok/toolhive/blob/ac4a1326dc0ab75a43c7ccd2d3932965eab24201/README.md",
+          "blob_sha": "1ac01d277987d747df5b9a6361c2025bf85af2d8",
+          "observed_content_sha256": "46623bc2ef84c0483e829fdf923222fc6f8b877f64599e293678cb5bdc4821f4",
+          "content_characters": 11747,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/stacklok/toolhive/blob/ac4a1326dc0ab75a43c7ccd2d3932965eab24201/LICENSE",
+          "blob_sha": "5d19730a604c467f93437238d205f8e793dddb40",
+          "observed_content_sha256": "269187c8b1d9569c2a3a381eeb428150f96b2a2c93e168be7ce45e1247853168",
+          "content_characters": 11344,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 11,
+      "requested_repo": "modelcontextprotocol/inspector",
+      "canonical_repo": "modelcontextprotocol/inspector",
+      "head": "488c30d9d16e4993bc548ad298eb7450f5125c93",
+      "cache_sha256": "5602e7488c55425201fcaf9fc8759a7e569704428290dc5219f794c4b6d1c0c1",
+      "checked_at": "2026-11-12",
+      "license": "License is transitioning MIT to Apache-2.0, with retained MIT contributions and CC-BY-4.0 documentation; NOASSERTION is expected for this mixed text.",
+      "license_class": "TRANSITION_APACHE2_MIT_DOCS_CC_BY4",
+      "facts": "Inspector is a connect/list/call/debug tool. README says default secret storage uses OS keychain if available, otherwise a file that is unencrypted without a supplied key.",
+      "do_not_infer": "Inspector is not a sandbox, independent QA decision maker, or screenshot-diff tool. Do not assume a headless/container machine has an encrypted keychain-backed store.",
+      "pilot": "Inspect storage selection on the target environment using fake tokens. Verify memory-only/encrypted mode, no secret leakage into logs/exports, and negative MCP response handling.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/modelcontextprotocol/inspector/blob/488c30d9d16e4993bc548ad298eb7450f5125c93/README.md",
+          "blob_sha": "7f5c529411172c33889e678496ed8bb1463c1a3a",
+          "observed_content_sha256": "a7141b0cb29ad8af66b20e4c53b28c0e36cda08532d596a084468bd8922250d8",
+          "content_characters": 11562,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/modelcontextprotocol/inspector/blob/488c30d9d16e4993bc548ad298eb7450f5125c93/LICENSE",
+          "blob_sha": "4a93985763241755401a10678395303de4e720ba",
+          "observed_content_sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a",
+          "content_characters": 12227,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 12,
+      "requested_repo": "modelcontextprotocol/servers",
+      "canonical_repo": "modelcontextprotocol/servers",
+      "head": "e1dc4b18dbb948921da37f3d4224a628730b43b0",
+      "cache_sha256": "e39ff6eb81efabd955127654308b474066075a943b2c8a36fc08814810883365",
+      "checked_at": "2026-11-12",
+      "license": "Same MIT-to-Apache-2.0 transition; documentation license is distinct.",
+      "license_class": "TRANSITION_APACHE2_MIT_DOCS_CC_BY4",
+      "facts": "Root README explicitly presents these as educational reference MCP implementations and asks users to evaluate their own security safeguards.",
+      "do_not_infer": "Official repository ownership does not make these production-ready servers or a collective audit of every third-party server. Archived servers may have newer owners/replacements.",
+      "pilot": "Choose one exact server and version; test allowed directories or database scopes, traversal/symlink/URI attacks, auth, cancellation and audit logs. Do not deploy the complete examples collection.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/README.md",
+          "blob_sha": "9e612a110babdaac685a0279ec7ac4b14a9eec71",
+          "observed_content_sha256": "92581188edbaa1e732885f11a408176e038d8bc41704b327d19dbd3d853a5c4b",
+          "content_characters": 10545,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/LICENSE",
+          "blob_sha": "4a93985763241755401a10678395303de4e720ba",
+          "observed_content_sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a",
+          "content_characters": 12227,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 13,
+      "requested_repo": "microsoft/playwright-mcp",
+      "canonical_repo": "microsoft/playwright-mcp",
+      "head": "78eca85361efb545a4c0f59b6140aef0721c5412",
+      "cache_sha256": "4ad95ddead5cdf7fd2cfce9fced7fc28005084c5d4a471bb8d745bfe2f32e90a",
+      "checked_at": "2026-11-12",
+      "license": "Apache-2.0 text and metadata agree for the inspected MCP server.",
+      "license_class": "APACHE2_TEXT_OBSERVED",
+      "facts": "README requires Node >=18, defaults to persistent browser profiles, documents isolated sessions, and explicitly says origin controls and Playwright MCP are not security boundaries.",
+      "do_not_infer": "Do not grant a personal browser profile to an agent or equate origin allowlists with egress isolation. Redirects and local file access require independent controls; several example modes disable browser sandboxing.",
+      "pilot": "Dedicated profile or isolated context, separate per concurrent agent. Test redirected egress, local-file denial, cookie separation, sensitive URL redaction, download handling and explicit approval for account-changing actions.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/microsoft/playwright-mcp/blob/78eca85361efb545a4c0f59b6140aef0721c5412/README.md",
+          "blob_sha": "87f3a3391791cb16b1c57be2848252b27f607f9a",
+          "observed_content_sha256": "db4a7eee3e3bd4be105f8f9a10945cda390fe3bd955d05183e961f4e91f0b7ef",
+          "content_characters": 70096,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/microsoft/playwright-mcp/blob/78eca85361efb545a4c0f59b6140aef0721c5412/LICENSE",
+          "blob_sha": "cefe596afef12e19a8e5e923f1a04c7da3188760",
+          "observed_content_sha256": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda",
+          "content_characters": 11552,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 16,
+      "requested_repo": "github/github-mcp-server",
+      "canonical_repo": "github/github-mcp-server",
+      "head": "6fbcd00b2034502ba3001a49dfaf93593aee7069",
+      "cache_sha256": "b0d987e3e6b13054ace6ca4bd3a30a44a8d6fd67729aa72db45ebd1c8e074f54",
+      "checked_at": "2026-11-12",
+      "license": "MIT text/metadata in the inspected cache; API usage and account permissions remain separate.",
+      "license_class": "MIT_TEXT_OBSERVED",
+      "facts": "README documents OAuth/PAT login, toolsets and exact tools, read-only filtering, and many tools with write/admin scopes. Read-only filtering takes priority in documented configuration.",
+      "do_not_infer": "An MCP connection is not blanket owner permission. A repository-readable token does not justify admin, workflow, deletion or write actions. Hosted and local implementations have different auth behavior.",
+      "pilot": "Start with a selected disposable repository and read-only tool allowlist plus minimal token scopes. Verify denied writes, repo boundaries, duplicate mutations/leases, secret redaction and approval semantics before any writes.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/README.md",
+          "blob_sha": "432541f4342321f88225308ebb70402632798a56",
+          "observed_content_sha256": "371e8c991df6e5e61ca6a864d692141dbf1a728ae0790d376b54c96b91e4ff13",
+          "content_characters": 120041,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/LICENSE",
+          "blob_sha": "9a9cc50d37ea399f7ccc2f14b6c6d4cc4de02efc",
+          "observed_content_sha256": "9e48ecfa18e2b15169746a3c97beda4d1d6c6796097038498ca434ca7e0ccd44",
+          "content_characters": 1063,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 17,
+      "requested_repo": "googleworkspace/cli",
+      "canonical_repo": "googleworkspace/cli",
+      "head": "cd3697e07eb520056dcf142d0c7439bbb9ba32e9",
+      "cache_sha256": "d4d71a6905310cca7af66db2f99cebcb1eea9a725aff7046e3d88b78dffa0227",
+      "checked_at": "2026-11-12",
+      "license": "Apache-2.0 source text observed.",
+      "license_class": "APACHE2_TEXT_OBSERVED",
+      "facts": "Despite the googleworkspace organization name, README states this is not an officially supported Google product. It requires a GCP OAuth project/credentials or a supplied token and warns about oversized scope presets in testing-mode apps.",
+      "do_not_infer": "Do not promise official support, unrestricted free quotas, existing account consent, or send/write authorization. Local token encryption does not mean the agent cannot use the token with its granted powers.",
+      "pilot": "Separate test account/project; select only required read scopes and services. Prove tool discovery, token isolation, revocation and that mail/calendar/Drive writes stay denied until explicitly authorized.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/googleworkspace/cli/blob/cd3697e07eb520056dcf142d0c7439bbb9ba32e9/README.md",
+          "blob_sha": "04c532d0a6936d06d96c0572771feba4274a834e",
+          "observed_content_sha256": "499ff9600cc36f6c547e16ef5b56e7baee05afa35240c010b8873441928a39aa",
+          "content_characters": 20234,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/googleworkspace/cli/blob/cd3697e07eb520056dcf142d0c7439bbb9ba32e9/LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "observed_content_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "content_characters": 11358,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 18,
+      "requested_repo": "taylorwilsdon/google_workspace_mcp",
+      "canonical_repo": "taylorwilsdon/google_workspace_mcp",
+      "head": "65286d80c77589fbe43c85b870979d67794cc91c",
+      "cache_sha256": "deb9722827aa309b8fb8a7ced2fe18b44c539a607cb997c08d3601369ddf53a5",
+      "checked_at": "2026-11-12",
+      "license": "MIT source text observed; README dependency-wide license statements have not been independently audited.",
+      "license_class": "MIT_TEXT_OBSERVED_DEPENDENCIES_UNREVIEWED",
+      "facts": "Community Workspace MCP documents OAuth, read-only mode, service/tool filters, per-service permissions, multi-user HTTP modes and optional tracing.",
+      "do_not_infer": "Claims of secure organization hosting, no telemetry and permissive dependency licensing are source assertions. Do not infer tested tenant isolation or least privilege from OAuth 2.1 naming alone. Insecure-transport snippets are local examples.",
+      "pilot": "Two test users with disjoint fake data; narrow scopes/tools and read-only mode. Prove cross-user denial, correct bearer-token validation, secret storage, tool-union behavior and absence of trace-content leakage.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/taylorwilsdon/google_workspace_mcp/blob/65286d80c77589fbe43c85b870979d67794cc91c/README.md",
+          "blob_sha": "3d850b5bcf967ba757a8e88426c1077e761e2bb2",
+          "observed_content_sha256": "6f4171de850800402ff47b7a88b037314cff77115288c60b2dc2c7d1d69ec0a7",
+          "content_characters": 27136,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/taylorwilsdon/google_workspace_mcp/blob/65286d80c77589fbe43c85b870979d67794cc91c/LICENSE",
+          "blob_sha": "bc5b15a5fb2d98aad3b8abea7a82339708a8fc7b",
+          "observed_content_sha256": "6c1f0beeb232472e68f961f11a0bd1b98f21513ccdbb88770d392fc95f17149a",
+          "content_characters": 1070,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 19,
+      "requested_repo": "sonnylazuardi/cursor-talk-to-figma-mcp",
+      "canonical_repo": "grab/cursor-talk-to-figma-mcp",
+      "head": "ddd90f3a6d454ea0b2fc29f1b084f50fd062b880",
+      "cache_sha256": "1e8552f967d571cafc2aee26182513f28b84319bece68571141f0c7defac5025",
+      "checked_at": "2026-11-12",
+      "license": "MIT source text observed; API redirect resolves the original sonnylazuardi URL to grab/cursor-talk-to-figma-mcp.",
+      "license_class": "MIT_TEXT_OBSERVED",
+      "facts": "Community bridge uses a Figma plugin and socket connection. README Windows/WSL instructions include binding 0.0.0.0.",
+      "do_not_infer": "Do not present this as the official Figma service or assume the socket is authenticated because it is local. Binding all interfaces can expose design-write capability. Successful node edits do not establish visual fidelity or design-system compliance.",
+      "pilot": "Disposable Figma document and explicit connection scope; verify origin/channel/auth handling, no other documents accessible, rollback, text fidelity and independent visual QA. Keep the socket loopback-only unless an isolated network design is tested.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp/blob/ddd90f3a6d454ea0b2fc29f1b084f50fd062b880/README.md",
+          "blob_sha": "d1ccd6c62d01b83877d704e6cd0e111c03f08e50",
+          "observed_content_sha256": "dc7db373813b3898f73bdfe5f12f62edefb03358ddf04b0c036f13877656e2e2",
+          "content_characters": 9821,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp/blob/ddd90f3a6d454ea0b2fc29f1b084f50fd062b880/LICENSE",
+          "blob_sha": "db5ef900a57312e0532c247e74fdf472f2ebd03c",
+          "observed_content_sha256": "4381826279ec9bec074481549644fc5fb58e037b87813e085f06e15e82deb1f7",
+          "content_characters": 1092,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 20,
+      "requested_repo": "activepieces/activepieces",
+      "canonical_repo": "activepieces/activepieces",
+      "head": "4f4ab8973b76e474770a57d544c2fdc967d0e0e2",
+      "cache_sha256": "6000aea48abb962fa1ab0d315342ce107ff9df75408c84bda004779b9e9fbba6",
+      "checked_at": "2026-11-12",
+      "license": "Community content is MIT; packages/ee and server API ee areas have commercial terms. Pinned enterprise terms inspected.",
+      "license_class": "MIXED_MIT_ENTERPRISE",
+      "facts": "README describes integrations and a no-code/workflow builder, including enterprise capabilities.",
+      "do_not_infer": "Do not treat advertised enterprise RBAC/security functions as available under core MIT, or a workflow builder as proof of dynamic recursive agent orchestration. Workflows can execute account mutations through stored credentials.",
+      "pilot": "One deterministic adapter flow with a fake credential, explicit read-only action, error/timeout/retry tests and idempotency. Map every selected piece/dependency and enterprise feature before reuse.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/activepieces/activepieces/blob/4f4ab8973b76e474770a57d544c2fdc967d0e0e2/README.md",
+          "blob_sha": "a0b8adff34d2909d02480a2ed61a13b4e87a2ce4",
+          "observed_content_sha256": "b159d84d19ea2505143a1d369416b8f5ef63540e9530bd2f20f8bd0e3e0c70bf",
+          "content_characters": 91254,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/activepieces/activepieces/blob/4f4ab8973b76e474770a57d544c2fdc967d0e0e2/LICENSE",
+          "blob_sha": "73e0a2f7acf13c780655de40183b06a0a93e091b",
+          "observed_content_sha256": "d490fc48488c4f5a721d354f0a5cce0972c7e3de768ac3e0c5851c3de79f3c9b",
+          "content_characters": 1629,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [
+        {
+          "key": "activepieces-ee",
+          "url": "https://github.com/activepieces/activepieces/blob/4f4ab8973b76e474770a57d544c2fdc967d0e0e2/packages/ee/LICENSE",
+          "git_blob_sha": "1c68c6b3bbc00e1a41a78b488da61a0c983faab4",
+          "checked_at": "2026-11-12",
+          "summary": "Enterprise production use requires applicable subscription terms or another governing agreement and a valid enterprise license for the correct seats. Core MIT terms do not cover these directories.",
+          "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+        }
+      ],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 21,
+      "requested_repo": "n8n-io/n8n",
+      "canonical_repo": "n8n-io/n8n",
+      "head": "1ae5175a008fc464cc27579b4d7613b60e203ed1",
+      "cache_sha256": "243754e5807a6c17b52fc0535f1b4ac313907b11d6fd5bdf76056612769a9284",
+      "checked_at": "2026-11-12",
+      "license": "Sustainable Use License for covered main-branch content, with separate Enterprise exceptions. The text limits use/distribution; it is not an unrestricted MIT/Apache grant.",
+      "license_class": "SUSTAINABLE_USE_PLUS_ENTERPRISE",
+      "facts": "README offers visual workflows, code, approvals and self-hosted/cloud modes; root license has file/directory and branch restrictions.",
+      "do_not_infer": "Do not call the entire product unrestricted open source or assume commercial redistribution/hosted resale is allowed. Internal/personal usage and SaaS redistribution require different scope decisions.",
+      "pilot": "Choose exact permitted deployment/use case first. Use a disposable workflow to prove credential scoping, cancellation, retries/idempotency, export/recovery and no unsanctioned account actions.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/n8n-io/n8n/blob/1ae5175a008fc464cc27579b4d7613b60e203ed1/README.md",
+          "blob_sha": "2d2053d58750e70ca43f946ab75a6ec5d532f87c",
+          "observed_content_sha256": "2883ac16a971679a2b46fbedd2b8361fc3bde58388ac463a707ff66687a34225",
+          "content_characters": 3971,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/n8n-io/n8n/blob/1ae5175a008fc464cc27579b4d7613b60e203ed1/LICENSE.md",
+          "blob_sha": "f85f59baa906530c26cee26e0c9ddd6bd5f86dbd",
+          "observed_content_sha256": "d2f621f59aa4c10eab79b6333e59d9d3d5b53307dcfd16dbd75e40e679e84965",
+          "content_characters": 4415,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 22,
+      "requested_repo": "langfuse/langfuse",
+      "canonical_repo": "langfuse/langfuse",
+      "head": "9621bc46d0e67e7580f6425dea07996f347f0412",
+      "cache_sha256": "68d54351ecd189b86db5f6426b979ff222a7eac1f63c44be9e894f5f8d1059de",
+      "checked_at": "2026-11-12",
+      "license": "MIT outside listed EE directories; enterprise periphery has separate commercial terms.",
+      "license_class": "MIXED_MIT_ENTERPRISE",
+      "facts": "README documents OpenTelemetry-based traces, evals, prompts, costs and self-hosted/cloud deployments.",
+      "do_not_infer": "Observability is not an independent QA verdict. Do not infer that traces are secret-free or that self-hosting automatically satisfies retention, tenant isolation or cost accuracy. README scale claims are not AWE load tests.",
+      "pilot": "Synthetic traces containing canary secrets; prove redaction before storage/export, retention/deletion and access boundaries. Check instrumented tool actions and missing-event detection independently of the system under review.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/langfuse/langfuse/blob/9621bc46d0e67e7580f6425dea07996f347f0412/README.md",
+          "blob_sha": "bd8a1cf07920249a10cca128aa0349559b3b0443",
+          "observed_content_sha256": "1dae4f71cec43ff4aa0b1309f450d019f1600ecc241d1374fad898a8b3c3abf0",
+          "content_characters": 58254,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/langfuse/langfuse/blob/9621bc46d0e67e7580f6425dea07996f347f0412/LICENSE",
+          "blob_sha": "eaa2e5e444c8634f35b2a1137f7ea06e8353f475",
+          "observed_content_sha256": "9ee6ca42e813fb58bcad18bed834438503bcc997da3b452d3f9ad4af4292b6b3",
+          "content_characters": 1646,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [
+        {
+          "key": "langfuse-ee",
+          "url": "https://github.com/langfuse/langfuse/blob/9621bc46d0e67e7580f6425dea07996f347f0412/ee/LICENSE",
+          "git_blob_sha": "3e78f3e97ac04d255328733b8c479d62bbaebadf",
+          "checked_at": "2026-11-12",
+          "summary": "The enterprise periphery has commercial terms, while root-defined core remains MIT. Enterprise use depends on the governing agreement and valid license; development/testing copying and modification are separately allowed.",
+          "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+        }
+      ],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 31,
+      "requested_repo": "Infisical/infisical",
+      "canonical_repo": "Infisical/infisical",
+      "head": "4dcb599d9455c117e7de0ac176744eb20cc37f0e",
+      "cache_sha256": "9e26b0759fe63e8d32fe511fd14bdd89913feae738574830cf1d82b6a28e6f5c",
+      "checked_at": "2026-11-12",
+      "license": "MIT outside any EE directory; backend/src/ee/LICENSE.md specifies commercial production conditions. Not every advertised access feature is covered by core MIT.",
+      "license_class": "MIXED_MIT_ENTERPRISE",
+      "facts": "README describes secrets, certificates, privileged access and agent access; Docker setup includes Windows instructions.",
+      "do_not_infer": "A vault product does not make end-to-end secret handling safe: agents/tools can still exfiltrate grants, environment values or output. Do not infer free entitlements for advertised approvals/enterprise policy functions.",
+      "pilot": "Fake secret with narrow machine identity and time-limited access; prove denial outside scope, rotation/revocation and no leak to subprocess output, model context, logs or checkpoint exports. Test backup/restore on disposable data.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/README.md",
+          "blob_sha": "a35a3d0ab31ae75a85e75e19e8c5e941c196212e",
+          "observed_content_sha256": "977beaedaac4919c0b8720ae1de0708482f0f9d80e90aef459520a27a739f742",
+          "content_characters": 20190,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/LICENSE",
+          "blob_sha": "35d53252fdf304d2f39c7d2496e71ae3f6709d22",
+          "observed_content_sha256": "ec701a993a5e14b71f1fc6ffb649ca6e704a2e3bc7d06fd5dd47f6334324cf8a",
+          "content_characters": 1565,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [
+        {
+          "key": "infisical-ee-actual",
+          "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/backend/src/ee/LICENSE.md",
+          "git_blob_sha": "a1c37bb93d0ba228c105870ca80310e025d946d1",
+          "checked_at": "2026-11-12",
+          "summary": "The discovered backend EE license requires an agreement and valid enterprise license for production use. Root MIT applies outside EE exclusions; not every advertised secret-management feature is thereby established as free.",
+          "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+        }
+      ],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 33,
+      "requested_repo": "alibaba/OpenSandbox",
+      "canonical_repo": "opensandbox-group/OpenSandbox",
+      "head": "dc4c26eaf06131c74c1067ec62e309d11f77040d",
+      "cache_sha256": "aaf819c563226789fdf3ceeb017e4baaf5a6000139c82e68306fccac689bc4a5",
+      "checked_at": "2026-11-12",
+      "license": "Apache-2.0 text observed; repository has moved from alibaba/OpenSandbox to opensandbox-group/OpenSandbox.",
+      "license_class": "APACHE2_TEXT_OBSERVED",
+      "facts": "README documents Docker/Kubernetes sandboxes, code/command/file/browser access, optional Firecracker runtime and egress/vault features. It explicitly records a signing/provenance gap for current umbrella releases.",
+      "do_not_infer": "Do not state all release images are signed or all backends offer the same security boundary. A sandbox API with commands is a privileged execution service; defaults, mounts, egress and control-plane access need tests.",
+      "pilot": "Pin image digest; establish available signing evidence for that release. Validate no host mounts/privileged socket access, egress deny, command quota/timeouts, cancellation, checkpoint isolation and secret brokerage with a disposable payload.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/opensandbox-group/OpenSandbox/blob/dc4c26eaf06131c74c1067ec62e309d11f77040d/README.md",
+          "blob_sha": "d32141a2917f759014d1fcc96271117c9e3992e1",
+          "observed_content_sha256": "39535d8f0c100407c2a7bbd3c9e47a058e5ac1aaf1751d6a6dab59c5a51ac48e",
+          "content_characters": 11632,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/opensandbox-group/OpenSandbox/blob/dc4c26eaf06131c74c1067ec62e309d11f77040d/LICENSE",
+          "blob_sha": "b09cd7856d58590578ee1a4f3ad45d1310a97f87",
+          "observed_content_sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a",
+          "content_characters": 11324,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    },
+    {
+      "rank": 34,
+      "requested_repo": "OpenHands/OpenHands",
+      "canonical_repo": "OpenHands/OpenHands",
+      "head": "5b40cc2da4c2bf10f6b6b00204141eab274c4255",
+      "cache_sha256": "2ad421ad210f0d0ccd5c9bd0f350161bd989523c885ca5173fbed6072cf8e214",
+      "checked_at": "2026-11-12",
+      "license": "Root MIT source text observed for the inspected repository; cloud service and separate backends have their own terms.",
+      "license_class": "MIT_TEXT_OBSERVED",
+      "facts": "Current README describes local execution by default, optional Docker sandboxes and multiple conversation sandboxes. It says conversation isolation does not sandbox the whole Canvas/automation service and shared host workspaces remain shared.",
+      "do_not_infer": "Do not reuse older product descriptions or claim all execution is containerized. A multi-agent UI does not establish mission-bounded recursion or conflict-free parallel work. Docker/local network-auth examples are conditional.",
+      "pilot": "Separate worktrees per agent; minimal container mounts; prove shared-directory conflicts are prevented, host/service boundary, strong session auth, approval for mutations and recovery of both conversation state and source tree.",
+      "evidence_refs": [
+        {
+          "kind": "readme",
+          "url": "https://github.com/OpenHands/OpenHands/blob/5b40cc2da4c2bf10f6b6b00204141eab274c4255/README.md",
+          "blob_sha": "a54ff31e9256438c02a1f84c67ff18ef754f5829",
+          "observed_content_sha256": "86361418e329ce000239cd73de1cfd802c7f2d528727890e735b31b801344227",
+          "content_characters": 15402,
+          "scope": "SOURCE_TEXT_ONLY"
+        },
+        {
+          "kind": "license",
+          "url": "https://github.com/OpenHands/OpenHands/blob/5b40cc2da4c2bf10f6b6b00204141eab274c4255/LICENSE",
+          "blob_sha": "f6f60f52368bcc96f82fbe59ec65049c2c3af9db",
+          "observed_content_sha256": "e1d1fa9f3a8d7bef24449d488fcd8f00f8f272cac297bb9bed161eb6175b876a",
+          "content_characters": 1087,
+          "scope": "SOURCE_TEXT_ONLY"
+        }
+      ],
+      "supplemental_license_refs": [],
+      "inspection_status": "README_AND_LICENSE_TEXT_REVIEWED",
+      "license_status": "TEXT_SCOPE_INSPECTED_NOT_PACKAGE_OR_ENTITLEMENT_CLEARANCE",
+      "runtime_verification": "NOT_RUN",
+      "security_audit": "NOT_PERFORMED",
+      "awe_acceptance": "NOT_PROVEN",
+      "cross_family_review": "NOT_SATISFIED"
+    }
+  ],
+  "critical_do_not_infer": [
+    "README description or GitHub metadata is not sandbox/security/production certification.",
+    "A permissive root license does not cover excluded enterprise directories, hosted terms, dependencies or model/provider access.",
+    "MCP is a protocol; source descriptions do not grant execution or write authorization.",
+    "Model routing software is not inference credit, payment eligibility, quality assurance or a verified hard budget.",
+    "An independent agent in the same GPT family does not satisfy the requested different-family gate."
+  ]
+}

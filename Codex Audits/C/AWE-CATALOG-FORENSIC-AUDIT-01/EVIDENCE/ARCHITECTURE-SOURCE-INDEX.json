@@ -1,0 +1,115 @@
+{
+  "documents": [
+    {
+      "id": "A01",
+      "path": "03 - Практика/05 - AWE GROUP/01 - Архитектура — решения и открытые вопросы.md",
+      "sha256": "0c52173bdac6db7671e03a78f248671734cdf3c595446e9b1299a0c47d7fb44a",
+      "bytes": 23060,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/01%20-%20%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0%20%E2%80%94%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.md"
+    },
+    {
+      "id": "A02",
+      "path": "03 - Практика/05 - AWE GROUP/AWE-GROUP-Architecture-v01.canvas",
+      "sha256": "c79fdf0ec192640055c18c9041fddc03a2f7db7eed0f1b36642de211927cea14",
+      "bytes": 84049,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/AWE-GROUP-Architecture-v01.canvas"
+    },
+    {
+      "id": "A03",
+      "path": "03 - Практика/05 - AWE GROUP/АРХИТЕКТУРА — ДИНАМИЧЕСКИЕ РЕКУРСИВНЫЕ ПОДАГЕНТЫ — 2026-11-12.md",
+      "sha256": "4d3864262cbbd87ac02e735ac87be764d46564d863eac1427bb6e9222e67d29b",
+      "bytes": 6195,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/%D0%90%D0%A0%D0%A5%D0%98%D0%A2%D0%95%D0%9A%D0%A2%D0%A3%D0%A0%D0%90%20%E2%80%94%20%D0%94%D0%98%D0%9D%D0%90%D0%9C%D0%98%D0%A7%D0%95%D0%A1%D0%9A%D0%98%D0%95%20%D0%A0%D0%95%D0%9A%D0%A3%D0%A0%D0%A1%D0%98%D0%92%D0%9D%D0%AB%D0%95%20%D0%9F%D0%9E%D0%94%D0%90%D0%93%D0%95%D0%9D%D0%A2%D0%AB%20%E2%80%94%202026-11-12.md"
+    },
+    {
+      "id": "A04",
+      "path": "03 - Практика/05 - AWE GROUP/AWE-CONSTITUTION-v01.md",
+      "sha256": "630ac038fe743c4f042635e01e291ddffa749bc83e9b8b80f7c062c4ab5e718d",
+      "bytes": 11245,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/AWE-CONSTITUTION-v01.md"
+    },
+    {
+      "id": "A05",
+      "path": "03 - Практика/05 - AWE GROUP/04 - Блок 04 — AWE Quality Assurance System.md",
+      "sha256": "bf083f17137ec78d2fc72c1adf1fab22dd11e32b94496eb2d9fa55de40e6d174",
+      "bytes": 14530,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/04%20-%20%D0%91%D0%BB%D0%BE%D0%BA%2004%20%E2%80%94%20AWE%20Quality%20Assurance%20System.md"
+    },
+    {
+      "id": "A06",
+      "path": "03 - Практика/05 - AWE GROUP/Память — сквозная архитектура и правила.md",
+      "sha256": "8bd13befef84ee9eff18531a77defe8eb9301d9a7704184f2bc4cd755135b396",
+      "bytes": 15242,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D1%8C%20%E2%80%94%20%D1%81%D0%BA%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D1%8F%20%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0%20%D0%B8%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0.md"
+    },
+    {
+      "id": "A07",
+      "path": "03 - Практика/05 - AWE GROUP/05 - Результат, состояние и продолжение.md",
+      "sha256": "f5b14252a090c3f898ef38eb59fd108b6fae9c21db2c42b51fb9da24a6075df2",
+      "bytes": 8894,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/05%20-%20%D0%A0%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%2C%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.md"
+    },
+    {
+      "id": "A08",
+      "path": "03 - Практика/05 - AWE GROUP/CHECKPOINTS/AWE-ARCHITECTURE-VS-LIVE-2026-11-12-1541-MSK.md",
+      "sha256": "e3af7e99ebf07b6327f22005ed2e785533d68bcdbd132a45064c1c0f392ce9bd",
+      "bytes": 6156,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/CHECKPOINTS/AWE-ARCHITECTURE-VS-LIVE-2026-11-12-1541-MSK.md"
+    },
+    {
+      "id": "A09",
+      "path": "03 - Практика/05 - AWE GROUP/CHECKPOINTS/OPENCODE-TI-INTEGRATION-VERDICT-2026-11-12-1558.md",
+      "sha256": "ba33dc03c1643f3e96a7f1714301823689aeb56eed879ffdfe25a00813e89459",
+      "bytes": 3872,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/CHECKPOINTS/OPENCODE-TI-INTEGRATION-VERDICT-2026-11-12-1558.md"
+    },
+    {
+      "id": "A10",
+      "path": "03 - Практика/05 - AWE GROUP/CHECKPOINTS/TOOL-INTELLIGENCE-V2-OPENCODE-SOURCE-HANDOFF-2026-11-12.md",
+      "sha256": "d3fa46064261c35c38dd4c0af908d2f91d7228eec3e0264ad839f38ecdf02fa3",
+      "bytes": 2121,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/CHECKPOINTS/TOOL-INTELLIGENCE-V2-OPENCODE-SOURCE-HANDOFF-2026-11-12.md"
+    },
+    {
+      "id": "A11",
+      "path": "03 - Практика/05 - AWE GROUP/REPORTS/MANUS-FULL-PLATFORM-COMPARISON-CAREER01-2026-11-12.md",
+      "sha256": "e3bfeefafb9a07a30fa887426e09a2aad5421a7d88fd508e3e24d1289d9a9006",
+      "bytes": 44490,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/REPORTS/MANUS-FULL-PLATFORM-COMPARISON-CAREER01-2026-11-12.md"
+    },
+    {
+      "id": "A12",
+      "path": "03 - Практика/05 - AWE GROUP/REPORTS/MANUS-REVISED-AGENT-ZERO-ASSESSMENT-2026-11-12.md",
+      "sha256": "8f308aa78c655aa804c73618fae90bad10c5ae4b9aa91420472abd2594b9f6c3",
+      "bytes": 28618,
+      "commit": "5c611773bff3ccba76b78337534ed8944e137236",
+      "url": "https://github.com/failm3/nivict-ai-academy/blob/5c611773bff3ccba76b78337534ed8944e137236/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/REPORTS/MANUS-REVISED-AGENT-ZERO-ASSESSMENT-2026-11-12.md"
+    }
+  ],
+  "canvas_checks": {
+    "node_count": 134,
+    "edge_count": 121,
+    "node_ids_unique": true,
+    "dangling_edges": [],
+    "scope": "Structural checks only; not runtime/overlap/layout QA"
+  },
+  "current_runtime": {
+    "repository": "failm3/awe-group-runtime",
+    "remote_main_observed": "d5e9d857dbdeb8f31f9a798b10b5af4af639dbda",
+    "published_current_cleanroom_head_source": "NOT_FOUND_IN_OBSERVED_REMOTE_TREE",
+    "live_runtime": "NOT_OBSERVED",
+    "working_12_record_membership": "NO_INDEPENDENT_LIVE_SNAPSHOT",
+    "source_of_12_count": "A09 pinned report only"
+  }
+}

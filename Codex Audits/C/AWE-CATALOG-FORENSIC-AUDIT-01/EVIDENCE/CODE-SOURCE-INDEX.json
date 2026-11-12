@@ -1,0 +1,101 @@
+[
+  {
+    "repo": "agent0ai/agent-zero",
+    "head": "ba9b67df0f54ac78106ae85c552ef5d2458f7c9a",
+    "path": "tools/call_subordinate.py",
+    "git_blob": "27a50f33e62d416dbedfbbcf884f055ed7a9ffa6",
+    "sha256": "17f43276a06416c549a83bedbccac112b25e3c3ccfc54e1d7aaf033a3afe7437",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/agent0ai/agent-zero/blob/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/tools/call_subordinate.py"
+  },
+  {
+    "repo": "NousResearch/hermes-agent",
+    "head": "67664e236ddcc45824b871d575677287599af152",
+    "path": "tools/delegate_tool.py",
+    "git_blob": "775f1a6c5d93590b864beb57dcf297f16c25f359",
+    "sha256": "d323ef87e88fb196e9f3d278b49622bad7685e32a3e0935e4048ddbf9aa58a82",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/NousResearch/hermes-agent/blob/67664e236ddcc45824b871d575677287599af152/tools/delegate_tool.py"
+  },
+  {
+    "repo": "mastra-ai/mastra",
+    "head": "6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef",
+    "path": "package.json",
+    "git_blob": "e86f206241baf76b547a06350ce5960d6417c0c9",
+    "sha256": "5305bfa627804918a20223a8193ef788de2cdbe418b1aa6ff6dcd0ce3021ebd6",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/package.json"
+  },
+  {
+    "repo": "BerriAI/litellm",
+    "head": "52d1c4cd80162fbf03d7f92def0cb1631f1edfd4",
+    "path": "pyproject.toml",
+    "git_blob": "39c760ef943966f729df788cbf2fb11684b22b1f",
+    "sha256": "b704853cca7b2800e673fa842e84d56367033ae2ab2d525ae657538d9f6c5f6d",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/pyproject.toml"
+  },
+  {
+    "repo": "stacklok/toolhive",
+    "head": "ac4a1326dc0ab75a43c7ccd2d3932965eab24201",
+    "path": "go.mod",
+    "git_blob": "8c142bdfe00af82e3a4dda2b24a327a4fb2cadd3",
+    "sha256": "130d2d111620e0d2377b147d9a5bf0db22d782b33ab369000279b22cb424d23c",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/stacklok/toolhive/blob/ac4a1326dc0ab75a43c7ccd2d3932965eab24201/go.mod"
+  },
+  {
+    "repo": "microsoft/playwright-mcp",
+    "head": "78eca85361efb545a4c0f59b6140aef0721c5412",
+    "path": "package.json",
+    "git_blob": "fd656432f2d27946bce803cb266b682146681a59",
+    "sha256": "b6fe6a3ee655f4b1b046599b66c193ce8d3365fbd55adaf4b46653ef245e6644",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/microsoft/playwright-mcp/blob/78eca85361efb545a4c0f59b6140aef0721c5412/package.json"
+  },
+  {
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "head": "83d2ba4dde9663a8cd0bdb8af6c99fea50726003",
+    "path": "package.json",
+    "git_blob": "69a8844a4cb6c88cafeaa5a0906c9d1a7dd9d6eb",
+    "sha256": "180a8ea6a5366f1a23e66a404a3854c2740ad6c4a89647a6b136f5187726015f",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/83d2ba4dde9663a8cd0bdb8af6c99fea50726003/package.json"
+  },
+  {
+    "repo": "googleworkspace/cli",
+    "head": "cd3697e07eb520056dcf142d0c7439bbb9ba32e9",
+    "path": "Cargo.toml",
+    "git_blob": "5df4c987292c90de1a0668e1fc3c44baea502985",
+    "sha256": "889a26e584cf0d1f6427a068397e6f5bc99807232149f3e2672921cd54b5a837",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/googleworkspace/cli/blob/cd3697e07eb520056dcf142d0c7439bbb9ba32e9/Cargo.toml"
+  },
+  {
+    "repo": "taylorwilsdon/google_workspace_mcp",
+    "head": "65286d80c77589fbe43c85b870979d67794cc91c",
+    "path": "pyproject.toml",
+    "git_blob": "ab2eab6e29bda97796a7e5d9a48ef086cb39dd68",
+    "sha256": "260eb276a626dc26f8d3ff472a7eecc7c70be0726f50fb871e2ceb35072242f9",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/taylorwilsdon/google_workspace_mcp/blob/65286d80c77589fbe43c85b870979d67794cc91c/pyproject.toml"
+  },
+  {
+    "repo": "getzep/graphiti",
+    "head": "ebef986a0b2360211b65751c111cacb4a7d790eb",
+    "path": "pyproject.toml",
+    "git_blob": "932b5ef5a9602fceb80765ec638855b41048ce26",
+    "sha256": "f409096fde64090b47e7a6c8cc1edeceb521edb737a6bf2b7468e8f8edaee1e0",
+    "status": "SOURCE_FILE_READ",
+    "url": "https://github.com/getzep/graphiti/blob/ebef986a0b2360211b65751c111cacb4a7d790eb/pyproject.toml"
+  },
+  {
+    "repo": "DeusData/codebase-memory-mcp",
+    "head": "ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd",
+    "path": "Cargo.toml",
+    "git_blob": null,
+    "sha256": null,
+    "status": "NOT_FOUND",
+    "url": "https://github.com/DeusData/codebase-memory-mcp/blob/ff812bfdf07b24b94a6210ed7d6bc27d6c5b8ebd/Cargo.toml"
+  }
+]

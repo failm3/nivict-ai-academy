@@ -1,0 +1,82 @@
+[
+  {
+    "file": "iirepresent.json",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/iirepresent.json",
+    "bytes": 850896,
+    "sha256": "01dc8a9f15f769f0c240fe7d64442ea279ef6461675f9f4204eb47571701ddc5",
+    "git_blob": "eb5c857c66af7701e58745ebce66585e48ab119e",
+    "expected_git_blob": "eb5c857c66af7701e58745ebce66585e48ab119e",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "Радар.json",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/Радар.json",
+    "bytes": 2257187,
+    "sha256": "2f5c6806030dba7ac7b3e8e3c1cf9510054e88ac7085d46b08a941ecf9dc4221",
+    "git_blob": "09cbfa76a6aeebb6d208e7b6c565604549854f9c",
+    "expected_git_blob": "09cbfa76a6aeebb6d208e7b6c565604549854f9c",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "catalog-all-4504.csv",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/catalog-all-4504.csv",
+    "bytes": 4048275,
+    "sha256": "8ad601eb0ff81cf8b8597da7276819c58bd4f156d1c269789fd4907bae9b3fa4",
+    "git_blob": "4f2a4739b5e6bb6a412de26bfefccaa51d39b7f7",
+    "expected_git_blob": "4f2a4739b5e6bb6a412de26bfefccaa51d39b7f7",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "all-records-classified.json",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/all-records-classified.json",
+    "bytes": 5620443,
+    "sha256": "5a83c501b290b83a17f6ffaeb0fe9cae772e26be7a6a4c5cbcb948908fc76b56",
+    "git_blob": "d2bd28d28a4d23fc82ac5ffbb8a3b4112fcea123",
+    "expected_git_blob": "d2bd28d28a4d23fc82ac5ffbb8a3b4112fcea123",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "validation-report.json",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/validation-report.json",
+    "bytes": 2584,
+    "sha256": "dfd4a0bbb143d86c9fe420c5c98b5accaeeb3333e6700f3b9a085799b4cc27b5",
+    "git_blob": "6cde1ff8e12ee8c6b08087a2a1e07fed23ec6151",
+    "expected_git_blob": "6cde1ff8e12ee8c6b08087a2a1e07fed23ec6151",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "issues.csv",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/issues.csv",
+    "bytes": 315799,
+    "sha256": "43568762d8f8ae8f3a151db94e0bc67fc2c0334c4a1a3ce43d272b3a755f214b",
+    "git_blob": "1dda39448eb7b083ce5b247d406a5e7b0cd0ffe8",
+    "expected_git_blob": "1dda39448eb7b083ce5b247d406a5e7b0cd0ffe8",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "duplicates.csv",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/duplicates.csv",
+    "bytes": 8260,
+    "sha256": "d3bbbd6b26aeabd46c1bd85f4ba6a029fc5b5b50390c9d04f7db4a545494bbd9",
+    "git_blob": "21bb1b97648a6a572103454e86dad2634a7832af",
+    "expected_git_blob": "21bb1b97648a6a572103454e86dad2634a7832af",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  },
+  {
+    "file": "import-manifest.json",
+    "path": "04 - Инструменты/Каталог кандидатов/90 - Данные/import-manifest.json",
+    "bytes": 669,
+    "sha256": "a4c1d6debdb69c447ae15c8f3c03edc154fd0a6b6edf9c257c5d3221dc82c652",
+    "git_blob": "7ed693fadc0d4842f54570019409b4eb7e6a5b51",
+    "expected_git_blob": "7ed693fadc0d4842f54570019409b4eb7e6a5b51",
+    "blob_match": true,
+    "commit": "5c611773bff3ccba76b78337534ed8944e137236"
+  }
+]
