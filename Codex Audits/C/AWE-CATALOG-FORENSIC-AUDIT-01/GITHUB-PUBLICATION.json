@@ -1,0 +1,41 @@
+{
+  "task": "AWE-CATALOG-FORENSIC-AUDIT-01",
+  "status": "PARTIAL",
+  "repository": "failm3/nivict-ai-academy",
+  "branch": "codex/awe-catalog-forensic-audit-01",
+  "pull_request": "https://github.com/failm3/nivict-ai-academy/pull/31",
+  "pull_request_draft": true,
+  "merged": false,
+  "source_commit": "5c611773bff3ccba76b78337534ed8944e137236",
+  "verified_core_commit": "79c4baabd978890e110f04b9bde07e8629af7c0c",
+  "verified_core_audit_tree": "cf9d56aa96a042c2438d93486510e1adb1753821",
+  "verified_at_utc": "2026-11-12T15:08:52.645Z",
+  "all_core_blobs_readback": {
+    "files": 118,
+    "mismatches": [],
+    "unexpected": [],
+    "pass": true
+  },
+  "critical_file_content_readback": [
+    {
+      "path": "COVERAGE.json",
+      "byte_equal_utf8": true,
+      "git_blob": "fca5f795fd8dbb1877caa98192f29c1ed020c1bf"
+    },
+    {
+      "path": "CHECKPOINT.json",
+      "byte_equal_utf8": true,
+      "git_blob": "df6c8841ccc45de1a7758910dcc9bd3666298c91"
+    },
+    {
+      "path": "SHA256SUMS",
+      "byte_equal_utf8": true,
+      "git_blob": "d9d7ffda3bb80bd869010263824c5900ea3c621c"
+    }
+  ],
+  "private_manus_backup_published": false,
+  "main_modified_by_audit": false,
+  "scope": "Readback of core checkpoint. This receipt is added in a later documentation commit; it does not contain its own commit SHA.",
+  "runtime_and_security_acceptance": "NOT_PERFORMED",
+  "cross_family_qa": "NOT_SATISFIED"
+}
