@@ -21,6 +21,8 @@
 
 **Cortex — широкое исследование возможностей Nox, обсуждение 13.11.2026 (не финальный промпт):** [единая карта исследования Tool Gateway, Enterprise best practices, всей экосистемы знаний, Domain Packs, реальных пробелов и интеграций OpenCode](../RESEARCH/CORTEX-NOX-CAPABILITY-KNOWLEDGE-MARKET-AUDIT-SCOPE-2026-11-13.md). Важно: прежнее ТЗ на **self-update отдельно** теперь является **частной подтемой** более широкого исследования. Нет искусственных ограничений по размеру каталога; есть критерии доказательности, практической пригодности и остановки архитектурного поиска. **Ничего не отправлено Cortex и R0 не тронут.**
 
+**Cortex — итоговое исследовательское ТЗ (13.11.2026, PREPARED / NOT SENT):** [CORTEX-NOX-ENTERPRISE-CAPABILITY-RESEARCH-FINAL](../PROMPTS/CORTEX-NOX-ENTERPRISE-CAPABILITY-RESEARCH-FINAL-2026-11-13.md). Полное source-first исследование текущего Nox, практик крупных агентных компаний, Tool Gateway/4504 кандидатов, MCP/API/SDK/CLI, все категории знания/видео/публикаций, профессиональные Skills и Capability Packs (UX/UI, код, маркетинг, бизнес, аналитика), независимый QA, safe integration/reuse, Build/Buy и конкретные OpenCode-ready tickets. **Это исследование, а не разрешение на R1, не запуск Cortex и не изменение R0.** Старое узкое ТЗ по самообновлению теперь только дополнительный материал.
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
