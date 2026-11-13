@@ -7,6 +7,8 @@
 
 **Новая исследовательская концепция (2026-11-13, без разрешения на реализацию):** [NOX-R1-CAPABILITY-LIBRARIAN-AND-KNOWLEDGE-SYSTEM-2026-11-13.md](../IDEAS/NOX-R1-CAPABILITY-LIBRARIAN-AND-KNOWLEDGE-SYSTEM-2026-11-13.md) — роль «библиотекаря» (Capability Broker), фундаментальные KnowledgeCards, versioned Skills/Recipes, mandatory conditional quality contracts, тестовая школа перед R2. **R0 не менять, R1 не запускать до owner approval.**
 
+**R1 — новая рабочая программа по блокам (2026-11-13):** создан [единый реестр R1 Capability & Knowledge](../R1-CAPABILITY-PROGRAM/README.md), [правила статусов](../R1-CAPABILITY-PROGRAM/00-GOVERNANCE.md) и пакет **R1-01 Tool Gateway** ([спецификация](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/SPEC.md), [ToolCard schema](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/tool-card.schema.json), [кандидаты](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/CANDIDATES.md), [QA контракт](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/ACCEPTANCE.md)). Только проектные документы, **ничего не внедрено**; R0 не изменён. Следующая предметная работа — инвентаризация уже подключённых инструментов и окончательный выбор минимальных adapters в R1-01; блоки R1-02–R1-08 из реестра обсуждать и фиксировать последовательно.
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
