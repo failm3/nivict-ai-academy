@@ -250,3 +250,13 @@ D: 381,41 GB
 ## 23. Desktop — душевая дверь: 78 verified and removed, C 76.35 GiB
 
 13.11.2026 пользователь сообщил результаты предыдущего скрипта переноса Desktop. Для папки `C:\Users\1\Desktop\душевая дверь` → `D:\Nox-Storage\Desktop-Archive\душевая дверь`: **78 files; 0 errors**, `VERIFIED: душевая дверь`, введено подтверждение `REMOVE`, результат `ORIGINAL REMOVED: душевая дверь`. `Get-CimInstance Win32_LogicalDisk -Filter "DeviceID='C:'"` → **FreeGB 76,35 GiB**. Предыдущая точка: 75,4 GiB, прирост +0,95 GiB. Исходная точка: 23,6 GiB, суммарный прирост +52,75 GiB. Скрипт также должен был обработать `screenshots` (1,13 GiB), но **ни результата копирования, ни проверки, ни удаления этой папки в сообщении пользователя нет**: не предполагать успешное выполнение и не повторять слепо перенос в существующий каталог. Следующая проверка `Test-Path Desktop\screenshots` и `D:\Nox-Storage\Desktop-Archive\screenshots`, затем выбирать безопасный путь. В контексте AWE/студии действующие проекты не трогать. Ветка очистки в данном чате, OpenCode R0 в отдельном.
+
+
+## 24. Desktop — screenshots exists on C and D; verification pending
+
+Пользователь выполнил read-only Test-Path обоих архивируемых Desktop каталогов. Результаты:
+- `C:\Users\1\Desktop\screenshots`: **True**;
+- `D:\Nox-Storage\Desktop-Archive\screenshots`: **True**;
+- `C:\Users\1\Desktop\душевая дверь`: **False**;
+- `D:\Nox-Storage\Desktop-Archive\душевая дверь`: **True**.
+Достоверно `душевая дверь` успешно перенесена и удалена из Desktop, `screenshots` есть на обеих сторонах — ещё НЕ подтверждены хеши/полнота и НЕ удалён исходник. Следующий этап: полный сопоставительный SHA-256 и перечня файлов screenshot + отдельный prompt REMOVE только при успехе. Последний замер C: 76,35 GiB свободно, screenshots ранее 1,13 GiB (потенциал ~77,48 GiB), но до фактического удаления цифру не повышать. Не трогать активно используемые Nox/OpenCode/R0 и рабочие проекты, особенно Киберщит до оценки.
