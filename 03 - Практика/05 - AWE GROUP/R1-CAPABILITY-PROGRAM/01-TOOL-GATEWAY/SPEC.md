@@ -2,6 +2,12 @@
 
 **Готовность документа:** DRAFT_READY_FOR_REVIEW. **Работающий Gateway:** NOT_VERIFIED / не заявляется. **R0** должен быть завершён, R1 owner-authorized до внедрения.
 
+## Installed-code-first correction — 2026-11-13
+
+Read-only проверка рабочего Nox по Recorder подтвердила уже существующие `@mastra/core 1.82.0`, `@mastra/mcp 2.8.0`, `MCPClient` для `@playwright/mcp`, `allTools`, `ti_search`, `manus_search`, `createSpecialist` и guarded tool context. **Ни MCPClient, ни Mastra, ни Playwright, ни Agent Factory с нуля не писать**. Расхождение — не отсутствие инструментов, а недоказанный универсальный цикл `trusted capability lookup → approved adapter → scoped grant → real invoke → evidence`. Сначала проверить реальные импорты/версии ToolSearchProcessor и другие native функции, затем выбирать лишь минимальные недостающие adapters.
+
+[Подтверждённый список реализованного](../RESEARCH/NOX-IMPLEMENTED-CAPABILITIES-SOURCE-AUDIT-2026-11-13.md).
+
 ## Market-first correction — 2026-11-13
 
 **Не начинать разработку самописного Capability Broker до native-audit**. Уже существуют Mastra `ToolSearchProcessor` (поиск/загрузка заранее зарегистрированных tools; >=1.58.0), `MCPClient`, встроенные human approvals и их передача через supervisor/subagents. Composio имеет официальный `@composio/mastra` адаптер, Pipedream Connect — готовые OAuth/API/MCP подключения, ToolHive — self-hosted MCP isolation. Выбрать минимум компонентов по реальному R0 checkout. **ToolSearchProcessor не превращает каталог 4504 кандидатов в разрешённые, подключённые tools и не является ACL**; оставшийся слой policy+scope+receipt лишь тогда минимально реализовать самим.
