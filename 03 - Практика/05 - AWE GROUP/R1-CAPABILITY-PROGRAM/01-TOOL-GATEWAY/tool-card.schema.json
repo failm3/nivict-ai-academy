@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/failm3/nivict-ai-academy/tree/main/03%20-%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/05%20-%20AWE%20GROUP/R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/tool-card.schema.json",
+  "title": "Nox ToolCard draft metadata v0.1",
+  "description": "Inventory and documentation only. Does NOT grant authorization to use a tool. Verify status and policy in a trusted store.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "capability",
+    "kind",
+    "registry_status",
+    "origin",
+    "usage",
+    "adapter",
+    "input_schema",
+    "output_schema",
+    "security",
+    "verification"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_.-]{2,127}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 3
+    },
+    "kind": {
+      "enum": [
+        "builtin",
+        "mcp",
+        "cli",
+        "http"
+      ]
+    },
+    "registry_status": {
+      "enum": [
+        "candidate",
+        "verified",
+        "approved",
+        "connected",
+        "disabled"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_url"
+      ],
+      "properties": {
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "digest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "registry_record_id": {
+          "type": "string"
+        }
+      }
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "when_to_use",
+        "when_not_to_use"
+      ],
+      "properties": {
+        "when_to_use": {
+          "type": "string",
+          "minLength": 5
+        },
+        "when_not_to_use": {
+          "type": "string",
+          "minLength": 5
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "common_errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "documentation_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "adapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adapter_id"
+      ],
+      "properties": {
+        "adapter_id": {
+          "type": "string",
+          "minLength": 2
+        },
+        "protocol": {
+          "enum": [
+            "internal",
+            "stdio",
+            "http",
+            "https",
+            "subprocess"
+          ]
+        },
+        "healthcheck_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "input_schema": {
+      "type": "object"
+    },
+    "output_schema": {
+      "type": "object"
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "risk_tier",
+        "operations"
+      ],
+      "properties": {
+        "risk_tier": {
+          "enum": [
+            "read_only",
+            "workspace_write",
+            "external_action",
+            "destructive_or_financial"
+          ]
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "resource_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "network_origins": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_owner_approval": {
+          "type": "boolean"
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "timeout_ms": {
+          "type": "integer",
+          "minimum": 100
+        },
+        "max_calls_per_task": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "estimated_cost_currency": {
+          "type": "string"
+        },
+        "estimated_cost_per_call": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "not_tested",
+            "schema_reviewed",
+            "isolated_smoke_pass",
+            "integration_pass",
+            "independent_qa_pass"
+          ]
+        },
+        "test_command_or_procedure": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "last_checked_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
