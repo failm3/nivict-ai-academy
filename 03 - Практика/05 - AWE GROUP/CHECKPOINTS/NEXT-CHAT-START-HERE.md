@@ -13,6 +13,8 @@
 
 **Проверка реального кода Nox до рекомендаций (2026-11-13):** [NOX-IMPLEMENTED-CAPABILITIES-SOURCE-AUDIT](../R1-CAPABILITY-PROGRAM/RESEARCH/NOX-IMPLEMENTED-CAPABILITIES-SOURCE-AUDIT-2026-11-13.md). Подтверждено: Mastra core 1.82.0, MCP 2.8.0, memory/libsql, Prompt Master, Head, Agent Factory `createSpecialist`, recursion, tools file/shell/web/browser/Tool Intelligence, QA/Mission Manager. **Не предлагать повторное внедрение существующего!** Market scan — условные кандидаты только после gap analysis финального R0; R0 не изменять.
 
+**Сводка после уточнения владельцем приоритета (2026-11-13):** [CHECKPOINT-CURRENT-TRUTH-2026-11-13.md](../R1-CAPABILITY-PROGRAM/CHECKPOINT-CURRENT-TRUTH-2026-11-13.md). Правило: существующий код → доказанный недостаток → готовое рыночное решение → отдельное одобрение и изолированный тест → минимальная интеграция. Масtra, Prompt Master, MCP, Playwright, Agents и tools уже частично реализованы. Никаких новых предложений на замену без source audit.
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
