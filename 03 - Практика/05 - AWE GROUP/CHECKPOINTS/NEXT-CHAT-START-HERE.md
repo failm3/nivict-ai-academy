@@ -19,6 +19,8 @@
 
 **Исследование безопасных обновлений Nox — подготовлено ТЗ Кортиксу (13.11.2026, DRAFT, НЕ отправлено):** [NOX-SAFE-SELF-UPDATE-CORTEX-MARKET-AUDIT-DRAFT](../PROMPTS/NOX-SAFE-SELF-UPDATE-CORTEX-MARKET-AUDIT-DRAFT-2026-11-13.md). Сначала анализ существующего Nox и ASTRA-AUTONOMY-AUDIT `06-resilience-updates.md`, потом большой обзор зрелых market-ready CI/CD, signed releases, canary/rollback, database migration, tools/skills/knowledge updates; build-vs-buy, threat model и future OpenCode TЗ. Режим **research-only**, никакие процессы R0/R1 не запускать и код не менять.
 
+**Cortex — широкое исследование возможностей Nox, обсуждение 13.11.2026 (не финальный промпт):** [единая карта исследования Tool Gateway, Enterprise best practices, всей экосистемы знаний, Domain Packs, реальных пробелов и интеграций OpenCode](../RESEARCH/CORTEX-NOX-CAPABILITY-KNOWLEDGE-MARKET-AUDIT-SCOPE-2026-11-13.md). Важно: прежнее ТЗ на **self-update отдельно** теперь является **частной подтемой** более широкого исследования. Нет искусственных ограничений по размеру каталога; есть критерии доказательности, практической пригодности и остановки архитектурного поиска. **Ничего не отправлено Cortex и R0 не тронут.**
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
