@@ -9,6 +9,8 @@
 
 **R1 — новая рабочая программа по блокам (2026-11-13):** создан [единый реестр R1 Capability & Knowledge](../R1-CAPABILITY-PROGRAM/README.md), [правила статусов](../R1-CAPABILITY-PROGRAM/00-GOVERNANCE.md) и пакет **R1-01 Tool Gateway** ([спецификация](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/SPEC.md), [ToolCard schema](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/tool-card.schema.json), [кандидаты](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/CANDIDATES.md), [QA контракт](../R1-CAPABILITY-PROGRAM/01-TOOL-GATEWAY/ACCEPTANCE.md)). Только проектные документы, **ничего не внедрено**; R0 не изменён. Следующая предметная работа — инвентаризация уже подключённых инструментов и окончательный выбор минимальных adapters в R1-01; блоки R1-02–R1-08 из реестра обсуждать и фиксировать последовательно.
 
+**Market reuse research R1 (2026-11-13):** [проверенный по официальным источникам обзор Build vs Buy для всех восьми блоков](../R1-CAPABILITY-PROGRAM/RESEARCH/MARKET-REUSE-AUDIT-2026-11-13.md). Ключевой вывод: Mastra уже имеет ToolSearchProcessor, SkillSearchProcessor, MCPClient, HITL; Composio/Pipedream — готовые пользовательские API/OAuth; ToolHive — опциональный MCP sandbox; Docling/Crawl4AI — knowledge ingestion; Agent Skills + Promptfoo — процедуры/QA. Использовать готовое, писать минимальные адаптеры, не переписывать Nox. [OpenCode read-only inventory — только DRAFT, НЕ отправлен](../R1-CAPABILITY-PROGRAM/PROMPTS/OPENCODE-R1-READONLY-REUSE-INVENTORY-DRAFT.md). **R0 продолжается независимо, ничего не установлено, R1 не разрешён к исполнению.**
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
