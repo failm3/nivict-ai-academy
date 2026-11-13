@@ -3,6 +3,8 @@
 **Дата:** 2026-11-13. **Событие:** R0 получен OpenCode в 01:56 UTC (04:56 МСК), первые tool calls зафиксированы в 01:57 UTC. Итог **ещё неизвестен**, передача Nox в эксплуатацию ещё NO-GO.
 
 **Дополнение 02:11 UTC (05:11 МСК):** R0 продолжает исполняться; три реальных LLM-субагента подтверждены, базовые offline suite PASS, новая security-проверка пока 3 PASS / 1 FAIL; P0 release acceptance и final report не подтверждены. Проверенная текущая точка: [NOX-R0-LIVE-STATUS-2026-11-13-0211UTC.md](../REPORTS/NOX-R0-LIVE-STATUS-2026-11-13-0211UTC.md). Не запускать R0 повторно.\n
+**Дополнение 02:23 UTC (05:23 МСК):** Security 4/4 PASS, 7/7 общих offline suite PASS, независимый QA исходной версии 14 PASS / 12 FAIL / 5 BLOCKED, основные Security+QA файлы интегрированы; Runtime patch ещё не принят, в 02:22 выявлены ошибки typecheck, в 02:23 запущены повторные проверки без подтверждённого результата. [Новый проверенный статус](../REPORTS/NOX-R0-LIVE-STATUS-2026-11-13-0223UTC.md). **R0 остаётся IN PROGRESS / NO-GO.**
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
