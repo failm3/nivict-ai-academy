@@ -31,3 +31,12 @@
 - https://github.com/failm3/awe-group-observer/blob/main/LATEST.md
 
 **Next verification:** 02:23+ test exits, runtime child handoff, integrated negative test results, actual final report.
+
+## Supplemental observation — 02:25:44 UTC
+
+- Runtime child continued implementing offline child-process scenarios (`src/tests/helpers/r0-runtime-child.ts`) and lease/CAS interface; older regression suite command returned exit 0 at 02:24, but the **new integrated runtime gate is still not proven**.
+- At 02:25, isolated runtime source still showed a TypeScript contract mismatch: `r0-worker.ts` refers to `evaluateProviderOutcome`, not yet present in the runtime work-copy's `specialists.ts` (it was added separately in the main worktree). This needs integration/reconciliation.
+- Integrator had launched main combined typecheck + new independent contracts + `npm test` at 02:23. Their final exits were **not yet present** in checked part up to 02:25:44 UTC; main session was reading security tests and QA worker sources.
+- Observer collection #676 at 02:25 UTC reports PROCESS_PRESENT, but process presence alone cannot prove completion.
+
+Evidence: https://github.com/failm3/awe-opencode-recordings/blob/main/timeline/2026-11-13/02-24/part0000.txt ; https://github.com/failm3/awe-opencode-recordings/blob/main/timeline/2026-11-13/02-25/part0001.txt ; https://github.com/failm3/awe-group-observer/blob/main/LATEST.md
