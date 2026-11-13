@@ -23,6 +23,8 @@
 
 **Cortex — итоговое исследовательское ТЗ (13.11.2026, PREPARED / NOT SENT):** [CORTEX-NOX-ENTERPRISE-CAPABILITY-RESEARCH-FINAL](../PROMPTS/CORTEX-NOX-ENTERPRISE-CAPABILITY-RESEARCH-FINAL-2026-11-13.md). Полное source-first исследование текущего Nox, практик крупных агентных компаний, Tool Gateway/4504 кандидатов, MCP/API/SDK/CLI, все категории знания/видео/публикаций, профессиональные Skills и Capability Packs (UX/UI, код, маркетинг, бизнес, аналитика), независимый QA, safe integration/reuse, Build/Buy и конкретные OpenCode-ready tickets. **Это исследование, а не разрешение на R1, не запуск Cortex и не изменение R0.** Старое узкое ТЗ по самообновлению теперь только дополнительный материал.
 
+**R0 статус обновлён по независимому QA 04:24 UTC, 13.11.2026:** OpenCode создал `NOX-R0-FINAL-ENGINEERING-REPORT.md` со статусом `PENDING INDEPENDENT FINAL QA`. Зафиксированы `npm test` **12/12 offline suites PASS**, independent contracts 34/34, manager 76/76, lease 53/53, recursion 37/37, security 5/5, typecheck/build PASS. **НО независимый финальный QA: `FAIL — DO NOT CLOSE R0 OFFLINE`**, производство не оценено; D1–D9 в fencing реальных действий, целостности артефактов, отмене web/MCP, crash idempotency, grants, data isolation и agent budget. [Точное отдельное дополнение к Cortex](../PROMPTS/CORTEX-R0-STATUS-ADDENDUM-2026-11-13-0424UTC.md), оно **уже внесено в начало основного Cortex промпта**. Источник — GitHub Recorder minute 04:24 UTC. Не считать R0 accepted, не вмешиваться в OpenCode.
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
