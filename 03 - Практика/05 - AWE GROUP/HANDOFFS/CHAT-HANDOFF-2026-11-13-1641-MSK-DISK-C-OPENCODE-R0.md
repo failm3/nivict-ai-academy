@@ -215,3 +215,13 @@ D: 381,41 GB
 ## 17. Ollama — основной сервер переключён на D
 
 Пользователь 13.11.2026 выполнил предложенную процедуру PowerShell с подтверждением `SWITCH`: предварительно `NO OTHER OLLAMA CLIENTS` (единственное соединение раньше было от того же PowerShell PID 42728), запущено `Stop-Process` только для `ollama` / `ollama app`; исходная папка `C:\Users\1\.ollama\models` переименована в `models-backup`, временная переменная процесса `OLLAMA_MODELS=D:\Nox-Storage\Ollama\models`, сервер `ollama serve` на порту 11434 запущен снова. Ответ `/api/tags` содержал **обе** модели (`gpt-oss:20b`, `qwen3:4b-instruct`) и получен пользовательский вывод `SWITCH SUCCESSFUL / Both models available from D: / Old C drive models preserved as models-backup`. **Результат: текущий сервер читает D:, но СТАРЫЕ 15,17 ГиБ на C: ещё НЕ УДАЛЕНЫ.** Windows User переменная `OLLAMA_MODELS` ранее была настроена на D: и проверена, но Windows GUI setting `Model location` / автоматический запуск после reboot ещё **не проверены**. Не удалять `models-backup` до проверки постоянной настройки/предпочтений GUI и подтверждения работоспособности после корректного запуска приложения. Чат по очистке C: остаётся исходным, чат OpenCode/R0 отдельный. Отключение Ollama могло кратко прервать обращения клиентов; фактических ошибок OpenCode не подтверждено.
+
+
+## 18. Ollama — верификация основного пути перед удалением backup
+
+Пользователь предоставил фактический результат:
+- `[Environment]::GetEnvironmentVariable("OLLAMA_MODELS","User")` → `D:\Nox-Storage\Ollama\models`.
+- `ollama list` → обе модели `gpt-oss:20b` и `qwen3:4b-instruct`.
+- `Test-Path C:\Users\1\.ollama\models` → `False`, `Test-Path C:\Users\1\.ollama\models-backup` → `True`, `Test-Path D:\Nox-Storage\Ollama\models` → `True`.
+- Следовательно текущий сервер без исходной папки C: видит модели на D:, постоянная пользовательская переменная задана верно. **GUI Model location и работа после автозапуска Windows пока не проверялись.**
+- Пользователю предложен финальный безопасный скрипт проверки 14 файлов по SHA-256 `models-backup` и D: с подтверждением `DELETE BACKUP` для удаления `C:\Users\1\.ollama\models-backup`. **Нет подтверждения исполнения скрипта или удаления!** До следующего пользовательского вывода считать ~15,17 ГБ всё ещё занятыми на C: и последним достоверным замером свободного места `55,2 ГБ`. Из-за работы OpenCode не перезапускать Windows/WSL ради этой проверки; при отличающейся настройке GUI ничего не удалять.
