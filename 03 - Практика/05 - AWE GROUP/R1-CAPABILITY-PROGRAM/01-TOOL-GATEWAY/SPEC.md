@@ -2,6 +2,12 @@
 
 **Готовность документа:** DRAFT_READY_FOR_REVIEW. **Работающий Gateway:** NOT_VERIFIED / не заявляется. **R0** должен быть завершён, R1 owner-authorized до внедрения.
 
+## Market-first correction — 2026-11-13
+
+**Не начинать разработку самописного Capability Broker до native-audit**. Уже существуют Mastra `ToolSearchProcessor` (поиск/загрузка заранее зарегистрированных tools; >=1.58.0), `MCPClient`, встроенные human approvals и их передача через supervisor/subagents. Composio имеет официальный `@composio/mastra` адаптер, Pipedream Connect — готовые OAuth/API/MCP подключения, ToolHive — self-hosted MCP isolation. Выбрать минимум компонентов по реальному R0 checkout. **ToolSearchProcessor не превращает каталог 4504 кандидатов в разрешённые, подключённые tools и не является ACL**; оставшийся слой policy+scope+receipt лишь тогда минимально реализовать самим.
+
+[Полный рыночный аудит со ссылками и таблицей Build/Buy](../RESEARCH/MARKET-REUSE-AUDIT-2026-11-13.md).
+
 ## 1. Какая пользовательская возможность будет разблокирована
 
 В Nox можно дать задачу «создай и проверь сайт» — Head должен получить подходящий *реально исполнимый* инструмент (например, browser QA), ограниченное разрешение, конкретную инструкцию и настоящий результат с доказательствами, не обращаясь к OpenCode как исполнителю.
