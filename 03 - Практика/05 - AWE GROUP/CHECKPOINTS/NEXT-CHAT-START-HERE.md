@@ -17,6 +17,8 @@
 
 **R0 свежая проверка 03:38 UTC / 06:38 МСК (2026-11-13):** [отчёт с первичными evidence](../REPORTS/NOX-R0-LIVE-STATUS-2026-11-13-0338UTC.md). OpenCode активен (есть свежие вызовы дочерней explore сессии). Отдельный R0 manager **70 PASS / 0 FAIL** в 03:20 UTC; общий независимый TAP дошёл до `ok 31`, но прерван 120-секундным таймаутом — **не итоговый PASS**. Локальный diff 21 файл, ~2624 добавлений / 624 удалений. Финальный релиз/QA/owner GO не доказаны, **R0 всё ещё IN PROGRESS; R1 не запускать**.
 
+**Исследование безопасных обновлений Nox — подготовлено ТЗ Кортиксу (13.11.2026, DRAFT, НЕ отправлено):** [NOX-SAFE-SELF-UPDATE-CORTEX-MARKET-AUDIT-DRAFT](../PROMPTS/NOX-SAFE-SELF-UPDATE-CORTEX-MARKET-AUDIT-DRAFT-2026-11-13.md). Сначала анализ существующего Nox и ASTRA-AUTONOMY-AUDIT `06-resilience-updates.md`, потом большой обзор зрелых market-ready CI/CD, signed releases, canary/rollback, database migration, tools/skills/knowledge updates; build-vs-buy, threat model и future OpenCode TЗ. Режим **research-only**, никакие процессы R0/R1 не запускать и код не менять.
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
