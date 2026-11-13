@@ -1,0 +1,62 @@
+[
+  {
+    "original_repo": "diegosouzapw/OmniRoute",
+    "canonical_repo": "cheaper-inference/OmniRoute",
+    "original_api_response": {
+      "message": "Moved Permanently",
+      "url": "https://api.github.com/repositories/1157102282",
+      "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
+    },
+    "observed_repository_id": 1157102282,
+    "id_matches_redirect": true,
+    "primary_web_original_url": "https://github.com/diegosouzapw/OmniRoute",
+    "observed_final_web_url": "https://github.com/cheaper-inference/OmniRoute",
+    "checked_at": "2026-11-12T14:53:16.105Z",
+    "interpretation": "Identity redirect observed; not security or owner trust approval"
+  },
+  {
+    "original_repo": "sonnylazuardi/cursor-talk-to-figma-mcp",
+    "canonical_repo": "grab/cursor-talk-to-figma-mcp",
+    "original_api_response": {
+      "message": "Moved Permanently",
+      "url": "https://api.github.com/repositories/949523404",
+      "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
+    },
+    "observed_repository_id": 949523404,
+    "id_matches_redirect": true,
+    "primary_web_original_url": "https://github.com/sonnylazuardi/cursor-talk-to-figma-mcp",
+    "observed_final_web_url": "https://github.com/grab/cursor-talk-to-figma-mcp",
+    "checked_at": "2026-11-12T14:53:16.694Z",
+    "interpretation": "Identity redirect observed; not security or owner trust approval"
+  },
+  {
+    "original_repo": "alibaba/OpenSandbox",
+    "canonical_repo": "opensandbox-group/OpenSandbox",
+    "original_api_response": {
+      "message": "Moved Permanently",
+      "url": "https://api.github.com/repositories/1118085970",
+      "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
+    },
+    "observed_repository_id": 1118085970,
+    "id_matches_redirect": true,
+    "primary_web_original_url": "https://github.com/alibaba/OpenSandbox",
+    "observed_final_web_url": "https://github.com/opensandbox-group/OpenSandbox",
+    "checked_at": "2026-11-12T14:53:17.309Z",
+    "interpretation": "Identity redirect observed; not security or owner trust approval"
+  },
+  {
+    "original_repo": "jlowin/fastmcp",
+    "canonical_repo": "PrefectHQ/fastmcp",
+    "original_api_response": {
+      "message": "Moved Permanently",
+      "url": "https://api.github.com/repositories/896296825",
+      "documentation_url": "https://docs.github.com/rest/guides/best-practices-for-using-the-rest-api#follow-redirects"
+    },
+    "observed_repository_id": 896296825,
+    "id_matches_redirect": true,
+    "primary_web_original_url": "https://github.com/jlowin/fastmcp",
+    "observed_final_web_url": "https://github.com/PrefectHQ/fastmcp",
+    "checked_at": "2026-11-12T14:53:17.928Z",
+    "interpretation": "Identity redirect observed; not security or owner trust approval"
+  }
+]

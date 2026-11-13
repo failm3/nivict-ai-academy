@@ -1,0 +1,2432 @@
+{
+  "archive_name": "AWE-Tool-Intelligence-v2-all.zip",
+  "archive_sha256": "5855ce5cfdb0abda44954108bfe2cfa1bec97dbf7c51db7be822eb04541d5ec1",
+  "archive_bytes": 97098908,
+  "members": [
+    {
+      "member": "awe-tool-intelligence/.dockerignore",
+      "bytes": 181,
+      "sha256": "0d2c8165c7d3f0e82e76c9091260af893de03bbee6dafd5013da871523fa21b0"
+    },
+    {
+      "member": "awe-tool-intelligence/.env.example",
+      "bytes": 663,
+      "sha256": "9c9737815d85e1878ca911bc3f7bffdc8d90c7f2ec75cda1fbc8a5c70bb3cdc2"
+    },
+    {
+      "member": "awe-tool-intelligence/.gitignore",
+      "bytes": 380,
+      "sha256": "b1a267ec38d6d73d8df45561d812bda6e538836573e0f571395ec19229db9322"
+    },
+    {
+      "member": "awe-tool-intelligence/COLLABORATION.md",
+      "bytes": 4585,
+      "sha256": "fdd028c111b63aff3a309531ad403a9625af2f2669d872ce6fbb18fbdb1a3929"
+    },
+    {
+      "member": "awe-tool-intelligence/CONTRACT.md",
+      "bytes": 2920,
+      "sha256": "b882b22996512decde8a78286017795b2035dbafd37bd49df20832725110d01e"
+    },
+    {
+      "member": "awe-tool-intelligence/CORE_STATUS.md",
+      "bytes": 4755,
+      "sha256": "dcd70c0d540615cf85f9ab74002bb551e32d53ad119f890280f2f77eed71b62a"
+    },
+    {
+      "member": "awe-tool-intelligence/DELIVERY_STATUS.md",
+      "bytes": 16775,
+      "sha256": "219c0094f91057b7d3c6924dfdb58f438e8c448cec34c95c9d09ae67e90af9f9"
+    },
+    {
+      "member": "awe-tool-intelligence/Dockerfile",
+      "bytes": 653,
+      "sha256": "49fd53574698233839ce9f5a4686508fc4a2b23de6e11d7c19256088a1bcc5ba"
+    },
+    {
+      "member": "awe-tool-intelligence/OPERATIONS.md",
+      "bytes": 10668,
+      "sha256": "6ab3a0bf7cc2fb421d026618645b10e433775f861cf5ba73453a25bdea15fa08"
+    },
+    {
+      "member": "awe-tool-intelligence/PAID_PRODUCTS.md",
+      "bytes": 9325,
+      "sha256": "3a9a5656f6799085d63e23182b2e8774f084b53bacbb830848d272c79d3c204a"
+    },
+    {
+      "member": "awe-tool-intelligence/README.md",
+      "bytes": 34175,
+      "sha256": "aba7f193a4a0034929a118e12f16ab3fab10b7d5076928fca4bd09517e7608c5"
+    },
+    {
+      "member": "awe-tool-intelligence/TECHNICAL_SOURCES.md",
+      "bytes": 1163,
+      "sha256": "a4d8da54bc49fd086e85794308852e6dc25b5dda50aa5e46e18db2d5c62f118d"
+    },
+    {
+      "member": "awe-tool-intelligence/UNSTRUCTURED_LIVE_TEST.md",
+      "bytes": 5157,
+      "sha256": "eb6f80ea7f165efd2b4b324fc8fe346efb3b38dcd35efd19c127ba8eb41d2cfc"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/__init__.py",
+      "bytes": 97,
+      "sha256": "a35bb0d00be25232405381ef3038e184d39fe4a50544775f09bc8a3473d798cd"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/adapters.py",
+      "bytes": 2987,
+      "sha256": "989f176b544ab37ab4ff283751a3bd6cfd1653f8b73a84650b7f77bf2c2f5ab6"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/api.py",
+      "bytes": 12613,
+      "sha256": "13820e71c4d627b34240fbb375d85c377ec6e89799977852e17e64e9bfc168d6"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/cli.py",
+      "bytes": 6800,
+      "sha256": "ad93059f2017632baad838ff49a2a4fa4cd33b1a8a358f35c4483b99013a9e86"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/collectors/README.md",
+      "bytes": 7923,
+      "sha256": "b855701e1b3f4251c8f484c80b5673647149f6b933c0e24f9af03ca3a792013a"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/collectors/__init__.py",
+      "bytes": 221,
+      "sha256": "dc48bdaac1793ed09dffec5e07609ceaa7ede5089cbd62df9a9eb1c9142e6f50"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/collectors/public.py",
+      "bytes": 12956,
+      "sha256": "9e7426d06d5e83f692215b4694f9a71dd5190ccc4496dc4bf91c2796073083d0"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/collectors/runner.py",
+      "bytes": 6860,
+      "sha256": "8d71ed4535926366ed48024438d2542dd9f333cd1101232a2ccbe49e7d5e5247"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/collectors/storage.py",
+      "bytes": 10376,
+      "sha256": "63797ba580533a02440b02239f7f869064e5ae427a2fd467ad1fa178f278bd72"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/collectors/telegram_api.py",
+      "bytes": 10349,
+      "sha256": "6648256372799572870c424ad065992fa146d4b719556c3cbb2d3c4702781924"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/config.py",
+      "bytes": 1267,
+      "sha256": "62203a6055fafd8d49601d75c2cdd081829b74d0cf571d7bc8e8bb95e4bd6fdc"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/db.py",
+      "bytes": 1632,
+      "sha256": "a82d12a2b0deae868ef57865a2c1a51709ede48f9f32c8dece0c8baa0d912095"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/exporting.py",
+      "bytes": 2259,
+      "sha256": "6d171019e5055181ff652983bced376f493731b6479ed7145a36ee291f90733d"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/extraction.py",
+      "bytes": 1776,
+      "sha256": "7078c2ee853a33bb3ed905381b596cccf51b2e13d5e0f8774f0e650703ab5e39"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/ingest.py",
+      "bytes": 14095,
+      "sha256": "d153b5396824d30c21850174f5ce550e6d7edf317934d2cb25b9bf43d7bf04ae"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/intelligence.py",
+      "bytes": 8120,
+      "sha256": "63cfa9a07f70f10400e5c949965eab1ee236b938cc881db8ef6857e1925579b7"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/mcp_discovery.py",
+      "bytes": 7541,
+      "sha256": "a6bfbe9931ec5a511bba42a5df358b253c67dac7dd9c821908d624f139d8da21"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/models.py",
+      "bytes": 5302,
+      "sha256": "913f686f111756195b3693f42066ff13b57273793a392a346060b12f297b3e0b"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/network.py",
+      "bytes": 4541,
+      "sha256": "9657719b9de384c5a5117f8bbb34a285b8f8123230e57c90a8af736dd9ca98ef"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/queue.py",
+      "bytes": 5889,
+      "sha256": "84068f6cc6d7129d90b398218ff37fbf481d68f7e9d3c04a8e7d63a4e8b89d26"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/registry.py",
+      "bytes": 12594,
+      "sha256": "5744ce2a25c4aab8d373f24f70574dc20653a1fff5f84b27d56b1cd7c0f7d919"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/semantic.py",
+      "bytes": 2964,
+      "sha256": "87707c0c87ee928b5cf1eee3df93c259c6808e80771d9a1d5969a80dc71ca1bd"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/source_evaluation.py",
+      "bytes": 3129,
+      "sha256": "fca496a64b955d7fc76f4b94783760160f189c800a96e1ea486c18a0f46a5a23"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/sources.py",
+      "bytes": 1664,
+      "sha256": "e11bcb75cac7667f09e96bb4882ff6abf672e4aff79c5b5fe6042ef83405af11"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/sql/001_initial.sql",
+      "bytes": 6705,
+      "sha256": "d0d1f5c9f3d2c03473bdbe2ac75e1ebdab35d3d20aeaeed2848df2131fc22133"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/sql/002_extraction_sources.sql",
+      "bytes": 851,
+      "sha256": "11391f7439d18c92b0379bfbee9893a0f25349d2b46e25085c844d2cceebe890"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/sql/003_test_fingerprint.sql",
+      "bytes": 70,
+      "sha256": "56727623d1219a93d85d4a3e9b2d754cd198e645eb03694df9ec09d678326c94"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/sql/004_lifecycle.sql",
+      "bytes": 614,
+      "sha256": "0788b57d93a93565e6c7af70582ae238fabe388593eeba1d6f9fe79a172bbaf4"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/sql/005_intelligence_pipeline.sql",
+      "bytes": 1660,
+      "sha256": "47cd5bb2857acd0e7f0711d80e801784b2892146f6ae4128d5eed070a1879b1b"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/verification.py",
+      "bytes": 8324,
+      "sha256": "ef6d82caa1288110adab4d337d031f415164e1a53f9cc7dc439c85ee6c27f3bd"
+    },
+    {
+      "member": "awe-tool-intelligence/awe_ti/worker.py",
+      "bytes": 3339,
+      "sha256": "48745fc96eeaf6b89311a67305f9d91880a65715c3350fe8177673c7573a1594"
+    },
+    {
+      "member": "awe-tool-intelligence/compose.yaml",
+      "bytes": 2799,
+      "sha256": "83b22e468db73a926d2529145821041f46765d9558fd473bc197d874df983d97"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/awe-ti-api.service",
+      "bytes": 771,
+      "sha256": "f209dca6909c97d9db50d489a948738336538adce6374834144fe04d48ca8a79"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/awe-ti-intelligence.service",
+      "bytes": 582,
+      "sha256": "a23e6f6357923747dadbd269f32b57ee4023d876a9a5a660816278588b487d9d"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/awe-ti-intelligence.timer",
+      "bytes": 226,
+      "sha256": "01a31bb1f0dbcecc79c59515c2464d5d4e66c6be2206f00ca201d622a7d30f15"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/awe-ti-worker.service",
+      "bytes": 915,
+      "sha256": "3e5b62a249bbda3dce76b3cd13e74be02f91e29018c1d6459af12920bf93fb47"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/backup.py",
+      "bytes": 2218,
+      "sha256": "8161aba1d92cedfc7e9678330a1d3908d3ecd3ec3485090959940622d8233622"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/install_wsl.sh",
+      "bytes": 5419,
+      "sha256": "efa620bda161761894c8f511117501aca1067faaacbc33c68d6070098794432e"
+    },
+    {
+      "member": "awe-tool-intelligence/deploy/restore.py",
+      "bytes": 2243,
+      "sha256": "1286fbb7dcc651b99e4a39d5cb77840b0d16805dd9fbc34bcddb97bbe8c127df"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/metrics.json",
+      "bytes": 4936,
+      "sha256": "fc92cb5127873bfa8091abb2383783e7f03682a9aaedb1bfebc761022c421abf"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/registry_report.md",
+      "bytes": 12228,
+      "sha256": "c217e01bebcf04b1e17a179fc2528519fed3ddcd1f84de5f38c1b42126b0b0f3"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/research_registry.csv",
+      "bytes": 433424,
+      "sha256": "64f031a04c5ecc9dd02f11617b41b3c7dc950e6aea478608125b23e0ad7600f0"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/sources.json",
+      "bytes": 199321,
+      "sha256": "21b18909ab704101a1caeaa06ccf9b2764553bd7f1d4183b0d0b1cd53f07b90c"
+    },
+    {
+      "member": "awe-tool-intelligence/migrations/001_initial.sql",
+      "bytes": 6705,
+      "sha256": "d0d1f5c9f3d2c03473bdbe2ac75e1ebdab35d3d20aeaeed2848df2131fc22133"
+    },
+    {
+      "member": "awe-tool-intelligence/migrations/002_extraction_sources.sql",
+      "bytes": 851,
+      "sha256": "11391f7439d18c92b0379bfbee9893a0f25349d2b46e25085c844d2cceebe890"
+    },
+    {
+      "member": "awe-tool-intelligence/migrations/003_test_fingerprint.sql",
+      "bytes": 70,
+      "sha256": "56727623d1219a93d85d4a3e9b2d754cd198e645eb03694df9ec09d678326c94"
+    },
+    {
+      "member": "awe-tool-intelligence/migrations/004_lifecycle.sql",
+      "bytes": 614,
+      "sha256": "0788b57d93a93565e6c7af70582ae238fabe388593eeba1d6f9fe79a172bbaf4"
+    },
+    {
+      "member": "awe-tool-intelligence/migrations/005_intelligence_pipeline.sql",
+      "bytes": 1660,
+      "sha256": "47cd5bb2857acd0e7f0711d80e801784b2892146f6ae4128d5eed070a1879b1b"
+    },
+    {
+      "member": "awe-tool-intelligence/pyproject.toml",
+      "bytes": 764,
+      "sha256": "e28f428437cab1f7bbef5220b131efca23103ba9fc19cf681d9b28a5ae569fea"
+    },
+    {
+      "member": "awe-tool-intelligence/requirements.lock",
+      "bytes": 849,
+      "sha256": "f31dfeaea0d0fed0271672a338dd724e4fbb4ca5c2cce7fc1740fcd54055d831"
+    },
+    {
+      "member": "awe-tool-intelligence/requirements.txt",
+      "bytes": 167,
+      "sha256": "48737b64f2827747ea07cd58146fa7e2c4106f6d0694092275d372b65f0316e5"
+    },
+    {
+      "member": "awe-tool-intelligence/research/GitHubRadar_research.json",
+      "bytes": 36805,
+      "sha256": "a997ac28a3da9b151ef8d6364b13966c05948b225b3bb21d8fd532fdc04dfda4"
+    },
+    {
+      "member": "awe-tool-intelligence/research/GitHubRadar_research.md",
+      "bytes": 17374,
+      "sha256": "6a91debb8028ce8ca320db436390e99feae2745bb5256851719f29eb7aa92f53"
+    },
+    {
+      "member": "awe-tool-intelligence/research/additional_sources.json",
+      "bytes": 50590,
+      "sha256": "f0a97c7a5e10e3319b3e37a6b47a03368a007c850a1146f8fa37bc1b3633d3a6"
+    },
+    {
+      "member": "awe-tool-intelligence/research/additional_sources.md",
+      "bytes": 28058,
+      "sha256": "58d7c664470259b9eee86db29487b3c87c0e1ece5ff3d718f6c306e7ba9081fa"
+    },
+    {
+      "member": "awe-tool-intelligence/research/iirepresent_research.json",
+      "bytes": 29986,
+      "sha256": "d9a92040520354083a88449c88fce7b7e95ecfa027f8e2ff7846be472f763c3f"
+    },
+    {
+      "member": "awe-tool-intelligence/research/iirepresent_research.md",
+      "bytes": 18280,
+      "sha256": "21f6210ec0b99fc0176088e1a87d098a15a7b1b8f56abdf693623a3ef85dde94"
+    },
+    {
+      "member": "awe-tool-intelligence/research/live_stack_resources.jsonl",
+      "bytes": 6869,
+      "sha256": "57c2c24a0fcd5e0752b2554db3baa7ad767ae35d0d21e0fc6473826129719177"
+    },
+    {
+      "member": "awe-tool-intelligence/research/sachkov_blog_research.json",
+      "bytes": 33280,
+      "sha256": "720682ab4d93f73f83f0dc9fd24b5ba7514efddefe536e4a974fd0f7594133e7"
+    },
+    {
+      "member": "awe-tool-intelligence/research/sachkov_blog_research.md",
+      "bytes": 17730,
+      "sha256": "8f14286a691be5ae7ecb47a9ec1495e70cd203288ba704bf8352c1cdb2d6b85e"
+    },
+    {
+      "member": "awe-tool-intelligence/research/telegram_access.md",
+      "bytes": 3891,
+      "sha256": "b920587caf62d1217190de5546768fdf3e23df2ce210870e50b4ebad08326ff0"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/build_stack_records.py",
+      "bytes": 2720,
+      "sha256": "41d9b771404bce87983996761816d097feab3dc9dadb6df78ab444cb60a1520b"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/collect_history.py",
+      "bytes": 3515,
+      "sha256": "b2318897dc90286c4c13868a4127a3c016259ce954b869699bedbdca8a24dd12"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/export_reports.py",
+      "bytes": 6607,
+      "sha256": "83579d72ebb62e58e1fc239848d774a9af84d5de3e4bbfb3b96784f0a8f02e0c"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/intelligence_tick.py",
+      "bytes": 1938,
+      "sha256": "ca5ea4d0a238c771e5b5eb40f25dcb1f8bbda4edc454562357bd4df6e95690bf"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/live_api.py",
+      "bytes": 2975,
+      "sha256": "9800ccf03266b758834b62f8ea8ae6ef806496ff5a32ead2822b50f1074c11eb"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/live_backup.py",
+      "bytes": 2531,
+      "sha256": "63eded3b92869c9a8427e36b9dbc35fcf9d2fd3fa7fee97b2568e416530d49db"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/live_pipeline.py",
+      "bytes": 3184,
+      "sha256": "a3c4f22f1076e13f4c5ab2a38bb5be2a10ccd6327d3330196fc205e2be312440"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/live_semantic.py",
+      "bytes": 2504,
+      "sha256": "6ed9197952ca455727ce1930fc8543c5327ca29c23e1bf0d0942ac8881dcd250"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/live_stack.py",
+      "bytes": 4002,
+      "sha256": "5b3333092d132526308af5567cdef3341c688969c8c3aa7b472a65b17fad70fe"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/live_unstructured.py",
+      "bytes": 3262,
+      "sha256": "3e5dd38fd1e6646ced22551a1f784f7a491c80a89fc41731c254ae615edda8ef"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/package_delivery.py",
+      "bytes": 2994,
+      "sha256": "3d9b657b0084314ef5bc4461d665323fc1b02053514973118296e851554aaaad"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/register_unstructured_evidence.py",
+      "bytes": 3866,
+      "sha256": "5317501a9406921c62b253d799d00cae7e6449c25598d55be1ce1ea90727dd4d"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/register_verified_evidence.py",
+      "bytes": 4226,
+      "sha256": "1dddbf998896f8ef386cf49e4d9db7c5641ff9dad93d594dabd8660c6bfcadca"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/setup_semantic_model.py",
+      "bytes": 2478,
+      "sha256": "fac98143e3fbd2e33c1f59a663f9d3dee6a0f1f7b2400bfeef706030efb80493"
+    },
+    {
+      "member": "awe-tool-intelligence/scripts/setup_unstructured_sandbox.py",
+      "bytes": 1606,
+      "sha256": "2dd8820f880b634c8673797fae1238bbc5c9e61cb2f0a89a75352663d15ac559"
+    },
+    {
+      "member": "awe-tool-intelligence/semantic-model-lock.json",
+      "bytes": 919,
+      "sha256": "3b6bba46968bbb310d797ddc55550be5cd01b6a55f2eefb2f8adb67b81bee707"
+    },
+    {
+      "member": "awe-tool-intelligence/tests/conftest.py",
+      "bytes": 816,
+      "sha256": "85a0a3affe7470839a486eda546fe2d248ac717fb4a293b02037128463c74822"
+    },
+    {
+      "member": "awe-tool-intelligence/tests/test_collectors.py",
+      "bytes": 14209,
+      "sha256": "9810a9678a1bc129fb0d12e510e69827f529da63e2fd53b9261a018eaf0587b7"
+    },
+    {
+      "member": "awe-tool-intelligence/tests/test_core_postgres.py",
+      "bytes": 11055,
+      "sha256": "1e7c17a08177478a5c0113b4d6fb4d92d091e24d406c1a84161986e4d8728dc5"
+    },
+    {
+      "member": "awe-tool-intelligence/tests/test_core_unit.py",
+      "bytes": 5724,
+      "sha256": "c58ac52a623af9082c28410980b578be096c6bf90f9b58dcd31290d12151b0d3"
+    },
+    {
+      "member": "awe-tool-intelligence/tests/test_core_worker.py",
+      "bytes": 3230,
+      "sha256": "3acf734aa3fc18c5abf12cbb362fbd1d04cc59c0fdda43b6d2151b5e9ff2df2e"
+    },
+    {
+      "member": "awe-tool-intelligence/tests/test_intelligence.py",
+      "bytes": 5833,
+      "sha256": "4ddef7792ff4a23f6f36d9280754a03fd8e2d2c706369526a456e96252245792"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-stack.json",
+      "bytes": 1569,
+      "sha256": "5713929c5116bd4c1c3343bf48431aa10edb3559b348d63457396f05555ae4e7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-semantic.json",
+      "bytes": 1328,
+      "sha256": "b4e875d9c768f6d695d6675d2f18cfe96985958acae6b71d57e647839892d403"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-pipeline.json",
+      "bytes": 632,
+      "sha256": "6b58bb2141f20f602bcc9fd31f8ed6c98bee3389e817d8228da26233d621c636"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-beautifulsoup4.json",
+      "bytes": 478,
+      "sha256": "bddd0b8f432cf195c6488d65efa705cd78692736c0d99b7c1eefddc0e1f17c1b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-fastapi.json",
+      "bytes": 435,
+      "sha256": "d78e84f21379d9789a575aa9acdafa00a0cbfec2ad7cc01d7847acb635cf6c63"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-psycopg.json",
+      "bytes": 552,
+      "sha256": "ca5ccadf4fc6280a5a49375551547255b0f9d03f26cd77922320fc0a989f3d27"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-api.json",
+      "bytes": 1250,
+      "sha256": "7788bafbce29a2db1dbfd65c29ce29dc32ef7dd4f1c345e3cf1faf6eec253ff7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-backup.json",
+      "bytes": 1041,
+      "sha256": "7f05bdf1821f1dde9d370e67047b2f41dc2991526795e42e410aa6829ceca9e3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-unstructured.json",
+      "bytes": 991,
+      "sha256": "076f0dd93e40ce91ccbc35ed64181975b908780eababd268b30b598f94bff197"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-unstructured-initial-blocked.json",
+      "bytes": 716,
+      "sha256": "88ed5728fd97683a061e2217f4f712cacdc47bcb4b21ee7520a6a5f29a0390ac"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-stack.log",
+      "bytes": 1844,
+      "sha256": "0c348708a82220361fe74c16a51b310a08dec7c4f4dd10013d0551eca9ab8797"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-semantic.log",
+      "bytes": 1328,
+      "sha256": "b4e875d9c768f6d695d6675d2f18cfe96985958acae6b71d57e647839892d403"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-pipeline.log",
+      "bytes": 632,
+      "sha256": "6b58bb2141f20f602bcc9fd31f8ed6c98bee3389e817d8228da26233d621c636"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-api.log",
+      "bytes": 1250,
+      "sha256": "7788bafbce29a2db1dbfd65c29ce29dc32ef7dd4f1c345e3cf1faf6eec253ff7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-backup.log",
+      "bytes": 1103,
+      "sha256": "a46a6f5c898dc4055216da05f6b21a3bbd7c96068a1866921ce3c13bedd4060a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live-unstructured.log",
+      "bytes": 1256,
+      "sha256": "e82c227d47bf0c9acc01bc017e01523bd9b20acbd63fd9413ea36c0fb3aa8301"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/pytest-final.log",
+      "bytes": 99,
+      "sha256": "69c4a02ba27dce1effcc7a0f05816536fa949c246206a6cdb9f15ab63ca1b3c3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/git-secret-scan.json",
+      "bytes": 104,
+      "sha256": "feceea848ef099149cd22b44d39c7ef820caf1adf40548186be28aaac92f1cd7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/registered-evidence.json",
+      "bytes": 1353,
+      "sha256": "1f8af3403eca6a93e01a784c7b6d93b0be6af814021664a935cf31d21fefbb1e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/semantic-model.json",
+      "bytes": 1213,
+      "sha256": "32922a2bc620de68dad2a551b7cdb7bab416712842b1884e7a6b61012203256b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/intelligence-tick.json",
+      "bytes": 1003,
+      "sha256": "72f009cf2cc542376e3836922b60c63fe1fcf6649309e11c5b5ede05f616ea52"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/verification-queue.json",
+      "bytes": 2003,
+      "sha256": "97f552e0fe044e22742037009edc97db4443ab400903622c4b3379f296d1c9ad"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/source-evaluation.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/coverage/sachkov_blog.json",
+      "bytes": 1235,
+      "sha256": "31231f3f61f5cd3c1f97de2e713079d6803512937f6e7ab909df60c12eca2e91"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/coverage/iirepresent.json",
+      "bytes": 1212,
+      "sha256": "d86971f8405cc35815fc599f04e4b78be6539960127e2d7c3c0456efc92e2c91"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/coverage/GitHubRadar.json",
+      "bytes": 1214,
+      "sha256": "909690b55c1de392cd90cc2eaf647acd026ac201ba0cd2fca4fd7aa4290a6902"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/coverage/githubradar.json",
+      "bytes": 1257,
+      "sha256": "3b75e68eb137cdd78f92941fc00db695e4a2a9cdf183fff850088c4a1317245b"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/research_registry.jsonl",
+      "bytes": 19606354,
+      "sha256": "2da51063b9da385d97df3c61d8d0f3eb1125b159734f079367862fa8d1b2c1f4"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/research_registry.json",
+      "bytes": 24553214,
+      "sha256": "b654cc55ee906e88b235f61876231c305d2544ae8d422268fde5de8f14962c8b"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/approved_integration_registry.json",
+      "bytes": 231503,
+      "sha256": "0b52b843f77f21201d04999c9920d948c459f0024f8760ad94ecc3525038e367"
+    },
+    {
+      "member": "awe-tool-intelligence/exports/openapi.json",
+      "bytes": 37878,
+      "sha256": "8551672eff8dcfd8225274608a7a6afa7b1697e7821e71df208512e7226efc32"
+    },
+    {
+      "member": "awe-tool-intelligence/transfer/backup/registry.dump",
+      "bytes": 21205888,
+      "sha256": "2866fa604172c2a40548dd19ccf53fb352acedc950fce23ba20b9ccd80b9f6b6"
+    },
+    {
+      "member": "awe-tool-intelligence/transfer/backup/evidence.tar.gz",
+      "bytes": 37478473,
+      "sha256": "512fc534db25edad69b814a123644621a657ba3c76120c3ebe3f8bd92de3f14e"
+    },
+    {
+      "member": "awe-tool-intelligence/research/posts/iirepresent.jsonl",
+      "bytes": 14715144,
+      "sha256": "4efa3c1027e1d7f987ebc697d8a245d9303320eb015492546660222d9f257c09"
+    },
+    {
+      "member": "awe-tool-intelligence/research/posts/sachkov_blog.jsonl",
+      "bytes": 4578161,
+      "sha256": "573080444adf7cba8f86da16f21d51593a9500566b9c9aa6890c85d844fa204c"
+    },
+    {
+      "member": "awe-tool-intelligence/research/posts/GitHubRadar.jsonl",
+      "bytes": 21850682,
+      "sha256": "c1c463eb7a83b4037ae3ff261dbb7eaad4e2e46d6ad13b2af8e01cea76250179"
+    },
+    {
+      "member": "awe-tool-intelligence/research/posts/githubradar.jsonl",
+      "bytes": 21850682,
+      "sha256": "c1c463eb7a83b4037ae3ff261dbb7eaad4e2e46d6ad13b2af8e01cea76250179"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/postgres-install.log",
+      "bytes": 11575,
+      "sha256": "d5e30ca66fd899b6971c1fcf0e2b665a4047e30d4a146b4cabe41b5d5856f022"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/semantic-model-download.log",
+      "bytes": 1664,
+      "sha256": "c53bd01c24ada04f91046c6c6d05ec05b91718c67fc7c2bd5e0668a9efce417f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/ingest-GitHubRadar.json",
+      "bytes": 31299,
+      "sha256": "ec67ac256a9e79ca15b776889c7d74b078c5d4280284f01b08a2e7e937d6adec"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/ingest-iirepresent.json",
+      "bytes": 16216,
+      "sha256": "e2b33b7065625251b9a1ec186b720c51f46c1b8a185826ded9c4a13b09172762"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/ingest-sachkov_blog.json",
+      "bytes": 5534,
+      "sha256": "df95aa2ec8c56de96e1abbc6efe919c0bf7370e7a7d85976bc0a95bfe2323286"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/GitHubRadar_research.json.import.json",
+      "bytes": 71,
+      "sha256": "d338aaaa83a304e5f89cff3324992bbd7fe45ad408af130438a9833ab5d903d0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/iirepresent_research.json.import.json",
+      "bytes": 71,
+      "sha256": "c1b851d540e2e706501ffe2d8c592b597645da627748159b01a5e3defcede2f2"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/sachkov_blog_research.json.import.json",
+      "bytes": 71,
+      "sha256": "ce9f91a5d85d8b4a6667a4260c146ef1d50c352f18541cd3aca23ec0d012beb2"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/live_stack_resources.jsonl.import.json",
+      "bytes": 74,
+      "sha256": "a9affc44f922b62e4635243b2a5f34ee7ac2116001688a00a87bc479434cd578"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/intelligence-tick.log",
+      "bytes": 1003,
+      "sha256": "72f009cf2cc542376e3836922b60c63fe1fcf6649309e11c5b5ede05f616ea52"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/registered-evidence.log",
+      "bytes": 1353,
+      "sha256": "1f8af3403eca6a93e01a784c7b6d93b0be6af814021664a935cf31d21fefbb1e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/installed-beautifulsoup4.json",
+      "bytes": 432,
+      "sha256": "2282c0241d717606b874ed086266cee3c46112c02577acd5a02accc012c791ee"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/installed-fastapi.json",
+      "bytes": 419,
+      "sha256": "e6ffa0b193c4a800b8119ed359a08295eebbe7cb32ebec4393a9761e5b08c3e4"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/installed-psycopg.json",
+      "bytes": 434,
+      "sha256": "881ba073eb130c97e11a4c05829d88040fee70a030d6389f0b7772583b9c270b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/reingest-GitHubRadar.json",
+      "bytes": 31296,
+      "sha256": "c094ed842e426108521ae93bf4c852dcffebf7c9e9d5ff93af1125cbd077f80a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/reingest-iirepresent.json",
+      "bytes": 16213,
+      "sha256": "4fab8a2fa5c9ff03e7f6d14846adea7ae20c6ea606c212dd05db87ab3fa6615b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/reingest-sachkov_blog.json",
+      "bytes": 5533,
+      "sha256": "558ccb12ea45c34177ec1f26021936feed6ad318c420dee5540091871e998d81"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/api-server-test.log",
+      "bytes": 347,
+      "sha256": "7361120f9d672f56cfebde90dc66e29ad0f40382b4d039ecd216f798f0e46f79"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/export-final.log",
+      "bytes": 974,
+      "sha256": "3696345a7d0da241f2aa2546d2f0db5f851db763d51c8ac95792754aca83bfae"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/canonical-checkpoint.log",
+      "bytes": 1303,
+      "sha256": "a1beb14a70c6c0f8df9edbe2ca404bca6f3ba00b3c09b77b36396241d3547529"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/package-delivery.log",
+      "bytes": 894,
+      "sha256": "aea909bce07919cf041a7a0402be31dba9f747b45b43bc9a832ab03d80d4a037"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-version.txt",
+      "bytes": 8,
+      "sha256": "8105154d4fd13911a7a7a1a14af93c185e9bc6ff4e692961d57f03e973a74983"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-install.log",
+      "bytes": 24929,
+      "sha256": "c99b53da30dff8805933d38d7ec374d8140aec3e716dff189372399a030719cf"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-model-install.log",
+      "bytes": 869,
+      "sha256": "eb0e71f440508cd1434a5adb9b449215f1e2b55651370afeab25cf951d9bb1f9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-nlp-model.json",
+      "bytes": 704,
+      "sha256": "5edf591a0b826db4ac43522300c612d21592bfb1408d9855e19cb4d1e0209e26"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-mission-input.txt",
+      "bytes": 596,
+      "sha256": "cd6c2b852eaba40851c8634905233d1382ca69f6c4e6ee4a85fe4355a465971f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-mission-output.json",
+      "bytes": 6691,
+      "sha256": "26d60f21bcf807608f404a65331d0063aced3777dd2ddfaa35442ed1fa44ea99"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/unstructured-mission-source.json",
+      "bytes": 681,
+      "sha256": "097bc23be71370f33b167caaa5b5746d6e590db3003b8d4b903b65d3c6282f82"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/pypi/beautifulsoup4.json",
+      "bytes": 7099,
+      "sha256": "570f3af7e047d94524e60bc8bc32f31aedf2449f5585a09e3932935378665506"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/pypi/fastapi.json",
+      "bytes": 31508,
+      "sha256": "c2555960aa98ddafb7283be665437f13efabee93207bdbc1d2d23dcc231b6112"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/pypi/psycopg.json",
+      "bytes": 7495,
+      "sha256": "31a91ab266b88555c80fa6ae9c86c49372fce970a3b8f1dc8945a23de1dfdaec"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/pypi/unstructured.json",
+      "bytes": 518203,
+      "sha256": "9bccf384abc6cdab0b9cd6d475ca6aa25b5b6b31222a9884c5ad402571929d67"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/GitHubRadar.public.run.log",
+      "bytes": 22295,
+      "sha256": "a39c75bc3f2b2b400e50ca194a3627a045282f3b86798991d58502511a5241a3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/iirepresent.public.run.log",
+      "bytes": 13514,
+      "sha256": "461694610662d0bc214be81554420154052af7fdd66ab318b2e1269ca7865f61"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/sachkov_blog.public.run.log",
+      "bytes": 4929,
+      "sha256": "db9c2b3cb53d8f3fd68c61a2822a78a7d0700cc995f06cf3d1e89875f055a2da"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/GitHubRadar.public_web.requests.jsonl",
+      "bytes": 55508,
+      "sha256": "eed21541a892ca02403ae1a30507b55ef28f9576f1871f064fe8e5f4b1c6f475"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/sachkov_blog.public_web.requests.jsonl",
+      "bytes": 10970,
+      "sha256": "d8e09b3c79bb91698b717a0b3b39f7b75ba2eae801473ed6db183225dc0e7cc0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/iirepresent.public_web.requests.jsonl",
+      "bytes": 32862,
+      "sha256": "b5ed5b1348440c7776e27fc0f142f992c03633a1d3eb2189dff3d1725ffd101c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/collectors-tests.log",
+      "bytes": 2249,
+      "sha256": "14ebdae0275ada4f6105ce38ec4257432231e911a3a7842a52f236b734279c69"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/collectors-validation.json",
+      "bytes": 1335,
+      "sha256": "07a06d48808630ff9e6b0fbfc6eeeba55ab014e27c4f303b3e3d323c8060eb8c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/logs/public-resume-verification.log",
+      "bytes": 3782,
+      "sha256": "47c56e8f486effd170e836dc47a1616fe37daa4d0b92fb80f4d461be2ca42630"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/iirepresent.public_web.sqlite3",
+      "bytes": 32333824,
+      "sha256": "d88b048c954c4f91ed0365531e97ffc98acd5594777fe79681476d2d3a555ca5"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/sachkov_blog.public_web.sqlite3",
+      "bytes": 10641408,
+      "sha256": "583b13392710572c5e28f7d1792cc5e7b735c0fec8a514f47e0a058494a72fd1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/GitHubRadar.public_web.sqlite3",
+      "bytes": 53420032,
+      "sha256": "d24cb831d907fd547d140a1efc32a50510060441da64b2c3049480cad545b36b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/githubradar.public_web.sqlite3",
+      "bytes": 53420032,
+      "sha256": "f46520b422bb770a96c07d1a08dad21266e1e8f5cc79b6cdabde4a3e0dda28cf"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/GitHubRadar.collector.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/iirepresent.collector.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/sachkov_blog.collector.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/sachkov_blog.public_web.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/GitHubRadar.public_web.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/iirepresent.public_web.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/state/githubradar.collector.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/snapshots/iirepresent.public_web.jsonl",
+      "bytes": 14715144,
+      "sha256": "4efa3c1027e1d7f987ebc697d8a245d9303320eb015492546660222d9f257c09"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/snapshots/sachkov_blog.public_web.jsonl",
+      "bytes": 4915055,
+      "sha256": "d144324495540c64acda61bdc43c2332ee4ae2a96f95d822b7b4f1a4b10152e5"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/snapshots/GitHubRadar.public_web.jsonl",
+      "bytes": 21850682,
+      "sha256": "c1c463eb7a83b4037ae3ff261dbb7eaad4e2e46d6ad13b2af8e01cea76250179"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/snapshots/githubradar.public_web.jsonl",
+      "bytes": 21850682,
+      "sha256": "c1c463eb7a83b4037ae3ff261dbb7eaad4e2e46d6ad13b2af8e01cea76250179"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/mcp_registry/9b80da09032c8a39e6ac260e1ef051036f48b7183f5150ee444817b088450011.json",
+      "bytes": 120813,
+      "sha256": "bd01269baecd6fc1ccf45b3518f1407e862709f8faa3d273765d527e48404d23"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/mcp_registry/889aa80f5b70cf369dbdf0c5937c52e993b6ecf8d1919f74faed74f1cf468083.json",
+      "bytes": 121144,
+      "sha256": "5656f3c70522453e06392d0655337d3cb602859a2055d58d3b1f29f17beaa277"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/557f000e208d786137e77c25d8dd5aad1ea4f85690b45040eb7dad7b4e6ddadb.html",
+      "bytes": 132076,
+      "sha256": "557f000e208d786137e77c25d8dd5aad1ea4f85690b45040eb7dad7b4e6ddadb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c8389c6de3ae1f6b20a78df55328fde857180056b635696b5dda14297f5e6c9d.html",
+      "bytes": 123547,
+      "sha256": "c8389c6de3ae1f6b20a78df55328fde857180056b635696b5dda14297f5e6c9d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/29c4f23011fa1e535aa16ca8282b78498e1a0c483341afbd8b1a6dc8476b997b.html",
+      "bytes": 121960,
+      "sha256": "29c4f23011fa1e535aa16ca8282b78498e1a0c483341afbd8b1a6dc8476b997b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/dc48cf7310fbefc3de2317fc521f5f66a0b7383af42628fdb8528c7a5b61544b.html",
+      "bytes": 122717,
+      "sha256": "dc48cf7310fbefc3de2317fc521f5f66a0b7383af42628fdb8528c7a5b61544b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/38b0515a649e6f998abac1dc216d429516a7aae3b069dbce4e945a9ccaf655e9.html",
+      "bytes": 123850,
+      "sha256": "38b0515a649e6f998abac1dc216d429516a7aae3b069dbce4e945a9ccaf655e9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/cfc217b3cfdeea2a1473240cb14f1df8fe8c4431472b17a646b08cba88a1d3ed.html",
+      "bytes": 122253,
+      "sha256": "cfc217b3cfdeea2a1473240cb14f1df8fe8c4431472b17a646b08cba88a1d3ed"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1ec6031aecf78658082b28406e19215f58b52b861385b6fbc284051708d77bd5.html",
+      "bytes": 122994,
+      "sha256": "1ec6031aecf78658082b28406e19215f58b52b861385b6fbc284051708d77bd5"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/a09a836f92cc91a3f277ecde210d7b9b3a18072294a1cbc3c2064d90123fc43e.html",
+      "bytes": 122800,
+      "sha256": "a09a836f92cc91a3f277ecde210d7b9b3a18072294a1cbc3c2064d90123fc43e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ab9c4e6e55594c2bf3d5c6a9dffafefb3f386fae11389937e4386d44cdbfee69.html",
+      "bytes": 124285,
+      "sha256": "ab9c4e6e55594c2bf3d5c6a9dffafefb3f386fae11389937e4386d44cdbfee69"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/6dd00b599c94cc6069c96f83f7345104378b105d657370bea9b356e9bc122a36.html",
+      "bytes": 123965,
+      "sha256": "6dd00b599c94cc6069c96f83f7345104378b105d657370bea9b356e9bc122a36"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e18d11eb82d4dda0818a8d87c1e95208836acf37c76c6acda204481ceb7e9f11.html",
+      "bytes": 124343,
+      "sha256": "e18d11eb82d4dda0818a8d87c1e95208836acf37c76c6acda204481ceb7e9f11"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/81f9e6191827eaedbb58efae383c8fa111b84768e0ff05da638e3d19acf878d8.html",
+      "bytes": 124005,
+      "sha256": "81f9e6191827eaedbb58efae383c8fa111b84768e0ff05da638e3d19acf878d8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/de66224688ed75e6bbd5eaaf8ee2c3f85c1cedb71f1d3c6c1efbb67da2ff8042.html",
+      "bytes": 122115,
+      "sha256": "de66224688ed75e6bbd5eaaf8ee2c3f85c1cedb71f1d3c6c1efbb67da2ff8042"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e820ede47c08c6c358cd4f92ca26f575ca8bea0379da30f667c3d9c22c5cbfb8.html",
+      "bytes": 123162,
+      "sha256": "e820ede47c08c6c358cd4f92ca26f575ca8bea0379da30f667c3d9c22c5cbfb8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1fe9f35615698c75bffa6cb2c3bb7f996ab0758097167e109831232ce6688860.html",
+      "bytes": 121523,
+      "sha256": "1fe9f35615698c75bffa6cb2c3bb7f996ab0758097167e109831232ce6688860"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5499d76fd220e77a1361b67701f014fa9076494da0b426c340b6e123e80d74fe.html",
+      "bytes": 122069,
+      "sha256": "5499d76fd220e77a1361b67701f014fa9076494da0b426c340b6e123e80d74fe"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/b9c1e9b0551eb61387765e7275a4180256b27e65a1ee7fcb45356cc286f150d2.html",
+      "bytes": 120960,
+      "sha256": "b9c1e9b0551eb61387765e7275a4180256b27e65a1ee7fcb45356cc286f150d2"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/82f8c97e0c65774086331b8ae2c7551113d0bca89598c154ec99ade0647f279b.html",
+      "bytes": 112668,
+      "sha256": "82f8c97e0c65774086331b8ae2c7551113d0bca89598c154ec99ade0647f279b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/6d90270ae2a6fdb98368805f0c5716bcd4b29237a23daed993fd77df99498d39.html",
+      "bytes": 123529,
+      "sha256": "6d90270ae2a6fdb98368805f0c5716bcd4b29237a23daed993fd77df99498d39"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9364a699d887730158bd5a7639b18ef526219450d4ce15de44476e2f98adc8ab.html",
+      "bytes": 121310,
+      "sha256": "9364a699d887730158bd5a7639b18ef526219450d4ce15de44476e2f98adc8ab"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/b705e88279e3bab02faffd957661a37d418920886c9963d857adbf48123674ed.html",
+      "bytes": 124075,
+      "sha256": "b705e88279e3bab02faffd957661a37d418920886c9963d857adbf48123674ed"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/de9ac008503b12d8db499689aca2554b82cb2223c741ef2d11627f72dcdbf485.html",
+      "bytes": 123686,
+      "sha256": "de9ac008503b12d8db499689aca2554b82cb2223c741ef2d11627f72dcdbf485"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/87478825c2611607295c5605aadb4e1511dfa649736f8e6e6690845cd72d80ac.html",
+      "bytes": 123280,
+      "sha256": "87478825c2611607295c5605aadb4e1511dfa649736f8e6e6690845cd72d80ac"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/6188a5a6ad164eb4839fca2802ad0ac361cc534efba66f998b63c2e15cd564f8.html",
+      "bytes": 124545,
+      "sha256": "6188a5a6ad164eb4839fca2802ad0ac361cc534efba66f998b63c2e15cd564f8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/98efa69af6c3ece2eafbbf71363ae68687e76224390748359a5686507946575f.html",
+      "bytes": 124430,
+      "sha256": "98efa69af6c3ece2eafbbf71363ae68687e76224390748359a5686507946575f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4c033aac097355d4de2f6113344280c230f2e74beb79fe041d11cc1a953e7c99.html",
+      "bytes": 126143,
+      "sha256": "4c033aac097355d4de2f6113344280c230f2e74beb79fe041d11cc1a953e7c99"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9d4fc1011b66b7e18f2a8c2f775c9079c0832cf2f38f293b0d52832cd2f28eaf.html",
+      "bytes": 124203,
+      "sha256": "9d4fc1011b66b7e18f2a8c2f775c9079c0832cf2f38f293b0d52832cd2f28eaf"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/907fbb0549308c878ca216eb64ef7ffec1541f499a4211dac63acc32847f42c7.html",
+      "bytes": 126992,
+      "sha256": "907fbb0549308c878ca216eb64ef7ffec1541f499a4211dac63acc32847f42c7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/160d4b125b6f3db3b0501bceb2e095b9275d5f1909721d3c3db59b232177a8ee.html",
+      "bytes": 124386,
+      "sha256": "160d4b125b6f3db3b0501bceb2e095b9275d5f1909721d3c3db59b232177a8ee"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9709e4f614175f6ebf91618eb8448396e3e0fa1a39dffe174ffbeb5e7aea58a5.html",
+      "bytes": 125294,
+      "sha256": "9709e4f614175f6ebf91618eb8448396e3e0fa1a39dffe174ffbeb5e7aea58a5"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/97345b25b907229365f0f4f22dff2957c060d9b7118b04e9df189ccd70a33589.html",
+      "bytes": 122999,
+      "sha256": "97345b25b907229365f0f4f22dff2957c060d9b7118b04e9df189ccd70a33589"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9199bafc6043002c7a0cc88dfe9710a9c63a7cb2a0c4e0b2f9d08d74a7026753.html",
+      "bytes": 126317,
+      "sha256": "9199bafc6043002c7a0cc88dfe9710a9c63a7cb2a0c4e0b2f9d08d74a7026753"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4031f50cf47d4c482c70bbe327e49d4bbf79833aba1f0c253b159c1b687bf8c4.html",
+      "bytes": 126842,
+      "sha256": "4031f50cf47d4c482c70bbe327e49d4bbf79833aba1f0c253b159c1b687bf8c4"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1bb509a154a6495e4c20465559bdb2de5430ceafa54a89bc76f5bc73dff39cba.html",
+      "bytes": 123348,
+      "sha256": "1bb509a154a6495e4c20465559bdb2de5430ceafa54a89bc76f5bc73dff39cba"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/97cbfacd70b36d6696458d31da347328e43bf2df11eae906aaee6a4b0299c3fb.html",
+      "bytes": 123072,
+      "sha256": "97cbfacd70b36d6696458d31da347328e43bf2df11eae906aaee6a4b0299c3fb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/d311613629535b3afafa32b7fbf8d0f0b76f2e95488b8322ddd839b61571db08.html",
+      "bytes": 125398,
+      "sha256": "d311613629535b3afafa32b7fbf8d0f0b76f2e95488b8322ddd839b61571db08"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4e14971418b17582ccb130d643d43d936f7a0eb7e658112a478a03bc056dc649.html",
+      "bytes": 126015,
+      "sha256": "4e14971418b17582ccb130d643d43d936f7a0eb7e658112a478a03bc056dc649"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5fe091fb9e77d098af06799fd48f2940757211b7d67eec564f3d1a2a8e999183.html",
+      "bytes": 125520,
+      "sha256": "5fe091fb9e77d098af06799fd48f2940757211b7d67eec564f3d1a2a8e999183"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/f2d0876e78a903b64227a0b9c65aa66ed767a7868c450b63189139e24800013b.html",
+      "bytes": 124676,
+      "sha256": "f2d0876e78a903b64227a0b9c65aa66ed767a7868c450b63189139e24800013b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c80953aadf6780285d165ad29b5563fa69561091d2e7dc917f9c3c842912073a.html",
+      "bytes": 125332,
+      "sha256": "c80953aadf6780285d165ad29b5563fa69561091d2e7dc917f9c3c842912073a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c8152bc1d152e58dd01bcdad55f7552b925ef12e069b62bc479d121db074a80f.html",
+      "bytes": 125308,
+      "sha256": "c8152bc1d152e58dd01bcdad55f7552b925ef12e069b62bc479d121db074a80f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ab98c3b0ea1a42bbee764ca6f3d6439b265ca18a6c4cd56675966518875ef594.html",
+      "bytes": 123022,
+      "sha256": "ab98c3b0ea1a42bbee764ca6f3d6439b265ca18a6c4cd56675966518875ef594"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5b17664c68af53d7862aae75b60bbe477bf316eee9f5ddc58e984f8f7783fa7c.html",
+      "bytes": 124065,
+      "sha256": "5b17664c68af53d7862aae75b60bbe477bf316eee9f5ddc58e984f8f7783fa7c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/f5be2f07fc7e4c0468167629ee10d0442e28ec0248bf434e4afa28fe776b59f1.html",
+      "bytes": 123585,
+      "sha256": "f5be2f07fc7e4c0468167629ee10d0442e28ec0248bf434e4afa28fe776b59f1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/765f24fed950a4efd69d92cf65bedf7476e030711665ce261577ca42c1e4fa64.html",
+      "bytes": 125953,
+      "sha256": "765f24fed950a4efd69d92cf65bedf7476e030711665ce261577ca42c1e4fa64"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4ba77bd3bb988a2c2a27112f6a2f003937b27600f662701d89abed75b6f6d704.html",
+      "bytes": 127497,
+      "sha256": "4ba77bd3bb988a2c2a27112f6a2f003937b27600f662701d89abed75b6f6d704"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/cd4082aeba3e81134f3b20e58cfd14004c3bb683992563dfd1f6153ef1937651.html",
+      "bytes": 123849,
+      "sha256": "cd4082aeba3e81134f3b20e58cfd14004c3bb683992563dfd1f6153ef1937651"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/3beb93aac6dbffe07542841ca64472c044a446fa6b5a1adac94b207778a27c7b.html",
+      "bytes": 122743,
+      "sha256": "3beb93aac6dbffe07542841ca64472c044a446fa6b5a1adac94b207778a27c7b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/6bb2d91b98e4f04a741fd02ff3650c7edbb3303f40ef392e5a4f43893941c19e.html",
+      "bytes": 123698,
+      "sha256": "6bb2d91b98e4f04a741fd02ff3650c7edbb3303f40ef392e5a4f43893941c19e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/0562b32893bbc53d6198800e8b0d3e289ba9e956e936b387f30786496cd12b40.html",
+      "bytes": 124260,
+      "sha256": "0562b32893bbc53d6198800e8b0d3e289ba9e956e936b387f30786496cd12b40"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/44e123fc444907d08e6c57308fc2a27d5bf69aaecf3ad534c093d710192c72ca.html",
+      "bytes": 126084,
+      "sha256": "44e123fc444907d08e6c57308fc2a27d5bf69aaecf3ad534c093d710192c72ca"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e78354c19c752e311df639ab08a395fb9a560bca4e696c0b430270376dbfadf7.html",
+      "bytes": 125357,
+      "sha256": "e78354c19c752e311df639ab08a395fb9a560bca4e696c0b430270376dbfadf7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9a9af9a942da9d89a1329c608e9de4d04d28c7bfbbda6762ac38e557af87e36b.html",
+      "bytes": 123627,
+      "sha256": "9a9af9a942da9d89a1329c608e9de4d04d28c7bfbbda6762ac38e557af87e36b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e754206b595aab2c56500f6ac7e7e0496a657d3e1d22c184ad61aa71e8c8463d.html",
+      "bytes": 125452,
+      "sha256": "e754206b595aab2c56500f6ac7e7e0496a657d3e1d22c184ad61aa71e8c8463d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5e79e26dbf7430e0cdf53bb39cfbbc679179ffc7772773cc1189b2e625255440.html",
+      "bytes": 121443,
+      "sha256": "5e79e26dbf7430e0cdf53bb39cfbbc679179ffc7772773cc1189b2e625255440"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/d63aa0e0a46b360764db7cdfd5fdbc2092d3dc12e936a630231bfde29cf6cac6.html",
+      "bytes": 123723,
+      "sha256": "d63aa0e0a46b360764db7cdfd5fdbc2092d3dc12e936a630231bfde29cf6cac6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9f058da78068d3a9eb9b132ed7888a547bf640c056bd184fb711e4a71809db26.html",
+      "bytes": 120697,
+      "sha256": "9f058da78068d3a9eb9b132ed7888a547bf640c056bd184fb711e4a71809db26"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/7e0e2e35093bdb1ee4f4314bec0f76c39551c1e652b49626d1fad9668f80bffe.html",
+      "bytes": 119149,
+      "sha256": "7e0e2e35093bdb1ee4f4314bec0f76c39551c1e652b49626d1fad9668f80bffe"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/014f540de66bd1ecbd4851931553f152c5e65b84a45baf893ec2a7c55a83cf45.html",
+      "bytes": 118606,
+      "sha256": "014f540de66bd1ecbd4851931553f152c5e65b84a45baf893ec2a7c55a83cf45"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/eba71e6c86957c79a6c173aefe06e9e9922c093ab3b161052ce2f0265a24db40.html",
+      "bytes": 117837,
+      "sha256": "eba71e6c86957c79a6c173aefe06e9e9922c093ab3b161052ce2f0265a24db40"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ad28b8f731b22fcd6c4401f36c06ee525076ac9c29507eebf6619ee5135d6860.html",
+      "bytes": 119400,
+      "sha256": "ad28b8f731b22fcd6c4401f36c06ee525076ac9c29507eebf6619ee5135d6860"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ed04c284fccb718842a0729f87f1c495832dd5d851ad83bb80ef12976d51c22b.html",
+      "bytes": 119126,
+      "sha256": "ed04c284fccb718842a0729f87f1c495832dd5d851ad83bb80ef12976d51c22b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/87abddff1e8180a1152d3c2c8d1c39978c97ded1f132536b7811f27d747b8015.html",
+      "bytes": 116313,
+      "sha256": "87abddff1e8180a1152d3c2c8d1c39978c97ded1f132536b7811f27d747b8015"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/73fa30cc890574075659e2330b7245f98fbddb9d3e3971c05e8a4441b2ab49bd.html",
+      "bytes": 114697,
+      "sha256": "73fa30cc890574075659e2330b7245f98fbddb9d3e3971c05e8a4441b2ab49bd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e892f757e792da80455c879e84d87f2a0f127fe6e0cdecb730e706b7346682a8.html",
+      "bytes": 115118,
+      "sha256": "e892f757e792da80455c879e84d87f2a0f127fe6e0cdecb730e706b7346682a8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/a9efad34bd82e0cdf15c9bf3e656f8b522689e27e0252423261187d792e22f40.html",
+      "bytes": 120782,
+      "sha256": "a9efad34bd82e0cdf15c9bf3e656f8b522689e27e0252423261187d792e22f40"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/b17fd16ec90742cb726379b996fbc7d42e86893a6f0e01ef82dae2f8e2e48a1f.html",
+      "bytes": 116253,
+      "sha256": "b17fd16ec90742cb726379b996fbc7d42e86893a6f0e01ef82dae2f8e2e48a1f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/a68e7a339829c126f3f719bbf2848249cf2328b82306d95780d193f462489a7a.html",
+      "bytes": 115216,
+      "sha256": "a68e7a339829c126f3f719bbf2848249cf2328b82306d95780d193f462489a7a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/7f8755839e01c8e7bd589c9813eb50e1c01806b0103a321a98c9271d969328e0.html",
+      "bytes": 116366,
+      "sha256": "7f8755839e01c8e7bd589c9813eb50e1c01806b0103a321a98c9271d969328e0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/2bfb752246d1ec5e5a66ae542df20a2960888f71b84c38dcdda952541bc58f03.html",
+      "bytes": 119090,
+      "sha256": "2bfb752246d1ec5e5a66ae542df20a2960888f71b84c38dcdda952541bc58f03"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/38f3d1b06234479a4d3fe60ae95d2965273b2c852925d405883ffdf77bd7ebe1.html",
+      "bytes": 117903,
+      "sha256": "38f3d1b06234479a4d3fe60ae95d2965273b2c852925d405883ffdf77bd7ebe1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/8c0b1f3a44ba18aba9cb4c47cace3f37fbe2cbf31d759240e77ffab178ba5262.html",
+      "bytes": 115267,
+      "sha256": "8c0b1f3a44ba18aba9cb4c47cace3f37fbe2cbf31d759240e77ffab178ba5262"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/b733bc51a02fb86bdef6e8f65c269c27912b8a1ac0cb47b1f812a8fbb0ee16e7.html",
+      "bytes": 115991,
+      "sha256": "b733bc51a02fb86bdef6e8f65c269c27912b8a1ac0cb47b1f812a8fbb0ee16e7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ec6a703fa42befb793565492b1b6cc13cfe6989189954cf5d2e43443008e3cbe.html",
+      "bytes": 116943,
+      "sha256": "ec6a703fa42befb793565492b1b6cc13cfe6989189954cf5d2e43443008e3cbe"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/92c08457ad59a57a82e9d3d3ccb367a0c2fd265ad1e8e63c2db9c92c59a13498.html",
+      "bytes": 115728,
+      "sha256": "92c08457ad59a57a82e9d3d3ccb367a0c2fd265ad1e8e63c2db9c92c59a13498"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ea80a7ec32cabd961c1a67313cce53fdebdc2be85eb79dca83e1fcaf94d39d9d.html",
+      "bytes": 116837,
+      "sha256": "ea80a7ec32cabd961c1a67313cce53fdebdc2be85eb79dca83e1fcaf94d39d9d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/8004daac5e622af4be4e3098cbf4431fc749608c12a14c53c188a195a45a9f18.html",
+      "bytes": 118162,
+      "sha256": "8004daac5e622af4be4e3098cbf4431fc749608c12a14c53c188a195a45a9f18"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/bdf4e053566c7a5b34407a83f2a6a4171a1eb0112914524f1b2fed7bd6cbfed6.html",
+      "bytes": 115907,
+      "sha256": "bdf4e053566c7a5b34407a83f2a6a4171a1eb0112914524f1b2fed7bd6cbfed6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/b01ba40b89388bc4185713cf39c91b84c56e5a2c163c4dc31ebf3745edc4abf0.html",
+      "bytes": 114360,
+      "sha256": "b01ba40b89388bc4185713cf39c91b84c56e5a2c163c4dc31ebf3745edc4abf0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/86e59f754cb6361abd60d71f8e7759c57eb1967878e372f195e5417579224653.html",
+      "bytes": 115726,
+      "sha256": "86e59f754cb6361abd60d71f8e7759c57eb1967878e372f195e5417579224653"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c3f845e8e4164c992673dc76df746f4600073fa6ec0a298d867b57364e6dff16.html",
+      "bytes": 115007,
+      "sha256": "c3f845e8e4164c992673dc76df746f4600073fa6ec0a298d867b57364e6dff16"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/389d53a47bb73ac895f7ec0cd1ae636deb1e9d846ea99f8d107306630f0a242a.html",
+      "bytes": 114898,
+      "sha256": "389d53a47bb73ac895f7ec0cd1ae636deb1e9d846ea99f8d107306630f0a242a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9a5c7a5ce8a40cddf32ef58940b4069b61156e605ea8d52abe4072b789808783.html",
+      "bytes": 114121,
+      "sha256": "9a5c7a5ce8a40cddf32ef58940b4069b61156e605ea8d52abe4072b789808783"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/87a63143506af2fd7120a69ebeaf2ca1563d676452d46dfd82018fc8186b2896.html",
+      "bytes": 116368,
+      "sha256": "87a63143506af2fd7120a69ebeaf2ca1563d676452d46dfd82018fc8186b2896"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/6e49b6c91d2fecfd00849a6238a2265fbecd2fb084c6328859ee0482cca1df62.html",
+      "bytes": 113723,
+      "sha256": "6e49b6c91d2fecfd00849a6238a2265fbecd2fb084c6328859ee0482cca1df62"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/2b6a901ea21557880529ab5603dc782b303b9356b4bfd41ea99368cb197bfb7e.html",
+      "bytes": 113712,
+      "sha256": "2b6a901ea21557880529ab5603dc782b303b9356b4bfd41ea99368cb197bfb7e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e89cb0fcef8ffe07b2cff3adc926b501aed2df7a933b6a6020fb55fd9c353325.html",
+      "bytes": 114630,
+      "sha256": "e89cb0fcef8ffe07b2cff3adc926b501aed2df7a933b6a6020fb55fd9c353325"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/f4c3ef34ededf2935a29611f927a66c1824a796d41c39851dd0143f1d872ed8b.html",
+      "bytes": 113657,
+      "sha256": "f4c3ef34ededf2935a29611f927a66c1824a796d41c39851dd0143f1d872ed8b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c6ee8bd3cbe61d9d841f986bc1e5dc9ad0acf2ca9ccf0019a2e59f699719e9e4.html",
+      "bytes": 115149,
+      "sha256": "c6ee8bd3cbe61d9d841f986bc1e5dc9ad0acf2ca9ccf0019a2e59f699719e9e4"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1b22ad127c9f9fdbbcea045de1c8734df1fb94cd687c8723324e6a9214f744c9.html",
+      "bytes": 114152,
+      "sha256": "1b22ad127c9f9fdbbcea045de1c8734df1fb94cd687c8723324e6a9214f744c9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/0b6a14be3b1aa3e6f6c6522b34593724295d720afad330b34c25c2454dc1ccc8.html",
+      "bytes": 113267,
+      "sha256": "0b6a14be3b1aa3e6f6c6522b34593724295d720afad330b34c25c2454dc1ccc8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/dd5cd707e140901d6135ef83f179a2a79064c7786a39ed16c554dd74421a3211.html",
+      "bytes": 115442,
+      "sha256": "dd5cd707e140901d6135ef83f179a2a79064c7786a39ed16c554dd74421a3211"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/2630abf92aedd9f4f05491753805c0a2f4de5781868f2644322b700b3bbcf87a.html",
+      "bytes": 114559,
+      "sha256": "2630abf92aedd9f4f05491753805c0a2f4de5781868f2644322b700b3bbcf87a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/57309fabdb9abe1ace3e9d3201202f55a17100f1157c51b8a10200846c7b1ba9.html",
+      "bytes": 114683,
+      "sha256": "57309fabdb9abe1ace3e9d3201202f55a17100f1157c51b8a10200846c7b1ba9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/8bfe689b944e325d06bacc05dad8ff34d7394e4f128b49c0385c57d06060f8bc.html",
+      "bytes": 113804,
+      "sha256": "8bfe689b944e325d06bacc05dad8ff34d7394e4f128b49c0385c57d06060f8bc"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/8510549737f995ee40a06cfa97e43e1ffbfab3eed30318e54d7aafd115741fbe.html",
+      "bytes": 119942,
+      "sha256": "8510549737f995ee40a06cfa97e43e1ffbfab3eed30318e54d7aafd115741fbe"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/255ac9e85f24771ed71c457f9566f89123848a955f423fae6678153c581230d3.html",
+      "bytes": 118415,
+      "sha256": "255ac9e85f24771ed71c457f9566f89123848a955f423fae6678153c581230d3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/a8b29e1dcd8d8454dc229eb5b8c26412ce5736e7f071ef0b01e43e416367b4c6.html",
+      "bytes": 116217,
+      "sha256": "a8b29e1dcd8d8454dc229eb5b8c26412ce5736e7f071ef0b01e43e416367b4c6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/bdd2aee3203da78db9b9b7bb0c3786510853c214a70cf427864920609a9629e1.html",
+      "bytes": 114829,
+      "sha256": "bdd2aee3203da78db9b9b7bb0c3786510853c214a70cf427864920609a9629e1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/05bccc7a09783503a8a9c22b8aa7c3923a77a361f4e03a0b9d18f6d60fb1a31e.html",
+      "bytes": 114324,
+      "sha256": "05bccc7a09783503a8a9c22b8aa7c3923a77a361f4e03a0b9d18f6d60fb1a31e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/b8763b7da2dca3584e0d07e0977ae904151183168467a79db3fe98e19207b8b7.html",
+      "bytes": 114467,
+      "sha256": "b8763b7da2dca3584e0d07e0977ae904151183168467a79db3fe98e19207b8b7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c19b16552f7345aafb3f675a07f2279efd55ca3b72933a768411022cca2c2db8.html",
+      "bytes": 114823,
+      "sha256": "c19b16552f7345aafb3f675a07f2279efd55ca3b72933a768411022cca2c2db8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/67ca48f16edb02f456a91f035c2913bcd94ef04a411c3d69d4ac858039424e9e.html",
+      "bytes": 113668,
+      "sha256": "67ca48f16edb02f456a91f035c2913bcd94ef04a411c3d69d4ac858039424e9e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5828dc9873367ae3c9552d92c40e527ed9c7715d9cc4d8f14b5b609b5e6c3208.html",
+      "bytes": 114085,
+      "sha256": "5828dc9873367ae3c9552d92c40e527ed9c7715d9cc4d8f14b5b609b5e6c3208"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/560e105aa37d7a13c91db69f2e926ca35249207cebdc4e2ddcc05f577ef631fe.html",
+      "bytes": 112943,
+      "sha256": "560e105aa37d7a13c91db69f2e926ca35249207cebdc4e2ddcc05f577ef631fe"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c1fb85894066c3f7d82b5b905004d2daece89675940b0906c946c3a9fcc5942a.html",
+      "bytes": 114151,
+      "sha256": "c1fb85894066c3f7d82b5b905004d2daece89675940b0906c946c3a9fcc5942a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/e9729cce855d07800bc86c1402b5621ea987e93850ab8cc091733c8d5f33896c.html",
+      "bytes": 114232,
+      "sha256": "e9729cce855d07800bc86c1402b5621ea987e93850ab8cc091733c8d5f33896c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/08e46c196c8412a2ad3193c62909137c24d1a6df4893a25fd9d7aa00c8e75aea.html",
+      "bytes": 113488,
+      "sha256": "08e46c196c8412a2ad3193c62909137c24d1a6df4893a25fd9d7aa00c8e75aea"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/d7ad56c4608c572b613cc2cde925ac786ad3a899333d9239440da458e987a65c.html",
+      "bytes": 114277,
+      "sha256": "d7ad56c4608c572b613cc2cde925ac786ad3a899333d9239440da458e987a65c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/d60b1cd7536c28bf3451c281bfc20fadd2a41555513c25dadaab69bc73f3cef7.html",
+      "bytes": 115122,
+      "sha256": "d60b1cd7536c28bf3451c281bfc20fadd2a41555513c25dadaab69bc73f3cef7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c3d78a81b31730e7fcc7e3ebc00cebee8dd23883afb4cdc3a3f0756b3830d76c.html",
+      "bytes": 113179,
+      "sha256": "c3d78a81b31730e7fcc7e3ebc00cebee8dd23883afb4cdc3a3f0756b3830d76c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9d1d7699c0925aaaac44e447d8ea2fb0961b338cbe6135aeffe6248441786d14.html",
+      "bytes": 114128,
+      "sha256": "9d1d7699c0925aaaac44e447d8ea2fb0961b338cbe6135aeffe6248441786d14"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/68d08b8769a68dd183f5deeb6f42fd0e250827c7a66736e17a44dd1a5beb5b65.html",
+      "bytes": 112949,
+      "sha256": "68d08b8769a68dd183f5deeb6f42fd0e250827c7a66736e17a44dd1a5beb5b65"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/8784231eac552e690222d37036f8659306cee6cf3a7c2c0de52103ccd2d921a1.html",
+      "bytes": 114487,
+      "sha256": "8784231eac552e690222d37036f8659306cee6cf3a7c2c0de52103ccd2d921a1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/2eebbd6912a074b207534a158147a0e5efe4a3d2ddebcb75c2177bd02d912860.html",
+      "bytes": 113908,
+      "sha256": "2eebbd6912a074b207534a158147a0e5efe4a3d2ddebcb75c2177bd02d912860"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/7834a6c094559ed90f3552bbe68fac7f8036c858f0f278e50a950bf4c901f5ae.html",
+      "bytes": 114428,
+      "sha256": "7834a6c094559ed90f3552bbe68fac7f8036c858f0f278e50a950bf4c901f5ae"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/01948576eab2ffcfb6208d3dbdc22a7009a674b2d135710aa438573b9e29d3bd.html",
+      "bytes": 121265,
+      "sha256": "01948576eab2ffcfb6208d3dbdc22a7009a674b2d135710aa438573b9e29d3bd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4b7f144b3b4d9e537467f914176838bd34dc6b013c155487be505b2c22fbe852.html",
+      "bytes": 122774,
+      "sha256": "4b7f144b3b4d9e537467f914176838bd34dc6b013c155487be505b2c22fbe852"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/02ba9b7573d46649adb5414c629bcdd6afb2ed945f921d226a6d99657d6569e0.html",
+      "bytes": 123065,
+      "sha256": "02ba9b7573d46649adb5414c629bcdd6afb2ed945f921d226a6d99657d6569e0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/57459696485bde6e62f72cfefaae60200d70a56afdbb70cf4cae0189e7bfd4ae.html",
+      "bytes": 119654,
+      "sha256": "57459696485bde6e62f72cfefaae60200d70a56afdbb70cf4cae0189e7bfd4ae"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/576bbb9e43b8a5430d602b8ff9ab1e799599e382d7f2853da69bbe1be488506d.html",
+      "bytes": 114800,
+      "sha256": "576bbb9e43b8a5430d602b8ff9ab1e799599e382d7f2853da69bbe1be488506d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/79999f299ddcee87b347b1da4b708a2261b752cb8278d85c358d2858de5d2626.html",
+      "bytes": 114959,
+      "sha256": "79999f299ddcee87b347b1da4b708a2261b752cb8278d85c358d2858de5d2626"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/90d4e65550cd57a096c1cffac9f2f761bf2adb28a5c1ad92cebd50a7716f2a39.html",
+      "bytes": 115834,
+      "sha256": "90d4e65550cd57a096c1cffac9f2f761bf2adb28a5c1ad92cebd50a7716f2a39"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/9928f48752c1de7ec271eb85030df59c44f725da1fa8fcb04ad5cbf4cabc50c7.html",
+      "bytes": 117998,
+      "sha256": "9928f48752c1de7ec271eb85030df59c44f725da1fa8fcb04ad5cbf4cabc50c7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1a7286c038c744fa9182ffb7973e1ea65133637b6c772e6e5f8d94ea57403886.html",
+      "bytes": 115792,
+      "sha256": "1a7286c038c744fa9182ffb7973e1ea65133637b6c772e6e5f8d94ea57403886"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/f53f02e0472586a055432e6ddfc37cfd8165acbe8d66232423fc67e8b609baf0.html",
+      "bytes": 117819,
+      "sha256": "f53f02e0472586a055432e6ddfc37cfd8165acbe8d66232423fc67e8b609baf0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1f3c8f9d966e55292ffdf0ec15f6c37c53505b0e3236766af04aef276bef16e1.html",
+      "bytes": 116538,
+      "sha256": "1f3c8f9d966e55292ffdf0ec15f6c37c53505b0e3236766af04aef276bef16e1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/3dde524af018966fd11bcbd47f85a3b6561eaf5e27e724efdade080326e09b01.html",
+      "bytes": 114534,
+      "sha256": "3dde524af018966fd11bcbd47f85a3b6561eaf5e27e724efdade080326e09b01"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/075e01966d77420fef42de66cb3ec9882e25d50bf2386f41a7bc103c05aa26fa.html",
+      "bytes": 114433,
+      "sha256": "075e01966d77420fef42de66cb3ec9882e25d50bf2386f41a7bc103c05aa26fa"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/49e617edbc30787ec2fc390e34c1526cf6e624ffd442e060e09b134962b26efc.html",
+      "bytes": 114747,
+      "sha256": "49e617edbc30787ec2fc390e34c1526cf6e624ffd442e060e09b134962b26efc"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/038b8bb9c0b8e96de7fc3451c50fcfe3150220a00c6e7dec5330e31b78742728.html",
+      "bytes": 115361,
+      "sha256": "038b8bb9c0b8e96de7fc3451c50fcfe3150220a00c6e7dec5330e31b78742728"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4892b2853d6af60d3f65982c14b57f792db9ed7aecd4d54d35a9308d7dedbafd.html",
+      "bytes": 117066,
+      "sha256": "4892b2853d6af60d3f65982c14b57f792db9ed7aecd4d54d35a9308d7dedbafd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/f037f3248c4e177d72c8b07a3e628f77a32859b88a58c29946244bf744c8d94c.html",
+      "bytes": 116247,
+      "sha256": "f037f3248c4e177d72c8b07a3e628f77a32859b88a58c29946244bf744c8d94c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/977f6965be4292f4d7f7a9fbf01316dbdde57fb9410f5616f98003682ddd5505.html",
+      "bytes": 118026,
+      "sha256": "977f6965be4292f4d7f7a9fbf01316dbdde57fb9410f5616f98003682ddd5505"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c29cb4193db390ba51b784fc0b10ab312bc9c17dde310515bd3fa3f4e3fb8cd6.html",
+      "bytes": 118048,
+      "sha256": "c29cb4193db390ba51b784fc0b10ab312bc9c17dde310515bd3fa3f4e3fb8cd6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/273e097f98225914d8b16605f2381c264d87e541c62a68386eecebf7a28235ea.html",
+      "bytes": 116024,
+      "sha256": "273e097f98225914d8b16605f2381c264d87e541c62a68386eecebf7a28235ea"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4d55eb33c50a90d932b64612483adf150bd902d4ecd91f168f6f8412b41083d8.html",
+      "bytes": 116126,
+      "sha256": "4d55eb33c50a90d932b64612483adf150bd902d4ecd91f168f6f8412b41083d8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/c84df2ad552a1baad57f70388de27ffe2faf58b23b73270f26f71efd23ac808f.html",
+      "bytes": 114910,
+      "sha256": "c84df2ad552a1baad57f70388de27ffe2faf58b23b73270f26f71efd23ac808f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/00432702e104b42cc2acb959099e32b32362052d4f4be34a2e6b2bdfa62dcd81.html",
+      "bytes": 118398,
+      "sha256": "00432702e104b42cc2acb959099e32b32362052d4f4be34a2e6b2bdfa62dcd81"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/290c94c6004bb9fe906dd869b4c1b27980f9746c9aba892ca54482b4e5bf0fad.html",
+      "bytes": 116240,
+      "sha256": "290c94c6004bb9fe906dd869b4c1b27980f9746c9aba892ca54482b4e5bf0fad"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/48c6e7c8f20929a9943bd0f4e043f924fefced6a33e50b105fdad280d1ba5808.html",
+      "bytes": 112742,
+      "sha256": "48c6e7c8f20929a9943bd0f4e043f924fefced6a33e50b105fdad280d1ba5808"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/ac703d4b87b447116bd0e997839207cf836c33b85ded7e9e84777f6b62c54fa1.html",
+      "bytes": 114394,
+      "sha256": "ac703d4b87b447116bd0e997839207cf836c33b85ded7e9e84777f6b62c54fa1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/d80505d12ce5ee40fb6f04ffba4f135d273cadc1a340aba7758b7f8e0bcf5118.html",
+      "bytes": 116648,
+      "sha256": "d80505d12ce5ee40fb6f04ffba4f135d273cadc1a340aba7758b7f8e0bcf5118"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5c6f718c3505e5a7c538dd32cbf0b4547d502ab27dee0358afae484aa2a2808e.html",
+      "bytes": 114574,
+      "sha256": "5c6f718c3505e5a7c538dd32cbf0b4547d502ab27dee0358afae484aa2a2808e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/07d065261ca122f72c6c7078a373344960ee93691c2f69e101cf6914ae8c2d5b.html",
+      "bytes": 113995,
+      "sha256": "07d065261ca122f72c6c7078a373344960ee93691c2f69e101cf6914ae8c2d5b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/33ac6f0a87679823cdbd9493c9a0d9bbaaa14d4800a156693fb595b3d9d06207.html",
+      "bytes": 114276,
+      "sha256": "33ac6f0a87679823cdbd9493c9a0d9bbaaa14d4800a156693fb595b3d9d06207"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/a74d8118379e35a1934b0b43cdab041c46e61345181f7083b22b143f17109231.html",
+      "bytes": 113307,
+      "sha256": "a74d8118379e35a1934b0b43cdab041c46e61345181f7083b22b143f17109231"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/5cd7c52f0546cffb3d1e6b132ec2ddde61efaa5b48ff8d14637dcd1b193bfa1e.html",
+      "bytes": 113537,
+      "sha256": "5cd7c52f0546cffb3d1e6b132ec2ddde61efaa5b48ff8d14637dcd1b193bfa1e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/a1bc43dd080cc4a3aa3c2edfeb47219329bde9bcad6eed3c9a64ec3014308e8a.html",
+      "bytes": 114051,
+      "sha256": "a1bc43dd080cc4a3aa3c2edfeb47219329bde9bcad6eed3c9a64ec3014308e8a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/cc50b4ae6e3e54053399d0898ec316ee7a1a6c30811a5e657044f8a0222f18f6.html",
+      "bytes": 114288,
+      "sha256": "cc50b4ae6e3e54053399d0898ec316ee7a1a6c30811a5e657044f8a0222f18f6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/acb77dfe6df550957485c0c73fe108cfc86cea7905bd8c0f391076e38ce76117.html",
+      "bytes": 113666,
+      "sha256": "acb77dfe6df550957485c0c73fe108cfc86cea7905bd8c0f391076e38ce76117"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/7618159150c324d23c3be98df70395116a378131821fe5ed15d6c2aa84184668.html",
+      "bytes": 117033,
+      "sha256": "7618159150c324d23c3be98df70395116a378131821fe5ed15d6c2aa84184668"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/438f8a431d56338c09daf1a3feeadbe3f481c6acf2a4354266126740678d91a7.html",
+      "bytes": 113296,
+      "sha256": "438f8a431d56338c09daf1a3feeadbe3f481c6acf2a4354266126740678d91a7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/6d270ec56f4d60b436a67e580f3cd97bb77c20588840036d7b383392f3112de0.html",
+      "bytes": 113652,
+      "sha256": "6d270ec56f4d60b436a67e580f3cd97bb77c20588840036d7b383392f3112de0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4897c1d2ca46073801633943c9d6a2752bf4bc52961c1d7a9cd7f830bc735be6.html",
+      "bytes": 114521,
+      "sha256": "4897c1d2ca46073801633943c9d6a2752bf4bc52961c1d7a9cd7f830bc735be6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/685d6d1d3123a816beeefc2d256af6696bcfc267ad5df15b7045dcefe2d09a4f.html",
+      "bytes": 113587,
+      "sha256": "685d6d1d3123a816beeefc2d256af6696bcfc267ad5df15b7045dcefe2d09a4f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/92f94604c3fc76542e1a7fdd4a3dddd40a521952fb5760e4ef19e38cb8aca5e9.html",
+      "bytes": 115578,
+      "sha256": "92f94604c3fc76542e1a7fdd4a3dddd40a521952fb5760e4ef19e38cb8aca5e9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/be474d83a3ca45fdd71ad22f40626c1f468cb6cad7a2021714a5c7435f1945b0.html",
+      "bytes": 112846,
+      "sha256": "be474d83a3ca45fdd71ad22f40626c1f468cb6cad7a2021714a5c7435f1945b0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/8edf54cc8cce05581339e3a1b09a92c7d166528a0e2513b4e14dcf901c00c35d.html",
+      "bytes": 108363,
+      "sha256": "8edf54cc8cce05581339e3a1b09a92c7d166528a0e2513b4e14dcf901c00c35d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/4db39155a9afb34daa7dcd70fad2ea2b21f8b39cb16baee7ddfb44b55fe7dcb9.html",
+      "bytes": 108363,
+      "sha256": "4db39155a9afb34daa7dcd70fad2ea2b21f8b39cb16baee7ddfb44b55fe7dcb9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/64543f5f39893a0c4262d817632996a149a5d79fee7a5468dc929251809f7c3a.html",
+      "bytes": 106030,
+      "sha256": "64543f5f39893a0c4262d817632996a149a5d79fee7a5468dc929251809f7c3a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/GitHubRadar/1d08c94c38d950882ee648abe1421ed3d45d442c51c817a9410bc03984f445af.html",
+      "bytes": 97220,
+      "sha256": "1d08c94c38d950882ee648abe1421ed3d45d442c51c817a9410bc03984f445af"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/29939b7ef040273bdfbb3631cb8c451774b90cb2634f56d47bed9155436af905.html",
+      "bytes": 140772,
+      "sha256": "29939b7ef040273bdfbb3631cb8c451774b90cb2634f56d47bed9155436af905"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/d8f962a6d88ce22946580a558e7fd9e82bd3b1eb178fa1701e163b556a3d3d8c.html",
+      "bytes": 138974,
+      "sha256": "d8f962a6d88ce22946580a558e7fd9e82bd3b1eb178fa1701e163b556a3d3d8c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/af9fcf588ca4dbb74404da17d54887808b5c174a97384ec33f085b9eb296fa52.html",
+      "bytes": 146723,
+      "sha256": "af9fcf588ca4dbb74404da17d54887808b5c174a97384ec33f085b9eb296fa52"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/ac66563491f70192ef0f144e8fee459fdd27f5115aa7b9c6d9088bb00218b7bd.html",
+      "bytes": 114245,
+      "sha256": "ac66563491f70192ef0f144e8fee459fdd27f5115aa7b9c6d9088bb00218b7bd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/eb979274d63de07c8e4b68ea2a30e63b5760afd91948b96033754b1dad6e6e6d.html",
+      "bytes": 122789,
+      "sha256": "eb979274d63de07c8e4b68ea2a30e63b5760afd91948b96033754b1dad6e6e6d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/be4c6219100830db1252ca680ab536d2a0a408a47408d5ad6bf7952a63a451d3.html",
+      "bytes": 150838,
+      "sha256": "be4c6219100830db1252ca680ab536d2a0a408a47408d5ad6bf7952a63a451d3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/661f239d0f354b0b57ed98d32949cd5c4c1a625287c86c034e90f571cdedaafb.html",
+      "bytes": 115363,
+      "sha256": "661f239d0f354b0b57ed98d32949cd5c4c1a625287c86c034e90f571cdedaafb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/c78a57b599393ec77b766a5b79fa7afba9fea4f80ec1a7491e20709101495d98.html",
+      "bytes": 134097,
+      "sha256": "c78a57b599393ec77b766a5b79fa7afba9fea4f80ec1a7491e20709101495d98"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/351079c99725206d0f9cd0242476345d0dd4156218029e26e95dc6a6d8c101cb.html",
+      "bytes": 151763,
+      "sha256": "351079c99725206d0f9cd0242476345d0dd4156218029e26e95dc6a6d8c101cb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/0faf89702633fbca122b6ba0486a0a1c6ca83def002f10b98f27571912a920b6.html",
+      "bytes": 112672,
+      "sha256": "0faf89702633fbca122b6ba0486a0a1c6ca83def002f10b98f27571912a920b6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/2a245ff65efe17b50a0dc0114a0a78a2968d526d197f69e947781fbd2785e48d.html",
+      "bytes": 136278,
+      "sha256": "2a245ff65efe17b50a0dc0114a0a78a2968d526d197f69e947781fbd2785e48d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/9cb85f1e56e08635408bfcc7bb85099b679727487bbed1cf32d552ad5a8b4d4c.html",
+      "bytes": 122643,
+      "sha256": "9cb85f1e56e08635408bfcc7bb85099b679727487bbed1cf32d552ad5a8b4d4c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/37c7e06a3465918e44e6c23fe8c5ccfa7e2bd36b8ce36035f200063633d7710c.html",
+      "bytes": 161223,
+      "sha256": "37c7e06a3465918e44e6c23fe8c5ccfa7e2bd36b8ce36035f200063633d7710c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/a8aa8b8d58c12d7df4ea1f8356078744b62bb8beb2cf068e730a552198d06a33.html",
+      "bytes": 103162,
+      "sha256": "a8aa8b8d58c12d7df4ea1f8356078744b62bb8beb2cf068e730a552198d06a33"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/8a5b4a2b43de5d092cdff14f761ff09a9578af97a7b5aa4d1ff69c38681166e3.html",
+      "bytes": 142513,
+      "sha256": "8a5b4a2b43de5d092cdff14f761ff09a9578af97a7b5aa4d1ff69c38681166e3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/88933aa71fd0c1f072118b26af6f3d6131e91c9e49e9c0f7344807220fe75cf7.html",
+      "bytes": 120708,
+      "sha256": "88933aa71fd0c1f072118b26af6f3d6131e91c9e49e9c0f7344807220fe75cf7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/98e1ffb53c1b00bad4873a1be6b8068e99646919f5c29e0ed77fa70199401d6f.html",
+      "bytes": 140253,
+      "sha256": "98e1ffb53c1b00bad4873a1be6b8068e99646919f5c29e0ed77fa70199401d6f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/568c4a3aac5e6669c16b61ed4548a10edf0772f3d5fb7e3811ebdc0ecc038fcb.html",
+      "bytes": 121962,
+      "sha256": "568c4a3aac5e6669c16b61ed4548a10edf0772f3d5fb7e3811ebdc0ecc038fcb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/516d450eab1dbb012642a4904c62e2d698f005f9797cc8bcbb22f268723d5d9c.html",
+      "bytes": 130225,
+      "sha256": "516d450eab1dbb012642a4904c62e2d698f005f9797cc8bcbb22f268723d5d9c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/084f599a3d0502a5c343d0c22f9e5687a9ff96ff6f3164a30a96d049c15d2630.html",
+      "bytes": 129764,
+      "sha256": "084f599a3d0502a5c343d0c22f9e5687a9ff96ff6f3164a30a96d049c15d2630"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/68873b86c4cd6fb39accf28d4e79eb7027dc07766c48f4986ef38d5bbed19b77.html",
+      "bytes": 133190,
+      "sha256": "68873b86c4cd6fb39accf28d4e79eb7027dc07766c48f4986ef38d5bbed19b77"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/056b7cc46dd4b852071689376fe5472867f5a31de1e6687f04ba413f39227cb4.html",
+      "bytes": 129405,
+      "sha256": "056b7cc46dd4b852071689376fe5472867f5a31de1e6687f04ba413f39227cb4"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/de675be1adb40542c90eb8cddf04c47434514fbf183a8f41f576a2b8210bbfe3.html",
+      "bytes": 148493,
+      "sha256": "de675be1adb40542c90eb8cddf04c47434514fbf183a8f41f576a2b8210bbfe3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/6887fba5550d27d13f8bd86a4ba5e4b39c01215a185fe3ad054fac2b7ecbe149.html",
+      "bytes": 125330,
+      "sha256": "6887fba5550d27d13f8bd86a4ba5e4b39c01215a185fe3ad054fac2b7ecbe149"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/8166abd336f1cb4e84ee544eb60f51e519794740fe393a72afcc63e67f0da707.html",
+      "bytes": 123769,
+      "sha256": "8166abd336f1cb4e84ee544eb60f51e519794740fe393a72afcc63e67f0da707"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/60530806bf6470650f889e9e3216dc1dca78ec4e83c671a0fe3bc6de6701dab0.html",
+      "bytes": 140184,
+      "sha256": "60530806bf6470650f889e9e3216dc1dca78ec4e83c671a0fe3bc6de6701dab0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/b3f5d69356c61e455bf17d701e921da4a6cf338b3c045e75c6c7867945478ac6.html",
+      "bytes": 136900,
+      "sha256": "b3f5d69356c61e455bf17d701e921da4a6cf338b3c045e75c6c7867945478ac6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/9366e9001e1aa8a6446d98c01f2a63576498d2fd681ed49ae96c6ebb01f6a230.html",
+      "bytes": 126180,
+      "sha256": "9366e9001e1aa8a6446d98c01f2a63576498d2fd681ed49ae96c6ebb01f6a230"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/45e1c460b4dcd5a5c28335ce57a869169cd296e9e58a9ed349a14f41eb92046a.html",
+      "bytes": 138686,
+      "sha256": "45e1c460b4dcd5a5c28335ce57a869169cd296e9e58a9ed349a14f41eb92046a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/cc2e7ae5643b53b9b7ad456659f7ba529e08e705c47fadeec419bcf997a96519.html",
+      "bytes": 80195,
+      "sha256": "cc2e7ae5643b53b9b7ad456659f7ba529e08e705c47fadeec419bcf997a96519"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/22d76cce3da2812fafad1c9663e40b46932774da3a6c5bc92e30e1c5a9280f6b.html",
+      "bytes": 140776,
+      "sha256": "22d76cce3da2812fafad1c9663e40b46932774da3a6c5bc92e30e1c5a9280f6b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/sachkov_blog/ab9ecd2ff1a9f09f3c5162eff1bf4722e390b7cd954d7e4c4d45f96621c6b428.html",
+      "bytes": 140773,
+      "sha256": "ab9ecd2ff1a9f09f3c5162eff1bf4722e390b7cd954d7e4c4d45f96621c6b428"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/b4e3982f0e757abbfe0bfee5ed86fec410f817435b50c3e1f00fcdf06db9536d.html",
+      "bytes": 156148,
+      "sha256": "b4e3982f0e757abbfe0bfee5ed86fec410f817435b50c3e1f00fcdf06db9536d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/fae2de114d58855d941406a2065a4f82e41b24b7b958d3a0b7b2f677acde1156.html",
+      "bytes": 149696,
+      "sha256": "fae2de114d58855d941406a2065a4f82e41b24b7b958d3a0b7b2f677acde1156"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/b49a276b420d2b8452f40a67b2b6a11493ad64b2bcdf34526997d70ef1c67652.html",
+      "bytes": 153623,
+      "sha256": "b49a276b420d2b8452f40a67b2b6a11493ad64b2bcdf34526997d70ef1c67652"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/a7b64944e75ce74a758d4e07afb83367621c5426889fabad47682c50cc3a6348.html",
+      "bytes": 142884,
+      "sha256": "a7b64944e75ce74a758d4e07afb83367621c5426889fabad47682c50cc3a6348"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/5d6255ea37ee5b3fa73a0828fd06f131b77cd785e4654a3b1d05f7b2cc58230f.html",
+      "bytes": 140426,
+      "sha256": "5d6255ea37ee5b3fa73a0828fd06f131b77cd785e4654a3b1d05f7b2cc58230f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/e13406ab9718a9d9226dcda76a0070bfb7716a78b156ebde4a36efe7cd5f519f.html",
+      "bytes": 141030,
+      "sha256": "e13406ab9718a9d9226dcda76a0070bfb7716a78b156ebde4a36efe7cd5f519f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1b01d5b314ded8f50ef5b4969522be303fa9657f4caef7be6c9b37993bedaa03.html",
+      "bytes": 150847,
+      "sha256": "1b01d5b314ded8f50ef5b4969522be303fa9657f4caef7be6c9b37993bedaa03"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9c0933117b543fb94be8595b5c873be98f055f24501841534c9d8a3ee1af799a.html",
+      "bytes": 133150,
+      "sha256": "9c0933117b543fb94be8595b5c873be98f055f24501841534c9d8a3ee1af799a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/c7a3615b2b28163cb26aa68b47a684a524865ad40b0431b727c45547856de7b6.html",
+      "bytes": 151774,
+      "sha256": "c7a3615b2b28163cb26aa68b47a684a524865ad40b0431b727c45547856de7b6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1b9c7e43855ade854c66d907cbca53bb27fcac43edd0801169865e9e4e874fab.html",
+      "bytes": 127985,
+      "sha256": "1b9c7e43855ade854c66d907cbca53bb27fcac43edd0801169865e9e4e874fab"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/3151caf3021a7d56cfcf9f9f4e6dcdca321a67f2cae9ac9f7459b060a4ba6620.html",
+      "bytes": 162071,
+      "sha256": "3151caf3021a7d56cfcf9f9f4e6dcdca321a67f2cae9ac9f7459b060a4ba6620"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/52bf922bd6312d4fa7bfd40935cea72a3610e9e595dae0bb065c1ff39dafc41d.html",
+      "bytes": 166887,
+      "sha256": "52bf922bd6312d4fa7bfd40935cea72a3610e9e595dae0bb065c1ff39dafc41d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/feec7c55f324f527127534109e21513d5dfdee4e63382d354463f53e7438a326.html",
+      "bytes": 123044,
+      "sha256": "feec7c55f324f527127534109e21513d5dfdee4e63382d354463f53e7438a326"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/ce92addc2eb51de08a188828d379e6abeae3eb6a961c1e5a5631fd5aa933e5ea.html",
+      "bytes": 160901,
+      "sha256": "ce92addc2eb51de08a188828d379e6abeae3eb6a961c1e5a5631fd5aa933e5ea"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/d0d8b32909050ee044fc9a955419779e90f2a4b9e4f4dc0f551928ff673ef8cf.html",
+      "bytes": 163409,
+      "sha256": "d0d8b32909050ee044fc9a955419779e90f2a4b9e4f4dc0f551928ff673ef8cf"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/8e8495aac7fa748504d72540a3b45bbe9bbbe5ac8830d63e1859752e2d213c63.html",
+      "bytes": 166385,
+      "sha256": "8e8495aac7fa748504d72540a3b45bbe9bbbe5ac8830d63e1859752e2d213c63"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/5da79322bb159fc59967d9b71e0b2a6d5af8183a07155ff6fa48884328287c3c.html",
+      "bytes": 141513,
+      "sha256": "5da79322bb159fc59967d9b71e0b2a6d5af8183a07155ff6fa48884328287c3c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9567a3c146def03271b891420c0936ec46bbee91931f19a2b41458539b3e73d2.html",
+      "bytes": 158147,
+      "sha256": "9567a3c146def03271b891420c0936ec46bbee91931f19a2b41458539b3e73d2"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/ba036774e80e351c3aa184c8ec081a701ee0358644383446f5065e4bda43c2b1.html",
+      "bytes": 147785,
+      "sha256": "ba036774e80e351c3aa184c8ec081a701ee0358644383446f5065e4bda43c2b1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/183681cde15005688294beb7bd018f21c3613fbd199de50080984b9eb40dbbad.html",
+      "bytes": 154023,
+      "sha256": "183681cde15005688294beb7bd018f21c3613fbd199de50080984b9eb40dbbad"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/8b62cfbf6bdf5af901d58e76048aacdae05bff5a6c6dabf6ac3857a0439922e8.html",
+      "bytes": 148474,
+      "sha256": "8b62cfbf6bdf5af901d58e76048aacdae05bff5a6c6dabf6ac3857a0439922e8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9b0eb0d4cf29de11aa1ef1799d360aa735488ca615d715895da344298d16b332.html",
+      "bytes": 136782,
+      "sha256": "9b0eb0d4cf29de11aa1ef1799d360aa735488ca615d715895da344298d16b332"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1bc39ed9b8839c12bba1ab4b4c133c2070410c988c6944c4807fee7d99ec4582.html",
+      "bytes": 148720,
+      "sha256": "1bc39ed9b8839c12bba1ab4b4c133c2070410c988c6944c4807fee7d99ec4582"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/931ff9c5a388a564d5e33c7d7173d6d52ed694a5cb4d00da7e5f822f0ebadaa7.html",
+      "bytes": 138953,
+      "sha256": "931ff9c5a388a564d5e33c7d7173d6d52ed694a5cb4d00da7e5f822f0ebadaa7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/e581ec47ba2256977f13ee9425b3f73e73ca579634bd4d17587ccb879c254047.html",
+      "bytes": 146344,
+      "sha256": "e581ec47ba2256977f13ee9425b3f73e73ca579634bd4d17587ccb879c254047"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/01ce6c0d76a08f36d14a4d97c760763763139d6393a8be9798ac53a0ad4a3fbf.html",
+      "bytes": 163491,
+      "sha256": "01ce6c0d76a08f36d14a4d97c760763763139d6393a8be9798ac53a0ad4a3fbf"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/34bac140cbfe1fbb06ea9de81bba6447e68a715f3884096cd5fccc69fa6cf0f5.html",
+      "bytes": 162595,
+      "sha256": "34bac140cbfe1fbb06ea9de81bba6447e68a715f3884096cd5fccc69fa6cf0f5"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/97b27cee92c7c4b11258c673a8c49a0ea0efa3c950b4345b28e7b052fd022b7d.html",
+      "bytes": 172345,
+      "sha256": "97b27cee92c7c4b11258c673a8c49a0ea0efa3c950b4345b28e7b052fd022b7d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/f07ef54a87566c46b30c801fc8467a75c218ac99961c92a5c9b0e09b6ce0951d.html",
+      "bytes": 162103,
+      "sha256": "f07ef54a87566c46b30c801fc8467a75c218ac99961c92a5c9b0e09b6ce0951d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/3710132ed44db13d78fdeaf5b44109e0df7938d541eba7a9f90944545d54be82.html",
+      "bytes": 172571,
+      "sha256": "3710132ed44db13d78fdeaf5b44109e0df7938d541eba7a9f90944545d54be82"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/12fa13d26bca0003412d81fa3e25fc5b05b125e3eede4156551303e86a70931d.html",
+      "bytes": 140337,
+      "sha256": "12fa13d26bca0003412d81fa3e25fc5b05b125e3eede4156551303e86a70931d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/01206d70ea475b8ccd84bd727febacef0ac9fa3d8404631fe04b0c000ec560f2.html",
+      "bytes": 166364,
+      "sha256": "01206d70ea475b8ccd84bd727febacef0ac9fa3d8404631fe04b0c000ec560f2"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/422a28cbb84b3bbeb430d34450716c50d5dabda04499ce43d607cf16c8ac5568.html",
+      "bytes": 131681,
+      "sha256": "422a28cbb84b3bbeb430d34450716c50d5dabda04499ce43d607cf16c8ac5568"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/f10460a6b9dce0e382d0c66051f8b713db78e7db32f5a2da9b65036b7c39aa0a.html",
+      "bytes": 177412,
+      "sha256": "f10460a6b9dce0e382d0c66051f8b713db78e7db32f5a2da9b65036b7c39aa0a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/70efde06cfe97c6ac9d35311756c0d294d4567fcc9f2a97716c317bc93113f61.html",
+      "bytes": 125652,
+      "sha256": "70efde06cfe97c6ac9d35311756c0d294d4567fcc9f2a97716c317bc93113f61"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/8f9fe2c8152dec539b712310aa648892c406932dc2fad27505009d4e5fc3b850.html",
+      "bytes": 149041,
+      "sha256": "8f9fe2c8152dec539b712310aa648892c406932dc2fad27505009d4e5fc3b850"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/0ce2c67030850db86565e5dc400be6ff03a2fcc0fcedf5c0f29c9c888be82fc9.html",
+      "bytes": 152149,
+      "sha256": "0ce2c67030850db86565e5dc400be6ff03a2fcc0fcedf5c0f29c9c888be82fc9"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/03df4a03d198e1443327c10c10fa80bf6fbd92b605a59929481f5dc0c490429f.html",
+      "bytes": 152751,
+      "sha256": "03df4a03d198e1443327c10c10fa80bf6fbd92b605a59929481f5dc0c490429f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9f14913e8a6b2c961aed9b89ab0e0175eb1c057c644147ab45b3f0f719695897.html",
+      "bytes": 133012,
+      "sha256": "9f14913e8a6b2c961aed9b89ab0e0175eb1c057c644147ab45b3f0f719695897"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/3543e673e2bc4824e24912a6ded78575efedca3145853a6a975a33ed27b37870.html",
+      "bytes": 160546,
+      "sha256": "3543e673e2bc4824e24912a6ded78575efedca3145853a6a975a33ed27b37870"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/52a8a0cbc2f92047a56a32004b2ad8c0fcf91ac0b0d39c1936af671d167d52b0.html",
+      "bytes": 137099,
+      "sha256": "52a8a0cbc2f92047a56a32004b2ad8c0fcf91ac0b0d39c1936af671d167d52b0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/69d35569b7734e47fef0497911b841b7ca99ab9592337700d618ccd062e092ab.html",
+      "bytes": 121911,
+      "sha256": "69d35569b7734e47fef0497911b841b7ca99ab9592337700d618ccd062e092ab"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/c3130d0c79c9d121bd94022b2e058a01afe50e89213e247eef7c80b3b13f2c5b.html",
+      "bytes": 129927,
+      "sha256": "c3130d0c79c9d121bd94022b2e058a01afe50e89213e247eef7c80b3b13f2c5b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9b0bb9d5959eced5a924972b5ea708eba95c400f2de27b2b92760acf75a7cedd.html",
+      "bytes": 123213,
+      "sha256": "9b0bb9d5959eced5a924972b5ea708eba95c400f2de27b2b92760acf75a7cedd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/394ab69e7be62d72d6014e4b91e7eabfd69691826930e58bd09d3c1eac072b98.html",
+      "bytes": 115407,
+      "sha256": "394ab69e7be62d72d6014e4b91e7eabfd69691826930e58bd09d3c1eac072b98"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/04efa533d49d66c6b64c1ab3b50aa154e4af66f1ad90b1ddc5ad5e422d94dd3f.html",
+      "bytes": 147030,
+      "sha256": "04efa533d49d66c6b64c1ab3b50aa154e4af66f1ad90b1ddc5ad5e422d94dd3f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/0f89d757922d1b72dffccb884dfadd62b2b470301eb58f99a12f5708405611bd.html",
+      "bytes": 167480,
+      "sha256": "0f89d757922d1b72dffccb884dfadd62b2b470301eb58f99a12f5708405611bd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/367b0f58acced887e4f7d3c91e9aee16da7459e4bd407bfe53aaba6318f30325.html",
+      "bytes": 155926,
+      "sha256": "367b0f58acced887e4f7d3c91e9aee16da7459e4bd407bfe53aaba6318f30325"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/29fff4032558916a5c764e7de2cf9124f58d1b8f7a6cf55ed6f60d609301ebc8.html",
+      "bytes": 159017,
+      "sha256": "29fff4032558916a5c764e7de2cf9124f58d1b8f7a6cf55ed6f60d609301ebc8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/668b4288b5e9e3a38547ccfdec1af1398db492a0d75e4eaf37c709152bc4644e.html",
+      "bytes": 162564,
+      "sha256": "668b4288b5e9e3a38547ccfdec1af1398db492a0d75e4eaf37c709152bc4644e"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/6e6bd24e8f21dd2e4f9a981c60950c86440d6c7051504efb6a5c3363a9e6344f.html",
+      "bytes": 157921,
+      "sha256": "6e6bd24e8f21dd2e4f9a981c60950c86440d6c7051504efb6a5c3363a9e6344f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/6fef906415eb93921fc60c4a63e3d075fc1b139b3694d97a09eb43ef7333812c.html",
+      "bytes": 150495,
+      "sha256": "6fef906415eb93921fc60c4a63e3d075fc1b139b3694d97a09eb43ef7333812c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/04021cd796513008040794bab8e5daf4476ade3803f04c7479d705b4bd91d7ea.html",
+      "bytes": 146069,
+      "sha256": "04021cd796513008040794bab8e5daf4476ade3803f04c7479d705b4bd91d7ea"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/efbbf4550f0eddf47941d4148796dd959c692ef2d46bc33eab3da08cf73c08e6.html",
+      "bytes": 160017,
+      "sha256": "efbbf4550f0eddf47941d4148796dd959c692ef2d46bc33eab3da08cf73c08e6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/73da8bc225cb2705b1bfa222293a80d1a227fbc544c112670ef2954810d413f8.html",
+      "bytes": 165933,
+      "sha256": "73da8bc225cb2705b1bfa222293a80d1a227fbc544c112670ef2954810d413f8"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/38e5e5b16af96b0017390c49f75b6d01fe2aac4a57d7c1d53bbfe14b93746f8a.html",
+      "bytes": 166763,
+      "sha256": "38e5e5b16af96b0017390c49f75b6d01fe2aac4a57d7c1d53bbfe14b93746f8a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/09da9936342e627753693dd639c534a96eba3349c36b2870f871a8189d510aab.html",
+      "bytes": 166819,
+      "sha256": "09da9936342e627753693dd639c534a96eba3349c36b2870f871a8189d510aab"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/5c32c52e3bae181af58b4b7acca59e3224d7bea643dbdc2b81c4e0736b64738c.html",
+      "bytes": 172118,
+      "sha256": "5c32c52e3bae181af58b4b7acca59e3224d7bea643dbdc2b81c4e0736b64738c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/ae7e6b9a167948616959aa730bd150eb346eb3d9db22354e41a71a4ddc4c5ddd.html",
+      "bytes": 161626,
+      "sha256": "ae7e6b9a167948616959aa730bd150eb346eb3d9db22354e41a71a4ddc4c5ddd"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/faea062acc554303ea90376fdf84a0b0bab8f66805ae3cb05ef635931b878d36.html",
+      "bytes": 162227,
+      "sha256": "faea062acc554303ea90376fdf84a0b0bab8f66805ae3cb05ef635931b878d36"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/a1cb9fe75a026ab2765499a58587f9c01122fd4c590d17a167c036de6b5e4975.html",
+      "bytes": 159794,
+      "sha256": "a1cb9fe75a026ab2765499a58587f9c01122fd4c590d17a167c036de6b5e4975"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/172eda15c68d27bb1ecf751a6f3c1bab678ef05b96f6e6b07e1f558d47139afb.html",
+      "bytes": 159319,
+      "sha256": "172eda15c68d27bb1ecf751a6f3c1bab678ef05b96f6e6b07e1f558d47139afb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/257a8de6b8b156104dca48a1bc5a35378a0af2f6d3bac856448ba5703f813f61.html",
+      "bytes": 156303,
+      "sha256": "257a8de6b8b156104dca48a1bc5a35378a0af2f6d3bac856448ba5703f813f61"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/5173e7f04486358bc5614984b502be1c96c5be5c365105c9e37d14abd7288ff3.html",
+      "bytes": 155386,
+      "sha256": "5173e7f04486358bc5614984b502be1c96c5be5c365105c9e37d14abd7288ff3"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/c9248f771233616109407688da057c85d12449d3c484d411c28630dbfe668e29.html",
+      "bytes": 155254,
+      "sha256": "c9248f771233616109407688da057c85d12449d3c484d411c28630dbfe668e29"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/f60cec94609d39a0e4eddab4b6382a3e05036bf496dae977d4d91f34a03d80e1.html",
+      "bytes": 151626,
+      "sha256": "f60cec94609d39a0e4eddab4b6382a3e05036bf496dae977d4d91f34a03d80e1"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/70368f21cace9838c1d4b0509685efe535c999c4ce6d48d30f0eec1fa3299e91.html",
+      "bytes": 157718,
+      "sha256": "70368f21cace9838c1d4b0509685efe535c999c4ce6d48d30f0eec1fa3299e91"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/68cd225c80a4ff0f60f3dd0751d31647aac917de96adf06d8853c1d6d157a5e0.html",
+      "bytes": 156402,
+      "sha256": "68cd225c80a4ff0f60f3dd0751d31647aac917de96adf06d8853c1d6d157a5e0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1566851516eb5fd8de219e6144dadc39a2d1bc1c99170218d8420d0aaf534c54.html",
+      "bytes": 147721,
+      "sha256": "1566851516eb5fd8de219e6144dadc39a2d1bc1c99170218d8420d0aaf534c54"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1ae28a81eefde8c2956f2765411a0c4bb6b55125d626352a1b89030aedf564bb.html",
+      "bytes": 118403,
+      "sha256": "1ae28a81eefde8c2956f2765411a0c4bb6b55125d626352a1b89030aedf564bb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/90f6a7099405c0f47aae03314942a87ec93561642cb25c23be036650f0b7188c.html",
+      "bytes": 129791,
+      "sha256": "90f6a7099405c0f47aae03314942a87ec93561642cb25c23be036650f0b7188c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/580c8aa78789d44a844a9bbf0581bfe8e012217b03b8a12424ef714f02239eff.html",
+      "bytes": 108355,
+      "sha256": "580c8aa78789d44a844a9bbf0581bfe8e012217b03b8a12424ef714f02239eff"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/6753268874b9e2b38c6a82043f484430c3db931853ba29764cce28acb21f1c69.html",
+      "bytes": 118050,
+      "sha256": "6753268874b9e2b38c6a82043f484430c3db931853ba29764cce28acb21f1c69"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/12a39c1b9c994ab159264bd183963cde84c3a19f885776375c59226e8e11a9c7.html",
+      "bytes": 120448,
+      "sha256": "12a39c1b9c994ab159264bd183963cde84c3a19f885776375c59226e8e11a9c7"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9bb76e01795c320fa83dba01cef5b8b03336ed08a43cbac370b4f19eede3eae2.html",
+      "bytes": 142180,
+      "sha256": "9bb76e01795c320fa83dba01cef5b8b03336ed08a43cbac370b4f19eede3eae2"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/54d2c8b72430fb3394c46ff1d6170d4ee61c12f8b200bb587cfd33e48993a8b0.html",
+      "bytes": 141849,
+      "sha256": "54d2c8b72430fb3394c46ff1d6170d4ee61c12f8b200bb587cfd33e48993a8b0"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/ad4a99c2e184cfbc65b65ea57025b076404c2a42debeb8b0d4dfab133f10178f.html",
+      "bytes": 111516,
+      "sha256": "ad4a99c2e184cfbc65b65ea57025b076404c2a42debeb8b0d4dfab133f10178f"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/a37e91e8ded729f3b5db5780321cb47ce3a3aed8f5a7c0280d48e2aaa50c3358.html",
+      "bytes": 146799,
+      "sha256": "a37e91e8ded729f3b5db5780321cb47ce3a3aed8f5a7c0280d48e2aaa50c3358"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1209fa76dcc6655cecab94816394eae9a458513547c5bee3bb4951b59f965964.html",
+      "bytes": 77416,
+      "sha256": "1209fa76dcc6655cecab94816394eae9a458513547c5bee3bb4951b59f965964"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/822887af6a8b5fb0074676f0007efd8c5bce0f1d637d9f827b9c6bdf32136430.html",
+      "bytes": 81673,
+      "sha256": "822887af6a8b5fb0074676f0007efd8c5bce0f1d637d9f827b9c6bdf32136430"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/f56ec98a532477e7f35bd98e9c5425fcc1c1c7a4ca9fb80f0f56566dbf46a1bb.html",
+      "bytes": 99885,
+      "sha256": "f56ec98a532477e7f35bd98e9c5425fcc1c1c7a4ca9fb80f0f56566dbf46a1bb"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/88423da954ad2c55d17884bbe41f35e3d70f156e5584dfc69d4bb9c8fa7801ac.html",
+      "bytes": 114602,
+      "sha256": "88423da954ad2c55d17884bbe41f35e3d70f156e5584dfc69d4bb9c8fa7801ac"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/96b1e9dffbd42f011bcb5890530c9760a9ba443bc73d294c5801824175ce5902.html",
+      "bytes": 124850,
+      "sha256": "96b1e9dffbd42f011bcb5890530c9760a9ba443bc73d294c5801824175ce5902"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/ae2b989dc4519c3f5e6dcad799075c9dd762aa6671545f76c819e6bf3de3c6f6.html",
+      "bytes": 123235,
+      "sha256": "ae2b989dc4519c3f5e6dcad799075c9dd762aa6671545f76c819e6bf3de3c6f6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/cf12a0b2888cad189afd1d886a8fc5239d66bd0f7cd10e88e6bbafa2e975a519.html",
+      "bytes": 127827,
+      "sha256": "cf12a0b2888cad189afd1d886a8fc5239d66bd0f7cd10e88e6bbafa2e975a519"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/291df318be35759c0c03c1b9223974b9c2d60a4e404204a0b7673587ac54beed.html",
+      "bytes": 88686,
+      "sha256": "291df318be35759c0c03c1b9223974b9c2d60a4e404204a0b7673587ac54beed"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/0ea4b46902c67c16d5e0a588eec2457a2ce05a7f4ca4f068129178e48864a32b.html",
+      "bytes": 124926,
+      "sha256": "0ea4b46902c67c16d5e0a588eec2457a2ce05a7f4ca4f068129178e48864a32b"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/7aca3102e9131f9b3a7e4233ef312b7bc95b3016d3019b365033873314c99a22.html",
+      "bytes": 88556,
+      "sha256": "7aca3102e9131f9b3a7e4233ef312b7bc95b3016d3019b365033873314c99a22"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/301b7638b9649c1a56cb7d0c21c2867f59b8dddba3c88f10f5cdc813029a081d.html",
+      "bytes": 85992,
+      "sha256": "301b7638b9649c1a56cb7d0c21c2867f59b8dddba3c88f10f5cdc813029a081d"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/5cb7e25b264b2adda546dbef4082621162c146496ff320c4f1e9acb146cd9b10.html",
+      "bytes": 94993,
+      "sha256": "5cb7e25b264b2adda546dbef4082621162c146496ff320c4f1e9acb146cd9b10"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9cab711420db98867d1c925988551c16ca09479a40be5d67c645d7410687bd4c.html",
+      "bytes": 87986,
+      "sha256": "9cab711420db98867d1c925988551c16ca09479a40be5d67c645d7410687bd4c"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/2426a76ca97f758920c41025e0cae7119d526c20d95d31d44e1ad9894365eaa6.html",
+      "bytes": 108447,
+      "sha256": "2426a76ca97f758920c41025e0cae7119d526c20d95d31d44e1ad9894365eaa6"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/1154c8ed5a8accd580299bbca7bbdbb368d579010f571509301dc871f805a376.html",
+      "bytes": 101165,
+      "sha256": "1154c8ed5a8accd580299bbca7bbdbb368d579010f571509301dc871f805a376"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/f25d6596d4945b00893b8794ba22f08a622ccc45d4adec2f6e7fb30dc937dc86.html",
+      "bytes": 92719,
+      "sha256": "f25d6596d4945b00893b8794ba22f08a622ccc45d4adec2f6e7fb30dc937dc86"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/811af7c2ce54b32081138cb3fe233b7a45fea7230e465f28323bc8ed175f644a.html",
+      "bytes": 83537,
+      "sha256": "811af7c2ce54b32081138cb3fe233b7a45fea7230e465f28323bc8ed175f644a"
+    },
+    {
+      "member": "awe-tool-intelligence/evidence/raw_html/iirepresent/9dcb3b9972336a16fff8f0d8ecc3d7bd3a5c41381f72d4207da1bfad6f34a4d1.html",
+      "bytes": 28480,
+      "sha256": "9dcb3b9972336a16fff8f0d8ecc3d7bd3a5c41381f72d4207da1bfad6f34a4d1"
+    },
+    {
+      "member": "awe-tool-intelligence/transfer/backup/manifest.json",
+      "bytes": 317,
+      "sha256": "647fa2a07308bb758386bcb5c04bfe65499aff56ab56829a1de75ef6e98a8b7c"
+    },
+    {
+      "member": "awe-tool-intelligence/awe-tool-intelligence.bundle",
+      "bytes": 296525,
+      "sha256": "334c0b2735d18aeccb6ab76b4b23c368fbe1845480b473d9a486e8ee6e3d2f7e"
+    },
+    {
+      "member": "awe-tool-intelligence/HANDOFF_RECEIPT-v2.md",
+      "bytes": 3234,
+      "sha256": "c5577989a99cbaa7062a78145248008abf545e4831326a8fb250cd33513bf5e8"
+    },
+    {
+      "member": "awe-tool-intelligence/DELIVERY_MANIFEST-v2.json",
+      "bytes": 909,
+      "sha256": "5268d94ab9d8a8c854aa397779beb839debc4d38895c7dc4262ff3e0bcd4bc66"
+    }
+  ]
+}

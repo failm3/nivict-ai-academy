@@ -1,0 +1,83 @@
+{
+  "reviewer": "independent agent, same GPT family; cross-family criterion NOT_SATISFIED",
+  "sample_size": 59,
+  "primary_readme_spotchecks": 4,
+  "results": [
+    {
+      "id": "Радар-0705",
+      "key": "mapscii",
+      "repo": "rastapasta/mapscii",
+      "prior_category": "AI - RAG и память",
+      "prior_confidence": "low",
+      "finding": "CATEGORY_FALSE_POSITIVE",
+      "observed": "Official README describes a terminal renderer for geographic vector tiles. Treat as cartography/terminal visualization; no RAG or agent memory capability established.",
+      "recommendation": "Reclassify after full metadata review.",
+      "evidence": {
+        "url": "https://github.com/rastapasta/mapscii/blob/master/README.md",
+        "readme_blob_sha": "eb777cf445714a62f69c3c282fedf2d119141b65",
+        "checked_at": "2026-11-12",
+        "read_scope": "README only; instructions treated as untrusted data; no installation or code execution"
+      },
+      "verification_status": "PRIMARY_README_REVIEWED",
+      "license_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "security_status": "NOT_AUDITED"
+    },
+    {
+      "id": "Радар-0128",
+      "key": "screenshot-studio",
+      "repo": "opennookorg/screenshot-studio",
+      "prior_category": "Медиа - Аудио и речь",
+      "prior_confidence": "high",
+      "finding": "CATEGORY_FALSE_POSITIVE",
+      "observed": "Official README describes an editor for screenshots, mockups and social graphics. Classify under image/design tools, with optional motion export; speech/audio capability not established.",
+      "recommendation": "High prior confidence is not source verification.",
+      "evidence": {
+        "url": "https://github.com/opennookorg/screenshot-studio/blob/main/README.md",
+        "readme_blob_sha": "6c97e2e50fcd084b722a0b4f22f52296d75e55e9",
+        "checked_at": "2026-11-12",
+        "read_scope": "README only; instructions treated as untrusted data; no installation or code execution"
+      },
+      "verification_status": "PRIMARY_README_REVIEWED",
+      "license_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "security_status": "NOT_AUDITED"
+    },
+    {
+      "id": "Радар-0694",
+      "key": "OWASP-CheatSheetSeries",
+      "repo": "OWASP/CheatSheetSeries",
+      "prior_category": "Инфраструктура - Данные и БД",
+      "prior_confidence": "low",
+      "finding": "CATEGORY_AND_RESOURCE_TYPE_REVIEW",
+      "observed": "Official README identifies a security guidance reference collection. This is not a database product; generic GitHub repository typing should not imply an installable DB tool.",
+      "recommendation": "Classify as security/reference; inspect document licensing separately from software licensing.",
+      "evidence": {
+        "url": "https://github.com/OWASP/CheatSheetSeries/blob/master/README.md",
+        "readme_blob_sha": "8c7cb6698d1ad20af9176c0a36caefa6907c21a0",
+        "checked_at": "2026-11-12",
+        "read_scope": "README only; instructions treated as untrusted data; no installation or code execution"
+      },
+      "verification_status": "PRIMARY_README_REVIEWED",
+      "license_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "security_status": "NOT_AUDITED"
+    },
+    {
+      "id": "Радар-0636",
+      "key": "PaperGuru-Benchmark",
+      "repo": "AutoTrustAI/PaperGuru-Benchmark",
+      "prior_category": "AI - Обучение и оценка моделей",
+      "prior_confidence": "high",
+      "finding": "NO_DESCRIPTION_CONTRADICTION_FOUND_IN_SPOTCHECK",
+      "observed": "README explicitly discusses a long-term memory architecture alongside benchmark claims. The original memory description cannot be rejected merely because the repository name contains Benchmark.",
+      "recommendation": "Do not accept claimed benchmark superiority without independent reproduction.",
+      "evidence": {
+        "url": "https://github.com/AutoTrustAI/PaperGuru-Benchmark/blob/main/README.md",
+        "readme_blob_sha": "3eb8e2474869a4fd252311388f7198ac9107ddb3",
+        "checked_at": "2026-11-12",
+        "read_scope": "README only; instructions treated as untrusted data; no installation or code execution"
+      },
+      "verification_status": "PRIMARY_README_REVIEWED",
+      "license_status": "NOT_INDEPENDENTLY_VERIFIED",
+      "security_status": "NOT_AUDITED"
+    }
+  ]
+}

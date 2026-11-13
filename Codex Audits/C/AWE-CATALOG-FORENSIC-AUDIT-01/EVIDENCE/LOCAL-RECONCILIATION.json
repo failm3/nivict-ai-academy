@@ -1,0 +1,47 @@
+{
+  "source_counts": {
+    "iirepresent.json": 1331,
+    "Радар.json": 3173
+  },
+  "expected_total": 4504,
+  "processed_total": 4504,
+  "processed_id_set_equal": true,
+  "processed_id_unique": true,
+  "classified_ids_equal": true,
+  "csv_ids_equal": true,
+  "note_ids_equal": true,
+  "note_count": 4504,
+  "all_git_blob_hashes_match": true,
+  "reported_source_sha256_match": false,
+  "manifest_counts_match": true,
+  "issue_rows_match_classification_flags": true,
+  "prior_issue_rows": 4090,
+  "expected_issue_rows": 4090,
+  "derivative_mismatch_count": 0,
+  "unique_counts": {
+    "exact_url": 4472,
+    "conservative_url": 4471,
+    "project_or_resource": 4465,
+    "legacy_full_url": 4466,
+    "legacy_host_path": 4424
+  },
+  "duplicate_extra_rows": {
+    "exact_url": 32,
+    "conservative_url": 33,
+    "project_or_resource": 39,
+    "legacy_full_url": 38,
+    "legacy_host_path": 80
+  },
+  "raw_record_key_shapes": {
+    "iirepresent.json": {
+      "description,link": 1331
+    },
+    "Радар.json": {
+      "description,link": 3173
+    }
+  },
+  "prior_duplicate_rows": 71,
+  "note_file_count": 4504,
+  "note_ids_unique": true,
+  "historical_hashes_explained_by_crlf": true
+}

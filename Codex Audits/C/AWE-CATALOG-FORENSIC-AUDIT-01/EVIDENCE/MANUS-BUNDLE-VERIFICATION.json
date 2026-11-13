@@ -1,0 +1,10 @@
+{
+  "bundle_sha256": "334c0b2735d18aeccb6ab76b4b23c368fbe1845480b473d9a486e8ee6e3d2f7e",
+  "verify_exit_code": 0,
+  "verify_stdout": "The bundle contains these 2 refs:\n58d3132c139b3e45ff7cd24289a2d618d87d373a refs/heads/manus/research-baseline\n58d3132c139b3e45ff7cd24289a2d618d87d373a HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n",
+  "verify_stderr": "C:/Users/1/Documents/Codex/2026-11-12/awe-group-awe-catalog-forensic-audit/work/manus/awe-tool-intelligence.bundle is okay\n",
+  "list_heads_exit_code": 0,
+  "list_heads_stdout": "58d3132c139b3e45ff7cd24289a2d618d87d373a refs/heads/manus/research-baseline\n58d3132c139b3e45ff7cd24289a2d618d87d373a HEAD\n",
+  "execution_scope": "Git data verification only; no checkout, hooks or upstream code execution",
+  "author_signature": "NOT_VERIFIED"
+}

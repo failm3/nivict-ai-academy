@@ -1,0 +1,24 @@
+{
+  "repository": "failm3/awe-group-runtime",
+  "commit": "d5e9d857dbdeb8f31f9a798b10b5af4af639dbda",
+  "tree_sha": "b3b496104c0487945c960fcf36f2f538ed68e80a",
+  "entry_count": 563,
+  "truncated": false,
+  "paths": [
+    {
+      "path": "src/agents/head-agent.ts",
+      "present": false
+    },
+    {
+      "path": "src/tools/ti-search.ts",
+      "present": false
+    },
+    {
+      "path": "package.json",
+      "present": true
+    }
+  ],
+  "live_runtime": "NOT_OBSERVED",
+  "working12": "NO_INDEPENDENT_CURRENT_SNAPSHOT",
+  "checked_at": "2026-11-12"
+}

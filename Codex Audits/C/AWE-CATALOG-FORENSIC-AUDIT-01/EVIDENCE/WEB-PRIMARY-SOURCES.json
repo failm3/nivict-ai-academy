@@ -1,0 +1,41 @@
+{
+  "web_sources": [
+    {
+      "url": "https://openrouter.ai/pricing",
+      "checked_at": "2026-11-12",
+      "method": "WEB_PRIMARY_READER",
+      "observations": [
+        "Standard credit-purchase platform fee 5.5%; Business 8%; list-price inference",
+        "BYOK allowance $25,000 list-price inference/month, then 5% fee",
+        "Public methods cards/AliPay/USDC; RF/account eligibility NOT_VERIFIED"
+      ]
+    },
+    {
+      "url": "https://www.requesty.ai/pricing",
+      "checked_at": "2026-11-12",
+      "method": "WEB_PRIMARY_READER",
+      "observations": [
+        "Published 5% markup; free models tier 200 requests/day",
+        "Payment methods/RF/account eligibility NOT_VERIFIED"
+      ]
+    },
+    {
+      "url": "https://router.cheap/",
+      "checked_at": "2026-11-12",
+      "method": "WEB_PRIMARY_READER",
+      "observations": [
+        "No readable pricing lines; authorized panel NOT_ACCESSED; exact prices UNKNOWN"
+      ]
+    },
+    {
+      "url": "https://developers.figma.com/docs/figma-mcp-server/",
+      "checked_at": "2026-11-12",
+      "method": "OFFICIAL_DOCUMENTATION_WEB_READER",
+      "observations": [
+        "Remote MCP supports design context, native canvas writes and code-to-canvas; compatible clients/access required",
+        "Docs require Full seat for write outside drafts; write beta currently free, future usage-based fee stated",
+        "Actual AWE connection NOT_TESTED"
+      ]
+    }
+  ]
+}

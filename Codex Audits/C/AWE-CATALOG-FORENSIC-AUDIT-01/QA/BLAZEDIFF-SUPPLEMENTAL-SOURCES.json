@@ -1,0 +1,53 @@
+{
+  "status": "SOURCE_TEXT_OBSERVED",
+  "sources": [
+    {
+      "key": "ssim",
+      "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/licenses/SSIM.md",
+      "blob_sha": "ffcb8e142f27ced54d5e3c188d0e12646aa49bc8",
+      "observation": "Project documents restrictions associated with original SSIM reference code and states its own TypeScript/Rust implementations are independently MIT licensed. This does not complete a commercial-rights or dependency audit.",
+      "checked_at": "2026-11-12",
+      "scope": "Text inspection only; no installation/code execution/model inference"
+    },
+    {
+      "key": "ms-ssim",
+      "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/licenses/MS-SSIM.md",
+      "blob_sha": "7ffeeb7c08dcdeaf45abd7a9a4cb0c8762e5048e",
+      "observation": "Project documents research-only restrictions for original MS-SSIM reference code and separately asserts MIT for its own independent implementations.",
+      "checked_at": "2026-11-12",
+      "scope": "Text inspection only; no installation/code execution/model inference"
+    },
+    {
+      "key": "hitchhikers",
+      "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/licenses/HITCHHIKERS-SSIM.md",
+      "blob_sha": "9f460377b0921a514e0c77898929a5ed55f04005",
+      "observation": "Project identifies the reference C implementation as BSD-2-Clause-Patent and states its own implementation is MIT. Exact notices and dependencies must be mapped per chosen package.",
+      "checked_at": "2026-11-12",
+      "scope": "Text inspection only; no installation/code execution/model inference"
+    },
+    {
+      "key": "milo-readme",
+      "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/crates/blazediff-milo/README.md",
+      "blob_sha": "b5b1653de9c34e7d5a18efafd2520bf179d145a3",
+      "observation": "The crate documents MIT code and embedded authors' trained weights under Apache-2.0. It is a learned perceptual metric, not an automatic UX acceptance decision.",
+      "checked_at": "2026-11-12",
+      "scope": "Text inspection only; no installation/code execution/model inference"
+    },
+    {
+      "key": "milo-license",
+      "url": "https://github.com/teimurjan/blazediff/blob/eafe393ce40ee22833a9aefe593ff779a7e8f8f3/licenses/MILO.md",
+      "blob_sha": "888103c4d1be5db641aeda700fe0bf4b4d25f845",
+      "observation": "Documents the embedded weight re-encoding, originating checkpoint commit and claimed checkpoint SHA-256. No weight bytes were downloaded or rehashed by this review.",
+      "checked_at": "2026-11-12",
+      "scope": "Text inspection only; no installation/code execution/model inference"
+    },
+    {
+      "key": "milo-upstream-license",
+      "url": "https://github.com/ugurcogalan06/MILO/blob/4f5b6fc641cae1a8aeaa8c4f04296dcad388b867/LICENSE",
+      "blob_sha": "c2d6056a19b08a9d55571e9ba7f76f1b75bc51e8",
+      "observation": "The upstream LICENSE at the checkpoint's documented commit is Apache License 2.0. This validates the source-license text observation, not the shipped binary/weight digest.",
+      "checked_at": "2026-11-12",
+      "scope": "Text inspection only; no installation/code execution/model inference"
+    }
+  ]
+}

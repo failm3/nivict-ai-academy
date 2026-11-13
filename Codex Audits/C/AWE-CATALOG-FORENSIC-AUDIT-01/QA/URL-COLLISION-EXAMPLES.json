@@ -1,0 +1,516 @@
+[
+  {
+    "legacy_host_path": [
+      "syntx.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0033",
+      "iirepresent-0206"
+    ],
+    "urls": [
+      "http://syntx.ai/",
+      "https://syntx.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "neurosphere.pro",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0066",
+      "iirepresent-0286"
+    ],
+    "urls": [
+      "http://neurosphere.pro/",
+      "https://neurosphere.pro/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "chatgpt.com",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0154",
+      "iirepresent-1010"
+    ],
+    "urls": [
+      "https://chatgpt.com/",
+      "https://chatgpt.com/?model=gpt-4o"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "fyro.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0194",
+      "iirepresent-0245"
+    ],
+    "urls": [
+      "http://fyro.ai/",
+      "https://fyro.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "education.github.com",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0265",
+      "iirepresent-0266"
+    ],
+    "urls": [
+      "http://education.github.com/",
+      "https://education.github.com/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "character.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0278",
+      "iirepresent-0422"
+    ],
+    "urls": [
+      "http://character.ai/",
+      "https://character.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "notebooklm.google",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0298",
+      "iirepresent-0564"
+    ],
+    "urls": [
+      "http://notebooklm.google/",
+      "https://notebooklm.google/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "playphrase.me",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0306",
+      "iirepresent-0474"
+    ],
+    "urls": [
+      "http://playphrase.me/",
+      "https://playphrase.me/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "grok.com",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0335",
+      "iirepresent-0467"
+    ],
+    "urls": [
+      "http://grok.com/",
+      "https://grok.com/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "github.com",
+      "/gtsteffaniak/filebrowser"
+    ],
+    "source_ids": [
+      "iirepresent-0339",
+      "Радар-0490"
+    ],
+    "urls": [
+      "https://github.com/gtsteffaniak/filebrowser",
+      "https://github.com/gtsteffaniak/filebrowser?tab=readme-ov-file"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "github.com",
+      "/resemble-ai/chatterbox"
+    ],
+    "source_ids": [
+      "iirepresent-0361",
+      "Радар-2854"
+    ],
+    "urls": [
+      "https://github.com/resemble-ai/chatterbox",
+      "https://github.com/resemble-ai/chatterbox?tab=readme-ov-file"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "replit.com",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0365",
+      "iirepresent-0468"
+    ],
+    "urls": [
+      "http://replit.com/",
+      "https://replit.com/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "github.com",
+      "/srwi/everythingtoolbar"
+    ],
+    "source_ids": [
+      "iirepresent-0367",
+      "Радар-0055"
+    ],
+    "urls": [
+      "https://github.com/srwi/EverythingToolbar",
+      "https://github.com/srwi/EverythingToolbar?tab=readme-ov-file"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "recraft.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0443",
+      "iirepresent-0756"
+    ],
+    "urls": [
+      "http://recraft.ai/",
+      "https://www.recraft.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "gptunnel.ru",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0492",
+      "iirepresent-0693"
+    ],
+    "urls": [
+      "https://gptunnel.ru/?utm_source=telegram&utm_medium=post&utm_campaign=iirepresent&utm_term=280",
+      "https://gptunnel.ru/?utm_source=telegram&utm_medium=promo&utm_campaign=iirepresent&utm_term=speedrun01"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "app.otio.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0495",
+      "iirepresent-0930"
+    ],
+    "urls": [
+      "https://app.otio.ai/",
+      "https://app.otio.ai//?ref=iirepresent"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "play.google.com",
+      "/store/apps/details"
+    ],
+    "source_ids": [
+      "iirepresent-0512",
+      "iirepresent-0667",
+      "iirepresent-0669",
+      "iirepresent-0671",
+      "iirepresent-0750",
+      "iirepresent-0992",
+      "iirepresent-1027",
+      "iirepresent-1034",
+      "iirepresent-1085",
+      "iirepresent-1119"
+    ],
+    "urls": [
+      "https://play.google.com/store/apps/details?id=ai.butterflies.ios&pcampaignid=web_share",
+      "https://play.google.com/store/apps/details?id=ai.perplexity.app.android",
+      "https://play.google.com/store/apps/details?id=ai.perplexity.app.android&pcampaignid=web_share",
+      "https://play.google.com/store/apps/details?id=com.aihomework",
+      "https://play.google.com/store/apps/details?id=com.argeneration.teleportscanner",
+      "https://play.google.com/store/apps/details?id=com.deepseek.chat",
+      "https://play.google.com/store/apps/details?id=com.meetclique.clique&pcampaignid=web_share",
+      "https://play.google.com/store/apps/details?id=com.xt.retouchoversea&hl=en_US&gl=US&pli=1",
+      "https://play.google.com/store/apps/details?id=io.elevenlabs.readerapp&hl=ru",
+      "https://play.google.com/store/apps/details?id=io.shubham0204.smollmandroid"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "chat.qwen.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0525",
+      "iirepresent-0554"
+    ],
+    "urls": [
+      "https://chat.qwen.ai/",
+      "https://chat.qwen.ai/?inputFeature=web_dev"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "github.com",
+      "/hacksider/deep-live-cam"
+    ],
+    "source_ids": [
+      "iirepresent-0549",
+      "iirepresent-0789",
+      "Радар-0869"
+    ],
+    "urls": [
+      "http://github.com/hacksider/Deep-Live-Cam",
+      "https://github.com/hacksider/Deep-Live-Cam"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "claude.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0654",
+      "iirepresent-0727"
+    ],
+    "urls": [
+      "http://claude.ai/",
+      "https://claude.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "consensus.app",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0739",
+      "iirepresent-0815"
+    ],
+    "urls": [
+      "http://consensus.app/",
+      "https://consensus.app/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "perplexity.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0782",
+      "iirepresent-0809"
+    ],
+    "urls": [
+      "http://perplexity.ai/",
+      "https://www.perplexity.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "ideogram.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0796",
+      "iirepresent-1071"
+    ],
+    "urls": [
+      "http://ideogram.ai/",
+      "https://ideogram.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "lumalabs.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-0820",
+      "iirepresent-0935"
+    ],
+    "urls": [
+      "http://lumalabs.ai/",
+      "https://lumalabs.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "youtube.com",
+      "/watch"
+    ],
+    "source_ids": [
+      "iirepresent-1054",
+      "iirepresent-1269",
+      "iirepresent-1305"
+    ],
+    "urls": [
+      "https://www.youtube.com/watch?v=FopG1hcxSVg",
+      "https://www.youtube.com/watch?v=G2SuBGH8ilQ",
+      "https://www.youtube.com/watch?v=Py0wxCoJ4xA"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "chat.openai.com",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-1090",
+      "iirepresent-1326"
+    ],
+    "urls": [
+      "http://chat.openai.com/",
+      "https://chat.openai.com/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "magnific.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-1108",
+      "iirepresent-1135"
+    ],
+    "urls": [
+      "http://magnific.ai/",
+      "https://magnific.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "midjourney.com",
+      "/home"
+    ],
+    "source_ids": [
+      "iirepresent-1118",
+      "iirepresent-1288"
+    ],
+    "urls": [
+      "https://www.midjourney.com/home",
+      "https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "replicate.com",
+      "/stability-ai/stable-video-diffusion/versions/3f0457e4619daac51203dedb472816fd4af51f3149fa7a9e0b5ffcf1b8172438"
+    ],
+    "source_ids": [
+      "iirepresent-1130",
+      "iirepresent-1144"
+    ],
+    "urls": [
+      "https://replicate.com/stability-ai/stable-video-diffusion/versions/3f0457e4619daac51203dedb472816fd4af51f3149fa7a9e0b5ffcf1b8172438?input=form&output=preview&prediction=7aoaijlbzpsmyclgoppcl3d4nu",
+      "https://replicate.com/stability-ai/stable-video-diffusion/versions/3f0457e4619daac51203dedb472816fd4af51f3149fa7a9e0b5ffcf1b8172438?input=form&output=preview&prediction=mbqkqndbajw4o35zznrrajwggu"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "leonardo.ai",
+      "/"
+    ],
+    "source_ids": [
+      "iirepresent-1141",
+      "iirepresent-1228"
+    ],
+    "urls": [
+      "http://leonardo.ai/",
+      "https://leonardo.ai/"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "magicstudio.com",
+      "/ru/backgroundblur"
+    ],
+    "source_ids": [
+      "iirepresent-1179",
+      "iirepresent-1182"
+    ],
+    "urls": [
+      "https://magicstudio.com/ru/backgroundblur/",
+      "https://magicstudio.com/ru/backgroundblur/?via=therundownai"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "github.com",
+      "/mikeroyal/self-hosting-guide"
+    ],
+    "source_ids": [
+      "Радар-0172",
+      "Радар-2935"
+    ],
+    "urls": [
+      "https://github.com/mikeroyal/Self-Hosting-Guide",
+      "https://github.com/mikeroyal/Self-Hosting-Guide?utm_source=chatgpt.com"
+    ],
+    "must_not_automatically_merge": true
+  },
+  {
+    "legacy_host_path": [
+      "github.com",
+      "/winscp/winscp"
+    ],
+    "source_ids": [
+      "Радар-0860",
+      "Радар-0861"
+    ],
+    "urls": [
+      "http://github.com/winscp/winscp",
+      "https://github.com/winscp/winscp"
+    ],
+    "must_not_automatically_merge": true
+  }
+]

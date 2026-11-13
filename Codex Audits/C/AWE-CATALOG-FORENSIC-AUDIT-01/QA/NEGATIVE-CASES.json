@@ -1,0 +1,57 @@
+[
+  {
+    "case": "path_case",
+    "a": "https://example.org/Tool",
+    "b": "https://example.org/tool",
+    "conservative_distinct": true,
+    "legacy_merges": true,
+    "actual_conservative_distinct": true,
+    "pass": true
+  },
+  {
+    "case": "query_identity",
+    "a": "https://example.org/api?model=a",
+    "b": "https://example.org/api?model=b",
+    "conservative_distinct": true,
+    "legacy_address_merges": true,
+    "actual_conservative_distinct": true,
+    "pass": true
+  },
+  {
+    "case": "path_encoded_slash",
+    "a": "https://example.org/a%2Fb",
+    "b": "https://example.org/a/b",
+    "conservative_distinct": true,
+    "legacy_merges": true,
+    "actual_conservative_distinct": true,
+    "pass": true
+  },
+  {
+    "case": "github_project_vs_file",
+    "a": "https://github.com/A/B",
+    "b": "https://github.com/a/b/blob/main/file.md",
+    "conservative_distinct": true,
+    "same_project": true,
+    "actual_conservative_distinct": true,
+    "pass": true,
+    "actual_same_project": true
+  },
+  {
+    "case": "fragment_resource",
+    "a": "https://example.org/page#one",
+    "b": "https://example.org/page#two",
+    "conservative_distinct": true,
+    "legacy_address_merges": true,
+    "actual_conservative_distinct": true,
+    "pass": true
+  },
+  {
+    "case": "www_not_assumed_alias",
+    "a": "https://www.example.org",
+    "b": "https://example.org",
+    "conservative_distinct": true,
+    "legacy_merges": true,
+    "actual_conservative_distinct": true,
+    "pass": true
+  }
+]

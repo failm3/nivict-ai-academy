@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-12T06:43:16.633156+00:00",
+  "counts": {
+    "sources": 4,
+    "posts": 5599,
+    "post_versions": 5617,
+    "post_links": 7846,
+    "post_media": 5546,
+    "resources": 3415,
+    "assertions": 33653,
+    "resource_provenance": 3619,
+    "extraction_candidates": 37837,
+    "source_candidates": 144,
+    "resource_versions": 204,
+    "integration_specs": 143,
+    "verification_runs": 28,
+    "live_tests": 5,
+    "approvals": 0,
+    "audit_events": 3
+  },
+  "stages": [
+    {
+      "stage": "DISCOVERED",
+      "n": 3403
+    },
+    {
+      "stage": "DOCUMENTED",
+      "n": 8
+    },
+    {
+      "stage": "LIVE_TESTED",
+      "n": 4
+    }
+  ],
+  "candidate_states": [
+    {
+      "state": "pending",
+      "kind": "named_mention",
+      "n": 29938
+    },
+    {
+      "state": "pending",
+      "kind": "unresolved_text",
+      "n": 26
+    },
+    {
+      "state": "pending",
+      "kind": "url",
+      "n": 4476
+    },
+    {
+      "state": "resolved",
+      "kind": "url",
+      "n": 3397
+    }
+  ],
+  "verification_outcomes": [
+    {
+      "method": "github_api_license",
+      "outcome": "license_file_observed",
+      "n": 9
+    },
+    {
+      "method": "github_api_metadata",
+      "outcome": "http_error_or_mismatch",
+      "n": 1
+    },
+    {
+      "method": "github_api_metadata",
+      "outcome": "metadata_observed",
+      "n": 9
+    },
+    {
+      "method": "url_reachability",
+      "outcome": "blocked_or_unreachable",
+      "n": 2
+    },
+    {
+      "method": "url_reachability",
+      "outcome": "reachable",
+      "n": 7
+    }
+  ],
+  "source_analysis": [
+    {
+      "handle": "githubradar",
+      "title": "GitHub Radar",
+      "trust": "B",
+      "public_posts": 3235,
+      "earliest_published_at": "2025-06-26T11:37:08+00:00",
+      "latest_published_at": "2026-11-12T02:40:00+00:00",
+      "posts_with_dated_timestamp": 3235,
+      "dated_public_posts_per_week": 44.964,
+      "posts_with_any_link": 3233,
+      "posts_with_registry_or_repository_link": 3226,
+      "technical_link_fraction": 0.9972,
+      "ad_marker_posts": 9,
+      "ad_marker_fraction": 0.0028,
+      "known_forward_marker_posts": 0,
+      "original_content_fraction": null,
+      "fraud_probability": null,
+      "claim_verification_precision": null,
+      "boundaries": "measures visible public corpus only; ad markers are heuristics, not proof of advertisements or fraud; link fraction is not tool quality"
+    },
+    {
+      "handle": "iirepresent",
+      "title": "ИИ Представляет",
+      "trust": "B",
+      "public_posts": 1616,
+      "earliest_published_at": "2023-02-28T21:39:19+00:00",
+      "latest_published_at": "2026-11-11T15:26:11+00:00",
+      "posts_with_dated_timestamp": 1616,
+      "dated_public_posts_per_week": 8.368,
+      "posts_with_any_link": 1549,
+      "posts_with_registry_or_repository_link": 149,
+      "technical_link_fraction": 0.0922,
+      "ad_marker_posts": 14,
+      "ad_marker_fraction": 0.0087,
+      "known_forward_marker_posts": 52,
+      "original_content_fraction": null,
+      "fraud_probability": null,
+      "claim_verification_precision": null,
+      "boundaries": "measures visible public corpus only; ad markers are heuristics, not proof of advertisements or fraud; link fraction is not tool quality"
+    },
+    {
+      "handle": "sachkov_blog",
+      "title": "Кирилл Сачков",
+      "trust": "B",
+      "public_posts": 548,
+      "earliest_published_at": "2024-01-13T12:59:12+00:00",
+      "latest_published_at": "2026-11-11T10:39:24+00:00",
+      "posts_with_dated_timestamp": 548,
+      "dated_public_posts_per_week": 3.714,
+      "posts_with_any_link": 281,
+      "posts_with_registry_or_repository_link": 17,
+      "technical_link_fraction": 0.031,
+      "ad_marker_posts": 6,
+      "ad_marker_fraction": 0.0109,
+      "known_forward_marker_posts": 9,
+      "original_content_fraction": null,
+      "fraud_probability": null,
+      "claim_verification_precision": null,
+      "boundaries": "measures visible public corpus only; ad markers are heuristics, not proof of advertisements or fraud; link fraction is not tool quality"
+    }
+  ],
+  "source_overlaps": [
+    {
+      "source_a": "githubradar",
+      "source_b": "iirepresent",
+      "common_technical_urls": 33,
+      "jaccard": 0.010012,
+      "scope": "exact canonical technical URL overlap, not semantic topic overlap"
+    },
+    {
+      "source_a": "githubradar",
+      "source_b": "sachkov_blog",
+      "common_technical_urls": 3,
+      "jaccard": 0.000936,
+      "scope": "exact canonical technical URL overlap, not semantic topic overlap"
+    },
+    {
+      "source_a": "iirepresent",
+      "source_b": "sachkov_blog",
+      "common_technical_urls": 0,
+      "jaccard": 0.0,
+      "scope": "exact canonical technical URL overlap, not semantic topic overlap"
+    }
+  ],
+  "approved_executable_records": 0,
+  "awe_integration_live_verified": false
+}

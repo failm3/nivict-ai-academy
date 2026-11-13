@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "scope": "Offline captured-observation replay; not upstream runtime tests",
+  "fresh_raw_inventory": true,
+  "fresh_manus_zip_parse": true,
+  "source_code_executed": "Only audit-authored standard-library scripts",
+  "results": [
+    {
+      "file": "INVENTORY-ALL.jsonl",
+      "captured_sha256": "37b47db08bcafeafd2aa8ecc03f1c67f588d4c2184fa8663ab9e31783e9a2689",
+      "replay_sha256": "37b47db08bcafeafd2aa8ecc03f1c67f588d4c2184fa8663ab9e31783e9a2689",
+      "byte_equal": true
+    },
+    {
+      "file": "COVERAGE.json",
+      "captured_sha256": "d903de00326f67e01a1eebc6015e3136174d35e65879846525289107af8cd09c",
+      "replay_sha256": "d903de00326f67e01a1eebc6015e3136174d35e65879846525289107af8cd09c",
+      "byte_equal": true
+    },
+    {
+      "file": "DEDUP-RECONCILIATION.csv",
+      "captured_sha256": "5474b1d2caa75091cfc4b15741549ef96f9b23429cc3d58ad0c0682389fa67e2",
+      "replay_sha256": "5474b1d2caa75091cfc4b15741549ef96f9b23429cc3d58ad0c0682389fa67e2",
+      "byte_equal": true
+    },
+    {
+      "file": "DUPLICATE-GROUPS.csv",
+      "captured_sha256": "46bd919a1ade083ef093f21ce6deebc75e34c7250741edf2365e2999dd5a0704",
+      "replay_sha256": "46bd919a1ade083ef093f21ce6deebc75e34c7250741edf2365e2999dd5a0704",
+      "byte_equal": true
+    },
+    {
+      "file": "CONTINUATION-QUEUE.csv",
+      "captured_sha256": "936aa71d5343cdba508b0571f57e6614c468ea0d2c7888520700cddbd9f42993",
+      "replay_sha256": "936aa71d5343cdba508b0571f57e6614c468ea0d2c7888520700cddbd9f42993",
+      "byte_equal": true
+    }
+  ],
+  "replay_data_assertions": {
+    "status": "PASS",
+    "scope": "Data/evidence assertions only; NOT runtime, security, external-family or Owner acceptance",
+    "checks": {
+      "original_id_set_equal": true,
+      "unique_row_count": true,
+      "original_content_equal": true,
+      "all_required_fields": true,
+      "external_attempt_evidence_for_every_row": true,
+      "metadata_queue_complete": true,
+      "body_never_read": true,
+      "source_totals_sum": true,
+      "category_totals_sum": true,
+      "no_false_runtime_pass": true,
+      "no_approval_or_integration_counts": true,
+      "technical_review_count": true,
+      "technical_no_false_pass": true,
+      "primary_blob_hashes_equal": true,
+      "primary_document_count": true,
+      "category_links_complete": true,
+      "flag_reviews_linked": true
+    },
+    "errors": [],
+    "flag_review_count": 12,
+    "raw_counts": {
+      "iirepresent.json": 1331,
+      "Радар.json": 3173
+    },
+    "external_attempted": 4504,
+    "independent_model_family_gate": "NOT_SATISFIED"
+  }
+}

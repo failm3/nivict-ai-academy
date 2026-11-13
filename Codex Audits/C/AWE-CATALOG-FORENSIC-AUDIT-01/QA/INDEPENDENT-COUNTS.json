@@ -1,0 +1,353 @@
+{
+  "status": "PARTIAL",
+  "auditor": "independent child agent; same GPT family as lead auditor",
+  "different_family_requirement": "NOT_SATISFIED",
+  "audited_at": "2026-11-12",
+  "source_commit": "5c611773bff3ccba76b78337534ed8944e137236",
+  "scope": "Read-only local corpus, derivative consistency, independent arithmetic and negative URL cases. No external code executed. No source/library imports from parent script.",
+  "checks": [
+    {
+      "check": "pinned_head",
+      "pass": true,
+      "detail": "5c611773bff3ccba76b78337534ed8944e137236"
+    },
+    {
+      "check": "raw_counts",
+      "pass": true,
+      "detail": {
+        "iirepresent": 1331,
+        "Радар": 3173
+      }
+    },
+    {
+      "check": "raw_shapes_exact_link_description",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_nonempty_strings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "classified_count_and_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "csv_count_and_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "note_count_and_id_multiplicity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_json_csv_note_crosswalk",
+      "pass": true,
+      "detail": {
+        "mismatch_count": 0
+      }
+    },
+    {
+      "check": "all_required_bytes_match_pinned_git_blobs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prior_raw_sha256_match",
+      "pass": false,
+      "detail": null,
+      "classification": "EXPLAINED_HISTORICAL_BYTE_MISMATCH",
+      "content_failure": false
+    },
+    {
+      "check": "prior_raw_sha256_explained_by_crlf",
+      "pass": true,
+      "detail": {
+        "iirepresent.json": {
+          "reported": "ee54b674c057f0c67b584b77e02454a175c6853c769452e4654559f2582b1c3b",
+          "pinned_git_lf": "01dc8a9f15f769f0c240fe7d64442ea279ef6461675f9f4204eb47571701ddc5",
+          "crlf_reconstruction": "ee54b674c057f0c67b584b77e02454a175c6853c769452e4654559f2582b1c3b"
+        },
+        "Радар.json": {
+          "reported": "3a73e487a8187369753c627010bd36a22559b3b51b3ecae724265ef617c1c800",
+          "pinned_git_lf": "2f5c6806030dba7ac7b3e8e3c1cf9510054e88ac7085d46b08a941ecf9dc4221",
+          "crlf_reconstruction": "3a73e487a8187369753c627010bd36a22559b3b51b3ecae724265ef617c1c800"
+        }
+      }
+    },
+    {
+      "check": "manifest_counts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prior_category_counts_recompute",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "prior_confidence_counts_recompute",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "legacy_normalized_count",
+      "pass": true,
+      "detail": 4466
+    },
+    {
+      "check": "legacy_address_count",
+      "pass": true,
+      "detail": 4424
+    },
+    {
+      "check": "duplicates_csv_exact_group_ids",
+      "pass": true,
+      "detail": {
+        "expected_groups": 38,
+        "claimed_groups": 38
+      }
+    },
+    {
+      "check": "duplicates_csv_query_collision_group_ids",
+      "pass": true,
+      "detail": {
+        "expected_groups": 33,
+        "claimed_groups": 33
+      }
+    },
+    {
+      "check": "duplicates_csv_group_count_values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issues_csv_exact_multiset",
+      "pass": true,
+      "detail": {
+        "expected": 4090,
+        "actual": 4090
+      }
+    },
+    {
+      "check": "independent_negative_url_cases",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "checks_passed": 20,
+  "checks_total": 21,
+  "source_integrity": "PINNED_GIT_BLOBS_MATCH",
+  "source_content_status": "NO_CONTENT_MISMATCH_DETECTED",
+  "historical_hash_status": "EXPLAINED_HISTORICAL_BYTE_MISMATCH",
+  "mismatches": [],
+  "note_escaping_reconciled": [
+    {
+      "id": "iirepresent-1069",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1074",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1075",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1084",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1201",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1216",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1217",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1218",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1234",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1258",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1263",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1267",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1268",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1269",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1273",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    },
+    {
+      "id": "iirepresent-1302",
+      "transformation": "HTML_ENTITY_ESCAPING",
+      "decoded_content_equal": true
+    }
+  ],
+  "line_ending_reconciliation": {
+    "iirepresent.json": {
+      "reported": "ee54b674c057f0c67b584b77e02454a175c6853c769452e4654559f2582b1c3b",
+      "pinned_git_lf": "01dc8a9f15f769f0c240fe7d64442ea279ef6461675f9f4204eb47571701ddc5",
+      "crlf_reconstruction": "ee54b674c057f0c67b584b77e02454a175c6853c769452e4654559f2582b1c3b"
+    },
+    "Радар.json": {
+      "reported": "3a73e487a8187369753c627010bd36a22559b3b51b3ecae724265ef617c1c800",
+      "pinned_git_lf": "2f5c6806030dba7ac7b3e8e3c1cf9510054e88ac7085d46b08a941ecf9dc4221",
+      "crlf_reconstruction": "3a73e487a8187369753c627010bd36a22559b3b51b3ecae724265ef617c1c800"
+    }
+  },
+  "source_hashes": {
+    "iirepresent.json": {
+      "sha256": "01dc8a9f15f769f0c240fe7d64442ea279ef6461675f9f4204eb47571701ddc5",
+      "bytes": 850896,
+      "git_blob": "eb5c857c66af7701e58745ebce66585e48ab119e",
+      "expected_blob": "eb5c857c66af7701e58745ebce66585e48ab119e",
+      "match": true
+    },
+    "Радар.json": {
+      "sha256": "2f5c6806030dba7ac7b3e8e3c1cf9510054e88ac7085d46b08a941ecf9dc4221",
+      "bytes": 2257187,
+      "git_blob": "09cbfa76a6aeebb6d208e7b6c565604549854f9c",
+      "expected_blob": "09cbfa76a6aeebb6d208e7b6c565604549854f9c",
+      "match": true
+    },
+    "all-records-classified.json": {
+      "sha256": "5a83c501b290b83a17f6ffaeb0fe9cae772e26be7a6a4c5cbcb948908fc76b56",
+      "bytes": 5620443,
+      "git_blob": "d2bd28d28a4d23fc82ac5ffbb8a3b4112fcea123",
+      "expected_blob": "d2bd28d28a4d23fc82ac5ffbb8a3b4112fcea123",
+      "match": true
+    },
+    "catalog-all-4504.csv": {
+      "sha256": "8ad601eb0ff81cf8b8597da7276819c58bd4f156d1c269789fd4907bae9b3fa4",
+      "bytes": 4048275,
+      "git_blob": "4f2a4739b5e6bb6a412de26bfefccaa51d39b7f7",
+      "expected_blob": "4f2a4739b5e6bb6a412de26bfefccaa51d39b7f7",
+      "match": true
+    },
+    "validation-report.json": {
+      "sha256": "dfd4a0bbb143d86c9fe420c5c98b5accaeeb3333e6700f3b9a085799b4cc27b5",
+      "bytes": 2584,
+      "git_blob": "6cde1ff8e12ee8c6b08087a2a1e07fed23ec6151",
+      "expected_blob": "6cde1ff8e12ee8c6b08087a2a1e07fed23ec6151",
+      "match": true
+    },
+    "issues.csv": {
+      "sha256": "43568762d8f8ae8f3a151db94e0bc67fc2c0334c4a1a3ce43d272b3a755f214b",
+      "bytes": 315799,
+      "git_blob": "1dda39448eb7b083ce5b247d406a5e7b0cd0ffe8",
+      "expected_blob": "1dda39448eb7b083ce5b247d406a5e7b0cd0ffe8",
+      "match": true
+    },
+    "duplicates.csv": {
+      "sha256": "d3bbbd6b26aeabd46c1bd85f4ba6a029fc5b5b50390c9d04f7db4a545494bbd9",
+      "bytes": 8260,
+      "git_blob": "21bb1b97648a6a572103454e86dad2634a7832af",
+      "expected_blob": "21bb1b97648a6a572103454e86dad2634a7832af",
+      "match": true
+    },
+    "import-manifest.json": {
+      "sha256": "a4c1d6debdb69c447ae15c8f3c03edc154fd0a6b6edf9c257c5d3221dc82c652",
+      "bytes": 669,
+      "git_blob": "7ed693fadc0d4842f54570019409b4eb7e6a5b51",
+      "expected_blob": "7ed693fadc0d4842f54570019409b4eb7e6a5b51",
+      "match": true
+    }
+  },
+  "counts": {
+    "raw": 4504,
+    "sources": {
+      "iirepresent": 1331,
+      "Радар": 3173
+    },
+    "classified": 4504,
+    "csv": 4504,
+    "notes": 4504,
+    "exact_urls": 4472,
+    "legacy_full_urls": 4466,
+    "legacy_addresses": 4424,
+    "conservative_resource_urls": 4471,
+    "project_or_resource_keys": 4465,
+    "prior_categories": {
+      "AI - Модели и инференс": 645,
+      "Системы - ОС и устройства": 228,
+      "Знания - Обучение и исследования": 247,
+      "AI - Агенты и MCP": 365,
+      "Медиа - Видео и 3D": 473,
+      "Медиа - Аудио и речь": 224,
+      "Разработка - Фреймворки и библиотеки": 210,
+      "Медиа - Изображения и графика": 303,
+      "AI - RAG и память": 48,
+      "Бизнес - Маркетинг и продажи": 68,
+      "Продуктивность и приложения": 212,
+      "Игры и интерактив": 96,
+      "Дизайн - UI UX и прототипирование": 34,
+      "AI - API и маршрутизация": 7,
+      "Безопасность и приватность": 246,
+      "Разработка - Браузер и автоматизация": 17,
+      "Инфраструктура - Данные и БД": 90,
+      "Разработка - Редакторы и CLI": 250,
+      "Инфраструктура - DevOps и хостинг": 250,
+      "Разработка - Тесты и качество": 69,
+      "Требует ручной классификации": 384,
+      "AI - Обучение и оценка моделей": 38
+    },
+    "prior_confidence": {
+      "low": 2918,
+      "high": 571,
+      "medium": 631,
+      "unclassified": 384
+    },
+    "strata": 59,
+    "sample_size": 59
+  },
+  "limitations": [
+    "Same model family; external independent model review pending.",
+    "Stratified selection covers all 59 nonempty category/confidence strata but validates source consistency only; no primary-source claim validation.",
+    "GitHub project groups are candidate identity relations, not proof of unique installable technologies.",
+    "No current runtime tested; no license or security conclusions."
+  ]
+}

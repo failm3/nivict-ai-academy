@@ -1,0 +1,25 @@
+[
+  {
+    "entity_id": "github:aminedjeghri/personal-os-setup",
+    "repo": "aminedjeghri/personal-os-setup",
+    "checked_at": "2026-11-12T14:37:06.528Z",
+    "method": "GITHUB_API_METADATA_RETRY",
+    "status": "METADATA_OBSERVED",
+    "id": 319290609,
+    "full_name": "AmineDjeghri/personal-os-setup",
+    "html_url": "https://github.com/AmineDjeghri/personal-os-setup",
+    "archived": false,
+    "disabled": false,
+    "fork": false,
+    "pushed_at": "2026-11-11T22:12:50Z",
+    "updated_at": "2026-11-12T14:02:45Z",
+    "default_branch": "main",
+    "license_metadata": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  }
+]

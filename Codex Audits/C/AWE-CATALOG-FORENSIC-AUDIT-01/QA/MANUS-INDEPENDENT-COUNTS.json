@@ -1,0 +1,225 @@
+{
+  "status": "PARTIAL",
+  "auditor": "separate agent, same GPT family; cross-family validation NOT_SATISFIED",
+  "archive_sha256": "5855ce5cfdb0abda44954108bfe2cfa1bec97dbf7c51db7be822eb04541d5ec1",
+  "archive_member_count": 485,
+  "registry_member_sha256": "2da51063b9da385d97df3c61d8d0f3eb1125b159734f079367862fa8d1b2c1f4",
+  "checks": [
+    {
+      "check": "archive_sha_matches",
+      "pass": true,
+      "detail": "5855ce5cfdb0abda44954108bfe2cfa1bec97dbf7c51db7be822eb04541d5ec1"
+    },
+    {
+      "check": "archive_crc_all_members",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "archive_names_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "archive_paths_safe_for_reading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "research_count_3415",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "research_ids_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "research_identity_keys_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "live_stack_is_three_library_records",
+      "pass": true,
+      "detail": {
+        "count": 3,
+        "interpretation": "This archive file is not a snapshot of the 12-row working AWE database."
+      }
+    },
+    {
+      "check": "all_live_stack_rows_map_to_research",
+      "pass": true,
+      "detail": [
+        {
+          "name": "Beautiful Soup",
+          "keys": [
+            "resource:https://code.launchpad.net/beautifulsoup",
+            "resource:https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+          ],
+          "research_ids": [
+            10
+          ]
+        },
+        {
+          "name": "FastAPI",
+          "keys": [
+            "github:fastapi/fastapi",
+            "resource:https://fastapi.tiangolo.com/"
+          ],
+          "research_ids": [
+            11
+          ]
+        },
+        {
+          "name": "Psycopg PostgreSQL adapter",
+          "keys": [
+            "github:psycopg/psycopg",
+            "resource:https://www.psycopg.org/psycopg3/docs/"
+          ],
+          "research_ids": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "check": "producer_row_match_metrics_independently_recomputed",
+      "pass": true,
+      "detail": {
+        "nivict_rows_by_basis": {
+          "NO_STABLE_ID_MATCH": 1195,
+          "exact": 1898,
+          "entity": 1411
+        },
+        "matched_manus_rows": 3270,
+        "unmatched_manus_rows": 145,
+        "manus_entity_keys": 3457,
+        "intersection_entity_keys": 3270
+      }
+    },
+    {
+      "check": "githubradar_case_alias_files_byte_equal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "backup_member_hash_registry.dump",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "backup_member_hash_evidence.tar.gz",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "check_passed": 13,
+  "check_total": 13,
+  "primary_url_overlap_metrics": {
+    "raw_urls": {
+      "nivict_unique_keys": 4472,
+      "manus_unique_keys": 3455,
+      "intersection_unique_keys": 1878,
+      "nivict_only_keys": 2594,
+      "manus_only_keys": 1577,
+      "nivict_rows_with_match": 1897,
+      "manus_rows_with_match": 1878
+    },
+    "conservative_urls": {
+      "nivict_unique_keys": 4471,
+      "manus_unique_keys": 3455,
+      "intersection_unique_keys": 1878,
+      "nivict_only_keys": 2593,
+      "manus_only_keys": 1577,
+      "nivict_rows_with_match": 1897,
+      "manus_rows_with_match": 1878
+    },
+    "project_or_resource": {
+      "nivict_unique_keys": 4465,
+      "manus_unique_keys": 3455,
+      "intersection_unique_keys": 3270,
+      "nivict_only_keys": 1195,
+      "manus_only_keys": 185,
+      "nivict_rows_with_match": 3309,
+      "manus_rows_with_match": 3270
+    }
+  },
+  "primary_plus_imported_claim_alias_metrics": {
+    "nivict_rows_by_basis": {
+      "NO_STABLE_ID_MATCH": 1195,
+      "exact": 1898,
+      "entity": 1411
+    },
+    "matched_manus_rows": 3270,
+    "unmatched_manus_rows": 145,
+    "manus_entity_keys": 3457,
+    "intersection_entity_keys": 3270
+  },
+  "live_stack_mapping": [
+    {
+      "name": "Beautiful Soup",
+      "keys": [
+        "resource:https://code.launchpad.net/beautifulsoup",
+        "resource:https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+      ],
+      "research_ids": [
+        10
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "keys": [
+        "github:fastapi/fastapi",
+        "resource:https://fastapi.tiangolo.com/"
+      ],
+      "research_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Psycopg PostgreSQL adapter",
+      "keys": [
+        "github:psycopg/psycopg",
+        "resource:https://www.psycopg.org/psycopg3/docs/"
+      ],
+      "research_ids": [
+        12
+      ]
+    }
+  ],
+  "stages": {
+    "DOCUMENTED": 8,
+    "LIVE_TESTED": 4,
+    "DISCOVERED": 3403
+  },
+  "verification_status": {
+    "official_metadata_observed": 6,
+    "live_tested": 4,
+    "research_only": 3405
+  },
+  "recorded_approvals": 0,
+  "recorded_approved_for_export": 0,
+  "delivery_manifest_checks": [
+    {
+      "basename": "awe-tool-intelligence-source-v2.zip",
+      "status": "SOURCE_MISSING_IN_OUTER_ZIP"
+    },
+    {
+      "basename": "awe-tool-intelligence-delivery-v2.tar.gz",
+      "status": "SOURCE_MISSING_IN_OUTER_ZIP"
+    },
+    {
+      "basename": "awe-tool-intelligence-v2.bundle",
+      "status": "HASH_MATCH"
+    }
+  ],
+  "limitations": [
+    "Registry observed in local delivered ZIP; no independent author signature established.",
+    "Metadata and live tests are imported claims, not rerun or accepted by this audit.",
+    "GitHub project grouping preserves resource distinctions and is not a unique technology count.",
+    "Official and repository URLs used as aliases can create multiple keys per Manus row. Unique-key counts must not be reported as unique-row counts.",
+    "The three-row live_stack_resources file is not the 12-row working AWE runtime database; no current runtime state was read."
+  ]
+}

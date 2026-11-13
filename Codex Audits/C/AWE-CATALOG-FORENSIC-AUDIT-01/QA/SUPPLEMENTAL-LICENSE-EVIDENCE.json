@@ -1,0 +1,65 @@
+{
+  "status": "PRIMARY_TEXT_INSPECTED",
+  "sources": [
+    {
+      "key": "mastra-root",
+      "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/LICENSE.md",
+      "git_blob_sha": "e1b6e4b6455a882dbbf66ee0b13101ec584d5e63",
+      "checked_at": "2026-11-12",
+      "summary": "Mastra core uses Apache-2.0 outside ee directories. The mapping explicitly names core auth, agent-builder, and editor EE areas.",
+      "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+    },
+    {
+      "key": "mastra-ee",
+      "url": "https://github.com/mastra-ai/mastra/blob/6ad8e7eb9d096aa3e2c7d291aa3d4cafa5f960ef/ee/LICENSE",
+      "git_blob_sha": "689ca0ad0738b43358c8c6c61f1b05667dba4fac",
+      "checked_at": "2026-11-12",
+      "summary": "Enterprise code is source available. Production use requires both a written agreement permitting the relevant feature and a valid feature-enabling license key; development/testing is separately defined. Production, redistribution and evaluation must not be treated as interchangeable.",
+      "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+    },
+    {
+      "key": "litellm-ee-actual",
+      "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/litellm/enterprise/LICENSE.md",
+      "git_blob_sha": "c8607439adfe19df15cf78a04e5964237a89b9bc",
+      "checked_at": "2026-11-12",
+      "summary": "Enterprise-directory production use requires an applicable agreement and valid enterprise license for the correct seats. Development/testing permissions do not grant unrestricted redistribution or production rights.",
+      "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+    },
+    {
+      "key": "activepieces-ee",
+      "url": "https://github.com/activepieces/activepieces/blob/4f4ab8973b76e474770a57d544c2fdc967d0e0e2/packages/ee/LICENSE",
+      "git_blob_sha": "1c68c6b3bbc00e1a41a78b488da61a0c983faab4",
+      "checked_at": "2026-11-12",
+      "summary": "Enterprise production use requires applicable subscription terms or another governing agreement and a valid enterprise license for the correct seats. Core MIT terms do not cover these directories.",
+      "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+    },
+    {
+      "key": "langfuse-ee",
+      "url": "https://github.com/langfuse/langfuse/blob/9621bc46d0e67e7580f6425dea07996f347f0412/ee/LICENSE",
+      "git_blob_sha": "3e78f3e97ac04d255328733b8c479d62bbaebadf",
+      "checked_at": "2026-11-12",
+      "summary": "The enterprise periphery has commercial terms, while root-defined core remains MIT. Enterprise use depends on the governing agreement and valid license; development/testing copying and modification are separately allowed.",
+      "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+    },
+    {
+      "key": "infisical-ee-actual",
+      "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/backend/src/ee/LICENSE.md",
+      "git_blob_sha": "a1c37bb93d0ba228c105870ca80310e025d946d1",
+      "checked_at": "2026-11-12",
+      "summary": "The discovered backend EE license requires an agreement and valid enterprise license for production use. Root MIT applies outside EE exclusions; not every advertised secret-management feature is thereby established as free.",
+      "inspection_scope": "LICENSE text only; no legal clearance or feature entitlement assumed"
+    }
+  ],
+  "failed_references": [
+    {
+      "url": "https://github.com/BerriAI/litellm/blob/52d1c4cd80162fbf03d7f92def0cb1631f1edfd4/litellm/enterprise/LICENSE",
+      "status": "HTTP_404",
+      "resolution": "Actual LICENSE.md located through directory listing."
+    },
+    {
+      "url": "https://github.com/Infisical/infisical/blob/4dcb599d9455c117e7de0ac176744eb20cc37f0e/ee/LICENSE",
+      "status": "HTTP_404",
+      "resolution": "Actual backend/src/ee/LICENSE.md located through directory listings."
+    }
+  ]
+}
