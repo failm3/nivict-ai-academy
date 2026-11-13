@@ -11,6 +11,8 @@
 
 **Market reuse research R1 (2026-11-13):** [проверенный по официальным источникам обзор Build vs Buy для всех восьми блоков](../R1-CAPABILITY-PROGRAM/RESEARCH/MARKET-REUSE-AUDIT-2026-11-13.md). Ключевой вывод: Mastra уже имеет ToolSearchProcessor, SkillSearchProcessor, MCPClient, HITL; Composio/Pipedream — готовые пользовательские API/OAuth; ToolHive — опциональный MCP sandbox; Docling/Crawl4AI — knowledge ingestion; Agent Skills + Promptfoo — процедуры/QA. Использовать готовое, писать минимальные адаптеры, не переписывать Nox. [OpenCode read-only inventory — только DRAFT, НЕ отправлен](../R1-CAPABILITY-PROGRAM/PROMPTS/OPENCODE-R1-READONLY-REUSE-INVENTORY-DRAFT.md). **R0 продолжается независимо, ничего не установлено, R1 не разрешён к исполнению.**
 
+**Проверка реального кода Nox до рекомендаций (2026-11-13):** [NOX-IMPLEMENTED-CAPABILITIES-SOURCE-AUDIT](../R1-CAPABILITY-PROGRAM/RESEARCH/NOX-IMPLEMENTED-CAPABILITIES-SOURCE-AUDIT-2026-11-13.md). Подтверждено: Mastra core 1.82.0, MCP 2.8.0, memory/libsql, Prompt Master, Head, Agent Factory `createSpecialist`, recursion, tools file/shell/web/browser/Tool Intelligence, QA/Mission Manager. **Не предлагать повторное внедрение существующего!** Market scan — условные кандидаты только после gap analysis финального R0; R0 не изменять.
+
 ## Восстановление
 
 1. **Полный master handoff:** [NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md](./NOX-MASTER-HANDOFF-2026-11-13-R0-LIVE.md).
