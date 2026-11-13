@@ -6,6 +6,8 @@
 
 > **Граница:** не перезапускать R0, не менять работающий OpenCode, не устанавливать плагины или MCP, не выдавать доступы, не запускать платные проверки и не модифицировать production runtime на основании этих документов. Владелец сейчас авторизовал **структурирование и подготовку блоков**, не внедрение R1. Не смешивать OpenCode build-plane и Nox runtime-plane.
 
+**Главная контрольная точка (2026-11-13):** [единая выверенная выдержка R0/R1, реализованного кода и ошибок предыдущих рекомендаций](./CHECKPOINT-CURRENT-TRUTH-2026-11-13.md). **ПЕРЕД ЛЮБЫМ ОБСУЖДЕНИЕМ НОВОГО ПЛАГИНА ПРОЧИТАТЬ ЭТОТ ФАЙЛ.**
+
 ## Сначала исходники Nox — приоритет над market scan
 
 **Проверенный source audit (2026-11-13):** [что уже реализовано в локальном Nox](./RESEARCH/NOX-IMPLEMENTED-CAPABILITIES-SOURCE-AUDIT-2026-11-13.md). В `package.json` уже присутствуют Mastra 1.82.0 / MCP 2.8.0 / memory 1.41.0 / libsql 1.29.0 / Playwright. В коде есть Prompt Master (`createSpecification`), Head, `createSpecialist`, рекурсивное делегирование, MCPClient и браузерный adapter, файлы/shell/web/TI, Mission Manager и QA. **Запрет рекомендовать эти компоненты как новые установки**. Все market options ниже — только conditional gap candidates после проверки финального R0 SHA и реального missing capability.
