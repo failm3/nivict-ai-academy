@@ -1,0 +1,63 @@
+{
+  "generated_at_date": "2026-11-04",
+  "sources": {
+    "iirepresent": 1331,
+    "Радар": 3173
+  },
+  "input_total": 4504,
+  "output_total_notes": 4504,
+  "url_with_http_scheme": 4504,
+  "missing_link": 0,
+  "missing_description": 0,
+  "unique_full_url_normalized": 4466,
+  "unique_host_path_only": 4424,
+  "duplicate_full_url_extra_records": 38,
+  "duplicate_host_path_extra_records": 80,
+  "full_url_distinctions_merged_by_host_path": 42,
+  "classification_confidence": {
+    "low": 2918,
+    "high": 571,
+    "medium": 631,
+    "unclassified": 384
+  },
+  "categories": {
+    "AI - Агенты и MCP": 365,
+    "AI - RAG и память": 48,
+    "AI - Модели и инференс": 645,
+    "AI - Обучение и оценка моделей": 38,
+    "AI - API и маршрутизация": 7,
+    "Разработка - Браузер и автоматизация": 17,
+    "Разработка - Тесты и качество": 69,
+    "Разработка - Редакторы и CLI": 250,
+    "Разработка - Фреймворки и библиотеки": 210,
+    "Инфраструктура - Данные и БД": 90,
+    "Инфраструктура - DevOps и хостинг": 250,
+    "Безопасность и приватность": 246,
+    "Дизайн - UI UX и прототипирование": 34,
+    "Медиа - Изображения и графика": 303,
+    "Медиа - Видео и 3D": 473,
+    "Медиа - Аудио и речь": 224,
+    "Знания - Обучение и исследования": 247,
+    "Бизнес - Маркетинг и продажи": 68,
+    "Продуктивность и приложения": 212,
+    "Системы - ОС и устройства": 228,
+    "Игры и интерактив": 96,
+    "Требует ручной классификации": 384
+  },
+  "flags_counts": {
+    "manual_topic_review": 3302,
+    "description_mentions_multiple_services": 611,
+    "exact_url_duplicate": 76,
+    "same_address_possible_query_collision": 74,
+    "may_not_be_installable_tool": 27
+  },
+  "source_sha256": {
+    "iirepresent.json": "ee54b674c057f0c67b584b77e02454a175c6853c769452e4654559f2582b1c3b",
+    "Радар.json": "3a73e487a8187369753c627010bd36a22559b3b51b3ecae724265ef617c1c800"
+  },
+  "website_validation": "NOT PERFORMED",
+  "topic_classification": "automated rules based on URL, path, source description; may contain errors",
+  "source_row_mapping_verified": true,
+  "note_files_verified": true,
+  "source_json_copied_byte_exact": true
+}
