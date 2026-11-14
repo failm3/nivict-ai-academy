@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "families": 18,
+  "tickets_preserved": 12,
+  "ticket_sections": [
+    "OC-01",
+    "OC-02",
+    "OC-03",
+    "OC-04",
+    "OC-05",
+    "OC-06",
+    "OC-07",
+    "OC-08",
+    "OC-09",
+    "OC-10",
+    "OC-11",
+    "OC-12"
+  ],
+  "scope": "Repair-addition structural audit only; no OpenCode/Nox action or paid test",
+  "files": [
+    {
+      "path": "OPENCODE-HANDOFF-READYNESS.md",
+      "bytes": 18964,
+      "sha256": "e400c789377baf754e20dad2272070ac747edbbf0300ff932742a9e325655692"
+    },
+    {
+      "path": "REQUIREMENTS-18-MATRIX.csv",
+      "bytes": 6867,
+      "sha256": "ce22963aa88ce065ac1b8694d2ff77ecdb40e36d5c3abf3f3d6a22e371f46365"
+    },
+    {
+      "path": "REQUIREMENTS-18-MATRIX.md",
+      "bytes": 9220,
+      "sha256": "f2527e57f8b042fc484395ced9f6929ec4f5b451679526b2ffcb5a15b31c4781"
+    }
+  ]
+}
