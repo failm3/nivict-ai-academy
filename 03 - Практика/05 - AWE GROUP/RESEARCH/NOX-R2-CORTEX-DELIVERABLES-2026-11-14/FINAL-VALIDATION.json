@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "canonical_families": 18,
+  "raw_records": 4504,
+  "expanded_candidates": 32,
+  "matrix_rows": 32,
+  "test_rows": 12,
+  "ledger_records": 4556,
+  "knowledge_snapshots": 68,
+  "eval_snapshots": 96,
+  "zip_sha256": "5745cbfe4c4326f358907a835de3899e5967471320ad79ea0ebb0d38c96b216f",
+  "mastra_tarball_integrity": "PASS",
+  "scope": "Artifact structure/readback/hash and evidence references only; no Nox runtime, L3/L4, T01-T12 or R2 acceptance tests"
+}
