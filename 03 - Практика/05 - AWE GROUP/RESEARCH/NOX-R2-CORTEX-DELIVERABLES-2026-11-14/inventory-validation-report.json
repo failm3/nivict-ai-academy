@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "records": 4504,
+  "unique_ids": 4504,
+  "raw_roundtrip": "4504/4504 exact object equality",
+  "csv_records": 4504,
+  "csv_raw_roundtrip": "4504/4504 exact URL+description+raw JSON",
+  "source_counts": {
+    "iirepresent": 1331,
+    "Радар": 3173
+  },
+  "crosswalk": {
+    "raw_csv_url_mismatches": 0,
+    "raw_csv_description_mismatches": 0,
+    "csv_classified_mismatch_records": 0,
+    "missing_cards": 0,
+    "card_identity_mismatch_records": 0,
+    "cleaned_missing_or_ambiguous": 0,
+    "historical_issue_rows": 4090,
+    "historical_issue_dangling_ids": 0,
+    "historical_duplicate_rows": 71
+  },
+  "dedup": {
+    "exact_unique": 4466,
+    "exact_extra": 38,
+    "address_unique": 4424,
+    "address_extra": 80,
+    "all_rows_retained": true
+  },
+  "evidence": {
+    "L1": 4504,
+    "H": 4504,
+    "L3": 0,
+    "L4": 0
+  },
+  "manifest_output_hashes_verified": 9,
+  "limitations": [
+    "Structural/schema validation, not live URL/upstream verification",
+    "Heuristic classification is not semantic ground truth",
+    "CURRENT_NOX remains UNKNOWN",
+    "SOURCE_HASH_MISMATCH cause remains UNKNOWN"
+  ]
+}
