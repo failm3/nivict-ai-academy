@@ -49,8 +49,6 @@ sha256sum -c MANIFEST-SHA256.txt
 
 GitHub блокирует обычные Git-файлы строго больше **100 MiB** и предупреждает о файлах больше **50 MiB**. Фактический размер финального ZIP указан в `FINAL-DELIVERY-VALIDATION.json` и repair report. Он меньше 100 MiB; отдельные JSONL также меньше лимита. Это ограничение хранилища, не признак исследовательской приёмки.
 
-## Independent validation boundary
+## Final independent report boundary
 
-`independent-validation/FINAL-INDEPENDENT-DELIVERY-VALIDATION.*` — PASS предыдущего 87-file ZIP `0e8e04fea388e9feec246f1aaa7ed2e820a4f18c539a84bd1f63b747d0ea7818`. После добавления этого отчёту текущий пакет проверен только локально; новый независимый PASS не заявляется.
-
-GitHub publication uses `chunks/` for every file >=4 MiB. Run `python3 chunks/assemble_verify.py --verify` to reconstruct and verify originals. `chunks/ASSEMBLY-MANIFEST.json` contains original and chunk hashes.
+Final independent PASS covers previous 87-file ZIP only. Current 89-file package after report addition is locally validated only.

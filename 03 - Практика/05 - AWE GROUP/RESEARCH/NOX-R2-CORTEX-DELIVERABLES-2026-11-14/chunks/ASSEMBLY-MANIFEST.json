@@ -178,6 +178,24 @@
           "chunk_sha256": "387ecb3ca2c65c1410f383b3339d5a6e7bc959425a145cdba419aaa447fd4671"
         }
       ]
+    },
+    "raw-provenance/snapshots/catalog-all-4504.csv": {
+      "bytes": 4048275,
+      "sha256": "8ad601eb0ff81cf8b8597da7276819c58bd4f156d1c269789fd4907bae9b3fa4",
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "chunk_path": "chunks/data/raw-provenance/snapshots/catalog-all-4504.csv.part0001",
+          "chunk_bytes": 2500000,
+          "chunk_sha256": "139a5cc09f7ce9d3d78957947ca45e0cfa03c5addf96400f2e0546ab174430da"
+        },
+        {
+          "chunk_index": 2,
+          "chunk_path": "chunks/data/raw-provenance/snapshots/catalog-all-4504.csv.part0002",
+          "chunk_bytes": 1548275,
+          "chunk_sha256": "16593dd5bb575712ccddde2616e69a29c485ab88e9f292a689ec67c0585f492d"
+        }
+      ]
     }
   }
 }

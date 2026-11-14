@@ -11,9 +11,9 @@
   "per_row_l2_plus": "INCOMPLETE",
   "source_hash_mismatch_cause": "CAUSE_ESTABLISHED_CRLF_VS_LF",
   "payload": {
-    "file_count_including_manifest": 87,
-    "manifest_entries": 86,
-    "total_uncompressed_bytes": 77923508,
+    "file_count_including_manifest": 91,
+    "manifest_entries": 90,
+    "total_uncompressed_bytes": 77994803,
     "all_manifest_sha256_verified": true,
     "manifest_self_hash_rule": "MANIFEST-SHA256.txt lists every package file except itself; external ZIP SHA-256 is in a sidecar outside the ZIP"
   },
@@ -230,6 +230,7 @@
   "independent_validation_boundary": {
     "previous_87_file_zip": "INDEPENDENT_PASS",
     "previous_outer_sha256": "0e8e04fea388e9feec246f1aaa7ed2e820a4f18c539a84bd1f63b747d0ea7818",
-    "current_package_after_report_addition": "LOCALLY_VALIDATED_ONLY_NOT_INDEPENDENT_PASS"
-  }
+    "current_89_file_package": "LOCALLY_VALIDATED_ONLY_NOT_INDEPENDENT_PASS"
+  },
+  "published_independent_audit": "PUBLISHED-INDEPENDENT-VALIDATION.* preserves pinned 28c697c FAIL; post-repair audit pending"
 }

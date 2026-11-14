@@ -84,6 +84,6 @@
 4. Независимые L3/L4 отсутствуют; vendor benchmarks не являются Nox uplift.
 5. `SOURCE_HASH_MISMATCH`: CRLF/LF cause established; conversion tool/pre-Git bytes UNKNOWN; TCO/calendar/uplift/owner gates incomplete.
 
-## Publication validation boundary
+## Final independent report boundary
 
-Final independent PASS covers previous 87-file ZIP only. Addition of final independent report and publication chunk metadata is locally validated, not independently re-audited.
+Final independent PASS covers previous 87-file ZIP only. Current 89-file package after report addition is locally validated only.
