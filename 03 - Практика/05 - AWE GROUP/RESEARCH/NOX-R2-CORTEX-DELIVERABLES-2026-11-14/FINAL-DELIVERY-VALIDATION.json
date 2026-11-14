@@ -13,7 +13,7 @@
   "payload": {
     "file_count_including_manifest": 91,
     "manifest_entries": 90,
-    "total_uncompressed_bytes": 77994683,
+    "total_uncompressed_bytes": 77994571,
     "all_manifest_sha256_verified": true,
     "manifest_self_hash_rule": "MANIFEST-SHA256.txt lists every package file except itself; external ZIP SHA-256 is in a sidecar outside the ZIP"
   },
