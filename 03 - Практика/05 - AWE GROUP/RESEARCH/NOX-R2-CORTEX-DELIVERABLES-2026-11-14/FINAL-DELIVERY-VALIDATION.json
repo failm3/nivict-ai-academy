@@ -217,14 +217,13 @@
   },
   "external_zip": {
     "filename": "NOX-R2-CORTEX-RESEARCH-FINAL.zip",
-    "bytes": 28294883,
-    "sha256": null,
+    "sha256": "EXTERNAL_ZIP_HASH_IN_SIDECAR_ONLY",
     "sha256_sidecar": "NOX-R2-CORTEX-RESEARCH-FINAL.zip.sha256",
-    "crc_test": "PASS",
-    "file_count": 87,
+    "file_count": 93,
     "self_included": false,
     "sidecar_included": false,
-    "note": "ZIP CRC and byte size are verified after final archive rebuild. ZIP SHA-256 is intentionally external-only in the sidecar: embedding it in the zipped JSON would create a self-reference."
+    "size_policy": "No size embedded: rebuild changes compressed bytes. Actual size and SHA-256 are determined from final external bytes.",
+    "independent_audit_boundary": "Previous 1ea497802a24f4cf4c647b93b6e21ea4765dc3e8067b866dbff25223e8c603d4 ZIP passed independent content audit except stale metadata. New ZIP requires metadata-delta and full integrity audit; no new PASS claimed."
   },
   "source_hash_mismatch_remaining_unknown": "Conversion tool/config and original pre-Git bytes UNKNOWN",
   "independent_validation_boundary": {
