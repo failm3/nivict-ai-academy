@@ -1,0 +1,53 @@
+{
+  "scope": "RAW provenance package final files",
+  "files": {
+    "L2-PRIORITY-BACKLOG.md": {
+      "bytes": 5658,
+      "sha256": "69bf5312ab912a7c9b54375d6188accfcd6d0d33c6008166b017b4bdaa54ed4b"
+    },
+    "RAW-PROVENANCE.md": {
+      "bytes": 6811,
+      "sha256": "8240f03ee81824f031c7cf73c187a714c749f0944db1827618b72913f11a0212"
+    },
+    "RAW-RECONCILIATION.json": {
+      "bytes": 3325,
+      "sha256": "a716eb976d0a18b23f4ef89c9bda64ef47d9a441018134403a89078306148003"
+    },
+    "RAW-VALIDATION-REPORT.json": {
+      "bytes": 1812,
+      "sha256": "dbbff026c991cbb15a063ded8e021d2321ee9aedf54485d18dbc7fd7ebf3b434"
+    },
+    "snapshots/catalog-all-4504.csv": {
+      "bytes": 4048275,
+      "sha256": "8ad601eb0ff81cf8b8597da7276819c58bd4f156d1c269789fd4907bae9b3fa4"
+    },
+    "snapshots/historical-audit-2026-11-04.md": {
+      "bytes": 2214,
+      "sha256": "88de81e7fc90d6832eb951546f105723722b9041e74571917d2feffe1fe91d64"
+    },
+    "snapshots/iirepresent.json": {
+      "bytes": 850896,
+      "sha256": "01dc8a9f15f769f0c240fe7d64442ea279ef6461675f9f4204eb47571701ddc5"
+    },
+    "snapshots/import-manifest.json": {
+      "bytes": 669,
+      "sha256": "a4c1d6debdb69c447ae15c8f3c03edc154fd0a6b6edf9c257c5d3221dc82c652"
+    },
+    "snapshots/validation-report.json": {
+      "bytes": 2584,
+      "sha256": "dfd4a0bbb143d86c9fe420c5c98b5accaeeb3333e6700f3b9a085799b4cc27b5"
+    },
+    "snapshots/Радар.json": {
+      "bytes": 2257187,
+      "sha256": "2f5c6806030dba7ac7b3e8e3c1cf9510054e88ac7085d46b08a941ecf9dc4221"
+    },
+    "validation.log": {
+      "bytes": 1812,
+      "sha256": "dbbff026c991cbb15a063ded8e021d2321ee9aedf54485d18dbc7fd7ebf3b434"
+    },
+    "verify_raw_provenance.py": {
+      "bytes": 6132,
+      "sha256": "186fc9f4a7c0bf98dc6589d5f14089cbe4f332bfe65ccc40bde89c1aea58e87c"
+    }
+  }
+}

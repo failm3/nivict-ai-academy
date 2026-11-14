@@ -1,0 +1,779 @@
+{
+  "schema_version": "nox-r2-delivery-manifest-v1",
+  "created_utc": "2026-11-14",
+  "owner_contract": "06-CORTEX-R2-FINAL-OWNER-PROMPT-2026-11-14.md / OWNER_FINAL_2026-11-14",
+  "package_status": "RESEARCH_PACKAGE_READY_WITH_EXPLICIT_LIMITATIONS",
+  "github_status": "READY_ONLY_AS_RESEARCH_DESIGN_SNAPSHOT_WITH_LIMITATIONS",
+  "r2_status": "R2_NOT_ACCEPTED",
+  "current_nox": "UNKNOWN",
+  "runtime_tests": "ALL_G0_G5_T01_T12_NOT_RUN",
+  "publication_performed": false,
+  "family_count": 18,
+  "families_complete_by_canonical_presence": true,
+  "structural_inventory": "4504/4504 L1/H; per-row L2/L3/L4 incomplete",
+  "known_blockers": [
+    "Current Nox source/runtime inaccessible",
+    "No runtime/adversarial/acceptance tests",
+    "No independent L3/L4 or accepted-result economics",
+    "Owner domains/oracles/experts/budgets/accounts/effect authority unresolved",
+    "Per-row upstream L2 for 4504 incomplete",
+    "SOURCE_HASH_MISMATCH cause and source archive bytes UNKNOWN"
+  ],
+  "artifacts": [
+    {
+      "artifact_id": "F01",
+      "canonical_name": "01-R2-EXECUTIVE-VERDICT.md",
+      "path": "01-R2-EXECUTIVE-VERDICT.md",
+      "sha256": "c081c54234f78bb090b30f8fa157d61b75b9a89c750c25bc35d423d04a178d07",
+      "bytes": 1296,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "DOCUMENTED_RESEARCH_COMPLETE_NO_GO",
+      "source_artifacts": [
+        "NOX-R2-RESEARCH-REPORT.md",
+        "requirements.md",
+        "artifact-compliance.md"
+      ],
+      "actual_limitations": "Synthesis of supplied directions; no runtime evidence"
+    },
+    {
+      "artifact_id": "F02",
+      "canonical_name": "02-NOX-LATEST-RUNTIME-FORENSIC-AUDIT.md",
+      "path": "02-NOX-LATEST-RUNTIME-FORENSIC-AUDIT.md",
+      "sha256": "b4e75c71c83d9e58b1214e5402db2db9389d3256d52b575994c2a2641787497c",
+      "bytes": 3077,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "BLOCKED_UNKNOWN_CURRENT",
+      "source_artifacts": [
+        "source-baseline.md",
+        "validation-program.md",
+        "opencode-tickets.md"
+      ],
+      "actual_limitations": "Historical baseline only; no fresh HEAD/call graph/receipts/readback"
+    },
+    {
+      "artifact_id": "F03",
+      "canonical_name": "03-COMPLETE-4504-REGISTRY.jsonl",
+      "path": "03-COMPLETE-4504-REGISTRY.jsonl",
+      "sha256": "707a967b53c3cbdc8f0dbc7813c948c4f54710643554884314a1df6d308a6b71",
+      "bytes": 32113102,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "STRUCTURAL_COMPLETE_4504_L1_H",
+      "source_artifacts": [
+        "catalog-4504.csv",
+        "raw-baseline.json",
+        "inventory-validation-report.json"
+      ],
+      "actual_limitations": "Raw rows preserved; per-row L2/L3/L4 not complete"
+    },
+    {
+      "artifact_id": "F04",
+      "canonical_name": "04-EXPANDED-TOOLS-AND-SKILLS-REGISTRY.jsonl",
+      "path": "04-EXPANDED-TOOLS-AND-SKILLS-REGISTRY.jsonl",
+      "sha256": "945d9f58654035a1a5ef965f23911086cf2532a0799eeda54282740c847c8d14",
+      "bytes": 66262,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "L2_32_CANDIDATES_NOT_RUN",
+      "source_artifacts": [
+        "solutions-catalog.csv",
+        "solutions-research.zip:knowledge-candidates.json",
+        "solutions-research.zip:evals-candidates.json"
+      ],
+      "actual_limitations": "19 solutions + 7 knowledge + 6 evals; not exhaustive universe; Nox fit UNKNOWN"
+    },
+    {
+      "artifact_id": "F05",
+      "canonical_name": "05-READY-MADE-INTEGRATION-ATLAS.md",
+      "path": "05-READY-MADE-INTEGRATION-ATLAS.md",
+      "sha256": "675c9c3eafcf44f69c86d830d00c915f0143e88d03622e08ab8be0bf7f193429",
+      "bytes": 11109,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "L2_DESIGN_NOT_COMPATIBILITY_PROOF",
+      "source_artifacts": [
+        "solutions-catalog.csv",
+        "solutions-evidence.md",
+        "knowledge-report.md",
+        "evals-report.md"
+      ],
+      "actual_limitations": "Exact observed upstreams, historical seams; no install/call"
+    },
+    {
+      "artifact_id": "F06",
+      "canonical_name": "06-ENTERPRISE-AGENT-COMPARATIVE-RESEARCH.md",
+      "path": "06-ENTERPRISE-AGENT-COMPARATIVE-RESEARCH.md",
+      "sha256": "409e76d12b5f680c9dedd66cec1b2a9c34fa5830183aa379af3ea840a0478c0f",
+      "bytes": 1762,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "L2_42_EVIDENCE_ROWS",
+      "source_artifacts": [
+        "enterprise-practices.md",
+        "enterprise-evidence.csv",
+        "four-contours.md"
+      ],
+      "actual_limitations": "Vendor metrics not Nox uplift; proprietary internals UNKNOWN"
+    },
+    {
+      "artifact_id": "F07",
+      "canonical_name": "07-OPEN-WORLD-COMPETENCE-GRAPH.md",
+      "path": "07-OPEN-WORLD-COMPETENCE-GRAPH.md",
+      "sha256": "9307c296c2bb9d41aab281a1ca601f2654e92098c6d0860076995f5747acc3ca",
+      "bytes": 1992,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "PROPOSED_GRAPH_NOT_RUN",
+      "source_artifacts": [
+        "four-contours.md",
+        "knowledge-report.md",
+        "validation-program.md"
+      ],
+      "actual_limitations": "Machine skeleton supplied; T08 extension not performed"
+    },
+    {
+      "artifact_id": "F08",
+      "canonical_name": "08-CONTINUOUS-KNOWLEDGE-SYSTEM.md",
+      "path": "08-CONTINUOUS-KNOWLEDGE-SYSTEM.md",
+      "sha256": "a5a319b6df8e56656c72d0b49fcd61c0e68177a5778d43e467e248f7e87ea684",
+      "bytes": 2216,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "L2_DESIGN_NOT_RUN",
+      "source_artifacts": [
+        "knowledge-report.md",
+        "solutions-research.zip",
+        "four-contours.md"
+      ],
+      "actual_limitations": "68 source snapshots; actual corpus/ACL/quality/cost UNKNOWN"
+    },
+    {
+      "artifact_id": "F09",
+      "canonical_name": "09-AUTONOMOUS-TOOL-ACQUISITION.md",
+      "path": "09-AUTONOMOUS-TOOL-ACQUISITION.md",
+      "sha256": "25a55b4678e921f204ec1143a6b6dcb2c088e74dc4cc7cb318386032b5b4d684",
+      "bytes": 2197,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "PROTOCOL_DESIGN_NOT_RUN",
+      "source_artifacts": [
+        "four-contours.md",
+        "RANKED-ACTIONABLE-SHORTLIST.md",
+        "opencode-tickets.md"
+      ],
+      "actual_limitations": "No acquisition/install/call/revoke; owner gates required"
+    },
+    {
+      "artifact_id": "F10",
+      "canonical_name": "10-EXECUTION-STRATEGY-INTELLIGENCE.md",
+      "path": "10-EXECUTION-STRATEGY-INTELLIGENCE.md",
+      "sha256": "d37c7eb57833ef82d857c7b836b00fcb6e266faab6a1c4babed3fc067a5ad90c",
+      "bytes": 1921,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "DESIGN_NO_MEASURED_WINNER",
+      "source_artifacts": [
+        "four-contours.md",
+        "evals-report.md",
+        "validation-program.md"
+      ],
+      "actual_limitations": "No equal-task route benchmark; cost/uplift UNKNOWN"
+    },
+    {
+      "artifact_id": "F11",
+      "canonical_name": "11-LEARNING-META-INTELLIGENCE.md",
+      "path": "11-LEARNING-META-INTELLIGENCE.md",
+      "sha256": "8221e307ef1bcc1c43b865049109055225c7f81082f3f42649094a18df7e3aae",
+      "bytes": 1931,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "DESIGN_NO_LEARNING_CLAIM",
+      "source_artifacts": [
+        "four-contours.md",
+        "knowledge-report.md",
+        "validation-program.md"
+      ],
+      "actual_limitations": "No transfer/self-improvement evidence"
+    },
+    {
+      "artifact_id": "F12",
+      "canonical_name": "12-DOMAIN-CAPABILITY-PACKS.md",
+      "path": "12-DOMAIN-CAPABILITY-PACKS.md",
+      "sha256": "ad019eb0085743b6aa59d9e57f2c7d9266f866298cfcb363d388ccf6d114e4cb",
+      "bytes": 2101,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "PROPOSED_NO_ACCEPTED_PACK",
+      "source_artifacts": [
+        "knowledge-report.md",
+        "validation-program.md",
+        "solutions-catalog.csv"
+      ],
+      "actual_limitations": "No ready/accepted pack; domain/expert/oracle owner required"
+    },
+    {
+      "artifact_id": "F13",
+      "canonical_name": "13-BUILD-BUY-REUSE-MATRIX.csv",
+      "path": "13-BUILD-BUY-REUSE-MATRIX.csv",
+      "sha256": "2e2c7a3b83a049f3f4b3e051026f7627a65aefc082f8011fab23708e02ef9c72",
+      "bytes": 49978,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "32_CANDIDATES_A_H_L1_L2",
+      "source_artifacts": [
+        "solutions-catalog.csv",
+        "solutions-research.zip"
+      ],
+      "actual_limitations": "Significant candidates, not all 4504; costs UNKNOWN"
+    },
+    {
+      "artifact_id": "F14",
+      "canonical_name": "14-R2-ACCEPTANCE-AND-BENCHMARKS.md",
+      "path": "14-R2-ACCEPTANCE-AND-BENCHMARKS.md",
+      "sha256": "c9777a15a4f9f3ad1f7e62ebba80f43a0a8202497e94645a2220c05068f0945e",
+      "bytes": 2325,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "PROGRAM_COMPLETE_ALL_TESTS_NOT_RUN",
+      "source_artifacts": [
+        "validation-program.md",
+        "test-matrix.csv",
+        "validation-checkpoint.md"
+      ],
+      "actual_limitations": "TR/T/G designed; no direct-Nox execution or acceptance"
+    },
+    {
+      "artifact_id": "F15",
+      "canonical_name": "15-OPENCODE-EXECUTION-PACK",
+      "path": "15-OPENCODE-EXECUTION-PACK",
+      "sha256": "6f5e75ed156b645e8a2627404d3c41d1aaa70415a99cda77fff08b2e96bbb497",
+      "bytes": 25780,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "12_TICKETS_PLANNED_NOT_IMPLEMENTED",
+      "source_artifacts": [
+        "opencode-tickets.md"
+      ],
+      "actual_limitations": "No code changes; owner authorization and fresh callsite mapping required"
+    },
+    {
+      "artifact_id": "F16",
+      "canonical_name": "16-FASTEST-SAFE-PATH-TO-R2.md",
+      "path": "16-FASTEST-SAFE-PATH-TO-R2.md",
+      "sha256": "9b745e8ef21bb0736a3e27d02218eba88b42c5da64d5b97f30d9b3118f0a579c",
+      "bytes": 2168,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "PATH_DESIGNED_NOT_PROVEN",
+      "source_artifacts": [
+        "FASTEST-SAFE-INTEGRATION-PATH.md",
+        "solutions-shortlist.md",
+        "opencode-tickets.md"
+      ],
+      "actual_limitations": "G0-G5 order; calendar/cost/current feasibility UNKNOWN"
+    },
+    {
+      "artifact_id": "F17",
+      "canonical_name": "17-SOURCE-AND-EVIDENCE-LEDGER.jsonl",
+      "path": "17-SOURCE-AND-EVIDENCE-LEDGER.jsonl",
+      "sha256": "ffb089d277d2527a28bdc500742cc63cf285d37dfd43f62d26b932de59242acb",
+      "bytes": 4360381,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "4556_LEDGER_RECORDS_L1_L2",
+      "source_artifacts": [
+        "catalog-4504.csv",
+        "enterprise-evidence.csv",
+        "solutions-research.zip",
+        "source-baseline.md"
+      ],
+      "actual_limitations": "4504 raw + 42 enterprise + 7 package + 3 archive manifests; not runtime ledger"
+    },
+    {
+      "artifact_id": "F18",
+      "canonical_name": "18-OWNER-DECISIONS-ONLY.md",
+      "path": "18-OWNER-DECISIONS-ONLY.md",
+      "sha256": "490f23c8991bf52c0cf36df9c67439ed1735d29b5f35a0e730e2d5e0577aad7e",
+      "bytes": 2182,
+      "spec_version": "OWNER_FINAL_2026-11-14",
+      "source_head": "docs 9573a64f2602631ec5d2299716612ba8578c2a13; historical Nox 68cc0ee20a25991ea275512e20ac521cc8f8234b; current UNKNOWN",
+      "created_utc": "2026-11-14",
+      "status": "DECISIONS_ENUMERATED_AWAITING_OWNER",
+      "source_artifacts": [
+        "validation-program.md",
+        "opencode-tickets.md",
+        "CRITICAL-QUESTIONS.md"
+      ],
+      "actual_limitations": "No owner approvals obtained by synthesis"
+    },
+    {
+      "artifact_id": "SUPPORT-07-OPEN-WORLD-COMPETENCE-GRAPH.json",
+      "canonical_name": null,
+      "path": "07-OPEN-WORLD-COMPETENCE-GRAPH.json",
+      "sha256": "ac5d69a585d3d022b35e57ecab28eebb5a30c8196f575ea90209aeb1d932080a",
+      "bytes": 1481,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-CRITICAL-QUESTIONS.md",
+      "canonical_name": null,
+      "path": "CRITICAL-QUESTIONS.md",
+      "sha256": "2792784e964f83d823cde752002359850a3116900cf023cb200027ed13892c62",
+      "bytes": 4351,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-FASTEST-SAFE-INTEGRATION-PATH.md",
+      "canonical_name": null,
+      "path": "FASTEST-SAFE-INTEGRATION-PATH.md",
+      "sha256": "49a24c4e2a2926bff6b5e3608819e1ad9e77d6fe055f8f61e94dcaa1c1b32c04",
+      "bytes": 2993,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-FINAL-VALIDATION.json",
+      "canonical_name": null,
+      "path": "FINAL-VALIDATION.json",
+      "sha256": "b80177098b737ece94fd1681acd96f6ede8c8b0b02d6aca80c5e80ed232077dd",
+      "bytes": 491,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-INVENTORY-AUDIT.md",
+      "canonical_name": null,
+      "path": "INVENTORY-AUDIT.md",
+      "sha256": "c0aa2b14977b8f91be3fbc5d7c1739bed006ddde3cb019b1e3349bfde2562cdf",
+      "bytes": 3514,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-NOX-R2-RESEARCH-REPORT.md",
+      "canonical_name": null,
+      "path": "NOX-R2-RESEARCH-REPORT.md",
+      "sha256": "37cf269dae8a4db034d3c4c189715f43e0f09a55c52997524fd2a7ed6734efc3",
+      "bytes": 7445,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-RANKED-ACTIONABLE-SHORTLIST.md",
+      "canonical_name": null,
+      "path": "RANKED-ACTIONABLE-SHORTLIST.md",
+      "sha256": "f205fced1bce47a27452c18518d68a43a56d4919858f472943b15675ff0d584f",
+      "bytes": 18317,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-SECTIONS-0-22-AUDIT.md",
+      "canonical_name": null,
+      "path": "SECTIONS-0-22-AUDIT.md",
+      "sha256": "7b41ea2daec752a5decee18e438bb89a9033739e9c9b05fc271d7a386065a7ef",
+      "bytes": 2993,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-artifact-compliance.md",
+      "canonical_name": null,
+      "path": "artifact-compliance.md",
+      "sha256": "66c208c9066b6c5fbde8e94cd6c6a349c789f501db35c7bad56037090a6018cf",
+      "bytes": 9855,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-catalog-4504.csv",
+      "canonical_name": null,
+      "path": "catalog-4504.csv",
+      "sha256": "8360a991e0529cedb9cb5fd4fd8db51b10c5841295f64241b720253734bbbf7b",
+      "bytes": 10886997,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-enterprise-evidence.csv",
+      "canonical_name": null,
+      "path": "enterprise-evidence.csv",
+      "sha256": "7bceb5bd03df4d121662db4f91e4e35e8dd1e668582b5c3848b42a689470714f",
+      "bytes": 23360,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-enterprise-manifest.json",
+      "canonical_name": null,
+      "path": "enterprise-manifest.json",
+      "sha256": "c061e6aa7e1d696c930464d84036e188290b5df22d7db5616adf06df098740cb",
+      "bytes": 653,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-enterprise-practices.md",
+      "canonical_name": null,
+      "path": "enterprise-practices.md",
+      "sha256": "a4ee236a78eeed5f3714bd3883491750e2d8be0eca45f816bdb9502421913b21",
+      "bytes": 33582,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-evals-report.md",
+      "canonical_name": null,
+      "path": "evals-report.md",
+      "sha256": "0ead4aa55af6b11bca92207256c7c529ae031ac1d3630a8b9c82ae714f0e10af",
+      "bytes": 22533,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-four-contours.md",
+      "canonical_name": null,
+      "path": "four-contours.md",
+      "sha256": "b93bf1bc77f1e703a2a2a3934b19c8d133ec66bf49b001382628b0dd039d0436",
+      "bytes": 18263,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-inventory-README.md",
+      "canonical_name": null,
+      "path": "inventory-README.md",
+      "sha256": "018e935336fd355c8681192b0ea217dbcf4a26121ab72dffa5ed797a91a240bc",
+      "bytes": 3134,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-inventory-validation-report.json",
+      "canonical_name": null,
+      "path": "inventory-validation-report.json",
+      "sha256": "03c9b533c2ecba7d2bbb046be44b8f37a352cea264be13f510e777031645239f",
+      "bytes": 1143,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-knowledge-report.md",
+      "canonical_name": null,
+      "path": "knowledge-report.md",
+      "sha256": "7cb972a6dc0cf27502d8717048e033e8e09b6949c80ebb6314b97009f3c109a9",
+      "bytes": 23234,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-opencode-tickets.md",
+      "canonical_name": null,
+      "path": "opencode-tickets.md",
+      "sha256": "45d4ca011afe73712facfb5f37bbfc6b555fdaecfb4604d13f3fe902f2749346",
+      "bytes": 12746,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-raw-baseline.json",
+      "canonical_name": null,
+      "path": "raw-baseline.json",
+      "sha256": "484fdedaa15408936f63f6296426d65206ce71b0902cdc677758b47ed53c3f15",
+      "bytes": 4286,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-requirements.md",
+      "canonical_name": null,
+      "path": "requirements.md",
+      "sha256": "4f71ac10dcfb8cbcb00bd34605ff2c6270c8879f30b43fe050ac29c591071007",
+      "bytes": 54175,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-resume.md",
+      "canonical_name": null,
+      "path": "resume.md",
+      "sha256": "ae5bc1308883051c1a9aa446053e944807d4764815f9babdd40031da3567bd23",
+      "bytes": 2517,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-solutions-catalog.csv",
+      "canonical_name": null,
+      "path": "solutions-catalog.csv",
+      "sha256": "70e9658ef23dc2dd4e0958021f3889bc3ebff87ae13db78c612490ad24609574",
+      "bytes": 20176,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-solutions-evidence.md",
+      "canonical_name": null,
+      "path": "solutions-evidence.md",
+      "sha256": "028e2c5a36585472ca694986b49180ac5aa95be1f526bd814334d9e44551fd08",
+      "bytes": 9938,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-solutions-research.zip",
+      "canonical_name": null,
+      "path": "solutions-research.zip",
+      "sha256": "fbd330bdf070f91246e43edaf2273579085cde335ed29f07fbb8a21276ff3348",
+      "bytes": 22702266,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-solutions-shortlist.md",
+      "canonical_name": null,
+      "path": "solutions-shortlist.md",
+      "sha256": "2c51f1e50f62a11e89d1f1edef8f51796c86ae8e11912ffb50f75c839610a412",
+      "bytes": 11157,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-source-baseline.md",
+      "canonical_name": null,
+      "path": "source-baseline.md",
+      "sha256": "c553595a26c61b5a9767baa507bfbcf99b4285f3b0017c30aeb9c974eb9bd6bb",
+      "bytes": 20810,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-test-matrix.csv",
+      "canonical_name": null,
+      "path": "test-matrix.csv",
+      "sha256": "81c0c88783b46e5dd7be1b11048514e0177eff6b154126da19514ab7fea7e019",
+      "bytes": 12225,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-validation-checkpoint.md",
+      "canonical_name": null,
+      "path": "validation-checkpoint.md",
+      "sha256": "1638b5c2e23553d39a51bb3130a1e3428485cdc52e737a052dd367d80dea4c21",
+      "bytes": 2316,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    },
+    {
+      "artifact_id": "SUPPORT-validation-program.md",
+      "canonical_name": null,
+      "path": "validation-program.md",
+      "sha256": "40d6cf57fab4251f39b35c45282de558af3656ddf50b369864dc5b5bb79ee880",
+      "bytes": 14800,
+      "spec_version": "AS_DECLARED_IN_SOURCE",
+      "source_head": "SEE_CONTENT",
+      "created_utc": "2026-11-14",
+      "status": "SUPPORTING_EVIDENCE_OR_SYNTHESIS_READ_CONTENT",
+      "source_artifacts": [
+        "session 0d145d93-e21e-4994-bd18-158169ff1946 or local synthesis"
+      ],
+      "actual_limitations": "Supporting artifact; hash/readback does not prove runtime correctness or R2 acceptance"
+    }
+  ]
+}

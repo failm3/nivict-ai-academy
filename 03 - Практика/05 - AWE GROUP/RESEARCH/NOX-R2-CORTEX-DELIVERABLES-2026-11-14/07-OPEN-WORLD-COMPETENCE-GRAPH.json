@@ -1,0 +1,66 @@
+{
+  "schema_version": "nox-r2-open-world-graph-v1",
+  "status": "PROPOSED_NOT_VALIDATED",
+  "node_types": [
+    "domain",
+    "subdomain",
+    "fundamental_knowledge",
+    "specialized_procedure",
+    "prerequisite",
+    "tool",
+    "source_rights_acl",
+    "risk",
+    "deliverable",
+    "qa_oracle",
+    "independent_reviewer",
+    "validity_scope",
+    "evidence_of_practice",
+    "verified_experience"
+  ],
+  "edge_types": [
+    "contains",
+    "requires",
+    "uses",
+    "governed_by",
+    "mitigates",
+    "produces",
+    "verified_by",
+    "valid_for",
+    "supported_by",
+    "derived_from"
+  ],
+  "example_nodes": [
+    {
+      "id": "DOMAIN-CHANGE-IMPACT",
+      "type": "domain",
+      "name": "Local change-impact audit",
+      "status": "PROPOSED_FIXTURE_ONLY"
+    },
+    {
+      "id": "DELIVERABLE-RISK-CHECKLIST",
+      "type": "deliverable",
+      "source_refs": [
+        "validation-program.md G3"
+      ]
+    },
+    {
+      "id": "ORACLE-INDEPENDENT-DOMAIN",
+      "type": "qa_oracle",
+      "status": "OWNER_REQUIRED"
+    }
+  ],
+  "example_edges": [
+    {
+      "from": "DOMAIN-CHANGE-IMPACT",
+      "type": "produces",
+      "to": "DELIVERABLE-RISK-CHECKLIST"
+    },
+    {
+      "from": "DELIVERABLE-RISK-CHECKLIST",
+      "type": "verified_by",
+      "to": "ORACLE-INDEPENDENT-DOMAIN"
+    }
+  ],
+  "extension_rule": "Every added entity needs source/evidence/scope; no safe scope or expert oracle => BLOCKED",
+  "current_evidence": "NO_GRAPH_EXTENSION_RUN"
+}

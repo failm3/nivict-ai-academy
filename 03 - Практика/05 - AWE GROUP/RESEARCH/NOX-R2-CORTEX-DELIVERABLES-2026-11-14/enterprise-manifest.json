@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-11-14",
+  "nox_runtime": "UNKNOWN",
+  "nox_tests": "NOT_RUN",
+  "validation": {
+    "csv_records": 42,
+    "all_cited_evidence_resolved": true,
+    "nox_test_execution": false
+  },
+  "files": {
+    "enterprise-practices.md": {
+      "bytes": 33582,
+      "sha256": "a4ee236a78eeed5f3714bd3883491750e2d8be0eca45f816bdb9502421913b21"
+    },
+    "four-contours.md": {
+      "bytes": 18263,
+      "sha256": "b93bf1bc77f1e703a2a2a3934b19c8d133ec66bf49b001382628b0dd039d0436"
+    },
+    "enterprise-evidence.csv": {
+      "bytes": 23360,
+      "sha256": "7bceb5bd03df4d121662db4f91e4e35e8dd1e668582b5c3848b42a689470714f"
+    }
+  }
+}

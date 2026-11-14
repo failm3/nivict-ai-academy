@@ -1,0 +1,235 @@
+{
+  "schema_version": "nox-r2-final-delivery-validation-v1",
+  "validated_utc": "2026-11-14",
+  "scope": "Artifact integrity, counts, deduplication and packaging only; not Nox runtime or R2 acceptance",
+  "package_status": "research/design snapshot",
+  "r2_status": "R2_NOT_ACCEPTED",
+  "current_nox": "UNKNOWN",
+  "g0_g5": "NOT_RUN",
+  "t01_t12": "NOT_RUN",
+  "independent_l3_l4": "ABSENT",
+  "per_row_l2_plus": "INCOMPLETE",
+  "source_hash_mismatch_cause": "CAUSE_ESTABLISHED_CRLF_VS_LF",
+  "payload": {
+    "file_count_including_manifest": 87,
+    "manifest_entries": 86,
+    "total_uncompressed_bytes": 77923508,
+    "all_manifest_sha256_verified": true,
+    "manifest_self_hash_rule": "MANIFEST-SHA256.txt lists every package file except itself; external ZIP SHA-256 is in a sidecar outside the ZIP"
+  },
+  "repair": {
+    "input_cleaned_file_count": 81,
+    "nested_duplicate_directory": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK",
+    "removed_identical_files": [
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-01.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-01.md",
+        "bytes": 1220,
+        "sha256": "dbd6a4c51e00e7ee23b558dd22bc4bb838c2341a4e16dd79d911c7ccfa22706e"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-02.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-02.md",
+        "bytes": 1003,
+        "sha256": "05ab8fdc6cad0c0c14660803c948c5fce830681f3e575edaa409ec6b9cb0de7a"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-03.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-03.md",
+        "bytes": 896,
+        "sha256": "ade35e0dd1ea0674aff997787f6a2297c47df00f49d63a0aa4e6286618820ae6"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-04.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-04.md",
+        "bytes": 840,
+        "sha256": "caf072844417885972e45e93085b005a60e3d7d31eef77e0d462f09c03358c7c"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-05.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-05.md",
+        "bytes": 739,
+        "sha256": "ccb6b4bb4cf201582bc54211aab272372d91461fb2fddae03185783602eea014"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-06.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-06.md",
+        "bytes": 1145,
+        "sha256": "711ef6c223c0f4196117b823568230a4950a06df50576382b0a4a7e273983075"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-07.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-07.md",
+        "bytes": 1062,
+        "sha256": "8000c2fbad7af19cb244b82282e2fb6533c66ac26424bde197dae09428766eb2"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-08.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-08.md",
+        "bytes": 927,
+        "sha256": "8decfa033a90f41cf497eb04cf135b056fbb678aa04527f64b63d496a44a6c3e"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-09.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-09.md",
+        "bytes": 768,
+        "sha256": "b0afd1ea9015da9be316d6fdf721ab28d3b63c95f6e36730c7f41463dd048f5c"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-10.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-10.md",
+        "bytes": 976,
+        "sha256": "11774ae715ce7bdd474148ce5a649981b71d1de3f0b669f63074242c25da4a0a"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-11.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-11.md",
+        "bytes": 767,
+        "sha256": "b513d12f4248d007e8cd35dffc01b0611b2e809bc27b3325d2a78b20347adced"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/OC-12.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/OC-12.md",
+        "bytes": 1143,
+        "sha256": "6a9632fe0927be25fb0f6a70c2f5b6800a3d5eb861d2ac0311db9eac1c5be306"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/README.md",
+        "retained": "15-OPENCODE-EXECUTION-PACK/README.md",
+        "bytes": 12746,
+        "sha256": "45d4ca011afe73712facfb5f37bbfc6b555fdaecfb4604d13f3fe902f2749346"
+      },
+      {
+        "removed": "15-OPENCODE-EXECUTION-PACK/15-OPENCODE-EXECUTION-PACK/tickets.json",
+        "retained": "15-OPENCODE-EXECUTION-PACK/tickets.json",
+        "bytes": 1548,
+        "sha256": "fd4d0964c3a8a263a783619bba6af00a056b7481286663a2aee273371a1e6a12"
+      }
+    ],
+    "removed_file_count": 14,
+    "remaining_exact_duplicate_groups": [
+      {
+        "sha256": "45d4ca011afe73712facfb5f37bbfc6b555fdaecfb4604d13f3fe902f2749346",
+        "paths": [
+          "15-OPENCODE-EXECUTION-PACK/README.md",
+          "opencode-tickets.md"
+        ]
+      }
+    ],
+    "remaining_exact_duplicates_policy": "Retained: only the proven nested copies were removed; other duplicate content is preserved as potentially distinct evidence/legacy records.",
+    "canonical_f06_rename": {
+      "old": "06-ENTERPRISE-COMPARATIVE-RESEARCH.md",
+      "new": "06-ENTERPRISE-AGENT-COMPARATIVE-RESEARCH.md",
+      "byte_identical": true,
+      "sha256": "409e76d12b5f680c9dedd66cec1b2a9c34fa5830183aa379af3ea840a0478c0f",
+      "status_after_repair": "COMPLETE in research/design scope; no runtime acceptance"
+    },
+    "raw_validation": {
+      "received_checksums": "PASS",
+      "4504_raw_object_source_mapping": "PASS",
+      "crlf_historical_hashes": "PASS",
+      "missing_external_files": [
+        "raw-provenance/verify_raw_provenance.py",
+        "raw-provenance/validation.log"
+      ],
+      "copy_error": "Session 3a08d06b-423a-403c-9b5e-042ee3ba9476 not found in accessible workspace"
+    },
+    "stale_delivery_metadata_repair": {
+      "first_independent_audit_status": "FIRST_AUDIT_FAIL_TWO_STALE_METADATA",
+      "corrected": {
+        "NOX-R2-RESEARCH-REPORT.md": {
+          "old_bytes": 7439,
+          "old_sha256": "65eb1e44a8327954a2cae1ebf48e8dc2fd29635dfc4fe88f8ec34dd7de65911c",
+          "actual_bytes": 7445,
+          "actual_sha256": "37cf269dae8a4db034d3c4c189715f43e0f09a55c52997524fd2a7ed6734efc3"
+        },
+        "solutions-research.zip": {
+          "old_bytes": 22804517,
+          "old_sha256": "5745cbfe4c4326f358907a835de3899e5967471320ad79ea0ebb0d38c96b216f",
+          "actual_bytes": 22702266,
+          "actual_sha256": "fbd330bdf070f91246e43edaf2273579085cde335ed29f07fbb8a21276ff3348"
+        }
+      },
+      "delivery_manifest_entries_checked": 48,
+      "all_delivery_manifest_entries_match": true,
+      "f15_rule": "Virtual directory aggregate: byte total only; no declared directory hash algorithm",
+      "repeat_independent_audit": "PENDING_SEPARATE_ADDITION"
+    }
+  },
+  "count_difference": {
+    "legacy_sha256sums_entries": 63,
+    "unlisted_nested_duplicate_files": 14,
+    "unlisted_nested_solutions_archive": 1,
+    "source_zip_files": 78,
+    "added_readme": 1,
+    "added_master_tracker": 1,
+    "added_manifest": 1,
+    "cleaned_zip_files": 81,
+    "formula": "63 legacy SHA256SUMS +14 unlisted nested duplicates +1 unlisted solutions archive =78; +README/tracker/manifest=81; -14 nested copies +2 placeholders +1 validation=70 before additions; -2 placeholders +11 RAW files +4 repair additions=83 final files including manifest"
+  },
+  "completeness": {
+    "canonical_families": 18,
+    "canonical_family_ids_present": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18"
+    ],
+    "raw_registry_records": 4504,
+    "expanded_candidates": 32,
+    "source_evidence_ledger_records": 4556,
+    "test_matrix_rows": 12,
+    "original_raw_artifacts": "PINNED_GIT_SOURCE_SNAPSHOTS_INCLUDED; original pre-Git bytes unavailable, not reconstructed",
+    "pending_raw_provenance": null,
+    "pending_opencode_matrix": null,
+    "raw_provenance": "raw-provenance/ (11 received files); verify_raw_provenance.py and validation.log unavailable from source session and NOT_INCLUDED",
+    "opencode_matrix": "REQUIREMENTS-18-MATRIX.md/.csv; OPENCODE-HANDOFF-READYNESS.md; REPAIR-VALIDATION.json",
+    "independent_validation": "independent-validation/ contains FIRST_AUDIT_FAIL_TWO_STALE_METADATA evidence and verifier; no repeat PASS claimed"
+  },
+  "privacy": {
+    "cleaned_package_reused": true,
+    "internal_sources_input_markdown_removed": 5,
+    "owner_email_redacted_in_two_json": true,
+    "owner_email_absent_from_nested_zip": true,
+    "private_nox_source_included": false
+  },
+  "nested_solutions_research": {
+    "path": "solutions-research.zip",
+    "file_count": 246,
+    "bytes": 22702266,
+    "sha256": "fbd330bdf070f91246e43edaf2273579085cde335ed29f07fbb8a21276ff3348",
+    "crc_test": "PASS",
+    "note": "Nested hash is separate from the outer ZIP sidecar hash."
+  },
+  "external_zip": {
+    "filename": "NOX-R2-CORTEX-RESEARCH-FINAL.zip",
+    "bytes": 28294883,
+    "sha256": null,
+    "sha256_sidecar": "NOX-R2-CORTEX-RESEARCH-FINAL.zip.sha256",
+    "crc_test": "PASS",
+    "file_count": 87,
+    "self_included": false,
+    "sidecar_included": false,
+    "note": "ZIP CRC and byte size are verified after final archive rebuild. ZIP SHA-256 is intentionally external-only in the sidecar: embedding it in the zipped JSON would create a self-reference."
+  },
+  "source_hash_mismatch_remaining_unknown": "Conversion tool/config and original pre-Git bytes UNKNOWN",
+  "independent_validation_boundary": {
+    "previous_87_file_zip": "INDEPENDENT_PASS",
+    "previous_outer_sha256": "0e8e04fea388e9feec246f1aaa7ed2e820a4f18c539a84bd1f63b747d0ea7818",
+    "current_package_after_report_addition": "LOCALLY_VALIDATED_ONLY_NOT_INDEPENDENT_PASS"
+  }
+}

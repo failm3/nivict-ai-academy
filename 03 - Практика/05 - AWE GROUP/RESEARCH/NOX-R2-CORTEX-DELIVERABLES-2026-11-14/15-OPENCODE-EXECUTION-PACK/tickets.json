@@ -1,0 +1,79 @@
+{
+  "order": [
+    "OC-01",
+    "OC-02",
+    "OC-03",
+    "OC-04",
+    "OC-05",
+    "OC-06",
+    "OC-07",
+    "OC-08",
+    "OC-09",
+    "OC-10",
+    "OC-11",
+    "OC-12"
+  ],
+  "tickets": [
+    {
+      "ticket_id": "OC-01",
+      "path": "OC-01.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-02",
+      "path": "OC-02.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-03",
+      "path": "OC-03.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-04",
+      "path": "OC-04.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-05",
+      "path": "OC-05.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-06",
+      "path": "OC-06.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-07",
+      "path": "OC-07.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-08",
+      "path": "OC-08.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-09",
+      "path": "OC-09.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-10",
+      "path": "OC-10.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-11",
+      "path": "OC-11.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "ticket_id": "OC-12",
+      "path": "OC-12.md",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    }
+  ],
+  "common_source": "../opencode-tickets.md"
+}
